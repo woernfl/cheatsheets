@@ -14,12 +14,12 @@
       </div>
       <footer role="contentinfo" class="site-footer">
         <p class="mb-1">
-          {% if site.twitter != nil %}
-          <a href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter fa-lg"></i>&nbsp;</a>
-          {% endif %} {% if site.github != nil %}
+          {% if site.github != "" %}
           <a href="{{ site.github }}" target="_blank"><i class="fa fa-github fa-lg"></i>&nbsp;</a>
-          {% endif %} {% if site.blog != nil %}
+          {% endif %} {% if site.blog != "" %}
           <a href="{{ site.blog }}" target="_blank"><i class="fa fa-code fa-lg"></i>&nbsp;</a>
+          {% endif %} {% if site.twitter != "" %}
+          <a href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter fa-lg"></i>&nbsp;</a>
           {% endif %} {% if site.linkedin != "" %}
           <a href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
           {% endif %}
