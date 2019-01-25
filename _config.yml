@@ -31,3 +31,9 @@ aux_links:
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
+
+# Social media links
+twitter: "https://twitter.com/woernfl"
+github: "https://github.com/woernfl"
+blog: "https://blog.woernfl.xyz"
+linkedin: "https://www.linkedin.com/in/woernfl/"
