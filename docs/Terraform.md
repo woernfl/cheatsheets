@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Terraform
-nav_order: 2
+parent: Home
 ---
 
 # Terraform Cheatsheet

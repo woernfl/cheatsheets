@@ -7,5 +7,5 @@ has_children: true
 permalink: /
 ---
 
-# My best cheatsheet
+# My best cheatsheets
 
