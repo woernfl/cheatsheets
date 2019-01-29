@@ -25,9 +25,9 @@ exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "pac
 search_enabled: true
 
 # Aux links for the upper right navigation
-aux_links:
-  "Woernfl blog":
-    - "https://blog.woernfl.xyz/"
+#aux_links:
+#  "Woernfl blog":
+#    - "https://blog.woernfl.xyz/"
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
