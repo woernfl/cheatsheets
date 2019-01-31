@@ -12,12 +12,9 @@ Initialize Terraform:
 
 ```bash
 terraform init
-<<<<<<< HEAD
+
 #To use a file to describe backend configuration
 terraform init -backend-config=backend.tfvars
-=======
-terraform init -backend-config=backend.tfvars #To use a file to describe backend configuration
->>>>>>> cec169855827e60a3eec60bc3f7cfe3474b2ad23
 ```
 
 Check what will be modfied:
