@@ -13,7 +13,7 @@ Initialize Terraform:
 ```bash
 terraform init
 
-#To use a file to describe backend configuration
+# To use a file to describe backend configuration:
 terraform init -backend-config=backend.tfvars
 ```
 
