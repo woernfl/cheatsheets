@@ -6,6 +6,8 @@ parent: Home
 
 # Terraform Cheatsheet
 
+## Basic actions
+
 Initialize Terraform:
 
 ```bash
@@ -15,19 +17,35 @@ terraform init
 Check what will be modfied:
 
 ```bash
-terraform plan
+terraform plan -out=tfplan .
 ```
 
 Apply modifications:
 
 ```bash
-terraform apply -auto-approve
+terraform apply -auto-approve plan
 ```
 
 Delete Terraform ressources:
 
 ```bash
 terraform destroy -force
+```
+
+## To debug
+
+Set TF_LOG env variable:
+
+```bash
+export TF_LOG=TRACE
+```
+
+## Bonus
+
+Format all your file following the same pattern:
+
+```bash
+terraform fmt
 ```
 
 Install autocompletion:
