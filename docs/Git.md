@@ -41,5 +41,5 @@ git status
 Add file change to the last commit:
 
 ```bash
-git commit --am
+git commit --am -s -m "$COMMIT_MESSAGE"
 ```
