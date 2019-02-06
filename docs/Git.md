@@ -8,10 +8,10 @@ parent: Home
 
 ## Basic actions
 
-Create a branch:
+Get the status of your repo:
 
 ```bash
-git checkout -b $BRANCH_NAME
+git status
 ```
 
 Stage a change:
@@ -32,20 +32,20 @@ Push your change to a remote repo:
 git push -u origin $BRANCH_NAME
 ```
 
-Get the status of your repo:
+Create a branch:
 
 ```bash
-git status
-```
-
-Add file change to the last commit:
-
-```bash
-git commit --am -s -m "$COMMIT_MESSAGE"
+git checkout -b $BRANCH_NAME
 ```
 
 Check commit history:
 
 ```bash
 git log --oneline --graph --color
+```
+
+Add file change to the last commit:
+
+```bash
+git commit --am -s -m "$COMMIT_MESSAGE"
 ```
