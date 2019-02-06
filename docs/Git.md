@@ -8,6 +8,12 @@ parent: Home
 
 ## Basic actions
 
+Clone a remote repo:
+
+```bash
+git clone $REMOTE_REPO_URL
+```
+
 Get the status of your repo:
 
 ```bash
