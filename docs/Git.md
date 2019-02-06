@@ -47,5 +47,5 @@ git commit --am -s -m "$COMMIT_MESSAGE"
 Check commit history:
 
 ```bash
-git log --oneline --graph
+git log --oneline --graph --color
 ```
