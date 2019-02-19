@@ -20,6 +20,12 @@ Get the status of your repo:
 git status
 ```
 
+Get the status of your repo listing all the files:
+
+```bash
+git status -u
+```
+
 Stage a change:
 
 ```bash
