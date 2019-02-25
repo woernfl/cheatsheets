@@ -61,3 +61,11 @@ Add file change to the last commit:
 ```bash
 git commit --am -s -m "$COMMIT_MESSAGE"
 ```
+
+## Bonus
+
+Enable credential helper to not have to retype your password each time you want to do something:
+
+```
+git config credential.helper store 
+```
