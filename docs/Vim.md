@@ -21,3 +21,17 @@ To remove line numbers:
 ```
 set nonumber
 ```
+
+## Must known shortcut
+
+Cut:
+
+```
+dd
+```
+
+Paste:
+
+```
+p
+```
