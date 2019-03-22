@@ -8,8 +8,16 @@ parent: Home
 
 ## Basic actions
 
-The `.vimrc` file in your home directory:
+To permanently apply the following, you can put them in the `.vimrc` file in your home directory.
+
+To display line numbers:
 
 ```
-set number # Enable number of line by default
+set number
+```
+
+To remove line numbers:
+
+```
+set nonumber
 ```
