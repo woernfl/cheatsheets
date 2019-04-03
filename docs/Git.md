@@ -62,6 +62,12 @@ Add file change to the last commit:
 git commit --am -s -m "$COMMIT_MESSAGE"
 ```
 
+Rebase a base branch in current branch:
+
+```bash
+git rebase $BASE_BRANCH
+```
+
 ## Bonus
 
 Enable credential helper to not have to retype your password each time you want to do something:
