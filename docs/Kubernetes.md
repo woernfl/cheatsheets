@@ -14,6 +14,20 @@ Get everything:
 kubectl get all --all-namespaces
 ```
 
+## Secret managment
+
+Create a secret from literal:
+
+```bash
+kubectl create secret generic $SECRET_NAME --from-literal=$KEY=$SECRET
+```
+
+Create a secret from a file:
+
+```bash
+kubectl create secret generic $SECRET_NAME --from-file=$KEY=$PATH_TO_FILE
+```
+
 ## To debug
 
 Connect to a pod from your local workstation:
