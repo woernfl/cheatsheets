@@ -68,6 +68,16 @@ Rebase a base branch in current branch:
 git rebase $BASE_BRANCH
 ```
 
+## Branch managment
+
+Rename a branch:
+
+```bash
+git branch -m $BRANCH_OLD_NAME $BRANCH_NEW_NAME
+git push origin :$BRANCH_OLD_NAME $BRANCH_NEW_NAME
+git push origin -u $BRANCH_NEW_NAME
+```
+
 ## Bonus
 
 Enable credential helper to not have to retype your password each time you want to do something:
