@@ -8,6 +8,12 @@ parent: Home
 
 ## Basic actions
 
+One line for loop:
+
+```bash
+for t in {1..5}; do echo "${t}"; done
+```
+
 Add an alias:
 
 ```bash
