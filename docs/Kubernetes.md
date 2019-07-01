@@ -30,6 +30,12 @@ kubectl create secret generic $SECRET_NAME --from-file=$KEY=$PATH_TO_FILE
 
 ## To debug
 
+Follow logs of multiple pods:
+
+```bash
+kubectl logs -f -n $NAMESPACE -l app=myapp
+```
+
 Connect to a pod from your local workstation:
 
 ```bash
