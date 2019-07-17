@@ -14,6 +14,12 @@ Get everything:
 kubectl get all --all-namespaces
 ```
 
+Get more info about pods:
+
+```bash
+kubectl get po -o wide
+```
+
 ## Secret managment
 
 Create a secret from literal:
@@ -36,10 +42,16 @@ Follow logs of multiple pods:
 kubectl logs -f -n $NAMESPACE -l app=myapp
 ```
 
+Get all events of what happened:
+
+```bash
+kubectl get events -n $NAMESPACE
+```
+
 Connect to a pod from your local workstation:
 
 ```bash
-kubectl port-forward --namespace $POD_NAMESPACE $POD_NAME $LOCAL_PORT:$POD_PORT
+kubectl port-forward --namespace $NAMESPACE $POD_NAME $LOCAL_PORT:$POD_PORT
 ```
 
 Boot a centos pod in Kubernetes:
