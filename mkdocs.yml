@@ -22,9 +22,6 @@ theme:
     text: 'Roboto'
     code: 'Roboto Mono'
 
-nav:
-    - Home: index.md
-
 # Customization
 extra:
   manifest: 'manifest.webmanifest'
