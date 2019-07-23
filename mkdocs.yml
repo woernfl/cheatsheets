@@ -18,8 +18,8 @@ theme:
   favicon: 'assets/images/logo.png'
   language: 'en'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: 'white'
+    accent: 'Red'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
