@@ -1,9 +1,3 @@
----
-layout: default
-title: SSH Key Generation
-parent: Home
----
-
 # SSH Key Generation
 
 ## Basic actions
@@ -11,7 +5,7 @@ parent: Home
 Generate new SSH Keys:
 
 ```bash
-ssh-keygen -t rsa -C "hello@onmyown.io"
+ssh-keygen -t rsa -C "$UNIQUE_IDENTIFIER"
 ```
 
 Press `Enter` to accept default location and then type your paraphrase twice.

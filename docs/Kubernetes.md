@@ -1,9 +1,3 @@
----
-layout: default
-title: Kubernetes
-parent: Home
----
-
 # Kubernetes Cheatsheet
 
 ## Basic actions

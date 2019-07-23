@@ -1,9 +1,3 @@
----
-layout: default
-title: Vim
-parent: Home
----
-
 # VIM Cheatsheet
 
 ## Basic actions

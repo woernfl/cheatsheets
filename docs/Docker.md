@@ -1,9 +1,3 @@
----
-layout: default
-title: Docker
-parent: Home
----
-
 # Docker Cheatsheet
 
 ## Basic actions
