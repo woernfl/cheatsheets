@@ -1,9 +1,3 @@
----
-layout: default
-title: SCP
-parent: Home
----
-
 # SCP Cheatsheet
 
 ## Basic actions

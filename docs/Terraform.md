@@ -1,9 +1,3 @@
----
-layout: default
-title: Terraform
-parent: Home
----
-
 # Terraform Cheatsheet
 
 ## Basic actions
