@@ -1,45 +1,10 @@
-# Material <small>for MkDocs</small>
+# All my cheatsheets
 
-## Create beautiful project documentation
+Hey I am [@woernfl](https://twitter.com/woernfl) and here are all the Cheatsheets I am usually using, you know, just to not have to browse the web for hours.
 
-Material is a theme for [MkDocs][1], an excellent static site generator geared
-towards project documentation. It is built using Google's [Material Design][2]
-guidelines.
+![Code](assets/images/code.jpeg "Code")
 
-[![Material for MkDocs](assets/images/material.png)](assets/images/material.png)
+## Acknowledgment
 
-  [1]: https://www.mkdocs.org
-  [2]: https://material.io/guidelines/material-design/
+Thanks to [Martin Donath (@squidfunk)](https://github.com/squidfunk) for providing the [Material for MkDocs template](https://squidfunk.github.io/mkdocs-material/) which this site is build on top of.
 
-## Quick start
-
-Install the latest version of Material with `pip`:
-
-``` sh
-pip install mkdocs-material
-```
-
-Append the following line to your project's `mkdocs.yml`:
-
-``` yaml
-theme:
-  name: 'material'
-```
-
-## What to expect
-
-* Responsive design and fluid layout for all kinds of screens and devices,
-  designed to serve your project documentation in a user-friendly way in 37
-  languages with optimal readability.
-
-* Easily customizable primary and accent color, fonts, favicon and logo;
-  straight forward localization through theme extension; integrated with Google
-  Analytics, Disqus and GitHub.
-
-* Well-designed search interface accessible through hotkeys (<kbd>F</kbd> or
-  <kbd>S</kbd>), intelligent grouping of search results, search term
-  highlighting and lazy loading.
-
-For detailed instructions see the [getting started guide][3].
-
-  [3]: getting-started.md
