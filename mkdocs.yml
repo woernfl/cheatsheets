@@ -34,8 +34,7 @@ copyright: 'Copyright &copy; 2016 - 2019 Martin Donath'
 
 # Configuration
 theme:
-  name: null
-  custom_dir: material
+  name: Tests
 
   # 404 page
   static_templates:
@@ -128,6 +127,6 @@ nav:
   - License: license.md
 
 # Google Analytics
-google_analytics:
-  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
-  - auto
+#google_analytics:
+#  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#  - auto
