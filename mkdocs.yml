@@ -26,6 +26,8 @@ theme:
 extra:
   manifest: 'manifest.webmanifest'
   social:
+    - type: 'blog'
+      link: 'https://blog.woernfl.xyz/'
     - type: 'github'
       link: 'https://github.com/woernfl'
     - type: 'twitter'
