@@ -1,15 +1,15 @@
 # Project information
-site_name: 'Material for MkDocs'
-site_description: 'A Material Design theme for MkDocs'
-site_author: 'Martin Donath'
-site_url: 'https://squidfunk.github.io/mkdocs-material/'
+site_name: 'Cheatsheets'
+site_description: 'This a compilation of the various cheatsheet I am using'
+site_author: 'Florian Woerner'
+site_url: 'https://cheatsheets.woernfl.xyz/'
 
 # Repository
-repo_name: 'squidfunk/mkdocs-material'
-repo_url: 'https://github.com/squidfunk/mkdocs-material'
+repo_name: 'woernfl/cheatsheets'
+repo_url: 'https://github.com/woernfl/cheatsheets'
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
+copyright: 'Copyright &copy; 2017 - 2019 Florian Woerner'
 
 # Configuration
 theme:
@@ -27,11 +27,11 @@ extra:
   manifest: 'manifest.webmanifest'
   social:
     - type: 'github'
-      link: 'https://github.com/squidfunk'
+      link: 'https://github.com/woernfl'
     - type: 'twitter'
-      link: 'https://twitter.com/squidfunk'
+      link: 'https://twitter.com/woernfl'
     - type: 'linkedin'
-      link: 'https://linkedin.com/in/squidfunk'
+      link: 'https://www.linkedin.com/in/woernfl'
 
 # Extensions
 markdown_extensions:
