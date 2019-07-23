@@ -14,7 +14,8 @@ copyright: 'Copyright &copy; 2017 - 2019 Florian Woerner'
 # Configuration
 theme:
   name: 'material'
-  logo: 'images/logo.png'
+  logo: 'assets/images/logo.png'
+  favicon: 'assets/images/favicon.png'
   language: 'en'
   palette:
     primary: 'indigo'
