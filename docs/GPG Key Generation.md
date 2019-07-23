@@ -14,9 +14,13 @@ gpg --list-secret-keys --keyid-format LONG
 gpg2 --gen-key
 ```
 
+<div markdown="1">
+
 ```markdown
 >:bulb: If you get the following error: `gpg: Sorry, no terminal at all requested - can't get input` remove the line `no-tty` from `~/.gnupg/gpg.conf`
 ```
+
+</div>
 
 - Choose `RSA and RSA` option
 
