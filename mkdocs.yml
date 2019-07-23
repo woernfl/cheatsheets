@@ -1,0 +1,44 @@
+# Project information
+site_name: 'Cheatsheets'
+site_description: 'This a compilation of the various cheatsheet I am using'
+site_author: 'Florian Woerner'
+site_url: 'https://cheatsheets.woernfl.xyz/'
+
+# Repository
+repo_name: 'woernfl/cheatsheets'
+repo_url: 'https://github.com/woernfl/cheatsheets'
+
+# Copyright
+copyright: 'Copyright &copy; 2017 - 2019 Florian Woerner'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'link'
+      link: 'https://blog.woernfl.xyz/'
+    - type: 'github'
+      link: 'https://github.com/woernfl'
+    - type: 'twitter'
+      link: 'https://twitter.com/woernfl'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/in/woernfl'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true

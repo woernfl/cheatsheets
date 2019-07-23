@@ -1,68 +1,81 @@
-<p align="right">
-    <a href="https://badge.fury.io/rb/just-the-docs"><img src="https://badge.fury.io/rb/just-the-docs.svg" alt="Gem version"></a> <a href="https://travis-ci.com/pmarsceill/just-the-docs"><img src="https://travis-ci.com/pmarsceill/just-the-docs.svg?branch=master" alt="Build status"></a>
-</p>
-<br><br>
-<p align="center">
-    <h1 align="center">Just the Docs</h1>
-    <p align="center">A modern, high customizable, responsive Jekyll theme for documentation with built-in search.<br>Easily hosted on GitHub Pages with few dependencies.</p>
-    <p align="center"><strong><a href="https://pmarsceill.github.io/just-the-docs/">See it in action!</a></strong></p>
-    <br><br><br>
-</p>
+[![Travis][travis-image]][travis-link]
+[![Downloads][downloads-image]][downloads-link]
+[![Gitter][gitter-image]][gitter-link]
+[![PyPI][pypi-image]][pypi-link]
+[![dependabot][dependabot-image]][dependabot-link]
 
-![jtd](https://user-images.githubusercontent.com/896475/47384541-89053c80-d6d5-11e8-98dc-dba16e192de9.gif)
+  [travis-image]: https://travis-ci.org/squidfunk/mkdocs-material.svg?branch=master
+  [travis-link]: https://travis-ci.org/squidfunk/mkdocs-material
+  [downloads-image]: https://img.shields.io/pypi/dm/mkdocs-material.svg
+  [downloads-link]: https://pypistats.org/packages/mkdocs-material
+  [gitter-image]: https://badges.gitter.im/squidfunk/mkdocs-material.svg
+  [gitter-link]: https://gitter.im/squidfunk/mkdocs-material
+  [pypi-image]: https://img.shields.io/pypi/v/mkdocs-material.svg
+  [pypi-link]: https://pypi.python.org/pypi/mkdocs-material
+  [dependabot-image]: https://img.shields.io/badge/dependabot-enabled-06f.svg
+  [dependabot-link]: https://dependabot.com
 
-## Installation
+# Material for MkDocs
 
-Add this line to your Jekyll site's Gemfile:
+A Material Design theme for [MkDocs][1].
 
-```ruby
-gem "just-the-docs"
+[![Material for MkDocs](https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/docs/assets/images/material.png)][2]
+
+  [1]: https://www.mkdocs.org
+  [2]: https://squidfunk.github.io/mkdocs-material/
+
+## Quick start
+
+Install the latest version of Material with `pip`:
+
+``` sh
+pip install mkdocs-material
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+Append the following line to your project's `mkdocs.yml`:
 
-```yaml
-theme: just-the-docs
+``` yaml
+theme:
+  name: 'material'
 ```
 
-And then execute:
+## What to expect
 
-    $ bundle
+* Responsive design and fluid layout for all kinds of screens and devices,
+  designed to serve your project documentation in a user-friendly way in 37
+  languages with optimal readability.
 
-Or install it yourself as:
+* Easily customizable primary and accent color, fonts, favicon and logo;
+  straight forward localization through theme extension; integrated with Google
+  Analytics, Disqus and GitHub.
 
-    $ gem install just-the-docs
+* Well-designed search interface accessible through hotkeys (<kbd>F</kbd> or
+  <kbd>S</kbd>), intelligent grouping of search results, search term
+  highlighting and lazy loading.
 
-## Usage
-
-[View the documentation](https://pmarsceill.github.io/just-the-docs/) for usage information.
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/pmarsceill/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-### Submitting code changes:
-
-- Open a [Pull Request](https://github.com/pmarsceill/just-the-docs/pulls)
-- Ensure all CI tests pass
-- Await code review
-- Bump the version number in `just-the-docs.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
-
-### Design and development principles of this theme:
-
-1. As few dependencies as possible
-2. No build script needed
-3. First class mobile experience
-4. Make the content shine
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is set up just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When the theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
+For detailed installation instructions and a demo, visit
+https://squidfunk.github.io/mkdocs-material/
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+**MIT License**
+
+Copyright (c) 2016-2019 Martin Donath
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
