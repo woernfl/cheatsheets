@@ -19,7 +19,7 @@ theme:
   language: 'en'
   palette:
     primary: 'white'
-    accent: 'Red'
+    accent: 'Deep Orange'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
