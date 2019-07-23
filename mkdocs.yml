@@ -18,7 +18,7 @@ theme:
   favicon: 'assets/images/logo.png'
   language: 'en'
   palette:
-    primary: 'white'
+    primary: 'Blue'
     accent: 'Deep Orange'
   font:
     text: 'Roboto'
