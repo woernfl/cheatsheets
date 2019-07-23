@@ -1,9 +1,3 @@
----
-layout: default
-title: AWS CLI
-parent: Home
----
-
 # AWS CLI Cheatsheet
 
 ## Basic actions

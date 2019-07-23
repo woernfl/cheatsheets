@@ -1,20 +1,14 @@
----
-layout: default
-title: GPG Key Generation
-parent: Home
----
-
 # GPG Key Generation
 
 ## Basic actions
 
-Checking if GPG Key existe:
+1. Checking if GPG Key existe:
 
 ```bash
 gpg --list-secret-keys --keyid-format LONG
 ```
 
-GPG key pair generation:
+2. GPG key pair generation:
 
 ```bash
 gpg2 --gen-key
@@ -22,17 +16,17 @@ gpg2 --gen-key
 
 > If you get the following error: `gpg: Sorry, no terminal at all requested - can't get input` remove the line `no-tty` from `~/.gnupg/gpg.conf`
 
-Choose `RSA and RSA` option
+3. Choose `RSA and RSA` option
 
-Choose the max lenght size for the key `4096`
+4. Choose the max lenght size for the key `4096`
 
-Enter the number of days you want this key to be valid
+5. Enter the number of days you want this key to be valid
 
-Enter ID details
+6. Enter ID details
 
-Type a secure passphrase
+7. Type a secure passphrase
 
-Generate enough entropy
+8. Generate enough entropy
 
 ```bash
 sudo yum install rng-tools
@@ -42,13 +36,13 @@ sudo yum install rng-tools
 sudo rngd -r /dev/urandom
 ```
 
-Once the key has been generated, list the created keys
+9. Once the key has been generated, list the created keys
 
 ```bash
 gpg --list-secret-keys --keyid-format LONG
 ```
 
-From the list of GPG keys, copy the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`
+10. From the list of GPG keys, copy the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`
 
 ```bash
 $ gpg --list-secret-keys --keyid-format LONG
@@ -59,8 +53,9 @@ uid                          Hubot
 ssb   4096R/42B317FD4BA89E7A 2016-03-10
 ```
 
-Paste the text below, substituting in the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`
+11. Paste the text below, substituting in the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`
 
 ```bash
 gpg --armor --export 3AA5C34371567BD2
 ```
+

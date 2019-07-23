@@ -1,9 +1,3 @@
----
-layout: default
-title: Bash
-parent: Home
----
-
 # Bash Cheatsheet
 
 ## Basic actions

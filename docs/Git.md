@@ -1,9 +1,3 @@
----
-layout: default
-title: Git
-parent: Home
----
-
 # Git Cheatsheet
 
 ## Basic actions
