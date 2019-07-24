@@ -15,3 +15,11 @@ vim ~/.bashrc
 # Go to the end of the file
 alias aliascommand='commands'
 ```
+
+## Tips
+
+Preserving environments variables when elevating privileges:
+
+```bash
+sudo -E printenv
+```
