@@ -2,10 +2,16 @@
 
 ## Basic actions
 
-One line for loop:
+One line `for` loop:
 
 ```bash
 for t in {1..5}; do echo "${t}"; done
+```
+
+One line `for` infinite loop:
+
+```bash
+for (( t=1; ; t++ )); do echo "${t}"; done
 ```
 
 Add an alias:
