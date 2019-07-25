@@ -44,7 +44,45 @@ Create a branch:
 git checkout -b $BRANCH_NAME
 ```
 
-## More advance actions
+## Check differences
+
+Check all changes since last commit:
+
+```bash
+git diff --color-words
+```
+
+Check changes since last commit for a specific file:
+
+```bash
+git diff --color-words HEAD $PATH_TO_FILE
+```
+
+Check changes between two commits:
+
+```bash
+git diff --color-words $COMMIT_NUMBER $COMMIT_NUMBER
+```
+
+Check changes between two commits for a specific file:
+
+```bash
+git diff --color-words $COMMIT_NUMBER $COMMIT_NUMBER $PATH_TO_FILE
+```
+
+Check changes between two branches:
+
+```bash
+git diff --color-words $BRANCH_NAME $BRANCH_NAME
+```
+
+Check changes between two branches for a specific file:
+
+```bash
+git diff --color-words $BRANCH_NAME $BRANCH_NAME $PATH_TO_FILE
+```
+
+## Commit history managment
 
 Check commit history:
 
@@ -58,13 +96,13 @@ Add file change to the last commit:
 git commit --am -s -m "$COMMIT_MESSAGE"
 ```
 
+## Branch managment
+
 Rebase a base branch in current branch:
 
 ```bash
 git rebase $BASE_BRANCH
 ```
-
-## Branch managment
 
 Rename a branch:
 
