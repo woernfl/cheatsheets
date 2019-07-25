@@ -7,25 +7,25 @@ To permanently apply the following, you can put them in the `.vimrc` file in you
 To display line numbers:
 
 ```
-set number
+:set number
 ```
 
 To remove line numbers:
 
 ```
-set nonumber
+:set nonumber
 ```
 
 Save the file:
 
 ```
-w
+:w
 ```
 
 Exit the file:
 
 ```
-q
+:q
 ```
 
 ## Clipboard
@@ -59,19 +59,19 @@ P
 Append:
 
 ```
-a
+:a
 ```
 
 Insert:
 
 ```
-i
+:i
 ```
 
 Undo changes
 
 ```
-u
+:u
 ```
 
 Redo changes
