@@ -44,6 +44,8 @@ Create a branch:
 git checkout -b $BRANCH_NAME
 ```
 
+## More advance actions
+
 Check commit history:
 
 ```bash
@@ -72,7 +74,31 @@ git push origin :$BRANCH_OLD_NAME $BRANCH_NEW_NAME
 git push origin -u $BRANCH_NEW_NAME
 ```
 
-## Bonus
+## Config managment
+
+Set username for the repo:
+
+```bash
+git config user.name "$NAME"
+```
+
+Set username globally:
+
+```bash
+git config --global user.name "$NAME"
+```
+
+Set email for the repo:
+
+```bash
+git config user.email "$EMAIL"
+```
+
+Set email globally:
+
+```bash
+git config --global user.email "$EMAIL"
+```
 
 Enable credential helper to not have to retype your password each time you want to do something:
 
