@@ -44,7 +44,7 @@ Create a branch:
 git checkout -b $BRANCH_NAME
 ```
 
-## Check difference betwwen versions
+## Check differences
 
 Check all changes since last commit:
 
