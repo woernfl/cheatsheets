@@ -2,16 +2,28 @@
 
 ## Basic actions
 
-Get everything:
+Get more info about pods:
+
+```bash
+kubectl get po -o wide
+```
+
+Get all main ressources:
 
 ```bash
 kubectl get all --all-namespaces
 ```
 
-Get more info about pods:
+Get main ressources for a specific namespace:
 
 ```bash
-kubectl get po -o wide
+kubectl get all -n $NAMESPACE
+```
+
+Get really all the ressources of a specific namespace:
+
+```bash
+kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=myapp -n $NAMESPACE
 ```
 
 ## Secret managment
