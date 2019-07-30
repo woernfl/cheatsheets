@@ -45,5 +45,5 @@ markdown_extensions:
   - toc:
       permalink: true
   - markdown_include.include:
-      base_path: docs
-      inheritHeadingDepth: true
+      - base_path: docs
+      - inheritHeadingDepth: true
