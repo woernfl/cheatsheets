@@ -1,3 +1,3 @@
 # PIP
 
-{!pip_insert!}
+{!../cheat/pip!}
