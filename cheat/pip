@@ -1,0 +1,21 @@
+## Search for packages
+pip search $PACKAGE_NAME
+
+## Install some packages
+pip install $PACKAGE_NAME
+
+## Install some package in user space
+pip install --user $PACKAGE_NAME
+
+## Upgrade some package
+pip install --upgrade $PACKAGE_NAME
+
+## Output and install packages in a requirement file
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+## List outdated packages
+pip list --outdated
+
+## Install specific version of a package
+pip install -I $PACKAGE_NAME==1.1.0
