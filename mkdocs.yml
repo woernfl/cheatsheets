@@ -45,6 +45,4 @@ markdown_extensions:
   - toc:
       permalink: true
   - markdown_include.include:
-      base_path: 'docs'
-      #inheritHeadingDepth: True
-      headingOffset: 1
+      base_path: './docs'
