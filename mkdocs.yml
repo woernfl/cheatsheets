@@ -46,3 +46,4 @@ markdown_extensions:
       permalink: true
   - markdown_include.include:
       base_path: docs
+      inheritHeadingDepth: True

@@ -1,7 +1,7 @@
-## Search for packages
+# Search for packages
 pip search SomePackage
 
-## Install some packages
+# Install some packages
 pip install SomePackage
 
 ## Install some package in user space
