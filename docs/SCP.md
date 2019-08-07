@@ -1,4 +1,4 @@
-# SCP Cheatsheet
+# SCP
 
 ## Basic actions
 

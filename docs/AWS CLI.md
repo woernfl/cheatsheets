@@ -1,4 +1,4 @@
-# AWS CLI Cheatsheet
+# AWS CLI
 
 ## Basic actions
 

@@ -1,4 +1,4 @@
-# Docker Cheatsheet
+# Docker
 
 ## Basic actions
 

@@ -1,4 +1,4 @@
-# Terraform Cheatsheet
+# Terraform
 
 ## Basic actions
 
