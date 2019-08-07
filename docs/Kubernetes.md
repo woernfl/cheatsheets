@@ -1,4 +1,4 @@
-# Kubernetes Cheatsheet
+# Kubernetes
 
 ## Basic actions
 

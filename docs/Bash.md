@@ -1,4 +1,4 @@
-# Bash Cheatsheet
+# Bash
 
 ## Basic actions
 

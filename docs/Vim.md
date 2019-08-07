@@ -1,4 +1,4 @@
-# VIM Cheatsheet
+# VIM
 
 ## Basic actions
 
