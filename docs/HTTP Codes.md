@@ -2,17 +2,17 @@
 
 ## HTTP methods
 
-GET
+### `GET`
 
-: The resource has been fetched and is transmitted in the message body.
+The resource has been fetched and is transmitted in the message body.
 
-`HEAD`
+### `HEAD`
 
-: The entity headers are in the message body.
+The entity headers are in the message body.
 
-`PUT` or `POST`
+### `PUT` or `POST`
 
-: The resource describing the result of the action is transmitted in the message body.
+The resource describing the result of the action is transmitted in the message body.
 
 ### `TRACE`
 
@@ -20,7 +20,7 @@ The message body contains the request message as received by the server
 
 ## 2xx
 
-### 200 OK
+### `200 OK`
 
 The request has succeeded.
 
@@ -146,6 +146,6 @@ This error response is given when the server is acting as a gateway and cannot g
 
 The HTTP version used in the request is not supported by the server.
 
-# Thanks
+## Thanks
 
 Thanks to the Mozilla foundation for there incredible work. All the info's on this page come from [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
