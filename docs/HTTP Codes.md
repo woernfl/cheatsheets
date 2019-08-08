@@ -4,7 +4,8 @@
 
 GET
 
-:   The resource has been fetched and is transmitted in the message body.
+:   The resource has been fetched and 
+    is transmitted in the message body.
 
 `HEAD`
 
