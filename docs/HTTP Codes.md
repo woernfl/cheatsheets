@@ -21,7 +21,7 @@ The message body contains the request message as received by the server
 
 ## 2xx
 
-### `200 OK`
+### 200 OK
 
 The request has succeeded.
 
