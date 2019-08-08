@@ -2,17 +2,17 @@
 
 ## HTTP methods
 
-### `GET`
+GET
 
-The resource has been fetched and is transmitted in the message body.
+:   The resource has been fetched and is transmitted in the message body.
 
-### `HEAD`
+`HEAD`
 
-The entity headers are in the message body.
+:   The entity headers are in the message body.
 
-### `PUT` or `POST`
+`PUT` or `POST`
 
-The resource describing the result of the action is transmitted in the message body.
+:   The resource describing the result of the action is transmitted in the message body.
 
 ### `TRACE`
 
