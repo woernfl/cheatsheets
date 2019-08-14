@@ -16,11 +16,11 @@ aws configure --profile $PROFILE_NAME
 
 ## Environment variables
 
-### `AWS_ACCESS_KEY_ID`
+`AWS_ACCESS_KEY_ID`
 
 :   Specifies an AWS access key associated with an IAM user or role.
 
-### `AWS_SECRET_ACCESS_KEY`
+`AWS_SECRET_ACCESS_KEY`
 
 :   Specifies the secret key associated with the access key. This is essentially the "password" for the access key.
 
