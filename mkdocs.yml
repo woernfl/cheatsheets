@@ -44,5 +44,6 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+  - markdown.extensions.def_list:
   - markdown_include.include:
       base_path: './docs'
