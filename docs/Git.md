@@ -112,6 +112,12 @@ git push origin :$BRANCH_OLD_NAME $BRANCH_NEW_NAME
 git push origin -u $BRANCH_NEW_NAME
 ```
 
+Copy a file from a branch to the current one:
+
+```bash
+git checkout $BRANCH_TO_COPY_FROM $PATH_OF_THE_FILE_TO_COPY
+```
+
 ## Config managment
 
 Set username for the repo:
