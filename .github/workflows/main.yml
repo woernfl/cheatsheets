@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Create a cheat folder
+      run: mkdir cheat
+    - name: Run a multi-line script
+      run: |
+        echo Add otherto build,
+        echo test, and deploy your project.
