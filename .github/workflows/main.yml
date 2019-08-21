@@ -12,5 +12,5 @@ jobs:
     - name: Run a multi-line script
       run: |
         mkdir -p cheat
-        cp docs/* cheat
-        find docs/ -type f -exec sed 's/a//'
+        find docs/ -type f -exec cp {} cheat/
+        find cheat/ -type f -exec sed -i.bak 's/a//'
