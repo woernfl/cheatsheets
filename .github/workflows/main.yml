@@ -12,4 +12,5 @@ jobs:
     - name: Run a multi-line script
       run: |
         mkdir -p cheat
-        echo test, and deploy your project.
+        cp docs/* cheat
+        find docs/ -type f -exec sed 's/a//'
