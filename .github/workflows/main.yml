@@ -14,3 +14,4 @@ jobs:
         mkdir -p cheat
         find docs/ -type f -exec cp {} cheat/ \;
         find cheat/ -type f -exec sed -i.bak 's/a//' {} \;
+        cat cheat/Bash.md
