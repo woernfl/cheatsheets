@@ -1,3 +1,0 @@
-# PIP
-
-{!../cheat/pip!}

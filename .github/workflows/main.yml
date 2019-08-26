@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a multi-line script
+      run: |
+        mkdir -p cheat
+        find docs/ -type f -exec cp {} cheat/ \;
+        find cheat/ -type f -exec sed -i.bak 's/a//' {} \;
+        cat cheat/bash.md

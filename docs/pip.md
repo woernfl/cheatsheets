@@ -1,3 +1,5 @@
+# PIP
+
 ## Basic actions
 
 ### Search for packages
@@ -43,4 +45,3 @@ pip list --outdated
 ```bash
 pip install -I $PACKAGE_NAME==1.1.0
 ```
-
