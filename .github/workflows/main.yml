@@ -14,7 +14,7 @@ jobs:
         mkdir -p cheat
         find docs/ -type f -exec cp {} cheat/ \;
         cd cheat/
-        sed 's/```.*//' *
+        sed 's/^```/ d' *
         #sed -i 's/[^a-zA-Z0-9]- #//g' *
         cat bash.md
 
