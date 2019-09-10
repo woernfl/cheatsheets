@@ -10,7 +10,7 @@ curl $WEBSITE_URL
 
 Get only the HTTP code back:
 
-```
+```bash
 curl --silent -o /dev/null -w "%{http_code}" $WEBSITE_URL
 ```
 
