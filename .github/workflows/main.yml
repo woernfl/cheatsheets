@@ -13,5 +13,7 @@ jobs:
       run: |
         mkdir -p cheat
         find docs/ -type f -exec cp {} cheat/ \;
-        find cheat/ -type f -exec sed -i.bak 's/a//' {} \;
-        cat cheat/bash.md
+        cd cheat/
+        sed -i '/^```/d' *
+        cat bash.md
+
