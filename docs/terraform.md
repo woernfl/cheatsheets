@@ -28,6 +28,16 @@ Delete Terraform ressources:
 terraform destroy -force
 ```
 
+## Terraform Cloud
+
+Generate user token and put it in the `~/.terraformrc` file like that:
+
+```bash
+credentials "app.terraform.io" {
+  token = "$TF_CLOUD_TOKEN"
+}
+```
+
 ## To debug
 
 Set TF_LOG env variable:
