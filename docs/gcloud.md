@@ -17,9 +17,10 @@ gcloud config set project $PROJECT_ID
 `GOOGLE_CREDENTIALS`
 
 :   Content of the creds file, can be set by using:
-:   ```bash
-:   export GOOGLE_CREDENTIALS=$(cat $CRED_FILE_PATH)
-:   ```
+
+```bash
+  export GOOGLE_CREDENTIALS=$(cat $CRED_FILE_PATH)
+```
 
 `GOOGLE_CLOUD_KEYFILE_JSON`
 
