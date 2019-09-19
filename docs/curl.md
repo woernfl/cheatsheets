@@ -19,3 +19,9 @@ Get a web site and specify the host we are reaching from:
 ```bash
 curl -H Host:$WEBSITE_DNS $WEBSITE_IP
 ```
+
+Get a binary:
+
+```bash
+curl -o $BINARY_URL
+```
