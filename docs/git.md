@@ -98,6 +98,12 @@ git commit --am -s -m "$COMMIT_MESSAGE"
 
 ## Branch managment
 
+Delete local branche:
+
+```bash
+git branch -d $BRANCH_NAME
+```
+
 Rebase a base branch in current branch:
 
 ```bash
