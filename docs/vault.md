@@ -1,4 +1,4 @@
-# Hashicorp Vault
+# Vault - Hashicorp
 
 ## Token managment
 
