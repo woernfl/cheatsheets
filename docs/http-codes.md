@@ -108,6 +108,14 @@
 
 :   This is similar to 401 but authentication is needed to be done by a proxy.
 
+`408 Request Timeout`
+
+:   This response is sent on an idle connection by some servers, even without any previous request by the client. It means that the server would like to shut down this unused connection.
+
+`409 Conflict`
+
+:   This response is sent when a request conflicts with the current state of the server.
+
 `413 Payload Too Large`
 
 :   Request entity is larger than limits defined by server; the server might close the connection or return an `Retry-After` header field.
