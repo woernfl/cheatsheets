@@ -39,6 +39,20 @@ if [ ! -d "$FOLDER_PATH"; then
 fi
 ```
 
+## Loop
+
+### While
+
+Basic `while` loop:
+
+```bash
+COUNTER=0
+while (( $COUNTER < 10 )); do
+  echo The counter is $COUNTER
+  let COUNTER=COUNTER+1
+done
+```
+
 ### For
 
 Basic `for` loop:
