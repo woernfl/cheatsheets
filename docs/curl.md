@@ -23,5 +23,11 @@ curl -H Host:$WEBSITE_DNS $WEBSITE_IP
 Get a binary:
 
 ```bash
-curl -o $BINARY_URL
+curl -O $BINARY_URL
+```
+
+Get multiple binaries:
+
+```bash
+ for i in $(curl -s https://releases.hashicorp.com/terraform/ | grep href | sed 's/.href="//' | cut -d ">" -f2 | cut -d "<" -f1 | grep -E terraform* | cut -d "_" -f2); do curl -O https://releases.hashicorp.com/terraform/$i/terraform_"$i"_linux_amd64.zip; done
 ```
