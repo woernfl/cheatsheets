@@ -80,6 +80,24 @@ Redo changes
 Ctrl + r
 ```
 
+Search
+
+```
+/$STRING_TO_SEARCH_FOR
+```
+
+Search and replace
+
+```
+:s/search/replace/
+```
+
+Search and replace an entire file
+
+```
+:%s/search/replace/
+```
+
 ## Navigation
 
 Go to specific line number:
