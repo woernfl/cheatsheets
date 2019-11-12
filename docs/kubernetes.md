@@ -63,7 +63,7 @@ kubectl port-forward --namespace $NAMESPACE $POD_NAME $LOCAL_PORT:$POD_PORT
 Connect to a service from your local workstation:
 
 ```bash
-kubectl port-forward --namespace $NAMESPACE --address 0.0.0.0 service/SERVICE_NAME $LOCAL_PORT:$POD_PORT
+kubectl port-forward --namespace $NAMESPACE --address 0.0.0.0 service/$SERVICE_NAME $LOCAL_PORT:$POD_PORT
 ```
 
 Boot a centos pod in Kubernetes:
