@@ -9,4 +9,5 @@ echo "source <(helm completion bash)" >> ~/.bashrc
 echo "source <(minikube completion bash)" >> ~/.bashrc
 echo "source <(skaffold completion bash)" >> ~/.bashrc
 terraform -install-autocomplete
+vault -autocomplete-install
 ```
