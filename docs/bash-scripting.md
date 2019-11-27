@@ -73,6 +73,12 @@ done
 
 ## Exit Codes
 
+Check the exist code of the last command runned:
+
+```bash
+echo $?
+```
+
 `0`
 
 :   All good
