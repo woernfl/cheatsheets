@@ -155,3 +155,65 @@ Enable credential helper to not have to retype your password each time you want 
 ```
 git config credential.helper store 
 ```
+
+## Tips and tricks
+
+I committed and immediately realized I need to make one small change:
+
+```bash
+# make your change
+git add . # or add individual files
+git commit --amend --no-edit
+```
+
+I accidentally committed something to master that should have been on a new branch:
+
+```bash
+# create a new branch from the current state of master
+git branch some-new-branch-name
+# remove the last commit from the master branch
+git reset HEAD~ --hard
+git checkout some-new-branch-name
+# your commit lives in this branch now
+```
+
+I accidentally committed to the wrong branch:
+
+```bash
+# undo the last commit, but leave the changes available
+git reset HEAD~ --soft
+git stash
+# move to the correct branch
+git checkout name-of-the-correct-branch
+git stash pop
+git add . # or add individual files
+git commit -m "your message here";
+# now your changes are on the correct branch
+```
+
+I need to undo a commit from like 5 commits ago:
+
+```bash
+# find the commit you need to undo
+git log
+# use the arrow keys to scroll up and down in history
+# once you've found your commit, save the hash
+git revert [saved hash]
+# git will create a new commit that undoes that commit
+# follow prompts to edit the commit message
+# or just save and commit
+```
+
+I need to undo my changes to a file:
+
+```bash
+# find a hash for a commit before the file was changed
+git log
+# use the arrow keys to scroll up and down in history
+# once you've found your commit, save the hash
+git checkout [saved hash] -- path/to/file
+# the old version of the file will be in your index
+git commit -m "Wow, you don't have to copy-paste to undo"
+```
+
+Thanks to Frumusanu Razvan for this [tricks](https://medium.com/faun/stop-headaches-from-git-3829210d2a31)
