@@ -14,14 +14,6 @@ One line `for` infinite loop:
 for (( t=1; ; t++ )); do echo "${t}"; done
 ```
 
-Add an alias:
-
-```bash
-vim ~/.bashrc
-# Go to the end of the file
-alias aliascommand='commands'
-```
-
 ## Setup a personal folder to store binaries
 
 Create a `bin` folder in your home folder:
