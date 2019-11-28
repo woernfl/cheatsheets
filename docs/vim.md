@@ -281,11 +281,9 @@ let g:gitgutter_enabled = 1
 
 2. Install the `vim` pluggins:
       
-        ```bash
         volt get https://github.com/frazrepo/vim-rainbow
         volt get https://github.com/scrooloose/nerdtree
         volt get https://github.com/airblade/vim-gitgutter
-        ```
 
 3. Create a `~/.vimrc` file:
 
