@@ -273,20 +273,29 @@ Enable the plugin globally, add the following to `.vimrc`:
 let g:gitgutter_enabled = 1
 ```
 
-### Vim-gitgutter
+## Overal basic setup
 
-A Vim plugin which shows a git diff in the gutter and stages/undoes hunks and partial hunks available [here](https://github.com/airblade/vim-gitgutter).
+1. Install `volt`:
 
-**Installation**
+See instructions [here](#volt)
+
+2. Install the `vim` pluggins:
 
 ```bash
+volt get https://github.com/frazrepo/vim-rainbow
+volt get https://github.com/scrooloose/nerdtree
 volt get https://github.com/airblade/vim-gitgutter
 ```
 
-**Usage**
-
-Enable the plugin globally, add the following to `.vimrc`:
+3. Create a `~/.vimrc` file:
 
 ```bash
+set number
+syntax enable
+
+let g:rainbow_active = 1
+
 let g:gitgutter_enabled = 1
+
+map <F2> :NERDTreeToggle<CR>
 ```
