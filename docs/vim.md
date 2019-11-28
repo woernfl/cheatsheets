@@ -146,9 +146,32 @@ $
 
 ### Volt
 
-:   A meta-level vim package manager.
-    Available [here](https://github.com/vim-volt/volt)
+A meta-level vim package manager available [here](https://github.com/vim-volt/volt).
 
 _Installation guide_
 
-See (Volt Github repo)[https://github.com/vim-volt/volt#install]
+See (Volt Github repo)[https://github.com/vim-volt/volt#install].
+
+_Usage_
+
+Install a vim plugin:
+
+```bash
+volt get https://github.com/frazrepo/vim-rainbow
+```
+
+Update plugins:
+
+```bash
+# Update all plugins
+volt get -l -u
+
+# Update a specific plugin
+volt get -u https://github.com/frazrepo/vim-rainbow
+```
+
+Uninstall plugins:
+
+```bash
+volt rm https://github.com/frazrepo/vim-rainbow
+```
