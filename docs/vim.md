@@ -280,7 +280,8 @@ let g:gitgutter_enabled = 1
     See instructions [here](#volt)
 
 2. Install the `vim` pluggins:
-      
+
+        :::bash
         volt get https://github.com/frazrepo/vim-rainbow
         volt get https://github.com/scrooloose/nerdtree
         volt get https://github.com/airblade/vim-gitgutter
