@@ -175,3 +175,21 @@ Uninstall plugins:
 ```bash
 volt rm https://github.com/frazrepo/vim-rainbow
 ```
+
+### Vim-rainbow
+
+Rainbow brackets for Vim available [here](https://github.com/frazrepo/vim-rainbow).
+
+**Installation guide**
+
+```bash
+volt get https://github.com/frazrepo/vim-rainbow
+```
+
+**Usage**
+
+Enable the plugin globally, add the following to `.vimrc`:
+
+```bash
+let g:rainbow_active = 1
+```
