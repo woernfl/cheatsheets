@@ -148,19 +148,19 @@ $
 
 A meta-level vim package manager available [here](https://github.com/vim-volt/volt).
 
-_Installation guide_
+**Installation guide**
 
 See (Volt Github repo)[https://github.com/vim-volt/volt#install].
 
-_Usage_
+**Usage**
 
-Install a vim plugin:
+_Install a vim plugin:_
 
 ```bash
 volt get https://github.com/frazrepo/vim-rainbow
 ```
 
-Update plugins:
+_Update plugins:_
 
 ```bash
 # Update all plugins
@@ -170,7 +170,7 @@ volt get -l -u
 volt get -u https://github.com/frazrepo/vim-rainbow
 ```
 
-Uninstall plugins:
+_Uninstall plugins:_
 
 ```bash
 volt rm https://github.com/frazrepo/vim-rainbow
