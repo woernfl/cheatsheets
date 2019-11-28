@@ -286,10 +286,6 @@ let g:gitgutter_enabled = 1
         volt get https://github.com/scrooloose/nerdtree
         volt get https://github.com/airblade/vim-gitgutter
 
-```bash
-volt get https://github.com/frazrepo/vim-rainbow
-```
-
 3. Create a `~/.vimrc` file:
 
         :::bash
