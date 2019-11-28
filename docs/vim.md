@@ -141,3 +141,14 @@ Go to the end of the line:
 ```bash
 $
 ```
+
+## Vim plugins
+
+### Volt
+
+:   A meta-level vim package manager.
+    Available [here](https://github.com/vim-volt/volt)
+
+_Installation guide_
+
+See (Volt Github repo)[https://github.com/vim-volt/volt#install]
