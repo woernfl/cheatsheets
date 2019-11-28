@@ -162,7 +162,7 @@ A meta-level vim package manager available [here](https://github.com/vim-volt/vo
 
 **Installation**
 
-See (Volt Github repo)[https://github.com/vim-volt/volt#install].
+See [Volt Github repo](https://github.com/vim-volt/volt#install).
 
 **Usage**
 
