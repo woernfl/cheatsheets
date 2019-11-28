@@ -28,6 +28,18 @@ Exit the file:
 :q
 ```
 
+Comment from line 1 to 8:
+
+```bash
+:1,8s/^/#
+```
+
+Uncomment from line 1 to 8:
+
+```bash
+:1,8s/^#/
+```
+
 ## Clipboard
 
 Cut:
