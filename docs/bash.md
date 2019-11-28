@@ -38,7 +38,7 @@ if [ -d $HOME/bin ]; then
 fi
 ```
 
-From now, all the binaries that you will put in your `bin` folders wwill be accessible from anywhere in your system.
+From now, all the binaries that you will put in your `bin` folders will be accessible from anywhere in your system.
 
 ## Tips
 
