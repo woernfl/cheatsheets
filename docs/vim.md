@@ -154,13 +154,13 @@ See (Volt Github repo)[https://github.com/vim-volt/volt#install].
 
 **Usage**
 
-_Install a vim plugin:_
+Install a vim plugin:
 
 ```bash
 volt get https://github.com/frazrepo/vim-rainbow
 ```
 
-_Update plugins:_
+Update plugins:
 
 ```bash
 # Update all plugins
@@ -170,7 +170,7 @@ volt get -l -u
 volt get -u https://github.com/frazrepo/vim-rainbow
 ```
 
-_Uninstall plugins:_
+Uninstall plugins:
 
 ```bash
 volt rm https://github.com/frazrepo/vim-rainbow
