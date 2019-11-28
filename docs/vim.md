@@ -148,7 +148,7 @@ $
 
 A meta-level vim package manager available [here](https://github.com/vim-volt/volt).
 
-**Installation guide**
+**Installation**
 
 See (Volt Github repo)[https://github.com/vim-volt/volt#install].
 
@@ -180,7 +180,7 @@ volt rm https://github.com/frazrepo/vim-rainbow
 
 Rainbow brackets for Vim available [here](https://github.com/frazrepo/vim-rainbow).
 
-**Installation guide**
+**Installation**
 
 ```bash
 volt get https://github.com/frazrepo/vim-rainbow
@@ -193,3 +193,52 @@ Enable the plugin globally, add the following to `.vimrc`:
 ```bash
 let g:rainbow_active = 1
 ```
+
+### NERDTree
+
+Rainbow brackets for Vim available [here](https://github.com/scrooloose/nerdtree).
+
+**Installation**
+
+```bash
+volt get https://github.com/scrooloose/nerdtree
+```
+
+**Usage**
+
+Activate NERDTree:
+
+```bash
+:NERDTree 
+```
+
+Close NERDTree:
+
+```bash
+:NERDTreeClose 
+```
+
+Toggle NERDTree:
+
+```bash
+:NERDTreeToggle
+```
+
+Or add this line to your `.vimrc` file to to toggle when you hit `F2` key:
+
+```bash
+map <F2> :NERDTreeToggle<CR>
+```
+
+Keyboard shortcuts:
+
+- `t`: Open the selected file in a new tab
+- `i`: Open the selected file in a horizontal split window
+- `s`: Open the selected file in a vertical split window
+- `I`: Toggle hidden files
+- `R`: Refresh the tree, useful if files change outside of Vim
+- `Ctrl + w w`: Cycle though all windows
+- `Ctrl + w h`: Takes you left a window
+- `Ctrl + w j`: Takes you down a window
+- `Ctrl + w k`: Takes you up a window
+- `Ctrl + w l`: Takes you right a window
