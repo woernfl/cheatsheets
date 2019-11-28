@@ -254,3 +254,21 @@ Keyboard shortcuts:
 - `Ctrl + w j`: Takes you down a window
 - `Ctrl + w k`: Takes you up a window
 - `Ctrl + w l`: Takes you right a window
+
+### Vim-gitgutter
+
+A Vim plugin which shows a git diff in the gutter and stages/undoes hunks and partial hunks available [here](https://github.com/airblade/vim-gitgutter).
+
+**Installation**
+
+```bash
+volt get https://github.com/airblade/vim-gitgutter
+```
+
+**Usage**
+
+Enable the plugin globally, add the following to `.vimrc`:
+
+```bash
+let g:gitgutter_enabled = 1
+```
