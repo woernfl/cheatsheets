@@ -272,3 +272,21 @@ Enable the plugin globally, add the following to `.vimrc`:
 ```bash
 let g:gitgutter_enabled = 1
 ```
+
+### Vim-gitgutter
+
+A Vim plugin which shows a git diff in the gutter and stages/undoes hunks and partial hunks available [here](https://github.com/airblade/vim-gitgutter).
+
+**Installation**
+
+```bash
+volt get https://github.com/airblade/vim-gitgutter
+```
+
+**Usage**
+
+Enable the plugin globally, add the following to `.vimrc`:
+
+```bash
+let g:gitgutter_enabled = 1
+```
