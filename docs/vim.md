@@ -277,7 +277,7 @@ let g:gitgutter_enabled = 1
 
 1. Install `volt`:
 
-See instructions [here](#volt)
+    See instructions [here](#volt)
 
 2. Install the `vim` pluggins:
 
