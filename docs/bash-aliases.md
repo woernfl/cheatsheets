@@ -19,5 +19,5 @@ fi
 ## `.bash_aliases` file
 
 ```bash
-alias gh='history|grep'
+alias hg='history|grep'
 ```
