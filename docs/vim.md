@@ -2,7 +2,7 @@
 
 ## Basic actions
 
-To permanently apply the following, you can put them in the `.vimrc` file in your home directory.
+To permanently apply the following, you can put them in the `~/.vimrc` file in your home directory.
 
 To display line numbers:
 
