@@ -20,4 +20,5 @@ fi
 
 ```bash
 alias hg='history|grep'
+alias ll='ls -la'
 ```
