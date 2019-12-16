@@ -19,6 +19,6 @@ fi
 ## `.bash_aliases` file
 
 ```bash
-alias hg='history|grep'
+alias hg='echo "Use !\$CMD_HISTORY_NUM to run the specific cmd" && history|grep'
 alias ll='ls -la'
 ```
