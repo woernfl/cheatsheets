@@ -2,6 +2,12 @@
 
 ## Basic actions
 
+Log in to a Docker registry:
+
+```bash
+docker login $REGISTRY_URL
+```
+
 Push multiple docker images:
 
 ```bash
