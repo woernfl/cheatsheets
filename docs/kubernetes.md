@@ -72,6 +72,12 @@ Boot a centos pod in Kubernetes:
 kubectl run tmp-shell --rm -i --tty --image centos -- /bin/bash
 ```
 
+Start shell in a running container:
+
+```bash
+kubectl -n $NAMESPACE exec -it $POD_NAME -- /bin/bash
+```
+
 ## Bonus
 
 Install autocompletion:
