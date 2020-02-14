@@ -1,4 +1,4 @@
-# Autocompletion
+# Bash autocompletion
 
 A list of commande to enable autocompletion for things I use everyday:
 
