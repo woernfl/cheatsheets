@@ -82,6 +82,12 @@ Check changes between two branches for a specific file:
 git diff --color-words $BRANCH_NAME $BRANCH_NAME $PATH_TO_FILE
 ```
 
+Check stages changes:
+
+```bash
+git diff --staged
+```
+
 ## Commit history managment
 
 Check commit history:
