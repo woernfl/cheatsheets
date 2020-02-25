@@ -8,7 +8,7 @@ Install nessecary package:
 sudo apt-get install apache2-utils
 ```
 
-Creates a new file if the file does not exist or modify an existing readable file and stores a record in it for user `admin`:
+Creates a new file if the file does not exist and stores a record in it for user `admin` (all other users are ereased):
 
 ```bash
 htpasswd -c .htpasswd admin
