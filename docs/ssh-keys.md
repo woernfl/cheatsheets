@@ -1,6 +1,6 @@
-# SSH Key Generation
+# SSH Keys
 
-## Basic actions
+## Generation
 
 Generate new SSH Keys:
 
@@ -11,3 +11,11 @@ ssh-keygen -t rsa -C "$UNIQUE_IDENTIFIER"
 Press `Enter` to accept default location and then type your paraphrase twice.
 
 2 new files were created in the `~/.ssh` folder, the `id_rsa` and `id_rsa.pub` ones.
+
+## Setting the rights file permissions
+
+Solves `WARNING: UNPROTECTED PRIVATE KEY FILE!`:
+
+```bash
+sudo chmod 600 $KEY_PATH
+```
