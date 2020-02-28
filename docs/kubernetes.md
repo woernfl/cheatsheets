@@ -78,6 +78,12 @@ Start shell in a running container:
 kubectl -n $NAMESPACE exec -it $POD_NAME -- /bin/bash
 ```
 
+Get the value of a Kubernetes secret:
+
+```bash
+kubectl -n $NAMESPACE get secret $SECRET_NAME -o jsonpath="{.data.$SECRET_PATH}" | base64 --decode
+```
+
 ## Bonus
 
 Install autocompletion:
