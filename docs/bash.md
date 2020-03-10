@@ -14,6 +14,13 @@ One line `for` infinite loop:
 for (( t=1; ; t++ )); do echo "${t}"; done
 ```
 
+Find a file by it's name:
+
+```bash
+find / -name find.txt  # case sensitive
+find / -iname find.txt # case insensitive
+```
+
 ## Setup a personal folder to store binaries
 
 Create a `bin` folder in your home folder:
