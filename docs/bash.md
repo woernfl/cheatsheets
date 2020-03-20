@@ -21,6 +21,20 @@ find / -name find.txt  # case sensitive
 find / -iname find.txt # case insensitive
 ```
 
+## Dev workflow
+
+Set environment variable listed as key-value pair in a `.env` file:
+
+```bash
+export $(grep -v '^#' .env | xargs)
+```
+
+Unset environment variable listed as key-value pair in a `.env` file:
+
+```bash
+unset $(grep -v '^#' .env | sed -E 's/(.*)=.*/\1/' | xargs)
+```
+
 ## Setup a personal folder to store binaries
 
 Create a `bin` folder in your home folder:
