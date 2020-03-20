@@ -21,7 +21,7 @@ find / -name find.txt  # case sensitive
 find / -iname find.txt # case insensitive
 ```
 
-## Dev workflow
+## Manage Environment variables
 
 Set environment variable listed as key-value pair in a `.env` file:
 
@@ -33,6 +33,12 @@ Unset environment variable listed as key-value pair in a `.env` file:
 
 ```bash
 unset $(grep -v '^#' .env | sed -E 's/(.*)=.*/\1/' | xargs)
+```
+
+Preserving environments variables when elevating privileges:
+
+```bash
+sudo -E printenv
 ```
 
 ## Setup a personal folder to store binaries
@@ -53,10 +59,16 @@ fi
 
 From now, all the binaries that you will put in your `bin` folders will be accessible from anywhere in your system.
 
-## Tips
+## Archiving files 
 
-Preserving environments variables when elevating privileges:
+Create a tar:
 
 ```bash
-sudo -E printenv
+tar -cvzf $ARCHIVE_NAME.tar $DIRECTORY_TO_COMPRESS
+```
+
+Extract a tar:
+
+```bash
+tar -xvzf $ARCHIVE_NAME.tar
 ```
