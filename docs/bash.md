@@ -41,6 +41,20 @@ Preserving environments variables when elevating privileges:
 sudo -E printenv
 ```
 
+## Network stuff
+
+Send a UDP Packet:
+
+```bash
+echo -n "blah:36|c" | nc -w 1 -u -4 $REMOTE_IP $REMOTE_PORT
+```
+
+Listen on UDP packet recieved by an host:
+
+```bash
+sudo tcpdump udp port $PORT_TO_LISTEN_ON -vv -X
+```
+
 ## Setup a personal folder to store binaries
 
 Create a `bin` folder in your home folder:
