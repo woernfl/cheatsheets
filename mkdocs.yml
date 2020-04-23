@@ -14,8 +14,7 @@ copyright: 'Copyright &copy; 2017 - 2020 Florian Woerner'
 
 # Configuration
 theme:
-  name: null
-  custom_dir: material
+  name: material
 
   # 404 page
   static_templates:
