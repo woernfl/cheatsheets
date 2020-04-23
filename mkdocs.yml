@@ -14,7 +14,11 @@ copyright: 'Copyright &copy; 2017 - 2019 Florian Woerner'
 # Configuration
 theme:
   name: 'material'
-  logo: 'assets/images/logo.png'
+  features:
+    - tabs
+    - instant
+  icon:
+    logo: 'assets/images/logo.png'
   favicon: 'assets/images/logo.png'
   language: 'en'
   palette:
