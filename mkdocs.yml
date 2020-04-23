@@ -1,49 +1,98 @@
 # Project information
 site_name: 'Cheatsheets'
-site_description: 'This a compilation of the various cheatsheet I am using'
-site_author: 'Florian Woerner'
 site_url: 'https://cheatsheets.woernfl.xyz/'
+site_author: 'Florian Woerner'
+site_description: 'This a compilation of the various cheatsheet I am using'
 
 # Repository
 repo_name: 'woernfl/cheatsheets'
 repo_url: 'https://github.com/woernfl/cheatsheets'
+edit_uri: ""
 
 # Copyright
-copyright: 'Copyright &copy; 2017 - 2019 Florian Woerner'
+copyright: 'Copyright &copy; 2017 - 2020 Florian Woerner'
 
 # Configuration
 theme:
-  name: 'material'
-  logo: 'assets/images/logo.png'
-  favicon: 'assets/images/logo.png'
+  name: null
+  custom_dir: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
   language: 'en'
+  features:
+    - tabs
+    #- instant
   palette:
     primary: 'Blue'
     accent: 'Deep Orange'
   font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: 'assets/images/logo.png'
+  favicon: 'assets/images/logo.png'
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
 
 # Customization
 extra:
-  manifest: 'manifest.webmanifest'
   social:
     - type: 'globe'
       link: 'https://blog.woernfl.xyz/'
     - type: 'github'
       link: 'https://github.com/woernfl'
-    - type: 'twitter'
+    - type: fontawesome/brands/twitter
       link: 'https://twitter.com/woernfl'
-    - type: 'linkedin'
+    - type: fontawesome/brands/linkedin
       link: 'https://www.linkedin.com/in/woernfl'
 
 # Extensions
 markdown_extensions:
-  - admonition
-  - codehilite:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
       guess_lang: false
-  - toc:
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
       permalink: true
-  - markdown.extensions.def_list:
-  - markdown_include.include:
-      base_path: './docs'
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
