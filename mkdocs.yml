@@ -49,5 +49,3 @@ markdown_extensions:
   - toc:
       permalink: true
   - markdown.extensions.def_list:
-  - markdown_include.include:
-      base_path: './docs'
