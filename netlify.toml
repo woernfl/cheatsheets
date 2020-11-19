@@ -1,5 +1,5 @@
 [build]
 publish = "site"
 command = """
-pip install mkdocs-material &&
+pip install mkdocs-material
 """
