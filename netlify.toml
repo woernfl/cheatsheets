@@ -2,5 +2,4 @@
 publish = "site"
 command = """
 pip install mkdocs-material &&
-mkdocs build -d site
 """
