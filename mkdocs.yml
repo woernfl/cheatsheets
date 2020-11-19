@@ -26,7 +26,7 @@ extra:
 
 plugins:
   - git-revision-date-localized:
-      type: date
+      type: datetime
       time_zone: Europe/Paris
       locale: fr
       fallback_to_build_date: true
