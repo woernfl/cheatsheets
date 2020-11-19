@@ -4,6 +4,9 @@ theme:
   logo: assets/images/logo.png
   favicon: assets/images/logo.png
 
+repo_name: 'woernfl/cheatsheets'
+repo_url: 'https://github.com/woernfl/cheatsheets'
+
 copyright: 'Copyright &copy; 2017 - 2020 Florian Woerner'
 
 extra:
