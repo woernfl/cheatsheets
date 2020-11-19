@@ -4,6 +4,8 @@ theme:
   logo: assets/images/logo.png
   favicon: assets/images/logo.png
 
+copyright: 'Copyright &copy; 2017 - 2020 Florian Woerner'
+
 extra:
   social:
     - icon: fontawesome/solid/globe
