@@ -1,53 +1,32 @@
-# Project information
-site_name: 'Cheatsheets'
-site_description: 'This a compilation of the various cheatsheet I am using'
-site_author: 'Florian Woerner'
-site_url: 'https://cheatsheets.woernfl.xyz/'
+site_name: Cheatsheets
+theme:
+  name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
 
-# Repository
 repo_name: 'woernfl/cheatsheets'
 repo_url: 'https://github.com/woernfl/cheatsheets'
 
-# Copyright
-copyright: 'Copyright &copy; 2017 - 2019 Florian Woerner'
+copyright: 'Copyright &copy; 2017 - 2020 Florian Woerner'
 
-# Configuration
-theme:
-  name: 'material'
-  features:
-    - tabs
-    - instant
-  icon:
-    logo: 'assets/images/logo.png'
-  favicon: 'assets/images/logo.png'
-  language: 'en'
-  palette:
-    primary: 'Blue'
-    accent: 'Deep Orange'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-
-# Customization
 extra:
-  manifest: 'manifest.webmanifest'
   social:
-    - type: 'globe'
-      link: 'https://blog.woernfl.xyz/'
-    - type: 'github'
-      link: 'https://github.com/woernfl'
-    - type: 'twitter'
-      link: 'https://twitter.com/woernfl'
-    - type: 'linkedin'
-      link: 'https://www.linkedin.com/in/woernfl'
+    - icon: fontawesome/solid/globe
+      link: https://blog.woernfl.xyz/
+      name: Woernfl's blog
+    - icon: fontawesome/brands/github
+      link: https://github.com/woernfl
+      name: Woernfl on Github
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/woernfl
+      name: Woernfl on Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/woernfl
+      name: Woernfl on Linkedin
 
-# Extensions
-markdown_extensions:
-  - admonition
-  - codehilite:
-      guess_lang: false
-  - toc:
-      permalink: true
-  - markdown.extensions.def_list:
-  - markdown_include.include:
-      base_path: './docs'
+plugins:
+  - git-revision-date-localized:
+      type: datetime
+      time_zone: Europe/Paris
+      locale: fr
+      fallback_to_build_date: true
