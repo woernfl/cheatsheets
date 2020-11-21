@@ -69,6 +69,7 @@ kubectl port-forward --namespace $NAMESPACE --address 0.0.0.0 service/$SERVICE_N
 Boot a centos pod in Kubernetes:
 
 ```bash
+kubectl run centos --stdin --tty --image=centos:7
 kubectl run tmp-shell --rm -i --tty --image centos -- /bin/bash
 ```
 
