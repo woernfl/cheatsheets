@@ -24,6 +24,13 @@ extra:
       link: https://www.linkedin.com/in/woernfl
       name: Woernfl on Linkedin
 
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: table
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
 plugins:
   - search
   - git-revision-date-localized:
