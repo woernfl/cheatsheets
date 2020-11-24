@@ -25,9 +25,7 @@ extra:
       name: Woernfl on Linkedin
 
 markdown_extensions:
-  - pymdownx.highlight:
-      linenums: true
-      linenums_style: table
+  - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.inlinehilite
 
