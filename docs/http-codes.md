@@ -2,7 +2,7 @@
 
 ## HTTP methods
 
-!!! note "GET"
+!!! note "`GET`"
     The resource has been fetched and is transmitted in the message body.
 
 !!! note "HEAD"
