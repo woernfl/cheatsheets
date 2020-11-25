@@ -25,6 +25,7 @@ extra:
       name: Woernfl on Linkedin
 
 markdown_extensions:
+  - admonition
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.inlinehilite
