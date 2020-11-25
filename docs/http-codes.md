@@ -4,13 +4,11 @@
 
 `GET`
 
-!!! note ""
-    The resource has been fetched and is transmitted in the message body.
+> The resource has been fetched and is transmitted in the message body.
 
 `HEAD`
 
-!!! note ""
-    The entity headers are in the message body.
+> The entity headers are in the message body.
 
 `PUT or POST`
 
@@ -26,13 +24,11 @@
 
 `200 OK`
 
-!!! note ""
-    The request has succeeded.
+> The request has succeeded.
 
 `201 Created`
 
-!!! note ""
-    The request has succeeded and a new resource has been created as a result of it.
+> The request has succeeded and a new resource has been created as a result of it.
 
 `202 Accepted`
 
