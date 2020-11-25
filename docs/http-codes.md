@@ -2,6 +2,18 @@
 
 ## HTTP methods
 
+!!! note "GET"
+    The resource has been fetched and is transmitted in the message body.
+
+!!! note "HEAD"
+    The entity headers are in the message body.
+
+!!! note "PUT or POST"
+    The resource describing the result of the action is transmitted in the message body.
+
+!!! note "TRACE"
+    The message body contains the request message as received by the server.
+
 `GET`
 
 :   The resource has been fetched and is transmitted in the message body.
@@ -16,7 +28,7 @@
 
 `TRACE`
 
-:   The message body contains the request message as received by the server
+:   The message body contains the request message as received by the server.
 
 ## 2xx
 
