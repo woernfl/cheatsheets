@@ -4,11 +4,11 @@
 
 `GET`
 
-> The resource has been fetched and is transmitted in the message body.
+The resource has been fetched and is transmitted in the message body.
 
 `HEAD`
 
-> The entity headers are in the message body.
+    The entity headers are in the message body.
 
 `PUT or POST`
 
