@@ -7,7 +7,8 @@
 !!! note ""
     The resource has been fetched and is transmitted in the message body.
 
-!!! note "HEAD"
+`HEAD`
+!!! note ""
     The entity headers are in the message body.
 
 !!! note "PUT or POST"
