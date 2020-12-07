@@ -12,11 +12,11 @@ gcloud config set project $PROJECT_ID
 
 `GCP_PROJECT`
 
-:   Set the current GCP project ID.
+Set the current GCP project ID.
 
 `GOOGLE_CREDENTIALS`
 
-:   Content of the creds file, can be set by using:
+Content of the creds file, can be set by using:
 
 ```bash
   export GOOGLE_CREDENTIALS=$(cat $CRED_FILE_PATH)
@@ -24,4 +24,4 @@ gcloud config set project $PROJECT_ID
 
 `GOOGLE_CLOUD_KEYFILE_JSON`
 
-:   Path to the authentification JSON key file.
+Path to the authentification JSON key file.
