@@ -24,7 +24,7 @@ gpg2 --gen-key
 - Enter the number of days you want this key to be valid
 
 - Enter ID details
-cheatsheets/docs/gpg-key-generation.md
+
 - Type a secure passphrase
 
 - Generate enough entropy
