@@ -86,6 +86,14 @@ Getting the list of nodes and the number of pods running on them
 kubectl get po -o json --all-namespaces | jq '.items | group_by(.spec.nodeName) | map({"nodeName": .[0].spec.nodeName, "count": length}) | sort_by(.count)'
 ```
 
+## Job managment
+
+Create a job from a cronjob
+
+```bash
+kubectl create job --from=cronjobs.batch/$CRONJOB_NAME $JOB_NAME 
+```
+
 ## To debug
 
 Follow logs of multiple pods:
