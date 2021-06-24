@@ -186,7 +186,7 @@ Delete a submodule:
 
 ```
 # Delete the relevant section from the .gitmodules file
-# Stage the .gitmodules changes git add .gitmodules
+git add .gitmodules
 git submodule deinit $PATH_TO_SUBMODULE
 git rm $PATH_TO_SUBMODULE
 git commit -m "Removed submodule"
