@@ -162,6 +162,37 @@ Enable credential helper to not have to retype your password each time you want 
 git config credential.helper store 
 ```
 
+## Submodules
+
+Clone repo with submodules (5 submodules at once):
+
+```
+git clone --recursive --jobs 5 $GIT_SUBMODULE_REPO_URL
+```
+
+Pull all the submodules updates:
+
+```
+git pull --recurse-submodules
+```
+
+Create a submodule:
+
+```
+git submodule add -b master --name $SUBMODULE_NAME $GIT_SUBMODULE_REPO_URL $SUBMODULE_PATH
+```
+
+Delete a submodule:
+
+```
+# Delete the relevant section from the .gitmodules file
+# Stage the .gitmodules changes git add .gitmodules
+git submodule deinit $PATH_TO_SUBMODULE
+git rm $PATH_TO_SUBMODULE
+git commit -m "Removed submodule"
+rm -rf .git/modules/$PATH_TO_SUBMODULE
+```
+
 ## Tips and tricks
 
 I committed and immediately realized I need to make one small change:
