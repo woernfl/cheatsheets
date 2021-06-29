@@ -207,10 +207,10 @@ I accidentally committed something to master that should have been on a new bran
 
 ```bash
 # create a new branch from the current state of master
-git branch some-new-branch-name
+git branch $SOME_NEW_BRANCH
 # remove the last commit from the master branch
 git reset HEAD~ --hard
-git checkout some-new-branch-name
+git checkout $SOME_NEW_BRANCH
 # your commit lives in this branch now
 ```
 
@@ -221,7 +221,7 @@ I accidentally committed to the wrong branch:
 git reset HEAD~ --soft
 git stash
 # move to the correct branch
-git checkout name-of-the-correct-branch
+git checkout $NAME_OF_THE_CORRECT_BRANCH
 git stash pop
 git add . # or add individual files
 git commit -m "your message here";
