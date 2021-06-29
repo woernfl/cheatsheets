@@ -117,20 +117,19 @@ kubectl get events -n $NAMESPACE
 Connect to a pod from your local workstation:
 
 ```bash
-kubectl port-forward --namespace $NAMESPACE $POD_NAME $LOCAL_PORT:$POD_PORT
+kubectl port-forward -n $NAMESPACE $POD_NAME $LOCAL_PORT:$POD_PORT
 ```
 
 Connect to a service from your local workstation:
 
 ```bash
-kubectl port-forward --namespace $NAMESPACE --address 0.0.0.0 service/$SERVICE_NAME $LOCAL_PORT:$POD_PORT
+kubectl port-forward -n $NAMESPACE --address 0.0.0.0 service/$SERVICE_NAME $LOCAL_PORT:$POD_PORT
 ```
 
 Boot a centos pod in Kubernetes:
 
 ```bash
-kubectl run centos --stdin --tty --image=centos:7
-kubectl run tmp-shell --rm -i --tty --image centos -- /bin/bash
+kubectl -n $NAMESPACE run tmp-shell --rm -i --tty --image centos -- /bin/bash
 ```
 
 Start shell in a running container:
