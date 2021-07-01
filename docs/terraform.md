@@ -14,12 +14,13 @@ Check what will be modfied:
 
 ```bash
 terraform plan -out=tfplan .
+terraform plan -var-file=dev.terraform.tfvars
 ```
 
 Apply modifications:
 
 ```bash
-terraform apply -auto-approve plan
+terraform apply -var-file=dev.terraform.tfvars -auto-approve
 ```
 
 Delete Terraform ressources:
