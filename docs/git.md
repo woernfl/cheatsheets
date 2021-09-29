@@ -130,6 +130,16 @@ Copy a file from a branch to the current one:
 git checkout $BRANCH_TO_COPY_FROM $PATH_OF_THE_FILE_TO_COPY
 ```
 
+## Start a new git repository
+
+```bash
+git init
+git add .
+git commit -m "First commit"
+git remote add origin $REPO_URL
+git push -u origin master
+```
+
 ## Config managment
 
 Set username for the repo:
