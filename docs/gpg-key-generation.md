@@ -60,3 +60,10 @@ ssb   4096R/42B317FD4BA89E7A 2016-03-10
 gpg --armor --export 3AA5C34371567BD2
 ```
 
+## Bonus
+
+Solve `gpg: signing failed: Inappropriate ioctl for device gpg: [stdin]: clear-sign failed: Inappropriate ioctl for device`:
+
+```
+export GPG_TTY=$(tty)
+```
