@@ -60,3 +60,9 @@ Install autocompletion:
 ```bash
 terraform -install-autocomplete
 ```
+
+If you use TF in a CI system, set this env variable to adjusts TFs output to avoid suggesting specific commands to run next:
+
+```bash
+TF_IN_AUTOMATION: "true"
+```
