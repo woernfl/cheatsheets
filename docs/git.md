@@ -142,6 +142,12 @@ git push -u origin master
 
 ## Config managment
 
+Check current config:
+
+```bash
+git config -l
+```
+
 Set username for the repo:
 
 ```bash
@@ -164,6 +170,20 @@ Set email globally:
 
 ```bash
 git config --global user.email "$EMAIL"
+```
+
+Set a GPG key to be used to sing commits:
+
+```bash
+gpg --list-secret-keys --keyid-format LONG
+# Copy the GPG key ID that starts with sec
+git config user.signingkey 30F2B65B9246B6CA
+```
+
+Set GPG program to use (usefull to solve `gpg: signing failed: secret key not available`):
+
+```bash
+git config --global gpg.program gpg2
 ```
 
 Enable credential helper to not have to retype your password each time you want to do something:
