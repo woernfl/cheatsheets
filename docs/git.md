@@ -178,6 +178,8 @@ Set a GPG key to be used to sing commits:
 gpg --list-secret-keys --keyid-format LONG
 # Copy the GPG key ID that starts with sec
 git config user.signingkey 30F2B65B9246B6CA
+# Automatically sign commits
+git config --global commit.gpgsign true
 ```
 
 Set GPG program to use (usefull to solve `gpg: signing failed: secret key not available`):
