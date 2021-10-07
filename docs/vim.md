@@ -156,54 +156,49 @@ $
 
 ## Vim plugins
 
-### Volt
-
-A meta-level vim package manager available [here](https://github.com/vim-volt/volt).
-
-**Installation**
-
-See [Volt Github repo](https://github.com/vim-volt/volt#install).
-
-**Usage**
-
-Install a vim plugin:
-
-```bash
-volt get https://github.com/frazrepo/vim-rainbow
-```
-
-Update plugins:
-
-```bash
-# Update all plugins
-volt get -l -u
-
-# Update a specific plugin
-volt get -u https://github.com/frazrepo/vim-rainbow
-```
-
-Uninstall plugins:
-
-```bash
-volt rm https://github.com/frazrepo/vim-rainbow
-```
-
-### Vim-rainbow
-
-Rainbow brackets for Vim available [here](https://github.com/frazrepo/vim-rainbow).
+### dein.vim
 
 **Installation**
 
 ```bash
-volt get https://github.com/frazrepo/vim-rainbow
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+sh ./installer.sh ~/.vim/bundles
 ```
 
-**Usage**
-
-Enable the plugin globally, add the following to `.vimrc`:
+Add the following on top of your `.vimrc`:
 
 ```bash
-let g:rainbow_active = 1
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible " Be iMproved
+endif
+
+" Required:
+" Add the dein installation directory into runtimepath
+set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
+
+" Required:
+call dein#begin('~/.vim/bundles')
+
+" Let dein manage dein
+" Required:
+call dein#add('~/.vim/bundles')
+
+" Add or remove your plugins here like this:
+"call dein#add('Shougo/neosnippet.vim')
+
+" Required:
+call dein#end()
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  all dein#install()
+endif
+"End dein Scripts-------------------------
 ```
 
 ### NERDTree
@@ -292,6 +287,7 @@ volt get https://github.com/airblade/vim-gitgutter
 ```bash
 set number
 syntax enable
+colorscheme delek
 
 let g:rainbow_active = 1
 
