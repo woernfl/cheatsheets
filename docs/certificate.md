@@ -2,11 +2,9 @@
 
 ## Certificate extensions
 
-`PFX` or `P12`
+**`PFX` or `P12` Personal Information Exchange Format**
 
-:   **Personal Information Exchange Format**
-
-    Supports storage of private and public keys and all certificates in the path.
+Supports storage of private and public keys and all certificates in the path.
 
 `CER` or `CRT`
 
