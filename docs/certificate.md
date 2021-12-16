@@ -6,32 +6,22 @@
 
 Supports storage of private and public keys and all certificates in the path.
 
-`CER` or `CRT`
+**`CER` or `CRT` Base64-encoded or DER-encoded binary X.509 Certificate**
 
-:   **Base64-encoded or DER-encoded binary X.509 Certificate**
+Storage of a single certificate.  This format does not support storage of private keys.
 
-    Storage of a single certificate.  This format does not support storage of private keys.
+**`CRL` Certificate Revocation List**
 
-`CRL`
+Designates a certificate that has been revoked.
 
-:   **Certificate Revocation List**
+**`CSR` Certificate Signing Request**
 
-    Designates a certificate that has been revoked.
+This file type is issued by applications to submit requests to a Certification Authority or CA.
 
-`CSR`
+**`DER` DER-encoded binary X.509 Certificate**
 
-:   **Certificate Signing Request**
+Storage of a single certificate.  This format does not support storage of private keys.
 
-    This file type is issued by applications to submit requests to a Certification Authority or CA.
+**`P7B` or `P7R` or `SPC` Cryptographic Message Syntax Standard**
 
-`DER`
-
-:   **DER-encoded binary X.509 Certificate**
-
-    Storage of a single certificate.  This format does not support storage of private keys.
-
-`P7B` or `P7R` or `SPC`
-
-:   **Cryptographic Message Syntax Standard**
-
-    Supports storage of all certificates in path and does not store private keys.
+Supports storage of all certificates in path and does not store private keys.
