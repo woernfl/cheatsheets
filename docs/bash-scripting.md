@@ -79,38 +79,20 @@ Check the exist code of the last command runned:
 echo $?
 ```
 
-`0`
+`0` All good
 
-:   All good
+`1` Catchall for general errors
 
-`1`
+`2` Misuse of shell builtins
 
-:   Catchall for general errors
+`126` Command invoked cannot execute
 
-`2`
+`127` "command not found"
 
-:   Misuse of shell builtins
+`128` Invalid argument to exit
 
-`126`
+`128+n` Fatal error signal “n”
 
-:   Command invoked cannot execute
+`130` Script terminated by Control-C
 
-`127`
-
-:   "command not found"
-
-`128`
-
-:   Invalid argument to exit
-
-`128+n`
-
-:   Fatal error signal “n”
-
-`130`
-
-:   Script terminated by Control-C
-
-`255\*`
-
-:   Exit status out of range
+`255\*` Exit status out of range
