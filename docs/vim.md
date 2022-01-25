@@ -156,60 +156,13 @@ $
 
 ## Vim plugins
 
-### dein.vim
+### vim-plug
 
-**Installation**
-
-```bash
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh ./installer.sh ~/.vim/bundles
-```
-
-Add the following on top of your `.vimrc`:
-
-```bash
-"dein Scripts-----------------------------
-if &compatible
-  set nocompatible " Be iMproved
-endif
-
-" Required:
-" Add the dein installation directory into runtimepath
-set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
-
-" Required:
-call dein#begin('~/.vim/bundles')
-
-" Let dein manage dein
-" Required:
-call dein#add('~/.vim/bundles')
-
-" Add or remove your plugins here like this:
-"call dein#add('Shougo/neosnippet.vim')
-
-" Required:
-call dein#end()
-
-" Required:
-filetype plugin indent on
-syntax enable
-
-" If you want to install not installed plugins on startup.
-if dein#check_install()
-  all dein#install()
-endif
-"End dein Scripts-------------------------
-```
+vim-plug for Vim available [here](https://github.com/junegunn/vim-plug). Installed using the `~/.vimrc` file provided in the overal basic setup section.
 
 ### NERDTree
 
 NERDTree for Vim available [here](https://github.com/scrooloose/nerdtree).
-
-**Installation**
-
-```bash
-volt get https://github.com/scrooloose/nerdtree
-```
 
 **Usage**
 
@@ -250,48 +203,41 @@ Keyboard shortcuts:
 - `Ctrl + w k`: Takes you up a window
 - `Ctrl + w l`: Takes you right a window
 
-### Vim-gitgutter
-
-A Vim plugin which shows a git diff in the gutter and stages/undoes hunks and partial hunks available [here](https://github.com/airblade/vim-gitgutter).
-
-**Installation**
-
-```bash
-volt get https://github.com/airblade/vim-gitgutter
-```
-
-**Usage**
-
-Enable the plugin globally, add the following to `.vimrc`:
-
-```bash
-let g:gitgutter_enabled = 1
-```
-
 ## Overal basic setup
 
-1. Install `volt`:
-
-    See instructions [here](#volt)
-
-2. Install the `vim` pluggins:
+1. Create a `~/.vimrc` file:
 
 ```bash
-volt get https://github.com/frazrepo/vim-rainbow
-volt get https://github.com/scrooloose/nerdtree
-volt get https://github.com/airblade/vim-gitgutter
-```
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
 
-3. Create a `~/.vimrc` file:
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs),'!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
 
-```bash
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+
+" Make sure you use single quotes
+
+Plug 'junegunn/vim-plug'
+Plug 'https://github.com/frazrepo/vim-rainbow'
+Plug 'https://github.com/scrooloose/nerdtree'
+
+" Initialize plugin system
+call plug#end()
+
 set number
 syntax enable
 colorscheme delek
 
-let g:rainbow_active = 1
-
-let g:gitgutter_enabled = 1
+let g:rainbow_active = 1 
+map <F4> :RainbowToggle<CR>
 
 map <F2> :NERDTreeToggle<CR>
 ```
