@@ -160,6 +160,10 @@ $
 
 vim-plug for Vim available [here](https://github.com/junegunn/vim-plug). Installed using the `~/.vimrc` file provided in the overal basic setup section.
 
+### vim-rainbow
+
+vim-rainbow for Vim available [here](https://github.com/frazrepo/vim-rainbow).
+
 ### NERDTree
 
 NERDTree for Vim available [here](https://github.com/scrooloose/nerdtree).
@@ -228,6 +232,7 @@ call plug#begin()
 Plug 'junegunn/vim-plug'
 Plug 'https://github.com/frazrepo/vim-rainbow'
 Plug 'https://github.com/scrooloose/nerdtree'
+Plug 'https://github.com/vim-airline/vim-airline'
 
 " Initialize plugin system
 call plug#end()
