@@ -203,7 +203,7 @@ endif
 
 ### NERDTree
 
-Rainbow brackets for Vim available [here](https://github.com/scrooloose/nerdtree).
+NERDTree for Vim available [here](https://github.com/scrooloose/nerdtree).
 
 **Installation**
 
