@@ -20,6 +20,12 @@ Get a web site and specify the host we are reaching from:
 curl -H Host:$WEBSITE_DNS $WEBSITE_IP
 ```
 
+Follow redirect:
+
+```bash
+curl -L -O https://github.com/vim-volt/volt/releases/download/v0.3.7/volt-v0.3.7-linux-amd64
+```
+
 Get a binary:
 
 ```bash
