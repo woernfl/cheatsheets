@@ -19,3 +19,12 @@ Solves `WARNING: UNPROTECTED PRIVATE KEY FILE!`:
 ```bash
 sudo chmod 600 $KEY_PATH
 ```
+
+## Adding a externally generated key to your ssh-agent
+
+Start the agent and add the key:
+
+```bash
+eval $(ssh-agent)
+ssh-add ~/.ssh/$KEY_PATH
+```
