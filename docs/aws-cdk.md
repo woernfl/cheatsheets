@@ -1,4 +1,4 @@
-# AWS CLI
+# AWS CDK
 
 ## Basic actions
 
