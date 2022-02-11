@@ -37,3 +37,13 @@ Destroy the stack
 ```bash
 cdk destroy
 ```
+
+## Environment variables
+
+`CDK_DEFAULT_ACCOUNT`
+
+Specifies an AWS account id to deploy to.
+
+`CDK_DEFAULT_REGION`
+
+Specifies an AWS region to deploy to.
