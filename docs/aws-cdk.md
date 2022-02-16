@@ -22,25 +22,25 @@ cdk ls
 See what the Cloudformation template will look like:
 
 ```bash
-cdk synth
+cdk synth $STACK_NAME
 ```
 
 Check the diff between what is currently deployed and what is currently declared in the code:
 
 ```bash
-cdk diff
+cdk diff $STACK_NAME
 ```
 
 Deploy the stack
 
 ```bash
-cdk deploy
+cdk deploy $STACK_NAME
 ```
 
 Destroy the stack
 
 ```bash
-cdk destroy
+cdk destroy $STACK_NAME
 ```
 
 ## Environment variables
