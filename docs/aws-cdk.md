@@ -13,6 +13,11 @@ Bootstrap the AWS account
 ```bash
 cdk bootstrap aws://$AWS_ACCOUNT_ID/$AWS_REGION
 ```
+List the different stacks:
+
+```bash
+cdk ls
+```
 
 See what the Cloudformation template will look like:
 
