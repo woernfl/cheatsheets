@@ -8,6 +8,12 @@ Log in to a Docker registry:
 docker login $REGISTRY_URL
 ```
 
+Exec into a container:
+
+```bash
+docker exec -it $CONTAINER_NAME /bin/bash
+```
+
 Push multiple docker images:
 
 ```bash
