@@ -55,6 +55,38 @@ Listen on UDP packet recieved by an host:
 sudo tcpdump udp port $PORT_TO_LISTEN_ON -vv -X
 ```
 
+## Volume management
+
+List the block devices:
+
+```bash
+lsblk -a
+```
+
+List the partitions:
+
+```bash
+sudo pvdisplay 
+```
+
+Resize a partition:
+
+```bash
+sudo pvresize $PARTITION_PATH
+```
+
+List the Logical Volume
+
+```bash
+sudo lvdisplay
+```
+
+Extend the size of the Logical Volume to the use all the free space:
+
+```bash
+sudo lvextend -l +100%FREE $LV_PATH
+```
+
 ## Setup a personal folder to store binaries
 
 Create a `bin` folder in your home folder:
