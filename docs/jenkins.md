@@ -1,5 +1,14 @@
 # Jenkins
 
+## Global variables
+
+To list global variable add `pipeline-syntax/globals` after your Jenkins URL in a browser, like that `$JENKINS_URL/pipeline-syntax/globals`
+
+`env.$ENV_VAR` Get or set the value of a environment variable
+
+`params.$PARAM_NAME` Get or set the value of a parametre
+
+`currentBuild.result` Get or set the final status of a job. Typically SUCCESS, UNSTABLE, or FAILURE (may be null for an ongoing build)
 
 ## Environment variables
 
