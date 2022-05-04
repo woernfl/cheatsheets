@@ -53,6 +53,13 @@ Set TF_LOG env variable:
 export TF_LOG=TRACE
 ```
 
+Test the output of an internal Terraform function:
+
+```bash
+# Drops you in an interactive shell
+terraform console
+```
+
 ## Bonus
 
 Format all your file following the same pattern:
