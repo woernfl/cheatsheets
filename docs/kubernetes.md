@@ -26,6 +26,32 @@ Get really all the ressources of a specific namespace:
 kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=myapp -n $NAMESPACE
 ```
 
+## Deployment managment
+
+Restart a rollout:
+
+```bash
+kubectl rollout restart
+```
+
+Get the rollout status:
+
+```bash
+kubectl rollout status -w
+```
+
+Get the rollouts history:
+
+```bash
+kubectl rollout history
+```
+
+Rollback a change:
+
+```bash
+kubectl rollout undo
+```
+
 ## Secret managment
 
 Create a secret from literal:
@@ -47,6 +73,10 @@ kubectl get secrets -o json --namespace $NAMESPACE_OLD | jq '.items[].metadata.n
 ```
 
 ## Pod managment
+
+```bash
+kubectl get pods --watch --output-watch-events
+```
 
 Get the list of pod with their CPU consumpsion:
 
