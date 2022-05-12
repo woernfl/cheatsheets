@@ -147,7 +147,7 @@ kubectl -n $NAMESPACE logs $POD_NAME --previous
 Get all events of what happened:
 
 ```bash
-kubectl get events -n $NAMESPACE
+kubectl -n $NAMESPACE get events --sort-by='{.lastTimestamp}' | tail
 ```
 
 Connect to a pod from your local workstation:
