@@ -23,8 +23,16 @@ curl -H Host:$WEBSITE_DNS $WEBSITE_IP
 Follow redirect:
 
 ```bash
-curl -L -O https://github.com/vim-volt/volt/releases/download/v0.3.7/volt-v0.3.7-linux-amd64
+curl -L -O $WEBSITE_URL
 ```
+
+List the content of a remote folder:
+
+```bash
+curl --list-only $WEBSITE_URL
+```
+
+## Binaries actions
 
 Get a binary:
 
