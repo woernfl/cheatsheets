@@ -2,11 +2,18 @@
 
 ## User Settings
 
+`ctrl+p` and type `User/settings.json`, then fille it with:
+
 ```json
 {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.bracketPairColorization.enabled": true
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.formatting.provider": "black"
 }
 ```
 
@@ -21,6 +28,7 @@ Here is the list of extentions I usually use:
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
 - [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
@@ -34,5 +42,6 @@ ext install HashiCorp.terraform
 ext install esbenp.prettier-vscode
 ext install redhat.vscode-yaml
 ext install mikestead.dotenv
+ext install ms-python.python
 ext install codezombiech.gitignore
 ```
