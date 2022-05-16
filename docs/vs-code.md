@@ -30,6 +30,7 @@ Here is the list of extentions I usually use:
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
+- [Trivy](https://marketplace.visualstudio.com/items?itemName=AquaSecurityOfficial.trivy-vulnerability-scanner)
 - [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
 Here is how to install this extentions using the VS Code Quick Open (Ctrl+P):
@@ -44,4 +45,5 @@ ext install redhat.vscode-yaml
 ext install mikestead.dotenv
 ext install ms-python.python
 ext install codezombiech.gitignore
+ext install AquaSecurityOfficial.trivy-vulnerability-scanner
 ```
