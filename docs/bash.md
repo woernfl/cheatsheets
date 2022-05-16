@@ -21,6 +21,12 @@ find / -name find.txt  # case sensitive
 find / -iname find.txt # case insensitive
 ```
 
+Rerun your last command, but with sudo this time:
+
+```bash
+sudo !!
+```
+
 ## Manage Environment variables
 
 Set environment variable listed as key-value pair in a `.env` file:
