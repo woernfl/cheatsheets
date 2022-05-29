@@ -27,6 +27,12 @@ Rerun your last command, but with sudo this time:
 sudo !!
 ```
 
+Print the PATH in a readable manner:
+
+```bash
+echo $PATH | tr ':' '\n'
+```
+
 ## Manage Environment variables
 
 Set environment variable listed as key-value pair in a `.env` file:
