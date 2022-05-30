@@ -285,4 +285,10 @@ git checkout [saved hash] -- path/to/file
 git commit -m "Wow, you don't have to copy-paste to undo"
 ```
 
+Trigger the CI without making changes to the code base:
+
+```bash
+git commit --allow-empty -s -m "Trigger CI"
+```
+
 Thanks to Frumusanu Razvan for this [tricks](https://medium.com/faun/stop-headaches-from-git-3829210d2a31)
