@@ -2,7 +2,7 @@
 
 ## User Settings
 
-`ctrl+p` and type `User/settings.json`, then fille it with:
+`ctrl+p` and type `User/settings.json` or `Preferences: Open Settings (JSON)`, then fille it with:
 
 ```json
 {
@@ -46,4 +46,5 @@ ext install mikestead.dotenv
 ext install ms-python.python
 ext install codezombiech.gitignore
 ext install AquaSecurityOfficial.trivy-vulnerability-scanner
+ext install ms-vscode-remote.remote-ssh
 ```
