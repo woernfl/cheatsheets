@@ -131,6 +131,20 @@ Extract a tar:
 tar -xvzf $ARCHIVE_NAME.tar
 ```
 
+## Choosing bash
+
+Check wich shells are installed:
+
+```bash
+cat /etc/shells
+```
+
+Swith to bash:
+
+```bash
+chsh -s /bin/bash
+```
+
 ## Pimping the prompt
 
 Add the following to your `~/.bashrc` file:
