@@ -13,7 +13,17 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  }
 }
 ```
 
