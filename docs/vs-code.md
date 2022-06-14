@@ -2,7 +2,7 @@
 
 ## User Settings
 
-`ctrl+p` and type `User/settings.json` or `Preferences: Open Settings (JSON)`, then fille it with:
+`ctrl+maj+p` and type `Preferences: Open Settings (JSON)`, then fill it with:
 
 ```json
 {
