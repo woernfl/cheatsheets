@@ -178,6 +178,7 @@ Get the value of a Kubernetes secret:
 
 ```bash
 kubectl -n $NAMESPACE get secret $SECRET_NAME -o jsonpath="{.data.$SECRET_PATH}" | base64 --decode
+kubectl -n $NAMESPACE get secret $SECRET_NAME -o 'go-template={{index .data "$SECRET_PATH"}}' | base64 --decode
 ```
 
 ## Bonus
