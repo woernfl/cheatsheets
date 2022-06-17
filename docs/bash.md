@@ -150,6 +150,10 @@ chsh -s /bin/bash
 Add the following to your `~/.bashrc` file:
 
 ```bash
+# Turn on parallel history
+shopt -s histappend
+history -a
+
 # Bash prompt
 git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
