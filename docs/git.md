@@ -32,6 +32,12 @@ Commit a change and sign it:
 git commit -s -m "$COMMIT_MESSAGE"
 ```
 
+Add new changes to the last commit:
+
+```bash
+git commit --amend
+```
+
 Push your change to a remote repo:
 
 ```bash
