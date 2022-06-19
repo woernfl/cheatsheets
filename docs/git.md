@@ -96,6 +96,12 @@ Check commit history:
 git log --oneline --graph --color
 ```
 
+Better git log:
+
+```bash
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+
 Add file change to the last commit:
 
 ```bash
