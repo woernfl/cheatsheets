@@ -33,6 +33,12 @@ Print the PATH in a readable manner:
 echo $PATH | tr ':' '\n'
 ```
 
+Check the difference between 2 files:
+
+```bash
+diff $FILE1 $FILE2
+```
+
 ## Manage Environment variables
 
 Set environment variable listed as key-value pair in a `.env` file:
