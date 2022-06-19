@@ -69,6 +69,12 @@ sudo tcpdump udp port $PORT_TO_LISTEN_ON -vv -X
 
 ## Volume management
 
+Check disk usage:
+
+```bash
+df -h
+```
+
 List the block devices:
 
 ```bash
