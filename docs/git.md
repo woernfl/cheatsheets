@@ -116,6 +116,12 @@ Delete local branche:
 git branch -d $BRANCH_NAME
 ```
 
+Pulls the changes from the remote branch to the local branch and makes a merge:
+
+```bash
+git pull origin $BRANCH_NAME
+```
+
 Rebase a base branch in current branch:
 
 ```bash
