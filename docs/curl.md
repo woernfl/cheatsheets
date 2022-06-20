@@ -14,6 +14,12 @@ Get only the HTTP code back:
 curl --silent -o /dev/null -w "%{http_code}" $WEBSITE_URL
 ```
 
+Continusly check the HTTP code:
+
+```bash
+for (( t=1; ; t++ )); do echo "${t}" && curl --silent -o /dev/null -w "%{http_code}" $WEBSITE_URL && sleep 1 && echo ""; done
+```
+
 Get a web site and specify the host we are reaching from:
 
 ```bash
