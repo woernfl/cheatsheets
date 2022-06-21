@@ -4,19 +4,27 @@
 
 `GET`
 
-The resource has been fetched and is transmitted in the message body.
+The `GET` method requests a representation of the specified resource. Requests using `GET` should only retrieve data.
 
 `HEAD`
 
-The entity headers are in the message body.
+The `HEAD` method asks for a response identical to a `GET` request, but without the response body.
 
-`PUT or POST`
+`POST`
 
-The resource describing the result of the action is transmitted in the message body.
+The `POST` method submits an entity to the specified resource, often causing a change in state or side effects on the server.
+
+`PUT`
+
+The `PUT` method replaces all current representations of the target resource with the request payload.
+
+`DELETE`
+
+The `DELETE` method deletes the specified resource.
 
 `TRACE`
 
-The message body contains the request message as received by the server.
+The `TRACE` method performs a message loop-back test along the path to the target resource.
 
 ## 2xx
 
@@ -156,4 +164,4 @@ The HTTP version used in the request is not supported by the server.
 
 ## Thanks
 
-Thanks to the Mozilla foundation for there incredible work. All the info's on this page come from [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+Thanks to the Mozilla foundation for there incredible work. All the info's on this page come from [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) and [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
