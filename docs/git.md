@@ -108,6 +108,12 @@ Better git log:
 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 ```
 
+Check commit history with changes:
+
+```bash
+git log -p
+```
+
 Add file change to the last commit:
 
 ```bash
