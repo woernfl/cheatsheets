@@ -291,6 +291,44 @@ Use `pod-inspect`:
 kubectl pod-inspect $POD_NAME
 ```
 
+### resource-capacity
+
+Install `resource-capacity`:
+
+```bash
+kubectl krew install resource-capacity
+```
+
+List node request and limits:
+
+```bash
+kubectl resource-capacity
+```
+
+List node request, limits and usage (require the metrics-server):
+
+```bash
+kubectl resource-capacity --util
+```
+
+List pod request and limits:
+
+```bash
+kubectl resource-capacity --pods
+```
+
+List node and pods request, limits and usage (require the metrics-server):
+
+```bash
+kubectl resource-capacity --pods --util
+```
+
+List node available resources:
+
+```bash
+kubectl resource-capacity --available
+```
+
 ### sick-pods
 
 Install `sick-pods`:
