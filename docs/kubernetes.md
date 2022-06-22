@@ -261,6 +261,8 @@ Use `ns`:
 kubectl ns $NAMESPACE
 ```
 
+It is recommended to add [fzf](https://github.com/junegunn/fzf)
+
 ### outdated
 
 Install `outdated`:
