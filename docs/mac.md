@@ -8,10 +8,16 @@ Install [Homebrew](https://brew.sh/):
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## Windows managment
+### Packages
 
-Install [Rectangle](https://github.com/rxhanson/Rectangle):
+Here is the list of packages I usually use:
 
-```bash
+- [Rectangle](https://github.com/rxhanson/Rectangle)
+- [fzf](https://github.com/junegunn/fzf)
+
+Here is how to install this packages using the terminal:
+
+```
 brew install --cask rectangle
+brew install --cask fzf
 ```
