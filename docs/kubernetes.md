@@ -181,6 +181,46 @@ kubectl -n $NAMESPACE get secret $SECRET_NAME -o jsonpath="{.data.$SECRET_PATH}"
 kubectl -n $NAMESPACE get secret $SECRET_NAME -o 'go-template={{index .data "$SECRET_PATH"}}' | base64 --decode
 ```
 
+## kubectl plugins
+
+### krew
+
+krew is available [here](https://krew.sigs.k8s.io/docs/user-guide/setup/install/).
+
+It will need to be updated a first time before you can use it.
+
+```bash
+kubectl krew update
+```
+
+### deprecations
+
+Install `deprecations`:
+
+```bash
+kubectl krew install deprecations
+```
+
+Use `deprecations`:
+
+```bash
+kubectl deprecations
+```
+
+### ns
+
+Install `ns`:
+
+```bash
+kubectl krew install ns
+```
+
+Use `ns`:
+
+```bash
+kubectl ns $NAMESPACE
+```
+
 ## Bonus
 
 Install autocompletion:
