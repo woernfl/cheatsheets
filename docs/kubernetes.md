@@ -207,6 +207,46 @@ Use `deprecations`:
 kubectl deprecations
 ```
 
+### ktop
+
+Install `ktop`:
+
+```bash
+kubectl krew install ktop
+```
+
+Use `ktop`:
+
+```bash
+kubectl ktop
+```
+
+### lineage
+
+Install `lineage`:
+
+```bash
+kubectl krew install lineage
+```
+
+List dependent resources:
+
+```bash
+kubectl lineage $RESSOURCE_TYPE $RESSOURCE_NAME -o=wide
+```
+
+List dependencies resource:
+
+```bash
+kubectl lineage $RESSOURCE_TYPE $RESSOURCE_NAME -D -o=wide
+```
+
+Display Helm release resources:
+
+```bash
+kubectl lineage helm $HELM_RELEASE_NAME
+```
+
 ### ns
 
 Install `ns`:
@@ -219,6 +259,96 @@ Use `ns`:
 
 ```bash
 kubectl ns $NAMESPACE
+```
+
+### outdated
+
+Install `outdated`:
+
+```bash
+kubectl krew install outdated
+```
+
+Use `outdated`:
+
+```bash
+kubectl outdated
+```
+
+### pod-inspect
+
+Install `pod-inspect`:
+
+```bash
+kubectl krew install pod-inspect
+```
+
+Use `pod-inspect`:
+
+```bash
+kubectl pod-inspect $POD_NAME
+```
+
+### sick-pods
+
+Install `sick-pods`:
+
+```bash
+kubectl krew install sick-pods
+```
+
+Use `sick-pods`:
+
+```bash
+kubectl sick-pods $POD_NAME
+```
+
+### topology
+
+Install `topology`:
+
+```bash
+kubectl krew install topology
+```
+
+Get the topology for the nodes:
+
+```bash
+kubectl topology node
+```
+
+Get the topology for the pods:
+
+```bash
+kubectl topology pod
+```
+
+### unused-volumes
+
+Install `unused-volumes`:
+
+```bash
+kubectl krew install unused-volumes
+```
+
+Use `unused-volumes`:
+
+```bash
+kubectl unused-volumes
+```
+
+### Quick install
+
+```bash
+kubectl krew install deprecations
+kubectl krew install ktop
+kubectl krew install lineage
+kubectl krew install ns
+kubectl krew install outdated
+kubectl krew install pod-inspect
+kubectl krew install sick-pods
+kubectl krew install topology
+kubectl krew install unused-volumes
 ```
 
 ## Bonus
