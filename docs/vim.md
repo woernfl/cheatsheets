@@ -247,6 +247,7 @@ call plug#end()
 
 set number
 syntax enable
+set laststatus=2
 colorscheme delek
 
 let g:rainbow_active = 1 
