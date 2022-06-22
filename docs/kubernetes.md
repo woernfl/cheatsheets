@@ -386,6 +386,7 @@ kubectl krew install lineage
 kubectl krew install ns
 kubectl krew install outdated
 kubectl krew install pod-inspect
+kubectl krew install resource-capacity
 kubectl krew install sick-pods
 kubectl krew install topology
 kubectl krew install unused-volumes
