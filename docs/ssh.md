@@ -1,6 +1,16 @@
-# SSH Keys
+# SSH
 
-## Generation
+## Basic actions
+
+Connect to a server through a Bastion:
+
+```bash
+ssh -t $BASTION_SERVER ssh $FINAL_SERVER
+```
+
+## SSH Keys
+
+### Generation
 
 Generate new SSH Keys:
 
@@ -12,7 +22,7 @@ Press `Enter` to accept default location and then type your paraphrase twice.
 
 2 new files were created in the `~/.ssh` folder, the `id_rsa` and `id_rsa.pub` ones.
 
-## Setting the rights file permissions
+### Setting the rights file permissions
 
 Solves `WARNING: UNPROTECTED PRIVATE KEY FILE!`:
 
@@ -20,7 +30,7 @@ Solves `WARNING: UNPROTECTED PRIVATE KEY FILE!`:
 sudo chmod 600 $KEY_PATH
 ```
 
-## Adding a externally generated key to your ssh-agent
+### Adding a externally generated key to your ssh-agent
 
 Start the agent and add the key:
 
