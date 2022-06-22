@@ -154,6 +154,14 @@ Go to the end of the line:
 $
 ```
 
+## Miscellaneous
+
+Set password protection to a file:
+
+```bash
+vim -x $PATH_TO_THE_FILE
+```
+
 ## Vim plugins
 
 ### vim-plug
