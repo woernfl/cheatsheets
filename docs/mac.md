@@ -18,6 +18,6 @@ Here is the list of packages I usually use:
 Here is how to install this packages using the terminal:
 
 ```
-brew install --cask rectangle
-brew install --cask fzf
+brew install rectangle
+brew install fzf
 ```
