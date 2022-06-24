@@ -35,6 +35,14 @@ Delete Terraform ressources:
 terraform destroy -force
 ```
 
+## Exposing the content of a file as a viarable
+
+```bash
+locals {
+  config = yamldecode(file("./config.yaml"))
+}
+```
+
 ## Terraform Cloud
 
 Generate user token and put it in the `~/.terraformrc` file like that:
