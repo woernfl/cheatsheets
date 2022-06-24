@@ -38,6 +38,12 @@ List the content of a remote folder:
 curl --list-only $WEBSITE_URL
 ```
 
+Also fetching the headers:
+
+```bash
+curl -I $WEBSITE_URL
+```
+
 ## Binaries actions
 
 Get a binary:
