@@ -39,6 +39,14 @@ Check the difference between 2 files:
 diff $FILE1 $FILE2
 ```
 
+## Miscellaneous
+
+Find out the top most used commands:
+
+```bash
+cat ~/.bash_history | tr "\|\;" "\n" | sed -e "s/^ //g" | cut -d " " -f 1 | sort | uniq -c | sort -n | tail -n 10
+```
+
 ## Manage Environment variables
 
 Set environment variable listed as key-value pair in a `.env` file:
