@@ -1,5 +1,9 @@
 # Mac
 
+## Keyboard shortcut
+
+`|`: `Alt + Shift + L`
+
 ## Package managment
 
 Install [Homebrew](https://brew.sh/):
