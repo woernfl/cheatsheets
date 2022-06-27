@@ -43,6 +43,7 @@ Here is the list of extentions I usually use:
 - [Trivy](https://marketplace.visualstudio.com/items?itemName=AquaSecurityOfficial.trivy-vulnerability-scanner)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Kite](https://marketplace.visualstudio.com/items?itemName=kiteco.kite)
+- [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 - [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
 Here is how to install this extentions using the VS Code Quick Open (Ctrl+P):
@@ -60,5 +61,6 @@ ext install codezombiech.gitignore
 ext install AquaSecurityOfficial.trivy-vulnerability-scanner
 ext install streetsidesoftware.code-spell-checker
 ext install kiteco.kite
+ext install aaron-bond.better-comments
 ext install ms-vscode-remote.remote-ssh
 ```
