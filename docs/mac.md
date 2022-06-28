@@ -3,6 +3,7 @@
 ## Keyboard shortcut
 
 Symbole | FR Shortcut | SG Shortcut
+--- | --- | --- 
  \| | Alt + Shift + L | Alt + 7
 
 ## Package managment
