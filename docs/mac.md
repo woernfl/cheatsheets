@@ -2,7 +2,8 @@
 
 ## Keyboard shortcut
 
-`|`: `Alt + Shift + L`
+Symbole | FR Shortcut | SG Shortcut
+ \| | Alt + Shift + L | Alt + 7
 
 ## Package managment
 
