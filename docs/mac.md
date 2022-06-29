@@ -2,9 +2,17 @@
 
 ## Keyboard shortcut
 
+### Symboles
+
 Symbole | FR Shortcut     | SG Shortcut
 ------- | --------------- | ----------- 
- \|     | Alt + Shift + L | Alt + 7
+\|      | Alt + Shift + L | Alt + 7
+ 
+### Systeme
+
+Shortcut      | Action
+------------- | ------------- 
+Ctrl + Cmd + Q| Lock the screen
 
 ## Package managment
 
