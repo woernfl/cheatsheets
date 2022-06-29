@@ -6,13 +6,14 @@
 
 Symbole | FR Shortcut     | CH DE Shortcut
 ------- | --------------- | ----------- 
-\|      | Alt + Shift + L | Alt + 7
+\|      | Alt + Maj + L | Alt + 7
  
 ### Systeme
 
 Shortcut      | Action
 ------------- | ------------- 
 Ctrl + Cmd + Q| Lock the screen
+Cmd + Maj + R | Reload the navigator window
 
 ## Package managment
 
