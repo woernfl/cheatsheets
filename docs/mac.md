@@ -4,7 +4,7 @@
 
 ### Symboles
 
-Symbole | FR Shortcut     | SG Shortcut
+Symbole | FR Shortcut     | CH DE Shortcut
 ------- | --------------- | ----------- 
 \|      | Alt + Shift + L | Alt + 7
  
