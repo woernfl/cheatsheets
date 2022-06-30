@@ -309,10 +309,25 @@ git checkout [saved hash] -- path/to/file
 git commit -m "Wow, you don't have to copy-paste to undo"
 ```
 
+Thanks to Frumusanu Razvan for this [tricks](https://medium.com/faun/stop-headaches-from-git-3829210d2a31)
+
 Trigger the CI without making changes to the code base:
 
 ```bash
 git commit --allow-empty -s -m "Trigger CI"
 ```
 
-Thanks to Frumusanu Razvan for this [tricks](https://medium.com/faun/stop-headaches-from-git-3829210d2a31)
+## Aliases
+
+To set the git aliases, used `git config --global --edit`:
+
+```bash
+[alias]
+     lod = log --graph --decorate --pretty=oneline --abbrev-commit --all
+     ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+     lsp = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate -p
+     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+```
+
+
+
