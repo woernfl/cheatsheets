@@ -33,10 +33,12 @@ Here is the list of packages I usually use:
 
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 - [fzf](https://github.com/junegunn/fzf)
+- [Fig](https://fig.io/)
 
 Here is how to install this packages using the terminal:
 
 ```
 brew install rectangle
 brew install fzf
+brew install fig
 ```
