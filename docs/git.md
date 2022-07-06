@@ -140,6 +140,12 @@ Rebase a base branch in current branch:
 git rebase $BASE_BRANCH
 ```
 
+Rebase a remote branch in current branch:
+
+```bash
+git pull --rebase --autostash origin master
+```
+
 Rename a branch:
 
 ```bash
