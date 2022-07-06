@@ -32,6 +32,7 @@
 Here is the list of extentions I usually use:
 
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
@@ -50,6 +51,7 @@ Here is how to install this extentions using the VS Code Quick Open (Ctrl+P):
 
 ```
 ext install yzhang.markdown-all-in-one
+ext install DavidAnson.vscode-markdownlint
 ext install wayou.vscode-todo-highlight
 ext install ms-azuretools.vscode-docker
 ext install HashiCorp.terraform
