@@ -26,6 +26,12 @@ Stage a change:
 git add $FILE_PATH
 ```
 
+Choose chunks of code you want to stage:
+
+```bash
+git add -p $FILE_PATH
+```
+
 Commit a change and sign it:
 
 ```bash
