@@ -8,6 +8,7 @@
 {
   "editor.tabSize": 2,
   "editor.bracketPairColorization.enabled": true,
+  "indentRainbow.includedLanguages": ["yaml", "yml"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[python]": {
@@ -23,7 +24,10 @@
     "editor.defaultFormatter": "hashicorp.terraform",
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file"
-  }
+  },
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "redhat.telemetry.enabled": false
 }
 ```
 
@@ -38,6 +42,7 @@ Here is the list of extentions I usually use:
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
@@ -59,6 +64,7 @@ ext install Gruntfuggly.todo-tree
 ext install ms-azuretools.vscode-docker
 ext install HashiCorp.terraform
 ext install esbenp.prettier-vscode
+ext install oderwat.indent-rainbow
 ext install redhat.vscode-yaml
 ext install mikestead.dotenv
 ext install ms-python.python
