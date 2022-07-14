@@ -1,4 +1,4 @@
-# BAsh setup
+# Bash setup
 
 ## Bash aliases
 
