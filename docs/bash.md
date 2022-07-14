@@ -39,13 +39,77 @@ Check the difference between 2 files:
 diff $FILE1 $FILE2
 ```
 
-## Miscellaneous
+## Test processing
 
-Find out the top most used commands:
+### `awk`
+
+Search for a specific keyword:
 
 ```bash
-cat ~/.bash_history | tr "\|\;" "\n" | sed -e "s/^ //g" | cut -d " " -f 1 | sort | uniq -c | sort -n | tail -n 10
+awk '/$KEYWORD/' $FILENAME
 ```
+
+Show specific a column only:
+
+```bash
+awk '{print $COLUMN_NUMBER}' $FILENAME
+```
+
+Show multiple columns:
+
+```bash
+awk '{print $COLUMN_NUMBER,$COLUMN_NUMBER}' $FILENAME
+```
+
+Show multiple columns without the whitespace between them:
+
+```bash
+awk '{print $COLUMN_NUMBER$COLUMN_NUMBER}' $FILENAME
+```
+
+Customize results using different characters as separators:
+
+```bash
+awk '{print $COLUMN_NUMBER "$SEPARATOR" $COLUMN_NUMBER}' $FILENAME
+```
+
+Combine search and column filtering:
+
+```bash
+awk '/$KEYWORD/ {print $COLUMN_NUMBER}' $FILENAME
+```
+
+Use a simple conditional statement:
+
+```bash
+awk '{if ($COLUMN_NUMBER expression $NUMBER) print $COLUMN_NUMBER}' $FILENAME
+```
+
+Use a different field separator. By default, AWK separates columns via white spaces:
+
+```bash
+awk -F '$SEPARATOR' '$STATEMENT' $FILENAME
+```
+
+Show results that should have all the specified keywords by using "and":
+
+```bash
+awk '/$KEYWORD/ && /$KEYWORD/' $FILENAME
+```
+
+Show results that should have any of the specified keywords by using “or”:
+
+```bash
+awk '/$KEYWORD/ || /$KEYWORD/' $FILENAME
+```
+
+Show everything except for the specified keyword using “not”:
+
+```bash
+awk '!/$KEYWORD/' $FILENAME
+```
+
+Thanks to Arc Sosangyo for his great blog post about `awk`. All the `awk` on this page come from [here](https://betterprogramming.pub/10-practical-use-of-awk-command-in-linux-unix-26fbd92f1112).
 
 ## Manage Environment variables
 
@@ -98,7 +162,7 @@ lsblk -a
 List the partitions:
 
 ```bash
-sudo pvdisplay 
+sudo pvdisplay
 ```
 
 Resize a partition:
@@ -119,25 +183,7 @@ Extend the size of the Logical Volume to the use all the free space:
 sudo lvextend -l +100%FREE $LV_PATH
 ```
 
-## Setup a personal folder to store binaries
-
-Create a `bin` folder in your home folder:
-
-```bash
-mkdir -p $HOME/bin
-```
-
-Add the `bin` folder to your PATH:
-
-```bash
-if [ -d $HOME/bin ]; then
-  export PATH="$HOME/bin:$PATH"
-fi
-```
-
-From now, all the binaries that you will put in your `bin` folders will be accessible from anywhere in your system.
-
-## Archiving files 
+## Archiving files
 
 Create a tar:
 
@@ -151,54 +197,107 @@ Extract a tar:
 tar -xvzf $ARCHIVE_NAME.tar
 ```
 
-## Choosing bash
+## Miscellaneous
 
-Check wich shells are installed:
+Find out the top most used commands:
 
 ```bash
-cat /etc/shells
+cat ~/.bash_history | tr "\|\;" "\n" | sed -e "s/^ //g" | cut -d " " -f 1 | sort | uniq -c | sort -n | tail -n 10
 ```
 
-Swith to bash:
+## Exit Codes
+
+Check the exist code of the last command runned:
 
 ```bash
-chsh -s /bin/bash
+echo $?
 ```
 
-## Pimping the prompt
+`0` All good
 
-Add the following to your `~/.bashrc` file:
+`1` Catchall for general errors
+
+`2` Misuse of shell builtins
+
+`126` Command invoked cannot execute
+
+`127` "command not found"
+
+`128` Invalid argument to exit
+
+`128+n` Fatal error signal “n”
+
+`130` Script terminated by Control-C
+
+`255\*` Exit status out of range
+
+## Bash scripting
+
+First line of the bash script:
 
 ```bash
-# Turn on parallel history
-shopt -s histappend
-history -a
+#!/usr/bin/env bash
+```
 
-# Bash prompt
-git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
+### Conditional
 
-FMT_BOLD="\e[1m"
-FMT_RESET="\e[0m"
-FMT_UNBOLD="\e[21m"
-FG_BLACK="\e[30m"
-FG_BLUE="\e[34m"
-FG_CYAN="\e[36m"
-FG_GREEN="\e[32m"
-FG_MAGENTA="\e[35m"
-FG_RED="\e[31m"
-FG_WHITE="\e[97m"
-BG_BLUE="\e[44m"
-BG_GREEN="\e[42m"
-BG_MAGENTA="\e[45m"
+#### If
 
-export GIT_PS1_SHOWDIRTYSTATE=1
-export GIT_PS1_SHOWCOLORHINTS=1
+Check if a user exist:
 
-export PS1=\
-"\n\[${BG_GREEN}\] \[${FG_RED}\] \[${FG_BLACK}\]\u \[${FG_GREEN}${BG_BLUE}\] "\
-"\[${FG_WHITE}\]\w \[${FMT_RESET}${FG_GREEN}\]"\
-'$(git_branch "\[${BG_MAGENTA}\] \[${FG_WHITE}\] %s \[${FMT_RESET}${FG_MAGENTA}\]")'\
-"\n \[${FG_GREEN}\]╰ \[${FG_CYAN}\]\$ \[${FMT_RESET}\]"
+```bash
+if ! id -u $USER_NAME > /dev/null 2>&1; then
+  echo 'Add $USER_NAME user'
+  adduser --ingroup $GROUP_NAME --home /home/$USER_NAME --gecos "" --shell /bin/bash --disabled-password $USER_NAME
+fi
+```
+
+Check if a group exist:
+
+```bash
+if ! id -g $GROUP_NAME > /dev/null 2>&1; then
+  echo 'Add $GROUP_NAME group'
+  addgroup $GROUP_NAME
+fi
+```
+
+Check if a folder exist:
+
+```bash
+if [ ! -d "$FOLDER_PATH"; then
+  echo 'Create $FOLDER_PATH folder'
+  mkdir -p $FOLDER_PATH
+fi
+```
+
+### Loop
+
+#### While
+
+Basic `while` loop:
+
+```bash
+COUNTER=0
+while (( $COUNTER < 10 )); do
+  echo The counter is $COUNTER
+  let COUNTER=COUNTER+1
+done
+```
+
+#### For
+
+Basic `for` loop:
+
+```bash
+for i in {1..5}; do
+  echo "Welcome $i times"
+done
+```
+
+Infinity `for` loop:
+
+```bash
+for (( ; ; )); do
+  echo "Infinite loop [hit CTRL+C to stop]"
+done
 ```
