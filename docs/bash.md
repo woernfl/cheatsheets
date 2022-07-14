@@ -41,7 +41,7 @@ diff $FILE1 $FILE2
 
 ## Text processing
 
-### `grep`
+### grep
 
 Search for a specific keyword (is case sensitive):
 
@@ -85,7 +85,39 @@ Display the lines that are not matched:
 grep -v $KEYWORD $FILE_PATH
 ```
 
-### `awk`
+### sed
+
+Replace a string by an other one:
+
+```bash
+sed 's/$SEARCH_STRING/$REPLACEMENT_STRING/g' $FILE_PATH
+```
+
+Replace a string by an other one in a particular line:
+
+```bash
+sed '$LINE_NUMBER s/$SEARCH_STRING/$REPLACEMENT_STRING/g' $FILE_PATH
+```
+
+Display replaced lines only:
+
+```bash
+sed -n 's/$SEARCH_STRING/$REPLACEMENT_STRING/p' $FILE_PATH
+```
+
+Delete lines:
+
+```bash
+sed '/^$/d' $FILE_PATH
+```
+
+Delete blank lines:
+
+```bash
+sed '/$SEARCH_STRING/d' $FILE_PATH
+```
+
+### awk
 
 Search for a specific keyword:
 
@@ -155,7 +187,7 @@ awk '!/$KEYWORD/' $FILE_PATH
 
 Thanks to Arc Sosangyo for his great blog post about `awk`. All the `awk` on this page come from [here](https://betterprogramming.pub/10-practical-use-of-awk-command-in-linux-unix-26fbd92f1112).
 
-### `head`
+### head
 
 Print the first X lines:
 
