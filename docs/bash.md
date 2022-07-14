@@ -39,7 +39,7 @@ Check the difference between 2 files:
 diff $FILE1 $FILE2
 ```
 
-## Test processing
+## Text processing
 
 ### `awk`
 
