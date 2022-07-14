@@ -417,3 +417,39 @@ for (( ; ; )); do
   echo "Infinite loop [hit CTRL+C to stop]"
 done
 ```
+
+### Create strucutured logs
+
+You will need to have `jq` installed.
+
+The function to use:
+
+```bash
+__timestamp(){
+  date "+%Y%m%dT%H%M%S"
+}
+__log(){
+  log_level="$1"
+  message="$2"
+  echo '{}' | \
+  jq  --monochrome-output \
+      --compact-output \
+      --raw-output \
+      --arg timestamp "$(__timestamp)" \
+      --arg log_level "$log_level" \
+      --arg message "$message" \
+      '.timestamp=$timestamp|.log_level=$log_level|.message=$message'
+}
+````
+
+Usage example:
+
+```bash
+# Line to put in your script
+__log "INFO" "Hello, World!"
+
+# Expected output
+{"timestamp":"20210812T191730","log_level":"INFO","message":"Hello, World!"}
+```
+
+Thanks to Jesse Riddle for sharing this awsome pice of shell script. All the info's of this section come from [here](https://medium.com/@jesse.riddle/structured-logging-in-a-shell-script-with-jq-f7542a94a1f6).
