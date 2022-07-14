@@ -155,6 +155,32 @@ awk '!/$KEYWORD/' $FILENAME
 
 Thanks to Arc Sosangyo for his great blog post about `awk`. All the `awk` on this page come from [here](https://betterprogramming.pub/10-practical-use-of-awk-command-in-linux-unix-26fbd92f1112).
 
+### `head`
+
+Print the first X lines:
+
+```bash
+head -n $NUMBER_OF_LINES_TO_PRINT $FILENAME
+```
+
+Print all except the last X lines:
+
+```bash
+head -n -$NUMBER_OF_LINES_NOT_TO_PRINT $FILENAME
+```
+
+Print the X first bytes:
+
+```bash
+head -c $NUMBER_OF_BYTES_TO_PRINT $FILENAME
+```
+
+Print all except the last X bytes:
+
+```bash
+head -c -$NUMBER_OF_BYTES_NOT_TO_PRINT $FILENAME
+```
+
 ## Manage Environment variables
 
 Set environment variable listed as key-value pair in a `.env` file:
