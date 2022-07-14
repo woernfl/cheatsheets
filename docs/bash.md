@@ -41,6 +41,50 @@ diff $FILE1 $FILE2
 
 ## Text processing
 
+### `grep`
+
+Search for a specific keyword (is case sensitive):
+
+```bash
+grep $KEYWORD $FILENAME
+```
+
+Search for a specific keyword (is note case sensitive):
+
+```bash
+grep -i $KEYWORD $FILENAME
+```
+
+Search for a specific keyword (returns the exact matches):
+
+```bash
+grep -w $KEYWORD $FILENAME
+```
+
+Display the count of number of matches:
+
+```bash
+grep -c $KEYWORD $FILENAME
+```
+
+Display only the matched pattern :
+
+```bash
+grep -o $KEYWORD $FILENAME
+```
+
+Show line number while displaying the output:
+
+```bash
+grep -n $KEYWORD $FILENAME
+```
+
+Display the lines that are not matched:
+
+```bash
+grep -v $KEYWORD $FILENAME
+```
+
 ### `awk`
 
 Search for a specific keyword:
