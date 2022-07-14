@@ -46,43 +46,43 @@ diff $FILE1 $FILE2
 Search for a specific keyword (is case sensitive):
 
 ```bash
-grep $KEYWORD $FILENAME
+grep $KEYWORD $FILE_PATH
 ```
 
 Search for a specific keyword (is note case sensitive):
 
 ```bash
-grep -i $KEYWORD $FILENAME
+grep -i $KEYWORD $FILE_PATH
 ```
 
 Search for a specific keyword (returns the exact matches):
 
 ```bash
-grep -w $KEYWORD $FILENAME
+grep -w $KEYWORD $FILE_PATH
 ```
 
 Display the count of number of matches:
 
 ```bash
-grep -c $KEYWORD $FILENAME
+grep -c $KEYWORD $FILE_PATH
 ```
 
 Display only the matched pattern :
 
 ```bash
-grep -o $KEYWORD $FILENAME
+grep -o $KEYWORD $FILE_PATH
 ```
 
 Show line number while displaying the output:
 
 ```bash
-grep -n $KEYWORD $FILENAME
+grep -n $KEYWORD $FILE_PATH
 ```
 
 Display the lines that are not matched:
 
 ```bash
-grep -v $KEYWORD $FILENAME
+grep -v $KEYWORD $FILE_PATH
 ```
 
 ### `awk`
@@ -90,67 +90,67 @@ grep -v $KEYWORD $FILENAME
 Search for a specific keyword:
 
 ```bash
-awk '/$KEYWORD/' $FILENAME
+awk '/$KEYWORD/' $FILE_PATH
 ```
 
 Show specific a column only:
 
 ```bash
-awk '{print $COLUMN_NUMBER}' $FILENAME
+awk '{print $COLUMN_NUMBER}' $FILE_PATH
 ```
 
 Show multiple columns:
 
 ```bash
-awk '{print $COLUMN_NUMBER,$COLUMN_NUMBER}' $FILENAME
+awk '{print $COLUMN_NUMBER,$COLUMN_NUMBER}' $FILE_PATH
 ```
 
 Show multiple columns without the whitespace between them:
 
 ```bash
-awk '{print $COLUMN_NUMBER$COLUMN_NUMBER}' $FILENAME
+awk '{print $COLUMN_NUMBER$COLUMN_NUMBER}' $FILE_PATH
 ```
 
 Customize results using different characters as separators:
 
 ```bash
-awk '{print $COLUMN_NUMBER "$SEPARATOR" $COLUMN_NUMBER}' $FILENAME
+awk '{print $COLUMN_NUMBER "$SEPARATOR" $COLUMN_NUMBER}' $FILE_PATH
 ```
 
 Combine search and column filtering:
 
 ```bash
-awk '/$KEYWORD/ {print $COLUMN_NUMBER}' $FILENAME
+awk '/$KEYWORD/ {print $COLUMN_NUMBER}' $FILE_PATH
 ```
 
 Use a simple conditional statement:
 
 ```bash
-awk '{if ($COLUMN_NUMBER expression $NUMBER) print $COLUMN_NUMBER}' $FILENAME
+awk '{if ($COLUMN_NUMBER expression $NUMBER) print $COLUMN_NUMBER}' $FILE_PATH
 ```
 
 Use a different field separator. By default, AWK separates columns via white spaces:
 
 ```bash
-awk -F '$SEPARATOR' '$STATEMENT' $FILENAME
+awk -F '$SEPARATOR' '$STATEMENT' $FILE_PATH
 ```
 
 Show results that should have all the specified keywords by using "and":
 
 ```bash
-awk '/$KEYWORD/ && /$KEYWORD/' $FILENAME
+awk '/$KEYWORD/ && /$KEYWORD/' $FILE_PATH
 ```
 
 Show results that should have any of the specified keywords by using “or”:
 
 ```bash
-awk '/$KEYWORD/ || /$KEYWORD/' $FILENAME
+awk '/$KEYWORD/ || /$KEYWORD/' $FILE_PATH
 ```
 
 Show everything except for the specified keyword using “not”:
 
 ```bash
-awk '!/$KEYWORD/' $FILENAME
+awk '!/$KEYWORD/' $FILE_PATH
 ```
 
 Thanks to Arc Sosangyo for his great blog post about `awk`. All the `awk` on this page come from [here](https://betterprogramming.pub/10-practical-use-of-awk-command-in-linux-unix-26fbd92f1112).
@@ -160,25 +160,39 @@ Thanks to Arc Sosangyo for his great blog post about `awk`. All the `awk` on thi
 Print the first X lines:
 
 ```bash
-head -n $NUMBER_OF_LINES_TO_PRINT $FILENAME
+head -n $NUMBER_OF_LINES_TO_PRINT $FILE_PATH
 ```
 
 Print all except the last X lines:
 
 ```bash
-head -n -$NUMBER_OF_LINES_NOT_TO_PRINT $FILENAME
+head -n -$NUMBER_OF_LINES_NOT_TO_PRINT $FILE_PATH
 ```
 
 Print the X first bytes:
 
 ```bash
-head -c $NUMBER_OF_BYTES_TO_PRINT $FILENAME
+head -c $NUMBER_OF_BYTES_TO_PRINT $FILE_PATH
 ```
 
 Print all except the last X bytes:
 
 ```bash
-head -c -$NUMBER_OF_BYTES_NOT_TO_PRINT $FILENAME
+head -c -$NUMBER_OF_BYTES_NOT_TO_PRINT $FILE_PATH
+```
+
+## Check logs
+
+Follow logs that are appended to a file:
+
+```bash
+tail -f $FILE_PATH
+```
+
+Retry to follow logs (useful when the file has not yet been created):
+
+```bash
+tail -f $FILE_PATH --retry
 ```
 
 ## Manage Environment variables
