@@ -5,7 +5,25 @@
 Connect to a server through a Bastion:
 
 ```bash
-ssh -t $BASTION_SERVER ssh $FINAL_SERVER
+ssh -t $BASTION_SSH_HOST ssh $FINAL_SSH_HOST
+```
+
+Connect using a specific private key:
+
+```bash
+ssh -i $PATH_TO_THE_PRIVATE_KEY $USER@$SSH_HOST
+```
+
+Skipping the known host check:
+
+```bash
+sh -o StrictHostKeyChecking=no $USER@$SSH_HOST
+```
+
+Executing cmds via SSH:
+
+```bash
+ssh -t $USER@$SSH_HOST $CMD
 ```
 
 ## SSH Keys
