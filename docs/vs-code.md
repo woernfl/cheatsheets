@@ -34,6 +34,7 @@ Here is the list of extentions I usually use:
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
+- [TODO Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -45,6 +46,7 @@ Here is the list of extentions I usually use:
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Kite](https://marketplace.visualstudio.com/items?itemName=kiteco.kite)
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+- [Box Comment](https://marketplace.visualstudio.com/items?itemName=polymermallard.box-comment)
 - [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
 Here is how to install this extentions using the VS Code Quick Open (Ctrl+P):
@@ -53,6 +55,7 @@ Here is how to install this extentions using the VS Code Quick Open (Ctrl+P):
 ext install yzhang.markdown-all-in-one
 ext install DavidAnson.vscode-markdownlint
 ext install wayou.vscode-todo-highlight
+ext install Gruntfuggly.todo-tree
 ext install ms-azuretools.vscode-docker
 ext install HashiCorp.terraform
 ext install esbenp.prettier-vscode
@@ -64,5 +67,6 @@ ext install AquaSecurityOfficial.trivy-vulnerability-scanner
 ext install streetsidesoftware.code-spell-checker
 ext install kiteco.kite
 ext install aaron-bond.better-comments
+ext install polymermallard.box-comment
 ext install ms-vscode-remote.remote-ssh
 ```
