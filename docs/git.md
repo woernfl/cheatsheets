@@ -56,6 +56,30 @@ Create a branch:
 git checkout -b $BRANCH_NAME
 ```
 
+## Standardise commit messages
+
+Using [Commitizen](https://github.com/commitizen/cz-cli) to have a common format.
+
+Install `commitizen` globally:
+
+```bash
+npm install -g commitizen
+```
+
+Install the commitizen adapter globally:
+
+```bash
+npm install -g cz-conventional-changelog
+```
+
+Create a `.czrc` file in the home directory, with the path referring to the preferred, globally-installed, `commitizen` adapter:
+
+```bash
+echo "{ \"path\": \"$(npm root -g)/cz-conventional-changelog\" }" > ~/.czrc
+```
+
+Now, use `git cz`to handle the commit.
+
 ## Check differences
 
 Check all changes since last commit:
