@@ -329,11 +329,13 @@ Trigger the CI without making changes to the code base:
 git commit --allow-empty -s -m "Trigger CI"
 ```
 
-## Aliases
+## Git config
 
 To set the git aliases, used `git config --global --edit`:
 
 ```bash
+[color]
+     ui = true
 [alias]
      lop = log --pretty=format:"%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s" --date=short
      lod = log --graph --decorate --pretty=oneline --abbrev-commit --all
