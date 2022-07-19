@@ -122,6 +122,12 @@ List the node taints:
 kubectl get nodes -o custom-columns=NAME:.metadata.name,TAINTS:.spec.taints
 ```
 
+List the nodes with there labels:
+
+```bash
+kubectl get nodes --show-labels
+```
+
 ## Job managment
 
 Create a job from a cronjob
