@@ -19,6 +19,8 @@ Shortcut      | Action
 ------------- | ------------- 
 Ctrl + Cmd + Q| Lock the screen
 Cmd + Maj + R | Reload the navigator window
+Cmd + Maj + D | Once in the finder, go to Desktop
+Cmd + Maj + H | Once in the finder, go to Home
 
 ## Package managment
 
