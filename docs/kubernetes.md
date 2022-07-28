@@ -187,6 +187,12 @@ kubectl -n $NAMESPACE get secret $SECRET_NAME -o jsonpath="{.data.$SECRET_PATH}"
 kubectl -n $NAMESPACE get secret $SECRET_NAME -o 'go-template={{index .data "$SECRET_PATH"}}' | base64 --decode
 ```
 
+Force delete a namespace:
+
+```bash
+kubectl get ns $NAMESPACE -o json | jq '.spec.finalizers = []'| kubectl replace --raw "/api/v1/namespaces/$NAMESPACE/finalize" -f -
+```
+
 ## kubectl plugins
 
 ### krew
