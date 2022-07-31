@@ -14,13 +14,6 @@ One line `for` infinite loop:
 for (( t=1; ; t++ )); do echo "${t}"; done
 ```
 
-Find a file by it's name:
-
-```bash
-find / -name find.txt  # case sensitive
-find / -iname find.txt # case insensitive
-```
-
 Rerun your last command, but with sudo this time:
 
 ```bash
@@ -40,6 +33,21 @@ diff $FILE1 $FILE2
 ```
 
 ## Text processing
+
+### find
+
+Find a file by it's name:
+
+```bash
+find / -name find.txt  # case sensitive
+find / -iname find.txt # case insensitive
+```
+
+Find duplicate files based on the MD5 hash:
+
+```bash
+find -type f -exec  md5sum '{}' ';' |  sort |  uniq --all-repeated=separate -w 33 |  cut -c 35-
+```
 
 ### grep
 
