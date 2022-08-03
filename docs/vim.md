@@ -142,6 +142,24 @@ Go page down:
 Ctrl + d
 ```
 
+Go to the end of the current word:
+
+```bash
+e
+```
+
+Go to the beginning of the next word:
+
+```bash
+w
+```
+
+Go to the beginning of the previous word:
+
+```bash
+b
+```
+
 Go to the start of the line after whitespaces:
 
 ```bash
