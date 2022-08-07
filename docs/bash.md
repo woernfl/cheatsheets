@@ -370,11 +370,14 @@ set -euxo pipefail
 ```
 
 `-u`: fail on non-existing variable
+
 `-x`: print the command before running it
+
 `-e`: fail the script on command fail
+
 `-o pipefail`: fail the script on a command fail in a pipeline 
 
-Thanks to this (article)[https://link.medium.com/RNKDFHuOisb] for clearly explaining all this options.
+Thanks to this [article](https://link.medium.com/RNKDFHuOisb) for clearly explaining all this options.
 
 ### Conditional
 
