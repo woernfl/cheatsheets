@@ -56,6 +56,12 @@ Create a branch:
 git checkout -b $BRANCH_NAME
 ```
 
+Search some code in the git history:
+
+```bash
+git rev-list --all | xargs git grep -F ‘$STRING_TO_SEARCH’
+```
+
 ## Standardise commit messages
 
 Using [Commitizen](https://github.com/commitizen/cz-cli) to have a common format.
@@ -194,6 +200,12 @@ Copy a file from a branch to the current one:
 
 ```bash
 git checkout $BRANCH_TO_COPY_FROM $PATH_OF_THE_FILE_TO_COPY
+```
+
+Delete local branch that has been deleted remotely:
+
+```bash
+git branch --merged master | grep -v "master" | xargs -n 1 git branch -d
 ```
 
 ## Start a new git repository
