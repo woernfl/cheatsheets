@@ -269,6 +269,16 @@ Listen on UDP packet recieved by an host:
 sudo tcpdump udp port $PORT_TO_LISTEN_ON -vv -X
 ```
 
+List all programs listing on a port:
+
+```bash
+# On a specific port
+lsof -i:$PORT
+
+# For all ports
+lsof -i
+```
+
 ## Volume management
 
 Check disk usage:
