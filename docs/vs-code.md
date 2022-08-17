@@ -85,3 +85,26 @@ ext install aaron-bond.better-comments
 ext install polymermallard.box-comment
 ext install ms-vscode-remote.remote-ssh
 ```
+
+Or via your terminal:
+
+```bash
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension wayou.vscode-todo-highlight
+code --install-extension Gruntfuggly.todo-tree
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension HashiCorp.terraform
+code --install-extension esbenp.prettier-vscode
+code --install-extension oderwat.indent-rainbow
+code --install-extension redhat.vscode-yaml
+code --install-extension mikestead.dotenv
+code --install-extension ms-python.python
+code --install-extension codezombiech.gitignore
+code --install-extension AquaSecurityOfficial.trivy-vulnerability-scanner
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension kiteco.kite
+code --install-extension aaron-bond.better-comments
+code --install-extension polymermallard.box-comment
+code --install-extension ms-vscode-remote.remote-ssh
+```
