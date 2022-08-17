@@ -39,14 +39,26 @@ diff $FILE1 $FILE2
 Find a file by it's name:
 
 ```bash
-find / -name find.txt  # case sensitive
-find / -iname find.txt # case insensitive
+find / -name $FILE_NAME # case sensitive
+find / -iname $FILE_NAME # case insensitive
+```
+
+Find files containing an expression recursively:
+
+```bash
+find . -type f -exec grep -l "$SEARCH_EXPRESSION" {} \;
 ```
 
 Find duplicate files based on the MD5 hash:
 
 ```bash
 find -type f -exec  md5sum '{}' ';' |  sort |  uniq --all-repeated=separate -w 33 |  cut -c 35-
+```
+
+Delete file older that a certain number of days:
+
+```bash
+find . -type f -mtime +$NUMBER_OF_DAYS -exec rm {} \;
 ```
 
 ### grep
@@ -450,6 +462,20 @@ Infinity `for` loop:
 for (( ; ; )); do
   echo "Infinite loop [hit CTRL+C to stop]"
 done
+```
+
+Print the time it took for some code to be executed:
+
+```bash
+#!/bin/bash
+
+start_time=$(date +%s)
+
+# some code here
+
+end_time=$(date +%s)
+
+echo "Took $(($end_time - $start_time)) seconds to complete"
 ```
 
 ### Create strucutured logs
