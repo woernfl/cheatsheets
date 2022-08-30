@@ -7,11 +7,11 @@
 Symbole | FR Shortcut     | CH DE Shortcut
 ------- | --------------- | ----------- 
 \|      | Alt + Maj + L   | Alt + 7
-\       | Alt + Maj + /   | 
-[       | Alt + Maj + (   |
-]       | Alt + Maj + )   |
-{       | Alt + (         |
-}       | Alt + )         |
+\       | Alt + Maj + /   | Alt + Maj + 7
+[       | Alt + Maj + (   | Alt + 5
+]       | Alt + Maj + )   | Alt + 6
+{       | Alt + (         | Alt + 8
+}       | Alt + )         | Alt + 9
  
 ### Systeme
 
