@@ -32,6 +32,12 @@ Check the difference between 2 files:
 diff $FILE1 $FILE2
 ```
 
+Get the absolute path of a file:
+
+```bash
+readink -f $FILE
+```
+
 ## Text processing
 
 ### find
