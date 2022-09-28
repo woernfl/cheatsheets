@@ -102,6 +102,12 @@ Print limits and requests of each pod:
 kubectl get pods -n $NAMESPACE -o=custom-columns='NAME:spec.containers[*].name,MEMREQ:spec.containers[*].resources.requests.memory,MEMLIM:spec.containers[*].resources.limits.memory,CPUREQ:spec.containers[*].resources.requests.cpu,CPULIM:spec.containers[*].resources.limits.cpu'
 ```
 
+Delete all the pods of a given namespace:
+
+```bash
+kubectl -n $NAMESPACE delete --all pods
+```
+
 ## Node managment
 
 Get the list of nodes and their memory size:
