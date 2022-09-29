@@ -142,6 +142,14 @@ Create a job from a cronjob
 kubectl create job --from=cronjobs.batch/$CRONJOB_NAME $JOB_NAME 
 ```
 
+## Kustomize
+
+To generate the manifest before applying it:
+
+```bash
+kubectl apply -k . --dry-run=client -o yaml > tmp.yaml
+```
+
 ## To debug
 
 Follow logs of multiple pods:
