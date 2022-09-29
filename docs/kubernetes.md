@@ -147,7 +147,7 @@ kubectl create job --from=cronjobs.batch/$CRONJOB_NAME $JOB_NAME
 To generate the manifest before applying it:
 
 ```bash
-kubectl apply -k . --dry-run=client -o yaml > tmp.yaml
+kubectl kustomize -o tmp.yaml
 ```
 
 ## To debug
