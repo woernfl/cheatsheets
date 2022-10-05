@@ -75,7 +75,6 @@ ext install HashiCorp.terraform
 ext install esbenp.prettier-vscode
 ext install oderwat.indent-rainbow
 ext install redhat.vscode-yaml
-ext install mikestead.dotenv
 ext install ms-python.python
 ext install codezombiech.gitignore
 ext install AquaSecurityOfficial.trivy-vulnerability-scanner
@@ -98,7 +97,6 @@ code --install-extension HashiCorp.terraform
 code --install-extension esbenp.prettier-vscode
 code --install-extension oderwat.indent-rainbow
 code --install-extension redhat.vscode-yaml
-code --install-extension mikestead.dotenv
 code --install-extension ms-python.python
 code --install-extension codezombiech.gitignore
 code --install-extension AquaSecurityOfficial.trivy-vulnerability-scanner
