@@ -22,8 +22,8 @@ fi
 alias hg='echo "Use !\$CMD_HISTORY_NUM to run the specific cmd" && history|grep'
 alias ll='ls -lah'
 alias gitcred='git config credential.helper store'
-alias update='sudo apt-get update && sudo apt-get upgrade -y'
 alias gitbrclean='git remote prune'
+alias update='sudo apt-get update && sudo apt-get upgrade -y'
 ```
 
 ## Setup a personal folder to store binaries
