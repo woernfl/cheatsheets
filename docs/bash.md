@@ -335,6 +335,12 @@ Extend the size of the Logical Volume to the use all the free space:
 sudo lvextend -l +100%FREE $LV_PATH
 ```
 
+Resize the size of file system to the use all the free space:
+
+```bash
+sudo resize2fs $LV_PATH
+```
+
 ## Archiving files
 
 Create a tar:
