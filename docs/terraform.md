@@ -26,7 +26,7 @@ terraform apply -var-file=dev.terraform.tfvars -auto-approve
 Apply modifications on a specific ressource:
 
 ```bash
-terraform apply -target="aws_eks_node_group.eks-worker" -var-file=dev.terraform.tfvars -auto-approve
+terraform apply -target="aws_eks_node_group.eks-worker[\"node-group\"]" -var-file=dev.terraform.tfvars -auto-approve
 ```
 
 Delete Terraform ressources:
