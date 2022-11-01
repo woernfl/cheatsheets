@@ -14,6 +14,10 @@ Create profil config:
 aws configure --profile $PROFILE_NAME
 ```
 
+```bash
+aws sts decode-authorization-message --encoded-message $ENCODED_MESSAGE | jq -r .DecodedMessage | sed 's/\\"/"/g' | jq .
+```
+
 ## Environment variables
 
 `AWS_ACCESS_KEY_ID`
