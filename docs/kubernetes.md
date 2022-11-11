@@ -150,6 +150,14 @@ To generate the manifest before applying it:
 kubectl kustomize -o tmp.yaml
 ```
 
+## Monitoring
+
+Get raw metrics from the API server:
+
+```bash
+kubectl get --raw /metrics
+```
+
 ## To debug
 
 Follow logs of multiple pods:
