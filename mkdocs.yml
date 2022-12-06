@@ -34,6 +34,6 @@ plugins:
   - search
   - git-revision-date-localized:
       type: datetime
-      time_zone: Europe/Paris
+      timezone: Europe/Paris
       locale: fr
       fallback_to_build_date: true
