@@ -19,3 +19,9 @@ Get all the informations available on a release:
 ```bash
 helm get all $RELEASE_NAME
 ```
+
+Get the status of a release:
+
+```bash
+helm status $RELEASE_NAME
+```
