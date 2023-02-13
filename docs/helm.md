@@ -25,3 +25,9 @@ Get the status of a release:
 ```bash
 helm status $RELEASE_NAME
 ```
+
+Get the status of a release:
+
+```bash
+helm upgrade --install --namespace=$NAMESPACE_NAME --values=values.yaml $RELEASE_NAME $CHART_NAME
+```
