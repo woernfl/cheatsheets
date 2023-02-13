@@ -26,6 +26,14 @@ Get really all the ressources of a specific namespace:
 kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=myapp -n $NAMESPACE
 ```
 
+## Namespace managment
+
+Namespace creation:
+
+```bash
+kubectl create namespace $NAMESPACE_NAME
+```
+
 ## Deployment managment
 
 Restart a rollout:
