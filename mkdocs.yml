@@ -3,6 +3,10 @@ theme:
   name: material
   logo: assets/images/logo.png
   favicon: assets/images/logo.png
+  icon:
+    edit: material/pencil
+  features:
+    - content.action.edit
 
 repo_name: 'woernfl/cheatsheets'
 repo_url: 'https://github.com/woernfl/cheatsheets'
