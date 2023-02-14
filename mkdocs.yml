@@ -54,4 +54,4 @@ plugins:
       type: datetime
       fallback_to_build_date: true
       timezone: Europe/Paris
-      locale: fr
+      locale: ga
