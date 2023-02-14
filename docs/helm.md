@@ -31,3 +31,9 @@ Get the status of a release:
 ```bash
 helm upgrade --install --namespace=$NAMESPACE_NAME --values=values.yaml $RELEASE_NAME $CHART_NAME
 ```
+
+Delete a release:
+
+```bash
+helm uninstall --namespace=$NAMESPACE_NAME $RELEASE_NAME
+```
