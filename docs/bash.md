@@ -38,6 +38,12 @@ Get the absolute path of a file:
 readink -f $FILE
 ```
 
+Become root:
+
+```bash
+sudo su –
+```
+
 ## Text processing
 
 ### find
