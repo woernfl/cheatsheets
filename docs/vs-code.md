@@ -58,7 +58,6 @@ Here is the list of extentions I usually use:
 - [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
 - [Trivy](https://marketplace.visualstudio.com/items?itemName=AquaSecurityOfficial.trivy-vulnerability-scanner)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [Kite](https://marketplace.visualstudio.com/items?itemName=kiteco.kite)
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 - [Box Comment](https://marketplace.visualstudio.com/items?itemName=polymermallard.box-comment)
 - [Groovy](https://marketplace.visualstudio.com/items?itemName=MellowMarshmallow.groovy)
@@ -80,7 +79,6 @@ ext install ms-python.python
 ext install codezombiech.gitignore
 ext install AquaSecurityOfficial.trivy-vulnerability-scanner
 ext install streetsidesoftware.code-spell-checker
-ext install kiteco.kite
 ext install aaron-bond.better-comments
 ext install polymermallard.box-comment
 ext install MellowMarshmallow.groovy
@@ -103,7 +101,6 @@ code --install-extension ms-python.python
 code --install-extension codezombiech.gitignore
 code --install-extension AquaSecurityOfficial.trivy-vulnerability-scanner
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension kiteco.kite
 code --install-extension aaron-bond.better-comments
 code --install-extension polymermallard.box-comment
 code --install-extension MellowMarshmallow.groovy
