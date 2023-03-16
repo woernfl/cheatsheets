@@ -208,6 +208,12 @@ Delete local branch that has been deleted remotely:
 git branch --merged master | grep -v "master" | xargs -n 1 git branch -d
 ```
 
+Delete local branch that are not `master`:
+
+```bash
+git branch | grep -v "master" | xargs -n 1 git branch -d
+```
+
 ## Start a new git repository
 
 ```bash
