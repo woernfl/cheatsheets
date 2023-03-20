@@ -205,13 +205,13 @@ git checkout $BRANCH_TO_COPY_FROM $PATH_OF_THE_FILE_TO_COPY
 Delete local branch that has been deleted remotely:
 
 ```bash
-git branch --merged master | grep -v "master" | xargs -n 1 git branch -d
+git branch --merged master | grep -E -v "master|main" | xargs -n 1 git branch -d
 ```
 
 Delete local branch that are not `master`:
 
 ```bash
-git branch | grep -v "master" | xargs -n 1 git branch -d
+git branch | grep -E -v "master|main" | xargs -n 1 git branch -d
 ```
 
 ## Start a new git repository
