@@ -23,6 +23,7 @@ alias hg='echo "Use !\$CMD_HISTORY_NUM to run the specific cmd" && history|grep'
 alias ll='ls -lah'
 alias gitcred='git config credential.helper store'
 alias gitcredunset='git config --unset credential.helper store'
+alias gitbranchclean='git branch | grep -E -v "master|main" | xargs -n 1 git branch -d'
 alias update='sudo apt-get update && sudo apt-get upgrade -y'
 ```
 
