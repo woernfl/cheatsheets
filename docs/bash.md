@@ -44,6 +44,12 @@ Become root:
 sudo su –
 ```
 
+Become any user without typing a password:
+
+```bash
+sudo su $USER_NAME
+```
+
 ## Text processing
 
 ### find
