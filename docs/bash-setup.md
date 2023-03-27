@@ -25,6 +25,7 @@ alias gitcred='git config credential.helper store'
 alias gitcredunset='git config --unset credential.helper store'
 alias gitbranchclean='git branch | grep -E -v "master|main" | xargs -n 1 git branch -d'
 alias update='sudo apt-get update && sudo apt-get upgrade -y'
+alias tmp='rm -rf tmp/ && mkdir tmp && cd tmp/'
 ```
 
 ## Setup a personal folder to store binaries
