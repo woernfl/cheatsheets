@@ -4,7 +4,7 @@
 
 How to escape double quotes:
 
-```grovy
+```bash
 sh """ echo \\"someTest\\" """
 ```
 
@@ -12,7 +12,7 @@ sh """ echo \\"someTest\\" """
 
 Basic environments block:
 
-```grovy
+```bash
 environment {
   TARGET_ENV = "dev"
 }
@@ -20,7 +20,7 @@ environment {
 
 Accessing an env variable:
 
-```grovy
+```bash
 steps {
   echo "TARGET_ENV = ${env.TARGET_ENV}"
 
@@ -38,7 +38,7 @@ steps {
 
 Set the value of an env varible using a `sh` command output:
 
-```grovy
+```bash
 environment {
   DATE = sh(returnStdout: true, script: ''' date --rfc-3339=seconds | sed 's/ /T/' ''').trim()
 }
