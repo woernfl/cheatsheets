@@ -251,6 +251,14 @@ Print all except the last X bytes:
 head -c -$NUMBER_OF_BYTES_NOT_TO_PRINT $FILE_PATH
 ```
 
+### cut
+
+Print the second field, fields being delimited by `:`:
+
+```bash
+cut -f2 -d":"
+```
+
 ## Check logs
 
 Follow logs that are appended to a file:
