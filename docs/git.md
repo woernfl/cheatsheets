@@ -366,8 +366,17 @@ git log
 # once you've found your commit, save the hash
 git revert [saved hash]
 # git will create a new commit that undoes that commit
-# follow prompts to edit the commit message
-# or just save and commit
+```
+
+I need to undo a commit from like 5 commit ago, and I want to review the changes made by the revert statement before committing them:
+
+```bash
+# find the commit you need to undo
+git log
+# use the arrow keys to scroll up and down in history
+# once you've found your commit, save the hash
+git revert --no-commit [saved hash]
+# git will not create a new commit that undoes that commit
 ```
 
 I need to undo my changes to a file:
