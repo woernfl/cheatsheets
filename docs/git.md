@@ -357,6 +357,13 @@ git commit -m "your message here";
 # now your changes are on the correct branch
 ```
 
+I need to undo the last commit:
+
+```bash
+git revert HEAD
+# git will create a new commit that undoes the last commit
+```
+
 I need to undo a commit from like 5 commits ago:
 
 ```bash
