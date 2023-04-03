@@ -360,7 +360,7 @@ git commit -m "your message here";
 I need to undo the last commit:
 
 ```bash
-git revert HEAD
+git revert --no-edit HEAD
 # git will create a new commit that undoes the last commit
 ```
 
@@ -371,7 +371,18 @@ I need to undo a commit from like 5 commits ago:
 git log
 # use the arrow keys to scroll up and down in history
 # once you've found your commit, save the hash
-git revert [saved hash]
+git revert --edit [saved hash]
+# git will create a new commit that undoes that commit with the message you will have specified
+```
+
+I need to undo a commit from like 5 commits ago:
+
+```bash
+# find the commit you need to undo
+git log
+# use the arrow keys to scroll up and down in history
+# once you've found your commit, save the hash
+git revert --no-edit [saved hash]
 # git will create a new commit that undoes that commit
 ```
 
