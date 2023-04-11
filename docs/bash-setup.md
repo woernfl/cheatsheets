@@ -26,6 +26,10 @@ alias gitcredunset='git config --unset credential.helper store'
 alias gitbranchclean='git branch | grep -E -v "master|main" | xargs -n 1 git branch -d'
 alias update='sudo apt-get update && sudo apt-get upgrade -y'
 alias tmp='rm -rf tmp/ && mkdir tmp && cd tmp/'
+
+gitclonecd() {
+  git clone "$1" && cd "$(basename "$1" .git)"
+}
 ```
 
 ## Setup a personal folder to store binaries
