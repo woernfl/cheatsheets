@@ -164,10 +164,16 @@ git rev-list --count $BRANCH_NAME
 
 ## Branch managment
 
-Delete local branche:
+Delete local branch:
 
 ```bash
 git branch -d $BRANCH_NAME
+```
+
+Delete remote branch:
+
+```bash
+git push origin --delete $BRANCH_NAME
 ```
 
 Pulls the changes from the remote branch to the local branch and makes a merge:
