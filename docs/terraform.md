@@ -7,26 +7,26 @@ Initialize Terraform:
 ```bash
 terraform init
 # To use a file to describe backend configuration
-terraform init -backend-config=dev.backend.tfvars
+terraform init -backend-config=vars/dev.backend.tfvars
 ```
 
 Check what will be modfied:
 
 ```bash
 terraform plan -out=tfplan .
-terraform plan -var-file=dev.terraform.tfvars
+terraform plan -var-file=vars/dev.terraform.tfvars
 ```
 
 Apply modifications:
 
 ```bash
-terraform apply -var-file=dev.terraform.tfvars -auto-approve
+terraform apply -var-file=vars/dev.terraform.tfvars -auto-approve
 ```
 
 Apply modifications on a specific ressource:
 
 ```bash
-terraform apply -target="aws_eks_node_group.eks-worker[\"node-group\"]" -var-file=dev.terraform.tfvars -auto-approve
+terraform apply -target="aws_eks_node_group.eks-worker[\"node-group\"]" -var-file=vars/dev.terraform.tfvars -auto-approve
 ```
 
 Delete Terraform ressources:
