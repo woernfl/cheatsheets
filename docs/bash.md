@@ -149,13 +149,13 @@ Display replaced lines only:
 sed -n 's/$SEARCH_STRING/$REPLACEMENT_STRING/p' $FILE_PATH
 ```
 
-Delete lines:
+Delete blank lines:
 
 ```bash
 sed '/^$/d' $FILE_PATH
 ```
 
-Delete blank lines:
+Delete lines:
 
 ```bash
 sed '/$SEARCH_STRING/d' $FILE_PATH
