@@ -137,6 +137,12 @@ Replace a string by an other one in a particular line:
 sed '$LINE_NUMBER s/$SEARCH_STRING/$REPLACEMENT_STRING/g' $FILE_PATH
 ```
 
+Delete a string:
+
+```bash
+sed -e "s/TLSv1, TLSv1.1, //g" -i $FILE_PATH
+```
+
 Display replaced lines only:
 
 ```bash
