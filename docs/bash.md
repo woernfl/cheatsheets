@@ -317,10 +317,16 @@ List all programs listing on a port:
 
 ```bash
 # On a specific port
-lsof -i:$PORT
+ss -tulpnat '( dport = :$PORT or sport = :$PORT )'
 
 # For all ports
-lsof -i
+ss -tualpn
+```
+
+Display connection summary:
+
+```
+ss -s
 ```
 
 ## Volume management
