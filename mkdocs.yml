@@ -11,6 +11,7 @@ theme:
     - navigation.instant
     - search.suggest
     - search.highlight
+    - content.code.copy
 
 repo_name: 'woernfl/cheatsheets'
 repo_url: 'https://github.com/woernfl/cheatsheets'
