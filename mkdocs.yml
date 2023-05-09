@@ -1,4 +1,5 @@
 site_name: Cheatsheets
+site_url: https://cheatsheets.woernfl.xyz
 theme:
   name: material
   language: en
