@@ -122,6 +122,20 @@ awk '!/$KEYWORD/' $FILE_PATH
 
 Thanks to Arc Sosangyo for his great blog post about `awk`. All the `awk` on this page come from [here](https://betterprogramming.pub/10-practical-use-of-awk-command-in-linux-unix-26fbd92f1112).
 
+### cat
+
+Concatenate 2 files:
+
+```bash
+cat $FILE_1 $FILE_2 > $FILE_1+2
+```
+
+Display the content of a file with line numbres:
+
+```bash
+cat -n $FILE_NAME
+```
+
 ### cut
 
 Print the second field, fields being delimited by `:`:
@@ -227,6 +241,34 @@ Print all except the last X bytes:
 head -c -$NUMBER_OF_BYTES_NOT_TO_PRINT $FILE_PATH
 ```
 
+### ls
+
+List folders and subfolders:
+
+```bash
+ls -R
+```
+
+Display size in a human redable format:
+
+```bash
+ls -lh
+```
+
+### mkdir
+
+Create multiple folders:
+
+```bash
+mkdir $FOLDER_NAME_1 $FOLDER_NAME_2 $FOLDER_NAME_3
+```
+
+Create multiples folders ending with numbers:
+
+```bash
+mkdir $FOLDER_NAME_{1..10}
+```
+
 ### sed
 
 Replace a string by an other one:
@@ -264,6 +306,23 @@ Delete lines:
 ```bash
 sed '/$SEARCH_STRING/d' $FILE_PATH
 ```
+
+## File permission
+
+Here is who has which permission
+
+| owner | group | others |
+
+|  | 4 | 2 | 1 |  |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| 0 | - | - | - | no permissions |
+| 1 | - | - | x | only execute |
+| 2 | - | w | - | only write |
+| 3 | - | w | x | writte and execute |
+| 4 | r | - | - | only read |
+| 5 | r | - | x | read and execute |
+| 6 | r | w | - | read and writte |
+| 7 | r | w | x | read, writte and execute |
 
 ## Check logs
 
