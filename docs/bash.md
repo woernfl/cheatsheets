@@ -312,6 +312,10 @@ sed '/$SEARCH_STRING/d' $FILE_PATH
 Here is who has which permission
 
 | owner | group | others |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| owner | group | others |
+
+Permissions list:
 
 |  | 4 | 2 | 1 |  |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
