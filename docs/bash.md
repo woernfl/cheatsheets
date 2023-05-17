@@ -50,7 +50,85 @@ Become any user without typing a password:
 sudo su $USER_NAME
 ```
 
-## Text processing
+## Basic commands
+
+### awk
+
+Search for a specific keyword:
+
+```bash
+awk '/$KEYWORD/' $FILE_PATH
+```
+
+Show specific a column only:
+
+```bash
+awk '{print $COLUMN_NUMBER}' $FILE_PATH
+```
+
+Show multiple columns:
+
+```bash
+awk '{print $COLUMN_NUMBER,$COLUMN_NUMBER}' $FILE_PATH
+```
+
+Show multiple columns without the whitespace between them:
+
+```bash
+awk '{print $COLUMN_NUMBER$COLUMN_NUMBER}' $FILE_PATH
+```
+
+Customize results using different characters as separators:
+
+```bash
+awk '{print $COLUMN_NUMBER "$SEPARATOR" $COLUMN_NUMBER}' $FILE_PATH
+```
+
+Combine search and column filtering:
+
+```bash
+awk '/$KEYWORD/ {print $COLUMN_NUMBER}' $FILE_PATH
+```
+
+Use a simple conditional statement:
+
+```bash
+awk '{if ($COLUMN_NUMBER expression $NUMBER) print $COLUMN_NUMBER}' $FILE_PATH
+```
+
+Use a different field separator. By default, AWK separates columns via white spaces:
+
+```bash
+awk -F '$SEPARATOR' '$STATEMENT' $FILE_PATH
+```
+
+Show results that should have all the specified keywords by using "and":
+
+```bash
+awk '/$KEYWORD/ && /$KEYWORD/' $FILE_PATH
+```
+
+Show results that should have any of the specified keywords by using “or”:
+
+```bash
+awk '/$KEYWORD/ || /$KEYWORD/' $FILE_PATH
+```
+
+Show everything except for the specified keyword using “not”:
+
+```bash
+awk '!/$KEYWORD/' $FILE_PATH
+```
+
+Thanks to Arc Sosangyo for his great blog post about `awk`. All the `awk` on this page come from [here](https://betterprogramming.pub/10-practical-use-of-awk-command-in-linux-unix-26fbd92f1112).
+
+### cut
+
+Print the second field, fields being delimited by `:`:
+
+```bash
+cut -f2 -d":"
+```
 
 ### find
 
@@ -123,6 +201,32 @@ Display the lines that are not matched:
 grep -v $KEYWORD $FILE_PATH
 ```
 
+### head
+
+Print the first X lines:
+
+```bash
+head -n $NUMBER_OF_LINES_TO_PRINT $FILE_PATH
+```
+
+Print all except the last X lines:
+
+```bash
+head -n -$NUMBER_OF_LINES_NOT_TO_PRINT $FILE_PATH
+```
+
+Print the X first bytes:
+
+```bash
+head -c $NUMBER_OF_BYTES_TO_PRINT $FILE_PATH
+```
+
+Print all except the last X bytes:
+
+```bash
+head -c -$NUMBER_OF_BYTES_NOT_TO_PRINT $FILE_PATH
+```
+
 ### sed
 
 Replace a string by an other one:
@@ -159,110 +263,6 @@ Delete lines:
 
 ```bash
 sed '/$SEARCH_STRING/d' $FILE_PATH
-```
-
-### awk
-
-Search for a specific keyword:
-
-```bash
-awk '/$KEYWORD/' $FILE_PATH
-```
-
-Show specific a column only:
-
-```bash
-awk '{print $COLUMN_NUMBER}' $FILE_PATH
-```
-
-Show multiple columns:
-
-```bash
-awk '{print $COLUMN_NUMBER,$COLUMN_NUMBER}' $FILE_PATH
-```
-
-Show multiple columns without the whitespace between them:
-
-```bash
-awk '{print $COLUMN_NUMBER$COLUMN_NUMBER}' $FILE_PATH
-```
-
-Customize results using different characters as separators:
-
-```bash
-awk '{print $COLUMN_NUMBER "$SEPARATOR" $COLUMN_NUMBER}' $FILE_PATH
-```
-
-Combine search and column filtering:
-
-```bash
-awk '/$KEYWORD/ {print $COLUMN_NUMBER}' $FILE_PATH
-```
-
-Use a simple conditional statement:
-
-```bash
-awk '{if ($COLUMN_NUMBER expression $NUMBER) print $COLUMN_NUMBER}' $FILE_PATH
-```
-
-Use a different field separator. By default, AWK separates columns via white spaces:
-
-```bash
-awk -F '$SEPARATOR' '$STATEMENT' $FILE_PATH
-```
-
-Show results that should have all the specified keywords by using "and":
-
-```bash
-awk '/$KEYWORD/ && /$KEYWORD/' $FILE_PATH
-```
-
-Show results that should have any of the specified keywords by using “or”:
-
-```bash
-awk '/$KEYWORD/ || /$KEYWORD/' $FILE_PATH
-```
-
-Show everything except for the specified keyword using “not”:
-
-```bash
-awk '!/$KEYWORD/' $FILE_PATH
-```
-
-Thanks to Arc Sosangyo for his great blog post about `awk`. All the `awk` on this page come from [here](https://betterprogramming.pub/10-practical-use-of-awk-command-in-linux-unix-26fbd92f1112).
-
-### head
-
-Print the first X lines:
-
-```bash
-head -n $NUMBER_OF_LINES_TO_PRINT $FILE_PATH
-```
-
-Print all except the last X lines:
-
-```bash
-head -n -$NUMBER_OF_LINES_NOT_TO_PRINT $FILE_PATH
-```
-
-Print the X first bytes:
-
-```bash
-head -c $NUMBER_OF_BYTES_TO_PRINT $FILE_PATH
-```
-
-Print all except the last X bytes:
-
-```bash
-head -c -$NUMBER_OF_BYTES_NOT_TO_PRINT $FILE_PATH
-```
-
-### cut
-
-Print the second field, fields being delimited by `:`:
-
-```bash
-cut -f2 -d":"
 ```
 
 ## Check logs
