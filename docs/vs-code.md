@@ -35,7 +35,8 @@
     "editor.formatOnSaveMode": "file"
   },
   "markdownlint.config": {
-    "MD033": false
+    "MD033": false,
+    "MD034": false
   },
   "explorer.confirmDragAndDrop": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
