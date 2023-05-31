@@ -34,6 +34,9 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file"
   },
+  "markdownlint.config": {
+    "MD033": false
+  },
   "explorer.confirmDragAndDrop": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "redhat.telemetry.enabled": false
