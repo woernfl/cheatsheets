@@ -14,6 +14,8 @@ Create profil config:
 aws configure --profile $PROFILE_NAME
 ```
 
+Decode an encrypted error message:
+
 ```bash
 aws sts decode-authorization-message --encoded-message $ENCODED_MESSAGE | jq -r .DecodedMessage | sed 's/\\"/"/g' | jq .
 ```
