@@ -223,6 +223,18 @@ Force delete a namespace:
 kubectl get ns $NAMESPACE -o json | jq '.spec.finalizers = []'| kubectl replace --raw "/api/v1/namespaces/$NAMESPACE/finalize" -f -
 ```
 
+To run a command in a container that is failling right after it's start:
+
+```yaml
+spec:
+  containers:
+    - name: fluent-bit
+      image: public.ecr.aws/aws-observability/aws-for-fluent-bit:stable
+      # Add a custom sh command
+      command: ["/bin/sh"]
+      args: ["-c", "cat /fluent-bit/etc/fluent-bit.conf"]
+```
+
 ## kubectl plugins
 
 ### krew
