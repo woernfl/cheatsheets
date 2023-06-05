@@ -15,13 +15,13 @@ Symbole | FR Shortcut     | CH DE Shortcut
  
 ### Systeme
 
-Shortcut           | Action
------------------- | ------------- 
-Ctrl + Cmd + Q     | Lock the screen
-Cmd + Maj + R      | Reload the navigator window
-Cmd + Alt+ Maj + V | Reload the navigator window
-Cmd + Maj + D      | Once in the finder, go to Desktop
-Cmd + Maj + H      | Once in the finder, go to Home
+Shortcut            | Action
+------------------- | ------------- 
+Ctrl + Cmd + Q      | Lock the screen
+Cmd + Alt + Maj + V | Past whithout formatting
+Cmd + Maj + R       | Reload the navigator window
+Cmd + Maj + D       | Once in the finder, go to Desktop
+Cmd + Maj + H       | Once in the finder, go to Home
 
 ## Package managment
 
