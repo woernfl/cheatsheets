@@ -23,6 +23,12 @@ Apply modifications:
 terraform apply -var-file=vars/dev.terraform.tfvars -auto-approve
 ```
 
+Get the list of existing ressources:
+
+```bash
+terraform state list
+```
+
 Apply modifications on a specific ressource:
 
 ```bash
