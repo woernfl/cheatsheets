@@ -2,6 +2,12 @@
 
 ## Basic actions
 
+Install or update the CDK cli:
+
+```bash
+sudo npm install -g aws-cdk@latest
+```
+
 Initialise the code:
 
 ```bash
