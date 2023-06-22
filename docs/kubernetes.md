@@ -82,8 +82,16 @@ kubectl get secrets -o json --namespace $NAMESPACE_OLD | jq '.items[].metadata.n
 
 ## Pod managment
 
+Watch pod events:
+
 ```bash
 kubectl get pods --watch --output-watch-events
+```
+
+Get the list of all non running pods:
+
+```bash
+kubectl get pod --field-selector=status.phase!=Running -A
 ```
 
 Get the list of pod with their CPU consumpsion:
