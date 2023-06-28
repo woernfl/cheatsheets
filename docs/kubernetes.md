@@ -158,6 +158,14 @@ Create a job from a cronjob
 kubectl create job --from=cronjobs.batch/$CRONJOB_NAME $JOB_NAME 
 ```
 
+## CRD managment
+
+list applied CRDs:
+
+```bash
+kubectl get crd
+```
+
 ## Kustomize
 
 To generate the manifest before applying it:
