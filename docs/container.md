@@ -1,6 +1,8 @@
-# Docker
+# Container
 
-## Basic actions
+## Docker
+
+### Basic actions
 
 Log in to a Docker registry:
 
@@ -20,3 +22,12 @@ Push multiple docker images:
 for t in $(docker images --format "{{.Repository}}:{{.Tag}} " | grep "$IMAGE_NAME"); do docker push "${t}"; done
 ```
 
+## ContainerD
+
+### Basic actions
+
+Pull an image:
+
+```bash
+ctr image pull $IMAGE_NAME
+```
