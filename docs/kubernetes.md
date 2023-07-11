@@ -77,7 +77,7 @@ kubectl create secret generic $SECRET_NAME --from-file=$KEY=$PATH_TO_FILE
 Copy a secret froma namespace to an other:
 
 ```bash
-kubectl get secrets -o json --namespace $NAMESPACE_OLD | jq '.items[].metadata.namespace = "$NAMESPACE_NEW"' | kubectl create-f  -
+kubectl get secrets $SECRET_NAME -o json --namespace $NAMESPACE_OLD | jq '.items[].metadata.namespace = "$NAMESPACE_NEW"' | kubectl create -f  -
 ```
 
 ## Pod managment
