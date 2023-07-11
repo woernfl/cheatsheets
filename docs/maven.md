@@ -72,6 +72,14 @@ Prints out the classpath needed to run:
 mvn dependency:build-classpath
 ```
 
+## To debug
+
+Get verbose logs (add `-X`):
+
+```bash
+mvn -X clean verify
+```
+
 ## Thanks
 
 Thanks to Jakob Jenkov for his work. Most of the info's on this page come from [here](https://jenkov.com/tutorials/maven/maven-commands.html)
