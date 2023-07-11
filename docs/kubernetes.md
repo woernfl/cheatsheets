@@ -26,6 +26,14 @@ Get really all the ressources of a specific namespace:
 kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=myapp -n $NAMESPACE
 ```
 
+## Generic actions
+
+Rename a ressource (the deployment ressource is an example, is working with other ressources also):
+
+```bash
+kubectl get deployment $RESSOURCE_NAME -o json | jq '.metadata.name = "$NEW_RESSOURCE_NAME"' | kubectl apply -f - && kubectl delete deployment $RESSOURCE_NAME
+```
+
 ## Namespace managment
 
 Namespace creation:
