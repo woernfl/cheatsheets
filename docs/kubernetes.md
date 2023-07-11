@@ -31,7 +31,7 @@ kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get
 Rename a ressource (the deployment ressource is an example, is working with other ressources also):
 
 ```bash
-kubectl get deployment $RESSOURCE_NAME -o json | jq '.metadata.name = "$NEW_RESSOURCE_NAME"' | kubectl apply -f - && kubectl delete deployment $RESSOURCE_NAME
+kubectl -n $NAMESPACE get deployment $RESSOURCE_NAME -o json | jq '.metadata.name = "$NEW_RESSOURCE_NAME"' | kubectl -n $NAMESPACE apply -f - && kubectl -n $NAMESPACE delete deployment $RESSOURCE_NAME
 ```
 
 ## Namespace managment
