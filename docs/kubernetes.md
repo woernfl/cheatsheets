@@ -82,6 +82,13 @@ Create a secret from a file:
 kubectl create secret generic $SECRET_NAME --from-file=$KEY=$PATH_TO_FILE
 ```
 
+Get the value of a Kubernetes secret:
+
+```bash
+kubectl -n $NAMESPACE get secret $SECRET_NAME -o jsonpath="{.data.$SECRET_PATH}" | base64 --decode
+kubectl -n $NAMESPACE get secret $SECRET_NAME -o 'go-template={{index .data "$SECRET_PATH"}}' | base64 --decode
+```
+
 Copy a secret from a namespace to an other:
 
 ```bash
@@ -232,13 +239,6 @@ Start shell in a running container:
 
 ```bash
 kubectl -n $NAMESPACE exec -it $POD_NAME -- /bin/bash
-```
-
-Get the value of a Kubernetes secret:
-
-```bash
-kubectl -n $NAMESPACE get secret $SECRET_NAME -o jsonpath="{.data.$SECRET_PATH}" | base64 --decode
-kubectl -n $NAMESPACE get secret $SECRET_NAME -o 'go-template={{index .data "$SECRET_PATH"}}' | base64 --decode
 ```
 
 Force delete a namespace:
