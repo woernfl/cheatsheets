@@ -66,6 +66,7 @@ Here is the list of extentions I usually use:
 - [Box Comment](https://marketplace.visualstudio.com/items?itemName=polymermallard.box-comment)
 - [Groovy](https://marketplace.visualstudio.com/items?itemName=MellowMarshmallow.groovy)
 - [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+- [tfsec](https://marketplace.visualstudio.com/items?itemName=tfsec.tfsec)
 
 Here is how to install this extentions using the VS Code Quick Open (Ctrl+P):
 
@@ -86,6 +87,7 @@ ext install streetsidesoftware.code-spell-checker
 ext install aaron-bond.better-comments
 ext install polymermallard.box-comment
 ext install MellowMarshmallow.groovy
+ext install tfsec.tfsec
 ext install ms-vscode-remote.remote-ssh
 ```
 
@@ -108,6 +110,7 @@ code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension aaron-bond.better-comments
 code --install-extension polymermallard.box-comment
 code --install-extension MellowMarshmallow.groovy
+code --install-extension tfsec.tfsec
 code --install-extension ms-vscode-remote.remote-ssh
 ```
 
