@@ -16,6 +16,9 @@ Add a `.pre-commit-config.yaml` file in the root of your repo.
 
 ```yaml
 repos:
+  # ========================================================
+  # = Base
+  # ========================================================
   # - repo: meta
   #   hooks:
   #     - id: check-hooks-apply
@@ -48,6 +51,47 @@ repos:
           - "--markdown-linebreak-ext=md"
 ```
 
+### Markdown
+
+```yaml
+repos:
+  # ========================================================
+  # = Markdown
+  # ========================================================
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.35.0
+    hooks:
+      - id: markdownlint
+        args: ["--disable", "MD013", "MD033", "MD034", "--"]
+```
+
+### Shell
+
+```yaml
+repos:
+  # ========================================================
+  # = Shell
+  # ========================================================
+  - repo: https://github.com/koalaman/shellcheck-precommit
+    rev: v0.9.0
+    hooks:
+      - id: shellcheck
+```
+
+### Docker container
+
+```yaml
+repos:
+  # ========================================================
+  # = Docker container
+  # ========================================================
+  - repo: https://github.com/hadolint/hadolint.git
+    rev: v2.10.0
+    hooks:
+      - id: hadolint-docker
+        entry: hadolint/hadolint:v2.8.0 hadolint
+```
+
 ### Terraform
 
 Prerequisite:
@@ -58,6 +102,9 @@ Here is the content of the `.pre-commit-config.yaml` file:
 
 ```yaml
 repos:
+  # ========================================================
+  # = Terraform
+  # ========================================================
   - repo: local
     hooks:
       - id: terraform-fmt
@@ -104,6 +151,9 @@ Here is the content of the `.pre-commit-config.yaml` file:
 
 ```yaml
 repos:
+  # ========================================================
+  # = IAC
+  # ========================================================
   - repo: local
     hooks:
       - id: iac-checkov
@@ -115,6 +165,14 @@ repos:
 ```
 
 ## How to manually run pre-commit
+
+A single pre-commit:
+
+```bash
+pre-commit run $PRE-COMMIT_ID
+```
+
+All pre-commits:
 
 ```bash
 pre-commit run -a
