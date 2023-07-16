@@ -12,20 +12,19 @@ pip install pre-commit
 
 Add a `.pre-commit-config.yaml` file in the root of your repo.
 
-### pre-commit configuration
-
-#### Base
-
-Prereq:
-
-- [terraform-docs](https://github.com/terraform-docs/terraform-docs)
-- [tfsec](https://github.com/aquasecurity/tfsec)
-- [tflint](https://github.com/terraform-linters/tflint)
-
-Here is the content of the `.pre-commit-config.yaml` file:
+### Base
 
 ```yaml
 repos:
+  # - repo: meta
+  #   hooks:
+  #     - id: check-hooks-apply
+  #     - id: check-useless-excludes
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.5.2
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
@@ -37,7 +36,6 @@ repos:
       - id: check-yaml
         args:
           - "--allow-multiple-documents"
-      - id: detect-aws-credentials
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: pretty-format-json
@@ -50,33 +48,70 @@ repos:
           - "--markdown-linebreak-ext=md"
 ```
 
-#### Terraform
+### Terraform
 
-Prereq:
+Prerequisite:
 
-- [terraform-docs](https://github.com/terraform-docs/terraform-docs)
-- [tfsec](https://github.com/aquasecurity/tfsec)
-- [tflint](https://github.com/terraform-linters/tflint)
+- [Docker](https://docs.docker.com/get-docker/)
 
 Here is the content of the `.pre-commit-config.yaml` file:
 
 ```yaml
 repos:
-  - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.81.0
+  - repo: local
     hooks:
-      - id: terraform_fmt
+      - id: terraform-fmt
+        name: Terraform fmt
+        language: docker_image
+        entry: -v "./:/data" -w /data docker-repo.nibr.novartis.net/hashicorp/terraform
+        args: ["fmt", "-recursive"]
+        pass_filenames: false
+      - id: terraform-validate
+        name: Terraform validate
+        language: docker_image
+        entry: -v "./:/data" -w /data docker-repo.nibr.novartis.net/hashicorp/terraform
+        args: ["validate"]
+        pass_filenames: false
+      - id: terraform-docs
+        name: Terraform docs
+        language: docker_image
+        entry: -v "./:/terraform-docs" quay.io/terraform-docs/terraform-docs:latest
         args:
-          - --args=-recursive
-      - id: terraform_docs
+          ["--config=/terraform-docs/.terraform-docs.yml", "/terraform-docs"]
+        pass_filenames: false
+      - id: terraform-lint
+        name: Terraform lint
+        language: docker_image
+        entry: -v "./:/data" ghcr.io/terraform-linters/tflint
         args:
-          - --args=--config=.terraform-docs.yml
-      - id: terraform_tflint
-        args:
-          - --args=--disable-rule="terraform_deprecated_interpolation"
-      - id: terraform_validate
-      - id: terraform_tfsec
-      - id: checkov
+          ["--chdir=/data", "--disable-rule=terraform_deprecated_interpolation"]
+        pass_filenames: false
+      - id: terraform-tfsec
+        name: Terraform tfsec
+        language: docker_image
+        entry: docker-repo.nibr.novartis.net/aquasec/tfsec
+        args: ["/src"]
+        pass_filenames: false
+```
+
+### IAC
+
+Prerequisite:
+
+- [Docker](https://docs.docker.com/get-docker/)
+
+Here is the content of the `.pre-commit-config.yaml` file:
+
+```yaml
+repos:
+  - repo: local
+    hooks:
+      - id: iac-checkov
+        name: IAC checkov
+        language: docker_image
+        entry: -v ./:/tf docker-repo.nibr.novartis.net/bridgecrew/checkov
+        args: ["--directory", "/tf"]
+        pass_filenames: false
 ```
 
 ## How to manually run pre-commit
