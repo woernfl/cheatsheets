@@ -110,13 +110,13 @@ repos:
       - id: terraform-fmt
         name: Terraform fmt
         language: docker_image
-        entry: -v "./:/data" -w /data docker-repo.nibr.novartis.net/hashicorp/terraform
+        entry: -v "./:/data" -w /data hashicorp/terraform
         args: ["fmt", "-recursive"]
         pass_filenames: false
       - id: terraform-validate
         name: Terraform validate
         language: docker_image
-        entry: -v "./:/data" -w /data docker-repo.nibr.novartis.net/hashicorp/terraform
+        entry: -v "./:/data" -w /data hashicorp/terraform
         args: ["validate"]
         pass_filenames: false
       - id: terraform-docs
@@ -136,7 +136,7 @@ repos:
       - id: terraform-tfsec
         name: Terraform tfsec
         language: docker_image
-        entry: docker-repo.nibr.novartis.net/aquasec/tfsec
+        entry: aquasec/tfsec
         args: ["/src"]
         pass_filenames: false
 ```
@@ -159,7 +159,7 @@ repos:
       - id: iac-checkov
         name: IAC checkov
         language: docker_image
-        entry: -v ./:/tf docker-repo.nibr.novartis.net/bridgecrew/checkov
+        entry: -v ./:/tf bridgecrew/checkov
         args: ["--directory", "/tf"]
         pass_filenames: false
 ```
