@@ -51,6 +51,14 @@ repos:
           - "--markdown-linebreak-ext=md"
 ```
 
+#### cspell
+
+How to start a dictionary in an existing project:
+
+```bash
+docker run -v $PWD:/workdir ghcr.io/streetsidesoftware/cspell:latest --words-only --unique "**" | sort --ignore-case > project-words.txt
+```
+
 ### Markdown
 
 ```yaml
