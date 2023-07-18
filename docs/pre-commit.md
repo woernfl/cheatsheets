@@ -8,6 +8,12 @@ Install pre-commit:
 pip install pre-commit
 ```
 
+Install the git hook scripts:
+
+```bash
+pre-commit install
+```
+
 ## pre-commit configuration
 
 Add a `.pre-commit-config.yaml` file in the root of your repo.
@@ -24,7 +30,7 @@ repos:
   #     - id: check-hooks-apply
   #     - id: check-useless-excludes
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v3.5.2
+    rev: 3.5.3
     hooks:
       - id: commitizen
         stages: [commit-msg]
@@ -32,23 +38,26 @@ repos:
     rev: v4.4.0
     hooks:
       - id: check-added-large-files
-      - id: check-executables-have-shebangs
       - id: check-json
-      - id: check-symlinks
-      - id: check-toml
       - id: check-yaml
         args:
           - "--allow-multiple-documents"
       - id: detect-private-key
       - id: end-of-file-fixer
-      - id: pretty-format-json
-        args:
-          - "--autofix"
-          - "--indent=2"
-          - "--no-sort-keys"
       - id: trailing-whitespace
         args:
           - "--markdown-linebreak-ext=md"
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v6.31.0
+    hooks:
+      - id: cspell
+        args:
+          - "--config cspell.config.yaml"
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v3.0.0"
+    hooks:
+      - id: prettier
+        stages: [pre-commit]
 ```
 
 #### cspell
@@ -59,6 +68,21 @@ How to start a dictionary in an existing project:
 docker run -v $PWD:/workdir ghcr.io/streetsidesoftware/cspell:latest --words-only --unique "**/*.md" | sort --ignore-case > project-words.txt
 ```
 
+### Secret
+
+```yaml
+repos:
+  # ========================================================
+  # = Secret
+  # ========================================================
+  - repo: local
+    hooks:
+      - id: secretlint
+        name: secretlint
+        language: docker_image
+        entry: secretlint/secretlint:latest secretlint
+```
+
 ### Markdown
 
 ```yaml
@@ -66,11 +90,29 @@ repos:
   # ========================================================
   # = Markdown
   # ========================================================
+  - repo: https://github.com/thlorenz/doctoc
+    rev: v2.2.0
+    hooks:
+      - id: doctoc
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.35.0
     hooks:
       - id: markdownlint
         args: ["--disable", "MD013", "MD033", "MD034", "--"]
+```
+
+### yaml
+
+```yaml
+repos:
+  # ========================================================
+  # = yaml
+  # ========================================================
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.32.0
+    hooks:
+      - id: yamllint
+        # files: (\.yaml|\.yml)$
 ```
 
 ### Shell
@@ -94,19 +136,13 @@ repos:
   # = Docker container
   # ========================================================
   - repo: https://github.com/hadolint/hadolint.git
-    rev: v2.10.0
+    rev: v2.12.0
     hooks:
       - id: hadolint-docker
-        entry: hadolint/hadolint:v2.8.0 hadolint
+        entry: hadolint/hadolint hadolint
 ```
 
 ### Terraform
-
-Prerequisite:
-
-- [Docker](https://docs.docker.com/get-docker/)
-
-Here is the content of the `.pre-commit-config.yaml` file:
 
 ```yaml
 repos:
@@ -118,44 +154,40 @@ repos:
       - id: terraform-fmt
         name: Terraform fmt
         language: docker_image
-        entry: -v "./:/data" -w /data hashicorp/terraform
+        entry: -v "./:/data" -w /data hashicorp/terraform:latest
         args: ["fmt", "-recursive"]
         pass_filenames: false
-      - id: terraform-validate
-        name: Terraform validate
-        language: docker_image
-        entry: -v "./:/data" -w /data hashicorp/terraform
-        args: ["validate"]
-        pass_filenames: false
+        files: (\.tf|\.tfvars)$
+        exclude: \.terraform\/.*$
       - id: terraform-docs
         name: Terraform docs
         language: docker_image
-        entry: -v "./:/terraform-docs" quay.io/terraform-docs/terraform-docs:latest
-        args:
-          ["--config=/terraform-docs/.terraform-docs.yml", "/terraform-docs"]
+        entry: quay.io/terraform-docs/terraform-docs:latest
+        args: ["/src/"]
         pass_filenames: false
+        files: (\.tf|\.terraform\.lock\.hcl)$
+        exclude: \.terraform\/.*$
       - id: terraform-lint
         name: Terraform lint
         language: docker_image
-        entry: -v "./:/data" ghcr.io/terraform-linters/tflint
+        entry: ghcr.io/terraform-linters/tflint:latest
         args:
-          ["--chdir=/data", "--disable-rule=terraform_deprecated_interpolation"]
+          [
+            "--chdir=/src/",
+            "--disable-rule=terraform_deprecated_interpolation",
+          ]
         pass_filenames: false
+        files: (\.tf|\.tfvars)$
+        exclude: \.terraform\/.*$
       - id: terraform-tfsec
-        name: Terraform tfsec
+        name: Terraform tfsec eks cluster
         language: docker_image
-        entry: aquasec/tfsec
-        args: ["/src"]
+        entry: docker-repo.nibr.novartis.net/aquasec/tfsec:latest
+        args: ["/src/"]
         pass_filenames: false
 ```
 
 ### IAC
-
-Prerequisite:
-
-- [Docker](https://docs.docker.com/get-docker/)
-
-Here is the content of the `.pre-commit-config.yaml` file:
 
 ```yaml
 repos:
@@ -165,10 +197,10 @@ repos:
   - repo: local
     hooks:
       - id: iac-checkov
-        name: IAC checkov
+        name: IAC checkov eks cluster
         language: docker_image
-        entry: -v ./:/tf bridgecrew/checkov
-        args: ["--directory", "/tf"]
+        entry: bridgecrew/checkov:latest
+        args: ["--directory", "/src/", "--quiet"]
         pass_filenames: false
 ```
 
