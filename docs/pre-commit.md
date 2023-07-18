@@ -182,7 +182,7 @@ repos:
       - id: terraform-tfsec
         name: Terraform tfsec eks cluster
         language: docker_image
-        entry: docker-repo.nibr.novartis.net/aquasec/tfsec:latest
+        entry: aquasec/tfsec:latest
         args: ["/src/"]
         pass_filenames: false
 ```
