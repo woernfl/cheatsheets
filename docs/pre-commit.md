@@ -56,7 +56,7 @@ repos:
 How to start a dictionary in an existing project:
 
 ```bash
-docker run -v $PWD:/workdir ghcr.io/streetsidesoftware/cspell:latest --words-only --unique "**" | sort --ignore-case > project-words.txt
+docker run -v $PWD:/workdir ghcr.io/streetsidesoftware/cspell:latest --words-only --unique "**/*.md" | sort --ignore-case > project-words.txt
 ```
 
 ### Markdown
