@@ -33,10 +33,6 @@ repos:
   #   hooks:
   #     - id: check-hooks-apply
   #     - id: check-useless-excludes
-  - repo: https://github.com/pre-commit/pre-commit
-    rev: v3.3.3
-    hooks:
-      - id: validate_manifest
   - repo: https://github.com/commitizen-tools/commitizen
     rev: 3.5.3
     hooks:
