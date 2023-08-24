@@ -49,6 +49,19 @@ locals {
 }
 ```
 
+## Customize Terraform Error Messages
+
+```bash
+resource "aws_instance" "web" {
+  # ...
+
+  provisioner "local-exec" {
+    command    = "echo The server's IP address is ${self.private_ip}"
+    on_failure = fail("Custom error message")
+  }
+}
+```
+
 ## Terraform Cloud
 
 Generate user token and put it in the `~/.terraformrc` file like that:
@@ -80,6 +93,12 @@ Format all your file following the same pattern:
 
 ```bash
 terraform fmt
+```
+
+Visualizes the resource dependencies:
+
+```bash
+terraform graph | dot -Tsvg > graph.svg
 ```
 
 Install autocompletion:
