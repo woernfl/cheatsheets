@@ -20,6 +20,16 @@ Decode an encrypted error message:
 aws sts decode-authorization-message --encoded-message $ENCODED_MESSAGE | jq -r .DecodedMessage | sed 's/\\"/"/g' | jq .
 ```
 
+## EC2
+
+Get all metadata info from the EC2:
+
+```bash
+TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` && curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/
+```
+
+Here is a list of all the [available categories](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/instancedata-data-categories.html).
+
 ## Environment variables
 
 `AWS_ACCESS_KEY_ID`
