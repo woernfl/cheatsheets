@@ -250,9 +250,6 @@ To set the default config to be used, used `git config --global --edit`:
      ui = true
 [alias]
      lop = log --pretty=format:"%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s" --date=short
-     lod = log --graph --decorate --pretty=oneline --abbrev-commit --all
-     ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-     lsp = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate -p
      ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 ```
 
