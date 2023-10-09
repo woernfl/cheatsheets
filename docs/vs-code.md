@@ -20,10 +20,6 @@
   "indentRainbow.includedLanguages": ["yaml", "yml"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
-  "python.formatting.provider": "black",
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform",
     "editor.formatOnSave": true,
@@ -40,6 +36,7 @@
   },
   "explorer.confirmDragAndDrop": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
+  "aws.telemetry": false,
   "redhat.telemetry.enabled": false
 }
 ```
