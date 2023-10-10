@@ -19,7 +19,7 @@ With the following attributes
 ## DNS Naming Pattern
 
 ```
-[project]-[env].[dns_domain]
+[project].[env].[dns_domain]
 ```
 
 With the following attributes:
