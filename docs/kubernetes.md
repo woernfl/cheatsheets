@@ -197,6 +197,14 @@ Get raw metrics from the API server:
 kubectl get --raw /metrics
 ```
 
+## Security query
+
+Get pods renuning in privileged mode:
+
+```bash
+kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{"\n"}{.metadata.name}{": "}{range .spec.containers[*]}{.securityContext.privileged}{end}{end}' | grep true
+```
+
 ## To debug
 
 Follow logs of multiple pods:
