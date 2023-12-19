@@ -139,6 +139,12 @@ Delete all the pods of a given namespace:
 kubectl -n $NAMESPACE delete --all pods
 ```
 
+Force delete a specific pod:
+
+```bash
+kubectl -n $NAMESPACE delete po $POD_NAME --force --grace-period=0
+```
+
 ## Node managment
 
 Get the list of nodes and their memory size:
