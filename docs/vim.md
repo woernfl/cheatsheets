@@ -80,22 +80,34 @@ Insert:
 :i
 ```
 
-Undo changes
+Undo changes:
 
 ```bash
 :u
 ```
 
-Redo changes
+Redo changes:
 
 ```bash
 Ctrl + r
 ```
 
-Search
+Search:
 
 ```bash
 /$STRING_TO_SEARCH_FOR
+```
+
+Search a specific string:
+
+```bash
+/\<$STRING_TO_SEARCH_FOR\>
+```
+
+Search ignoring the case:
+
+```bash
+/$STRING_TO_SEARCH_FOR\c
 ```
 
 Search and replace
