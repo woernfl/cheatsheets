@@ -249,7 +249,7 @@ To set the default config to be used, used `git config --global --edit`:
 [color]
      ui = true
 [alias]
-     lop = log --pretty=format:"%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s" --date=short
+     lop = log --pretty=format:"%C(yellow)%h\\ %Cred%ad\\ %Cblue%an%Cgreen%d\\ %Creset%s" --date=short
      ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 ```
 
