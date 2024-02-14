@@ -1,4 +1,4 @@
-# PIP
+# pip
 
 ## Basic actions
 
