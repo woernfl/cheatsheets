@@ -20,6 +20,12 @@ Check the version of a package:
 npm show $PACKAGE_NAME version
 ```
 
+Check the version of a package and all it depedencies:
+
+```bash
+npm list $PACKAGE_NAME
+```
+
 Set a private repo:
 
 ```bash
