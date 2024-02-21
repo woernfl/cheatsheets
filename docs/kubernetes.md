@@ -179,6 +179,18 @@ Create a job from a cronjob
 kubectl create job --from=cronjobs.batch/$CRONJOB_NAME $JOB_NAME 
 ```
 
+Suspend a cronjob:
+
+```bash
+kubectl patch cronjob/$CRONJOB_NAME -p '{"spec": {"suspend": true}}'
+```
+
+Get logs of a job:
+
+```bash
+kubectl logs job/$JOB_NAME
+```
+
 ## CRD managment
 
 list applied CRDs:
