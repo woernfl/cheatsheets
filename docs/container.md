@@ -21,6 +21,13 @@ Push multiple docker images:
 ```bash
 for t in $(docker images --format "{{.Repository}}:{{.Tag}} " | grep "$IMAGE_NAME"); do docker push "${t}"; done
 ```
+
+List all the labels of an images:
+
+```bash
+docker inspect $DOCKER_IMAGE_NAME | jq -r '.[0].Config.Labels
+```
+
 ### Build specific
 
 Change the build log output:
