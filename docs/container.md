@@ -25,7 +25,7 @@ for t in $(docker images --format "{{.Repository}}:{{.Tag}} " | grep "$IMAGE_NAM
 List all the labels of an images:
 
 ```bash
-docker inspect $DOCKER_IMAGE_NAME | jq -r '.[0].Config.Labels
+docker inspect $DOCKER_IMAGE_NAME | jq -r '.[0].Config.Labels'
 ```
 
 ### Build specific
