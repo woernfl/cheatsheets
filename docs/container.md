@@ -28,6 +28,12 @@ List all the labels of an images:
 docker inspect $DOCKER_IMAGE_NAME | jq -r '.[0].Config.Labels'
 ```
 
+Run a bash command without getting in the container:
+
+```bash
+docker run -it -u root --entrypoint /bin/bash $IMAGE_NAME -c "$BASH_COMMAND"
+```
+
 ### Build specific
 
 Change the build log output:
