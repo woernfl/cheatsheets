@@ -48,6 +48,12 @@ Solves `WARNING: UNPROTECTED PRIVATE KEY FILE!`:
 sudo chmod 600 $KEY_PATH
 ```
 
+### Add local public key to a remote server
+
+1. Display the local public key: `cat ~/.ssh/id_rsa.pub`
+2. Connect to the remote server
+3. Ad the local public key to the remote server authorised keys by editing the `~/.ssh/authorized_keys` file
+
 ### Adding a externally generated key to your ssh-agent
 
 Start the agent and add the key:
