@@ -23,6 +23,14 @@ Cmd + Maj + R       | Reload the navigator window
 Cmd + Maj + D       | Once in the finder, go to Desktop
 Cmd + Maj + H       | Once in the finder, go to Home
 
+## Shell config
+
+Switch to a bash shell:
+
+```bash
+chsh -s /bin/bash
+```
+
 ## Package managment
 
 Install [Homebrew](https://brew.sh/):
