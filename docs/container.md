@@ -33,7 +33,13 @@ docker inspect $DOCKER_IMAGE_NAME | jq -r '.[0].Config.Labels'
 Check if an image already exist in a registry (will be 0 if the image exist or 1 if the image doesn't exist):
 
 ```bash
-docker manifest inspect $IMGNAME:$IMGTAG > /dev/null ; echo $?
+docker manifest inspect $IMAGE_NAME:$IMAGE_TAG > /dev/null ; echo $?
+```
+
+Get the sha of an image:
+
+```bash
+docker images --no-trunc --quiet $IMAGE_NAME:$IMAGE_TAG
 ```
 
 List the ENTRYPOINT and CMD of an image:
