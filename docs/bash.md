@@ -584,7 +584,9 @@ end_time=$(date +%s)
 echo "Took $(($end_time - $start_time)) seconds to complete"
 ```
 
-### Create strucutured logs
+### Useful scripts
+
+#### Create strucutured logs
 
 You will need to have `jq` installed.
 
@@ -619,3 +621,79 @@ __log "INFO" "Hello, World!"
 ```
 
 Thanks to Jesse Riddle for sharing this awsome pice of shell script. All the info's of this section come from [here](https://medium.com/@jesse.riddle/structured-logging-in-a-shell-script-with-jq-f7542a94a1f6).
+
+#### Automated Backup
+
+This script creates automated backups:
+
+```bash
+#!/bin/bash
+# Backup a directory and store it in a backup folder with a timestamp
+SOURCE="/path/to/important/data"
+DEST="/path/to/backup/location"
+TIMESTAMP=$(date +"%Y%m%d%H%M%S")
+tar -czvf $DEST/backup_$TIMESTAMP.tar.gz $SOURCE
+echo "Backup completed: $DEST/backup_$TIMESTAMP.tar.gz"
+```
+
+Thanks to Obafemi for sharing this shell script. All the info's of this section come from [here](https://blog.devops.dev/12-bash-scripts-every-devops-engineer-should-automate-5b954bbee24c).
+
+#### Log Rotation
+
+This script rotates and compresses log files:
+
+```bash
+#!/bin/bash
+# Rotate and compress logs
+LOG_FILE="/path/to/logfile.log"
+BACKUP_DIR="/path/to/log/backup"
+TIMESTAMP=$(date +"%Y%m%d")
+mv $LOG_FILE $BACKUP_DIR/log_$TIMESTAMP.log
+gzip $BACKUP_DIR/log_$TIMESTAMP.log
+touch $LOG_FILE
+echo "Log rotation completed."
+```
+
+Thanks to Obafemi for sharing this shell script. All the info's of this section come from [here](https://blog.devops.dev/12-bash-scripts-every-devops-engineer-should-automate-5b954bbee24c).
+
+#### Automated Docker Cleanup
+
+This script automates Docker containers, images and volumes cleanup:
+
+```bash
+#!/bin/bash
+# Docker container and image cleanup
+docker system prune -af
+docker volume prune -f
+echo "Docker cleanup completed."
+```
+
+Thanks to Obafemi for sharing this shell script. All the info's of this section come from [here](https://blog.devops.dev/12-bash-scripts-every-devops-engineer-should-automate-5b954bbee24c).
+
+#### SSL Certificate Expiry Checker
+
+This script checks when your SSL certificate expires:
+
+```bash
+#!/bin/bash
+# Check SSL certificate expiration 
+DOMAIN="example.com"
+EXPIRY_DATE=$(echo | openssl s_client -servername $DOMAIN -connect $DOMAIN:443 2>/dev/null | openssl x509 -noout -dates | grep notAfter | cut -d= -f2)
+DAYS_LEFT=$(( ($(date -d "$EXPIRY_DATE" +%s) - $(date +%s)) / 86400 ))
+echo "SSL certificate for $DOMAIN expires in $DAYS_LEFT days."
+```
+
+Thanks to Obafemi for sharing this shell script. All the info's of this section come from [here](https://blog.devops.dev/12-bash-scripts-every-devops-engineer-should-automate-5b954bbee24c).
+
+#### Service Status Checker
+
+This script automates service health checks:
+
+```bash
+#!/bin/bash
+# Check the status of a specific service 
+SERVICE=$1
+systemctl is-active --quiet $SERVICE && echo "$SERVICE is running" || echo "$SERVICE is not running"
+```
+
+Thanks to Obafemi for sharing this shell script. All the info's of this section come from [here](https://blog.devops.dev/12-bash-scripts-every-devops-engineer-should-automate-5b954bbee24c).
