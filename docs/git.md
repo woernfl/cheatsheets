@@ -202,6 +202,12 @@ git rebase $BASE_BRANCH
 Rebase a remote branch in current branch:
 
 ```bash
+git pull --rebase origin master
+```
+
+Rebase a remote branch in current branch and stash changes:
+
+```bash
 git pull --rebase --autostash origin master
 ```
 
