@@ -15,7 +15,7 @@ nixpkgs.config = {
 
     allowUnfree = true;
 
-    chromium;
+    chromium = {};
 
   };
 
