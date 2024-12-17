@@ -1,6 +1,6 @@
 # Nix
 
-## Basic actions
+## ## Add some packages
 
 Config file path:
 
@@ -8,17 +8,9 @@ Config file path:
 /etc/nixos/configuration.nix
 ```
 
-## Add some packages
+Add the chromimum package
 
 ```bash
-nixpkgs.config = {
-
-    allowUnfree = true;
-
-    chromium = {};
-
-  };
-
 environment.systemPackages = [ pkgs.chromium ];
 ```
 
@@ -27,3 +19,5 @@ Then reload the config:
 ```bash
 sudo nixos-rebuild switch
 ```
+
+Here is the [list of packages](https://search.nixos.org/packages).
