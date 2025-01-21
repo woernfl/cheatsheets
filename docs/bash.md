@@ -215,6 +215,24 @@ Display the lines that are not matched:
 grep -v $KEYWORD $FILE_PATH
 ```
 
+Display X number of lines trailing the matched occurrences:
+
+```bash
+grep -A $X $KEYWORD $FILE_PATH
+```
+
+Display X number of lines leading the matched occurrences:
+
+```bash
+grep -B $X $KEYWORD $FILE_PATH
+```
+
+Display X number of lines leading and trailing the matched occurrences:
+
+```bash
+grep -C $X $KEYWORD $FILE_PATH
+```
+
 ### head
 
 Print the first X lines:
