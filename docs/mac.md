@@ -25,6 +25,12 @@ Cmd + Maj + H       | Once in the finder, go to Home
 
 ## Shell config
 
+Check which shell is used:
+
+```bash
+echo $SHELL
+```
+
 Switch to a bash shell:
 
 ```bash
