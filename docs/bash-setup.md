@@ -73,6 +73,12 @@ Check which shells are installed:
 cat /etc/shells
 ```
 
+Check which shell is used:
+
+```bash
+echo $0
+```
+
 Switch to bash:
 
 ```bash
