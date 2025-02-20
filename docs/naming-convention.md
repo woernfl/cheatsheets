@@ -14,24 +14,24 @@ With the following attributes:
 - `type`: which kind of ressource? `physical` | `virtual`
 - `purpose`: short description of the purpose of this server
     - `app`: application server
-    * `bkt`: storage bucket
-  * `cfg`: configuration management server
-  * `dns`: name server
-  * `fwl`: firewall
-  * `ftp`: SFTP server
-  * `lb`: load balancer server
-  * `mon`: monitoring server
-  * `pdu`: power distribution unit
-  * `prx`: proxy server
-  * `rtr`: router
-  * `sql`: database server
-  * `ssh`: SSH jump/bastion host
-  * `sto`: storage server
-  * `swt`: switch
-  * `ups`: uninterruptible power supply
-  * `vcs`: version control software server
-  * `vpn`: VPN server
-  * `web`: web server
+    - `bkt`: storage bucket
+    - `cfg`: configuration management server
+    - `dns`: name server
+    - `fwl`: firewall
+    - `ftp`: SFTP server
+    - `lb`: load balancer server
+    - `mon`: monitoring server
+    - `pdu`: power distribution unit
+    - `prx`: proxy server
+    - `rtr`: router
+    - `sql`: database server
+    - `ssh`: SSH jump/bastion host
+    - `sto`: storage server
+    - `swt`: switch
+    - `ups`: uninterruptible power supply
+    - `vcs`: version control software server
+    - `vpn`: VPN server
+    - `web`: web server
 - `number`: unique number
 
 ## DNS Naming Pattern
