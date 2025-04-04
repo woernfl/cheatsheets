@@ -8,6 +8,12 @@ Get a web site:
 curl $WEBSITE_URL
 ```
 
+Get all the transactions for a web site:
+
+```bash
+curl -v $WEBSITE_URL
+```
+
 Get only the HTTP code back:
 
 ```bash
@@ -42,6 +48,12 @@ Also fetching the headers:
 
 ```bash
 curl -I $WEBSITE_URL
+```
+
+Time the request:
+
+```bash
+curl  $WEBSITE_URL
 ```
 
 ## Binaries actions
