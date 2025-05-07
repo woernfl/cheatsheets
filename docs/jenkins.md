@@ -37,3 +37,11 @@ To list environment variable add `env-vars.html` after your Jenkins URL in a bro
 `JOB_URL` Full URL of this job, like http://server:port/jenkins/job/foo/ (Jenkins URL must be set)
 
 `WORKSPACE` The absolute path of the directory assigned to the build as a workspace.
+
+## Script Console
+
+Cancel all builds in the queue:
+
+```bash
+Jenkins.instance.queue.clear()
+```
