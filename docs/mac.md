@@ -50,15 +50,17 @@ Install [Homebrew](https://brew.sh/):
 Here is the list of packages I usually use:
 
 - [Rectangle](https://github.com/rxhanson/Rectangle)
-- [bat](https://github.com/sharkdp/bat)
-- [fzf](https://github.com/junegunn/fzf)
-- [Tig](https://jonas.github.io/tig/)
 
 Here is how to install this packages using the terminal:
 
 ```
 brew install rectangle
-brew install bat
-brew install fzf
-brew install tig
+```
+
+## Some easy fix
+
+Remove the binary malware virification:
+
+```bash
+sudo xattr -rc $BINARY
 ```
