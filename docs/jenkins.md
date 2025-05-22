@@ -45,3 +45,11 @@ Cancel all builds in the queue:
 ```bash
 Jenkins.instance.queue.clear()
 ```
+
+## Arboting Builds
+
+Pipeline jobs can be stopped by sending an HTTP POST request to URL endpoints of a build:
+
+- `BUILD_ID_URL/stop`: aborts a Pipeline.
+- `BUILD_ID_URL/term`: forcibly terminates a build (should only be used if stop does not work).
+- `BUILD_ID_URL/kill`: hard kill a pipeline. This is the most destructive way to stop a pipeline and should only be used as a last resort.
