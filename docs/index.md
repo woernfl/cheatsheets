@@ -7,4 +7,3 @@ Hey I am [@woernfl](https://twitter.com/woernfl) and here are all the Cheatsheet
 ## Acknowledgment
 
 Thanks to [Martin Donath (@squidfunk)](https://github.com/squidfunk) for providing the [Material for MkDocs template](https://squidfunk.github.io/mkdocs-material/) which this site is build on top of.
-
