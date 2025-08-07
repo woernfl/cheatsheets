@@ -1,4 +1,4 @@
-# Bash
+# Linux
 
 ## Basic actions
 
@@ -323,6 +323,17 @@ Delete lines:
 
 ```bash
 sed '/$SEARCH_STRING/d' $FILE_PATH
+```
+
+
+## Package managment
+
+### RedHat Based OS
+
+Exclude a package from an update:
+
+```bash
+sudo dnf update --exclude=$PACKAGE_NAME 
 ```
 
 ## File permission
