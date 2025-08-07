@@ -62,6 +62,14 @@ Automatically add some git lables:
 export BUILDX_GIT_LABELS=full
 ```
 
+### Clean up
+
+Remove all unused images, containers, networks and volumes:
+
+```bash
+docker system prune -af --volumes
+```
+
 ### Debug
 
 Run a bash command without getting in the container:
