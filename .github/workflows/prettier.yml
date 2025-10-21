@@ -20,7 +20,7 @@ jobs:
           yarn
           chmod +x ./node_modules/.bin/prettier
           yarn prettier . --write
-        working-directory: ${{ github.workspace }}
+        working-directory: ${{ github.workspace }}/cheatsheets
       - uses: autofix-ci/action@v1
         with:
           commit-message: "Apply Prettier format"
