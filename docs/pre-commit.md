@@ -132,10 +132,7 @@ repos:
         language: docker_image
         entry: ghcr.io/terraform-linters/tflint:latest
         args:
-          [
-            "--chdir=/src/",
-            "--disable-rule=terraform_deprecated_interpolation",
-          ]
+          ["--chdir=/src/", "--disable-rule=terraform_deprecated_interpolation"]
         pass_filenames: false
         files: (\.tf|\.tfvars)$
         exclude: \.terraform\/.*$

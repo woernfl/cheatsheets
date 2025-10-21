@@ -325,7 +325,6 @@ Delete lines:
 sed '/$SEARCH_STRING/d' $FILE_PATH
 ```
 
-
 ## Package managment
 
 ### RedHat Based OS
@@ -333,7 +332,7 @@ sed '/$SEARCH_STRING/d' $FILE_PATH
 Exclude a package from an update:
 
 ```bash
-sudo dnf update --exclude=$PACKAGE_NAME 
+sudo dnf update --exclude=$PACKAGE_NAME
 ```
 
 ## File permission
@@ -341,20 +340,20 @@ sudo dnf update --exclude=$PACKAGE_NAME
 Here is who has which permission:
 
 | owner | group | others |
-| ----------- | ----------- | ----------- |
+| ----- | ----- | ------ |
 
 Permissions list:
 
-|  | 4 | 2 | 1 |  |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| 0 | - | - | - | no permissions |
-| 1 | - | - | x | only execute |
-| 2 | - | w | - | only write |
-| 3 | - | w | x | writte and execute |
-| 4 | r | - | - | only read |
-| 5 | r | - | x | read and execute |
-| 6 | r | w | - | read and writte |
-| 7 | r | w | x | read, writte and execute |
+|     | 4   | 2   | 1   |                          |
+| --- | --- | --- | --- | ------------------------ |
+| 0   | -   | -   | -   | no permissions           |
+| 1   | -   | -   | x   | only execute             |
+| 2   | -   | w   | -   | only write               |
+| 3   | -   | w   | x   | writte and execute       |
+| 4   | r   | -   | -   | only read                |
+| 5   | r   | -   | x   | read and execute         |
+| 6   | r   | w   | -   | read and writte          |
+| 7   | r   | w   | x   | read, writte and execute |
 
 ## Check logs
 
@@ -532,7 +531,7 @@ set -euxo pipefail
 
 `-e`: fail the script on command fail
 
-`-o pipefail`: fail the script on a command fail in a pipeline 
+`-o pipefail`: fail the script on a command fail in a pipeline
 
 Thanks to this [article](https://link.medium.com/RNKDFHuOisb) for clearly explaining all this options.
 
@@ -637,7 +636,7 @@ __log(){
       --arg message "$message" \
       '.timestamp=$timestamp|.log_level=$log_level|.message=$message'
 }
-````
+```
 
 Usage example:
 
@@ -705,7 +704,7 @@ This script checks when your SSL certificate expires:
 
 ```bash
 #!/bin/bash
-# Check SSL certificate expiration 
+# Check SSL certificate expiration
 DOMAIN="example.com"
 EXPIRY_DATE=$(echo | openssl s_client -servername $DOMAIN -connect $DOMAIN:443 2>/dev/null | openssl x509 -noout -dates | grep notAfter | cut -d= -f2)
 DAYS_LEFT=$(( ($(date -d "$EXPIRY_DATE" +%s) - $(date +%s)) / 86400 ))
@@ -720,7 +719,7 @@ This script automates service health checks:
 
 ```bash
 #!/bin/bash
-# Check the status of a specific service 
+# Check the status of a specific service
 SERVICE=$1
 systemctl is-active --quiet $SERVICE && echo "$SERVICE is running" || echo "$SERVICE is not running"
 ```

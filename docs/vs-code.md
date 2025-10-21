@@ -117,11 +117,12 @@ Add your SSH host following this steps:
 3. Choose `Remote-SSH: Connect to Host`
 4. Choose the user configuration file (usually the first one in the list)
 5. Enter the following details:
-  ```
-  Host dev-ec2
-    HostName $SERVER_HOSTNAME_OR_IP
-    User $USER_TO_BE_USED_TO_CONNECT
-    IdentityFile $PATH_TO_PRIVATE_KEY_FILE
-  ```
+
+```
+Host dev-ec2
+  HostName $SERVER_HOSTNAME_OR_IP
+  User $USER_TO_BE_USED_TO_CONNECT
+  IdentityFile $PATH_TO_PRIVATE_KEY_FILE
+```
 
 If you need a more detailed instruction set, please visit the [official documentation](https://code.visualstudio.com/docs/remote/ssh).

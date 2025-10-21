@@ -229,13 +229,13 @@ NERDTree for Vim available [here](https://github.com/scrooloose/nerdtree).
 Activate NERDTree:
 
 ```bash
-:NERDTree 
+:NERDTree
 ```
 
 Close NERDTree:
 
 ```bash
-:NERDTreeClose 
+:NERDTreeClose
 ```
 
 Toggle NERDTree:
@@ -298,7 +298,7 @@ syntax enable
 set laststatus=2
 colorscheme delek
 
-let g:rainbow_active = 1 
+let g:rainbow_active = 1
 map <F4> :RainbowToggle<CR>
 
 map <F2> :NERDTreeToggle<CR>

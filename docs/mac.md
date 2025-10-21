@@ -4,24 +4,24 @@
 
 ### Symboles
 
-Symbole | FR Shortcut     | CH DE Shortcut
-------- | --------------- | ----------- 
-\|      | Alt + Maj + L   | Alt + 7
-\       | Alt + Maj + /   | Alt + Maj + 7
-[       | Alt + Maj + (   | Alt + 5
-]       | Alt + Maj + )   | Alt + 6
-{       | Alt + (         | Alt + 8
-}       | Alt + )         | Alt + 9
- 
+| Symbole | FR Shortcut   | CH DE Shortcut |
+| ------- | ------------- | -------------- |
+| \|      | Alt + Maj + L | Alt + 7        |
+| \       | Alt + Maj + / | Alt + Maj + 7  |
+| [       | Alt + Maj + ( | Alt + 5        |
+| ]       | Alt + Maj + ) | Alt + 6        |
+| {       | Alt + (       | Alt + 8        |
+| }       | Alt + )       | Alt + 9        |
+
 ### Systeme
 
-Shortcut            | Action
-------------------- | ------------- 
-Ctrl + Cmd + Q      | Lock the screen
-Cmd + Alt + Maj + V | Past whithout formatting
-Cmd + Maj + R       | Reload the navigator window
-Cmd + Maj + D       | Once in the finder, go to Desktop
-Cmd + Maj + H       | Once in the finder, go to Home
+| Shortcut            | Action                            |
+| ------------------- | --------------------------------- |
+| Ctrl + Cmd + Q      | Lock the screen                   |
+| Cmd + Alt + Maj + V | Past whithout formatting          |
+| Cmd + Maj + R       | Reload the navigator window       |
+| Cmd + Maj + D       | Once in the finder, go to Desktop |
+| Cmd + Maj + H       | Once in the finder, go to Home    |
 
 ## Shell config
 

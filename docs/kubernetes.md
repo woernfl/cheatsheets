@@ -188,7 +188,7 @@ kubectl get nodes --show-labels
 Create a job from a cronjob
 
 ```bash
-kubectl create job --from=cronjobs.batch/$CRONJOB_NAME $JOB_NAME 
+kubectl create job --from=cronjobs.batch/$CRONJOB_NAME $JOB_NAME
 ```
 
 Suspend a cronjob:
