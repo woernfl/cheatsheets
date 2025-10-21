@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v6
       - run: |
           yarn
-          ls -la /home/runner/work/cheatsheets/cheatsheets/node_modules/.bin/
+          chmod +x ./node_modules/.bin/prettier
           yarn prettier . --write
       - uses: autofix-ci/action@v1
         with:
