@@ -1,0 +1,24 @@
+name: autofix.ci
+on:
+  pull_request:
+  push:
+permissions:
+  actions: write
+  checks: write
+  contents: read
+  id-token: write
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: ${{ github.repository }}
+          token: ${{ github.token }}
+      - uses: actions/setup-node@v6
+      - run: |
+          yarn
+          yarn prettier . --write
+#      - uses: autofix-ci/action@v1
+#        with:
+#          commit-message: "Apply Prettier format"
