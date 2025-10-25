@@ -161,6 +161,12 @@ Check commit history with changes:
 git log -p
 ```
 
+Change last commit message:
+
+```bash
+git commit --amend
+```
+
 Add file change to the last commit:
 
 ```bash
