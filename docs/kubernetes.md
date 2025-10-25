@@ -23,7 +23,7 @@ kubectl get all -n $NAMESPACE
 Get really all the ressources of a specific namespace:
 
 ```bash
-kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -l app=myapp -n $NAMESPACE
+kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -n $NAMESPACE
 ```
 
 ## Generic actions
