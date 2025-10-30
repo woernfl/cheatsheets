@@ -392,6 +392,18 @@ sudo -E printenv
 
 ## Network stuff
 
+Check interfaces status:
+
+```bash
+ip link
+```
+
+Check interfaces ip address:
+
+```bash
+ip addr
+```
+
 Send a UDP Packet:
 
 ```bash
