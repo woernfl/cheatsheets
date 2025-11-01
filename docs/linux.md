@@ -490,6 +490,14 @@ Extract a tar:
 tar -xvzf $ARCHIVE_NAME.tar
 ```
 
+## Debugin Wake On Lan
+
+Check if the magic packet reach the server:
+
+```bash
+sudo tcpdump -i $NETWORK_INTERFACE_NAME -n -v -s0 udp port 9
+```
+
 ## Miscellaneous
 
 Find out the top most used commands:
