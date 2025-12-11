@@ -255,6 +255,12 @@ Get all events of what happened:
 kubectl -n $NAMESPACE get events --sort-by='{.lastTimestamp}' | tail
 ```
 
+Get all events of what happened without the tail:
+
+```bash
+kubectl -n $NAMESPACE get events --sort-by='.metadata.creationTimestamp'
+```
+
 Connect to a pod from your local workstation:
 
 ```bash
