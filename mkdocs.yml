@@ -47,9 +47,6 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/woernfl
       name: Woernfl on Github
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/woernfl
-      name: Woernfl on Twitter
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/woernfl
       name: Woernfl on Linkedin
