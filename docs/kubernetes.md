@@ -68,6 +68,12 @@ Rollback a change:
 kubectl rollout undo
 ```
 
+Scale deployment to 0:
+
+```bash
+kubectl scale deploy $DEPLOY_NAME --replicas=0
+```
+
 ## Secret managment
 
 Create a secret from literal:
