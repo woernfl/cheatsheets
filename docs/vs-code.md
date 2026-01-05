@@ -37,7 +37,8 @@
   "explorer.confirmDragAndDrop": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "aws.telemetry": false,
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "editor.stickyScroll.enabled": false
 }
 ```
 
