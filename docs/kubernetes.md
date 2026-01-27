@@ -151,6 +151,12 @@ Print container images by pod:
 kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{"\n"}{.metadata.name}{":\t"}{range .spec.containers[*]}{.image}{", "}{end}{end}' | sort
 ```
 
+Print pod running on a specific node:
+
+```bash
+kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=$NODE_NAME
+```
+
 Delete all the pods of a given namespace:
 
 ```bash
