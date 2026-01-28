@@ -1,6 +1,6 @@
+enable_parallel_processing: False
 site_name: Cheatsheets
 site_url: https://cheatsheets.woernfl.xyz
-enable_parallel_processing: false
 theme:
   name: material
   language: en
