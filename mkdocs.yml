@@ -73,5 +73,6 @@ plugins:
       type: timeago
       fallback_to_build_date: true
       locale: en
+      enable_parallel_processing: false
   - minify:
       minify_html: true
