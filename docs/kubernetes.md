@@ -195,6 +195,12 @@ List the nodes with there labels:
 kubectl get nodes --show-labels
 ```
 
+List the CPU and Memory for all the nodes in a cluster:
+
+```bash
+kubectl get nodes -o custom-columns=NAME:.metadata.name,CPU_CAPACITY:.status.capacity.cpu,CPU_ALLOCATABLE:.status.allocatable.cpu,MEM_CAPACITY:.status.capacity.memory,MEM_ALLOCATABLE:.status.allocatable.memory
+```
+
 ## Job managment
 
 Create a job from a cronjob
