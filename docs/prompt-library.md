@@ -26,13 +26,17 @@ Here is a list of softwares I use in my Kubernetes cluster:
 - Sealed Secrets to handle all the secrets
 - Rook to provide persistent volumes
 - Kube VIP to expose services outside of my kubernetes cluster
+- Netbird to handle the VPN connection from outside
 - Traefik to manage all the ingresses
 - Cert Manager to manage all the certificate creations and renewal
-- Node Feature Discovery to enhance the labels on my hardware
-- Netbird to handle the VPN connection from outside
 - Home Assistant to automate my home with a few Zigbee, Matter and Wifi devices
-- Zigbee2mqtt to handel the Zigbee devices connections
+- Homepage to regroup all the links I need in a single interface
 - Kured to reboot Kubernetes nodes when they need to be rebooted following a package upgrade
 - Jellyfin to watch films and movies
+- Node Feature Discovery to enhance the labels on my hardware
+- Mosquitto as a message broker for MQTT
+- Zigbee2mqtt to handel the Zigbee devices connections
+- Immich to host my picture
 - Knative to serve workloads that can scale to 0
+- Nvidia Device Plugin to expose the NVIDIA GPUs (2xA40) I have in my cluster
 ```
