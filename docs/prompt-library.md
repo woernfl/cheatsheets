@@ -28,5 +28,11 @@ Here is a list of softwares I use in my Kubernetes cluster:
 - Kube VIP to expose services outside of my kubernetes cluster
 - Traefik to manage all the ingresses
 - Cert Manager to manage all the certificate creations and renewal
-- Node Feature Discovery to enhance the labels on my hardware 
+- Node Feature Discovery to enhance the labels on my hardware
+- Netbird to handle the VPN connection from outside
+- Home Assistant to automate my home with a few Zigbee, Matter and Wifi devices
+- Zigbee2mqtt to handel the Zigbee devices connections
+- Kured to reboot Kubernetes nodes when they need to be rebooted following a package upgrade
+- Jellyfin to watch films and movies
+- Knative to serve workloads that can scale to 0
 ```
