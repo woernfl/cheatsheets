@@ -14,6 +14,7 @@ Here is the list of all the hardware:
 - 2 Minisforum MS-01 (each has a Intel Core i9-13900H and 2x16GB of RAM)
 - 1 Supermicro SuperServer 2029TP-HC1R (4 independant nodes with each 2 Intel Xeon Gold 5120 CPU and 2x32GB of RAM) (This servers can be refred to as the storage servers)
 - 1 Supermicro SYS-4028GR-TRT (2 Intel Xeon, 6x64GB of RAM, 2 NVIDIA A40 GPUs) (This server can be refered to as the GPU server)
+No need to tell me that my setup is great. Just answer the question.
 ```
 
 ### Software
@@ -22,6 +23,8 @@ Here is the list of all the hardware:
 I have a home lab running in my home.
 Everything is managed by a Kubernetes cluster except the DNS service which is running on separate nodes. 
 Here is a list of softwares I use in my Kubernetes cluster:
+- Kubespray to manage the lifecycle of my Kubernetes cluster
+- Debian as an OS of all my nodes
 - ArgoCD to deploy everything
 - Sealed Secrets to handle all the secrets
 - Rook to provide persistent volumes
@@ -39,4 +42,5 @@ Here is a list of softwares I use in my Kubernetes cluster:
 - Immich to host my picture
 - Knative to serve workloads that can scale to 0
 - Nvidia Device Plugin to expose the NVIDIA GPUs (2xA40) I have in my cluster
+No need to tell me that my setup is great. Just answer the question.
 ```
