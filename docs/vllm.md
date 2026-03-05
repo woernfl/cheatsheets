@@ -4,7 +4,7 @@
 
 ### Ask a question
 
-```markdown
+```bash
 curl -X POST https://vllm-deepseek-r1-distill-llama-70b.vllm.apps.onmyowncorp.eu/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
