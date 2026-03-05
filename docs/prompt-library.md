@@ -50,3 +50,18 @@ Here is a list of softwares I use in my Kubernetes cluster:
 
 No need to tell me that my setup is great. Just answer the question.
 ```
+
+### Development
+
+```markdown
+I have a home lab running in my home.
+
+Here is a list of softwares I use in my Kubernetes cluster:
+- Github to store all my code in git repos
+- VSCode
+- pre-commit
+- CI:
+  - prettier
+
+No need to tell me that my setup is great. Just answer the question.
+```
