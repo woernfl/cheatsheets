@@ -24,6 +24,8 @@ No need to tell me that my setup is great. Just answer the question.
 I have a home lab running in my home.
 Everything is managed by a Kubernetes cluster except the DNS service which is running on separate nodes. 
 Here is a list of softwares I use in my Kubernetes cluster:
+- Github to store all my code in git repos
+- Renovate Bot to make sure I am always up to date
 - Kubespray to manage the lifecycle of my Kubernetes cluster
 - Debian as an OS of all my nodes
 - ArgoCD to deploy everything
