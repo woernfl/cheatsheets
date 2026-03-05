@@ -27,6 +27,7 @@ Here is a list of softwares I use in my Kubernetes cluster:
 - Kubespray to manage the lifecycle of my Kubernetes cluster
 - Debian as an OS of all my nodes
 - ArgoCD to deploy everything
+- Cilium CNI to manage Kubernetes internal networking
 - Sealed Secrets to handle all the secrets
 - Rook to provide persistent volumes
 - Kube VIP to expose services outside of my kubernetes cluster
