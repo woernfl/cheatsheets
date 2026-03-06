@@ -45,6 +45,7 @@ Here is a list of softwares I use in my Kubernetes cluster:
 - Zigbee2mqtt to handel the Zigbee devices connections
 - Immich to host my picture
 - Knative to serve workloads that can scale to 0
+- Kourier to serve workloads managed by Knative
 - Nvidia Device Plugin to expose the NVIDIA GPUs (2xA40) I have in my cluster
 - VLLM to serve LLMs (Scaling to 0 using Knative)
 
