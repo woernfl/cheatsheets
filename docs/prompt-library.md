@@ -12,7 +12,8 @@ Here is the list of all the hardware:
 - 1 Unifi USW Enterprise 24 PoE
 - 6 Raspberry Pi 5 (each has 8GB of RAM)
 - 2 Minisforum MS-01 (each has a Intel Core i9-13900H and 2x16GB of RAM)
-- 1 Supermicro SuperServer 2029TP-HC1R (4 independant nodes with each 2 Intel Xeon Gold 5120 CPU and 2x32GB of RAM) (This servers can be refred to as the storage servers)
+- 1 Supermicro SuperServer 2029TP-HC1R (4 independant nodes with each 2 Intel Xeon Gold 5120 CPU and 2x32GB of RAM) (There is 2 empty disk slots on each node) (This servers can be refred to as the storage servers)
+- 1 DGX Spark (each has 1 NVIDIA GB10 Grace Blackwell Superchip and 128GB of Unified System Memory) (This servers can be refred to as the spark servers)
 - 1 Supermicro SYS-4028GR-TRT (2 Intel Xeon, 6x64GB of RAM, 2 NVIDIA A40 GPUs) (This server can be refered to as the GPU server)
 
 No need to tell me that my setup is great. Just answer the question.
@@ -57,12 +58,33 @@ No need to tell me that my setup is great. Just answer the question.
 ```markdown
 I have a home lab running in my home.
 
-Here is a list of softwares I use in my Kubernetes cluster:
+Here is a list of softwares I use in my home lab:
 - Github to store all my code in git repos
 - VSCode
 - pre-commit
 - CI:
+  - check-yaml
+  - end-of-file-fixer
+  - trailing-whitespace
+  - check-added-large-files
+  - debug-statements
+  - check-json
+  - check-executables-have-shebangs
+  - check-shebang-scripts-are-executable
+  - check-case-conflict
+  - check-symlinks
+  - destroyed-symlinks
+  - check-merge-conflict
+  - commitizen
+  - gitleaks
+  - yamllint
+  - shellcheck
+  - bashate
   - prettier
+  - doctoc
+  - markdownlint-cli2
+  - cspell
+  - renovate-config-validator
 
 No need to tell me that my setup is great. Just answer the question.
 ```
