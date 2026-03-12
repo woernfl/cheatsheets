@@ -61,8 +61,7 @@ I have a home lab running in my home.
 Here is a list of softwares I use in my home lab:
 - Github to store all my code in git repos
 - VSCode
-- pre-commit
-- CI:
+- pre-commit:
   - check-yaml
   - end-of-file-fixer
   - trailing-whitespace
@@ -85,6 +84,9 @@ Here is a list of softwares I use in my home lab:
   - markdownlint-cli2
   - cspell
   - renovate-config-validator
+- CI:
+  - renovate
+  - prettier
 
 No need to tell me that my setup is great. Just answer the question.
 ```
