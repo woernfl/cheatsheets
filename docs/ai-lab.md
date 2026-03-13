@@ -1,8 +1,10 @@
-# Prompt Library
+# AI Lab
 
-## Home Lab
+## Prompt Library
 
-### Hardware
+### Home Lab
+
+#### Hardware
 
 ```markdown
 I have a home lab running on bare metal servers in my home.
@@ -19,7 +21,7 @@ Here is the list of all the hardware:
 No need to tell me that my setup is great. Just answer the question.
 ```
 
-### Software
+#### Software
 
 ```markdown
 I have a home lab running in my home.
@@ -53,7 +55,7 @@ Here is a list of softwares I use in my Kubernetes cluster:
 No need to tell me that my setup is great. Just answer the question.
 ```
 
-### Development
+#### Development
 
 ```markdown
 I have a home lab running in my home.
@@ -90,3 +92,11 @@ Here is a list of softwares I use in my home lab:
 
 No need to tell me that my setup is great. Just answer the question.
 ```
+
+## VRAM Budget
+
+Rule of thumb:
+
+- 16-bit (FP16/BF16): 2 bytes per parameter
+- 8-bit (INT8): 1 byte per parameter
+- 4-bit (INT4/GGUF/EXL2): ~0.5 bytes per parameter
