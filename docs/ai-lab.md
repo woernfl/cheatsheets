@@ -16,7 +16,7 @@ Here is the list of all the hardware:
 - 2 Minisforum MS-01 (each has a Intel Core i9-13900H and 2x16GB of RAM)
 - 1 Supermicro SuperServer 2029TP-HC1R (4 independant nodes with each 2 Intel Xeon Gold 5120 CPU and 2x32GB of RAM) (There is 2 empty disk slots on each node) (This servers can be refred to as the storage servers)
 - 1 Supermicro SYS-4028GR-TRT (2 Intel Xeon E5-2680, 6x64GB of RAM, 2 NVIDIA A40 GPUs) (This server can be refered to as the GPU server)
-- 1 DGX Spark (each has 1 NVIDIA GB10 Grace Blackwell Superchip and 128GB of Unified System Memory) (This servers can be refred to as the spark servers)
+- 1 Asus Ascent GX10 (each has 1 NVIDIA GB10 Grace Blackwell Superchip and 128GB of Unified System Memory) (This servers can be refred to as the spark servers)
 
 No need to tell me that my setup is great. Just answer the question.
 ```
