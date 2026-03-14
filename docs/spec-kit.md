@@ -4,39 +4,45 @@
 
 ### `/speckit.constitution`
 
-Establishes project's governing principles. Defines your tech stack, coding standards, testing requirements, and overall architecture rules so the AI agent stays consistent across the entire project.
-
-Example 
+Establishes the project governing principles. Defines your tech stack, coding standards, testing requirements, and overall architecture rules so the AI agent stays consistent across the entire project.
 
 ```bash
-/speckit.constitution The aim of this project is to provide bleeding edge cheatsheets. Most of the files are un markdown. Mkdocs, a static site generator, is used to transform the Markdown files in HTML/CSS/JavaScript files. The Material for MkDocs addon is used. All the files are build and hosted using Netlify. All the Markdown files are linted using pre-commit hooks and GitHub actions.
+/speckit.constitution The aim of this project is to provide bleeding edge cheatsheets. Most of the files are in markdown. MkDocs, a static site generator, is used to transform the Markdown files to HTML/CSS/JavaScript files. The Material for MkDocs addon is used. All the files are built and hosted using Netlify. All the Markdown files are linted using pre-commit hooks and GitHub Actions.
 ```
 
-Create the spec:
+### `/speckit.specify`
+
+Defines what you want to build. You use this to outline the core requirements, user stories, and acceptance criteria for a new feature.
 
 ```bash
-/speckit.specify Deploy a MongoDB cluster on my Kubernetes cluster, it has it's own namespace, focuse on reliability of the deployment, if there is a public helm chart use it
+/speckit.specify Create a new cheatsheets page to document the use of Maven. As a user I should be able to find all the commands I have to type in a chronological order from the start of a project to the build and test of an artefact.
 ```
 
-Create a technical implementation plan:
+### `/speckit.plan`
+
+Determines how to build it. Based on the specifications, this command forces the AI to draft a detailed technical implementation plan, including data models, file structures, and API interactions.
 
 ```bash
-/speckit.plan the deployment uses ArgoCD, implement network policies using Cilium, if there is a public helm chart use it
+/speckit.plan Scout the internet to find the best Java/Maven development workflows. Compile your findings. Produce a markdown page containing the end result of your compilation. This page will follow the formatting of the other markdown pages that you will find in the docs folder of this repo.
 ```
 
-Break down into tasks:
+### `/speckit.tasks`
+
+Breaks the technical plan down into a granular, actionable task list.
 
 ```bash
 /speckit.tasks
 ```
 
-Execute implementation:
+### `/speckit.implement`
+
+Executes the code generation. The AI reads the task list and writes the actual code, systematically checking off tasks as they are completed.
 
 ```bash
 /speckit.implement
 ```
 
-## Initialisation
+## Initialization
 
 Install Spec Kit:
 
