@@ -7,7 +7,7 @@
 Establishes the project governing principles. Defines your tech stack, coding standards, testing requirements, and overall architecture rules so the AI agent stays consistent across the entire project.
 
 ```bash
-/speckit.constitution The aim of this project is to provide bleeding edge cheatsheets. Most of the files are in markdown. MkDocs, a static site generator, is used to transform the Markdown files to HTML/CSS/JavaScript files. The Material for MkDocs addon is used. All the files are built and hosted using Netlify. All the Markdown files are linted using pre-commit hooks and GitHub Actions.
+/speckit.constitution The aim of this project is to provide bleeding edge cheatsheets. Most of the files are in markdown. MkDocs, a static site generator, is used to transform the Markdown files to HTML/CSS/JavaScript files. The Material for MkDocs theme is used. All the files are built and hosted using Netlify. All the Markdown files are linted using pre-commit hooks and GitHub Actions.
 ```
 
 ### `/speckit.specify`
