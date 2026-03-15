@@ -401,7 +401,7 @@ git revert --edit [saved hash]
 # git will create a new commit that undoes that commit with the message you will have specified
 ```
 
-I need to undo a commit from like 5 commits ago:
+I need to undo a commit from like 5 commits ago (without editing the commit message):
 
 ```bash
 # find the commit you need to undo

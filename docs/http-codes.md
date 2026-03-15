@@ -164,4 +164,4 @@ The HTTP version used in the request is not supported by the server.
 
 ## Thanks
 
-Thanks to the Mozilla foundation for there incredible work. All the info's on this page come from [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) and [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+Thanks to the Mozilla foundation for their incredible work. All the info's on this page come from [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) and [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

@@ -17,7 +17,7 @@ ssh -i $PATH_TO_THE_PRIVATE_KEY $USER@$SSH_HOST
 Skipping the known host check:
 
 ```bash
-sh -o StrictHostKeyChecking=no $USER@$SSH_HOST
+ssh -o StrictHostKeyChecking=no $USER@$SSH_HOST
 ```
 
 Executing cmds via SSH:

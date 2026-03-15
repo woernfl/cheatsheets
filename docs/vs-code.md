@@ -42,9 +42,9 @@
 }
 ```
 
-## Extentions
+## Extensions
 
-Here is the list of extentions I usually use:
+Here is the list of extensions I usually use:
 
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
@@ -65,7 +65,7 @@ Here is the list of extentions I usually use:
 - [tfsec](https://marketplace.visualstudio.com/items?itemName=tfsec.tfsec)
 - [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
-Here is how to install this extentions using the VS Code Quick Open (Ctrl+P):
+Here is how to install these extensions using the VS Code Quick Open (Ctrl+P):
 
 ```
 ext install yzhang.markdown-all-in-one

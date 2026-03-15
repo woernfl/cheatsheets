@@ -1,6 +1,6 @@
 # Nix
 
-## ## Add some packages
+## Add some packages
 
 Config file path:
 
@@ -8,7 +8,7 @@ Config file path:
 /etc/nixos/configuration.nix
 ```
 
-Add the chromimum package
+Add the chromium package
 
 ```bash
 environment.systemPackages = [ pkgs.chromium ];

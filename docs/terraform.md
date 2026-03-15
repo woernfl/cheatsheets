@@ -10,7 +10,7 @@ terraform init
 terraform init -backend-config=vars/dev.backend.tfvars
 ```
 
-Check what will be modfied:
+Check what will be modified:
 
 ```bash
 terraform plan -out=tfplan .
@@ -23,25 +23,25 @@ Apply modifications:
 terraform apply -var-file=vars/dev.terraform.tfvars -auto-approve
 ```
 
-Get the list of existing ressources:
+Get the list of existing resources:
 
 ```bash
 terraform state list
 ```
 
-Apply modifications on a specific ressource:
+Apply modifications on a specific resource:
 
 ```bash
 terraform apply -target="aws_eks_node_group.eks-worker[\"node-group\"]" -var-file=vars/dev.terraform.tfvars -auto-approve
 ```
 
-Delete Terraform ressources:
+Delete Terraform resources:
 
 ```bash
 terraform destroy -force
 ```
 
-## Exposing the content of a file as a viarable
+## Exposing the content of a file as a variable
 
 ```bash
 locals {

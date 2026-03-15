@@ -24,4 +24,4 @@ Content of the creds file, can be set by using:
 
 `GOOGLE_CLOUD_KEYFILE_JSON`
 
-Path to the authentification JSON key file.
+Path to the authentication JSON key file.

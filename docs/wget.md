@@ -2,7 +2,7 @@
 
 ## Basic actions
 
-Dowload a file:
+Download a file:
 
 ```bash
 wget $FILE_URL
