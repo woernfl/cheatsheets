@@ -35,13 +35,13 @@ diff $FILE1 $FILE2
 Get the absolute path of a file:
 
 ```bash
-readink -f $FILE
+readlink -f $FILE
 ```
 
 Become root:
 
 ```bash
-sudo su –
+sudo su -
 ```
 
 Become any user without typing a password:
@@ -179,7 +179,7 @@ Search for a specific keyword (is case sensitive):
 grep $KEYWORD $FILE_PATH
 ```
 
-Search for a specific keyword (is note case sensitive):
+Search for a specific keyword (is not case sensitive):
 
 ```bash
 grep -i $KEYWORD $FILE_PATH
@@ -267,7 +267,7 @@ List folders and subfolders:
 ls -R
 ```
 
-Display size in a human redable format:
+Display size in a human readable format:
 
 ```bash
 ls -lh
@@ -350,11 +350,11 @@ Permissions list:
 | 0 | - | - | - | no permissions |
 | 1 | - | - | x | only execute |
 | 2 | - | w | - | only write |
-| 3 | - | w | x | writte and execute |
+| 3 | - | w | x | write and execute |
 | 4 | r | - | - | only read |
 | 5 | r | - | x | read and execute |
-| 6 | r | w | - | read and writte |
-| 7 | r | w | x | read, writte and execute |
+| 6 | r | w | - | read and write |
+| 7 | r | w | x | read, write and execute |
 
 ## Check logs
 
@@ -657,7 +657,7 @@ __log(){
       --arg message "$message" \
       '.timestamp=$timestamp|.log_level=$log_level|.message=$message'
 }
-````
+```
 
 Usage example:
 

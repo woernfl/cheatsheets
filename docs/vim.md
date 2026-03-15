@@ -193,15 +193,6 @@ Shift-{
 Shift-}
 ```
 
-Navigate blocks of code:
-
-```bash
-# Move one code block up
-Shift-{
-# Move one code block down
-Shift-}
-```
-
 ## Miscellaneous
 
 Set password protection to a file:

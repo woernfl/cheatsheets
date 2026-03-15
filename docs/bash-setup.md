@@ -53,7 +53,7 @@ From now, all the binaries that you will put in your `bin` folders will be acces
 
 ## Bash autocompletion
 
-A list of commande to enable autocompletion for things I use everyday:
+A list of commands to enable autocompletion for things I use everyday:
 
 ```bash
 echo "complete -C '$(which aws_completer)' aws" >> ~/.bashrc

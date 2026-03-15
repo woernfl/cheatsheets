@@ -2,7 +2,7 @@
 
 ## Basic actions
 
-- Checking if GPG Key existe:
+- Checking if GPG Key exists:
 
 ```bash
 gpg --list-secret-keys --keyid-format LONG
@@ -19,7 +19,7 @@ gpg2 --gen-key
 
 - Choose `RSA and RSA` option
 
-- Choose the max lenght size for the key `4096`
+- Choose the max length size for the key `4096`
 
 - Enter the number of days you want this key to be valid
 
