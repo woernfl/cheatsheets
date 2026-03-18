@@ -49,11 +49,13 @@ Install [Homebrew](https://brew.sh/):
 
 Here is the list of packages I usually use:
 
+- [Firefox](https://www.firefox.com)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 
 Here is how to install this packages using the terminal:
 
 ```
+brew install --cask firefox
 brew install rectangle
 ```
 
