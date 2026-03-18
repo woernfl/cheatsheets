@@ -37,6 +37,12 @@ Switch to a bash shell:
 chsh -s /bin/bash
 ```
 
+Add this to your `.bash_profile`:
+
+```bash
+source ~/.bashrc
+```
+
 ## Package managment
 
 Install [Homebrew](https://brew.sh/):
