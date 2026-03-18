@@ -38,7 +38,8 @@
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "aws.telemetry": false,
   "redhat.telemetry.enabled": false,
-  "editor.stickyScroll.enabled": false
+  "editor.stickyScroll.enabled": false,
+  "terminal.integrated.defaultProfile.osx": "bash"
 }
 ```
 
