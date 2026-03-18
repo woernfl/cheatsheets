@@ -56,6 +56,7 @@ Install [Homebrew](https://brew.sh/):
 Here is the list of packages I usually use:
 
 - [Git](https://git-scm.com/)
+- [Bash Completion](https://github.com/scop/bash-completion)
 - [Firefox](https://www.firefox.com)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 - [VS Code](https://code.visualstudio.com/)
@@ -65,6 +66,7 @@ Here is how to install this packages using the terminal:
 
 ```
 brew install git
+brew install bash-completion@2
 brew install --cask firefox
 brew install rectangle
 brew install --cask visual-studio-code
