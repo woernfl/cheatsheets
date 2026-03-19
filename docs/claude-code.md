@@ -1,25 +1,11 @@
 # Claude Code
 
-[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) is an agentic coding tool by Anthropic that runs in your terminal, reads your codebase, and helps you write, edit, and debug code.
-
 ## Installation
 
-Install Claude Code globally via npm:
+Install Claude Code:
 
 ```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-Authenticate with your Anthropic account:
-
-```bash
-claude auth login
-```
-
-Check authentication status:
-
-```bash
-claude auth status
+curl -fsSL https://claude.ai/install.sh | bash
 ```
 
 ## Starting a Session
@@ -28,18 +14,6 @@ Start an interactive session in the current directory:
 
 ```bash
 claude
-```
-
-Start a session with an initial prompt:
-
-```bash
-claude "$PROMPT"
-```
-
-Process a single prompt non-interactively (SDK/pipe mode):
-
-```bash
-claude -p "$PROMPT"
 ```
 
 Pipe file contents to Claude:
@@ -84,46 +58,26 @@ claude update
 
 ## Slash Commands
 
-Type `/help` inside a session to list all available commands.
-
-### Session Management
-
 | Command | Description |
 |---------|-------------|
-| `/help` | Show all available slash commands |
+| `/bug` | Report a bug in the current session |
 | `/clear` | Clear conversation history and start fresh |
 | `/compact [instructions]` | Summarize context to save tokens while keeping key info |
-| `/exit` or `/quit` | Exit the Claude Code session |
-
-### Project
-
-| Command | Description |
-|---------|-------------|
-| `/init` | Create a `CLAUDE.md` project memory file in the repo root |
-| `/memory` | View or manage project and session memory |
-| `/add-dir $PATH` | Add a working directory to the current session |
-
-### Configuration
-
-| Command | Description |
-|---------|-------------|
 | `/config` | Open settings (theme, output format, model, etc.) |
+| `/cost` | Display API usage and estimated cost for the session |
+| `/doctor` | Run diagnostics and environment validation |
+| `/exit` | Exit the Claude Code session |
+| `/help` | Show all available slash commands |
+| `/init` | Create a `CLAUDE.md` project memory file in the repo root |
+| `/mcp` | List connected MCP servers and their status |
+| `/memory` | View or manage project and session memory |
 | `/model` | Switch the Claude model for the current session |
 | `/permissions` | Manage tool permissions |
-| `/doctor` | Run diagnostics and environment validation |
-
-### MCP
-
-| Command | Description |
-|---------|-------------|
-| `/mcp` | List connected MCP servers and their status |
-
-### Utilities
-
-| Command | Description |
-|---------|-------------|
-| `/cost` | Display API usage and estimated cost for the session |
+| `/pr_comments` | Review pull request comments |
+| `/release` | Trigger a release workflow |
+| `/review` | Run a code review on recent changes |
 | `/status` | Show session and configuration status |
+| `/vim` | Toggle Vim keybindings |
 
 ## Keyboard Shortcuts
 
@@ -187,14 +141,6 @@ This creates a `/deploy-prod` slash command inside Claude Code.
 ## MCP (Model Context Protocol)
 
 MCP lets Claude Code connect to external tools, databases, and APIs.
-
-### Configuration Scopes
-
-| Scope | Visibility | Config file |
-|-------|-----------|-------------|
-| `local` | Current project, current user only | `.claude/settings.local.json` |
-| `project` | Current project, all team members | `.claude/settings.json` |
-| `user` | All projects for current user | `~/.claude.json` |
 
 ### Add an MCP Server via CLI
 
@@ -266,13 +212,3 @@ Edit `~/.claude.json` (user scope) or `.claude/settings.json` (project scope):
 ```
 
 Restart Claude Code after editing the config file for changes to take effect.
-
-### Common MCP Servers
-
-| Server | npm package | Description |
-|--------|-------------|-------------|
-| Filesystem | `@modelcontextprotocol/server-filesystem` | Read/write local files |
-| GitHub | `@modelcontextprotocol/server-github` | Manage PRs, issues, repos |
-| PostgreSQL | `@modelcontextprotocol/server-postgres` | Query PostgreSQL databases |
-| Brave Search | `@modelcontextprotocol/server-brave-search` | Web search via Brave |
-| Slack | `@modelcontextprotocol/server-slack` | Read/write Slack messages |
