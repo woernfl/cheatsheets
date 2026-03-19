@@ -61,6 +61,7 @@ Here is the list of packages I usually use:
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 - [VS Code](https://code.visualstudio.com/)
 - [LM Studio](https://lmstudio.ai/)
+- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 
 Here is how to install this packages using the terminal:
 
@@ -71,6 +72,7 @@ brew install --cask firefox
 brew install rectangle
 brew install --cask visual-studio-code
 brew install --cask lm-studio
+brew install kubernetes-cli
 ```
 
 ## Some easy fix
