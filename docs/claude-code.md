@@ -36,19 +36,19 @@ claude -r $SESSION_ID "$PROMPT"
 
 ## CLI Flags
 
-| Flag | Description |
-|------|-------------|
-| `-p "$PROMPT"` | Non-interactive mode (print result and exit) |
-| `-c` | Continue the most recent conversation |
-| `-r $SESSION_ID` | Resume a session by ID |
-| `--model $MODEL` | Specify Claude model (e.g. `claude-opus-4-5`, `claude-sonnet-4-5`) |
-| `--add-dir $PATH` | Add an extra directory to the working context |
-| `--output-format text/json/stream-json` | Choose the output format |
-| `--max-turns $N` | Limit agent turns in non-interactive mode |
-| `--allowedTools $TOOLS` | Comma-separated list of tools Claude may use |
-| `--disallowedTools $TOOLS` | Comma-separated list of tools Claude may not use |
-| `--append-system-prompt "$TEXT"` | Append custom instructions to the system prompt |
-| `--allow-dangerously-skip-permissions` | Skip permission prompts (use with caution) |
+| Flag                                    | Description                                                        |
+| --------------------------------------- | ------------------------------------------------------------------ |
+| `-p "$PROMPT"`                          | Non-interactive mode (print result and exit)                       |
+| `-c`                                    | Continue the most recent conversation                              |
+| `-r $SESSION_ID`                        | Resume a session by ID                                             |
+| `--model $MODEL`                        | Specify Claude model (e.g. `claude-opus-4-5`, `claude-sonnet-4-5`) |
+| `--add-dir $PATH`                       | Add an extra directory to the working context                      |
+| `--output-format text/json/stream-json` | Choose the output format                                           |
+| `--max-turns $N`                        | Limit agent turns in non-interactive mode                          |
+| `--allowedTools $TOOLS`                 | Comma-separated list of tools Claude may use                       |
+| `--disallowedTools $TOOLS`              | Comma-separated list of tools Claude may not use                   |
+| `--append-system-prompt "$TEXT"`        | Append custom instructions to the system prompt                    |
+| `--allow-dangerously-skip-permissions`  | Skip permission prompts (use with caution)                         |
 
 Update Claude Code to the latest version:
 
@@ -58,39 +58,39 @@ claude update
 
 ## Slash Commands
 
-| Command | Description |
-|---------|-------------|
-| `/bug` | Report a bug in the current session |
-| `/clear` | Clear conversation history and start fresh |
-| `/compact [instructions]` | Summarize context to save tokens while keeping key info |
-| `/config` | Open settings (theme, output format, model, etc.) |
-| `/cost` | Display API usage and estimated cost for the session |
-| `/doctor` | Run diagnostics and environment validation |
-| `/exit` | Exit the Claude Code session |
-| `/help` | Show all available slash commands |
-| `/init` | Create a `CLAUDE.md` project memory file in the repo root |
-| `/mcp` | List connected MCP servers and their status |
-| `/memory` | View or manage project and session memory |
-| `/model` | Switch the Claude model for the current session |
-| `/permissions` | Manage tool permissions |
-| `/pr_comments` | Review pull request comments |
-| `/release` | Trigger a release workflow |
-| `/review` | Run a code review on recent changes |
-| `/status` | Show session and configuration status |
-| `/vim` | Toggle Vim keybindings |
+| Command                   | Description                                               |
+| ------------------------- | --------------------------------------------------------- |
+| `/bug`                    | Report a bug in the current session                       |
+| `/clear`                  | Clear conversation history and start fresh                |
+| `/compact [instructions]` | Summarize context to save tokens while keeping key info   |
+| `/config`                 | Open settings (theme, output format, model, etc.)         |
+| `/cost`                   | Display API usage and estimated cost for the session      |
+| `/doctor`                 | Run diagnostics and environment validation                |
+| `/exit`                   | Exit the Claude Code session                              |
+| `/help`                   | Show all available slash commands                         |
+| `/init`                   | Create a `CLAUDE.md` project memory file in the repo root |
+| `/mcp`                    | List connected MCP servers and their status               |
+| `/memory`                 | View or manage project and session memory                 |
+| `/model`                  | Switch the Claude model for the current session           |
+| `/permissions`            | Manage tool permissions                                   |
+| `/pr_comments`            | Review pull request comments                              |
+| `/release`                | Trigger a release workflow                                |
+| `/review`                 | Run a code review on recent changes                       |
+| `/status`                 | Show session and configuration status                     |
+| `/vim`                    | Toggle Vim keybindings                                    |
 
 ## Keyboard Shortcuts
 
-| Shortcut | Description |
-|----------|-------------|
-| `Ctrl+C` | Interrupt Claude's current response |
-| `Ctrl+D` | Exit the session |
-| `Esc` | Cancel/escape current output |
-| `Esc` `Esc` | Open the rewind menu to undo recent changes |
-| `Shift+Tab` | Toggle auto-accept mode |
-| `Ctrl+G` | Open the prompt in an external editor |
-| `Option+T` / `Alt+T` | Enable extended thinking mode |
-| `Option+P` / `Alt+P` | Open the model picker |
+| Shortcut             | Description                                 |
+| -------------------- | ------------------------------------------- |
+| `Ctrl+C`             | Interrupt Claude's current response         |
+| `Ctrl+D`             | Exit the session                            |
+| `Esc`                | Cancel/escape current output                |
+| `Esc` `Esc`          | Open the rewind menu to undo recent changes |
+| `Shift+Tab`          | Toggle auto-accept mode                     |
+| `Ctrl+G`             | Open the prompt in an external editor       |
+| `Option+T` / `Alt+T` | Enable extended thinking mode               |
+| `Option+P` / `Alt+P` | Open the model picker                       |
 
 ## Project Memory (CLAUDE.md)
 
@@ -106,11 +106,13 @@ This creates a `CLAUDE.md` in the repo root. Add project-specific conventions, a
 # Project Context
 
 ## Architecture
+
 - Backend: Node.js + Express
 - Database: PostgreSQL
 - Frontend: React
 
 ## Conventions
+
 - Use kebab-case for file names
 - All functions must have JSDoc comments
 - Run `npm test` before committing
@@ -129,11 +131,13 @@ Example `.claude/commands/deploy-prod.md`:
 ---
 description: Deploy the application to production
 ---
+
 Run the following steps to deploy:
+
 1. Run `npm run build`
 2. Run the test suite with `npm test`
 3. Deploy using `./scripts/deploy.sh production`
-Report any errors and ask before proceeding to the next step.
+   Report any errors and ask before proceeding to the next step.
 ```
 
 This creates a `/deploy-prod` slash command inside Claude Code.
@@ -161,11 +165,11 @@ claude mcp add --scope user --transport stdio $SERVER_NAME -- $COMMAND $ARGS
 claude mcp add --scope project --transport http $SERVER_NAME $SERVER_URL
 ```
 
-| Scope | Visibility | Config file |
-|-------|-----------|-------------|
-| `local` | Current project, current user only | `.claude/settings.local.json` |
-| `project` | Current project, all team members | `.claude/settings.json` |
-| `user` | All projects for current user | `~/.claude.json` |
+| Scope     | Visibility                         | Config file                   |
+| --------- | ---------------------------------- | ----------------------------- |
+| `local`   | Current project, current user only | `.claude/settings.local.json` |
+| `project` | Current project, all team members  | `.claude/settings.json`       |
+| `user`    | All projects for current user      | `~/.claude.json`              |
 
 ### Manage MCP Servers
 
@@ -190,7 +194,11 @@ Edit `~/.claude.json` (user scope) or `.claude/settings.json` (project scope):
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/$USER/Documents"],
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/$USER/Documents"
+      ],
       "env": {}
     },
     "github": {
