@@ -74,6 +74,7 @@ brew install rectangle
 brew install --cask visual-studio-code
 brew install --cask lm-studio
 brew install kubernetes-cli
+brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
 ```
 
