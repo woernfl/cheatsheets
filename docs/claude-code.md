@@ -69,7 +69,7 @@ claude -r $SESSION_ID "$PROMPT"
 | `-r $SESSION_ID` | Resume a session by ID |
 | `--model $MODEL` | Specify Claude model (e.g. `claude-opus-4-5`, `claude-sonnet-4-5`) |
 | `--add-dir $PATH` | Add an extra directory to the working context |
-| `--output-format text\|json\|stream-json` | Choose the output format |
+| `--output-format text/json/stream-json` | Choose the output format |
 | `--max-turns $N` | Limit agent turns in non-interactive mode |
 | `--allowedTools $TOOLS` | Comma-separated list of tools Claude may use |
 | `--disallowedTools $TOOLS` | Comma-separated list of tools Claude may not use |
