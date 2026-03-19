@@ -163,11 +163,11 @@ claude mcp add --scope user --transport stdio $SERVER_NAME -- $COMMAND $ARGS
 claude mcp add --scope project --transport http $SERVER_NAME $SERVER_URL
 ```
 
-Add environment variables to a server:
-
-```bash
-claude mcp add --transport stdio $SERVER_NAME --env KEY=VALUE -- $COMMAND $ARGS
-```
+| Scope | Visibility | Config file |
+|-------|-----------|-------------|
+| `local` | Current project, current user only | `.claude/settings.local.json` |
+| `project` | Current project, all team members | `.claude/settings.json` |
+| `user` | All projects for current user | `~/.claude.json` |
 
 ### Manage MCP Servers
 
