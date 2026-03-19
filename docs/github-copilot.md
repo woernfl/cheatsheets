@@ -20,50 +20,50 @@ code --install-extension GitHub.copilot-chat
 
 ### Inline Suggestions
 
-| Shortcut                   | Description                              |
-| -------------------------- | ---------------------------------------- |
-| `Tab`                      | Accept the current inline suggestion     |
-| `Esc`                      | Dismiss the current inline suggestion    |
-| `Alt+]` / `Option+]`       | Show next inline suggestion              |
-| `Alt+[` / `Option+[`       | Show previous inline suggestion          |
-| `Ctrl+Enter`               | Open Copilot completions panel           |
-| `Alt+\` / `Option+\`       | Trigger inline suggestion manually       |
+| Shortcut             | Description                           |
+| -------------------- | ------------------------------------- |
+| `Tab`                | Accept the current inline suggestion  |
+| `Esc`                | Dismiss the current inline suggestion |
+| `Alt+]` / `Option+]` | Show next inline suggestion           |
+| `Alt+[` / `Option+[` | Show previous inline suggestion       |
+| `Ctrl+Enter`         | Open Copilot completions panel        |
+| `Alt+\` / `Option+\` | Trigger inline suggestion manually    |
 
 ### Chat
 
-| Shortcut                   | Description                              |
-| -------------------------- | ---------------------------------------- |
-| `Ctrl+Alt+I` / `Ctrl+Cmd+I`| Open Copilot Chat panel                  |
-| `Ctrl+I`                   | Open inline chat in the editor           |
-| `Ctrl+Shift+I`             | Open Copilot Chat in a new window        |
+| Shortcut                    | Description                       |
+| --------------------------- | --------------------------------- |
+| `Ctrl+Alt+I` / `Ctrl+Cmd+I` | Open Copilot Chat panel           |
+| `Ctrl+I`                    | Open inline chat in the editor    |
+| `Ctrl+Shift+I`              | Open Copilot Chat in a new window |
 
 ## Chat Slash Commands
 
-| Command      | Description                                                    |
-| ------------ | -------------------------------------------------------------- |
-| `/explain`   | Explain how the selected code works                            |
-| `/fix`       | Propose a fix for bugs in the selected code                    |
-| `/tests`     | Generate unit tests for the selected code                      |
-| `/doc`       | Add documentation comments to the selected code               |
-| `/simplify`  | Simplify the selected code                                     |
-| `/new`       | Scaffold a new workspace or file                               |
-| `/newNotebook` | Create a new Jupyter notebook                               |
-| `/clear`     | Start a new chat session                                       |
-| `/help`      | Show available slash commands and chat tips                    |
+| Command        | Description                                     |
+| -------------- | ----------------------------------------------- |
+| `/explain`     | Explain how the selected code works             |
+| `/fix`         | Propose a fix for bugs in the selected code     |
+| `/tests`       | Generate unit tests for the selected code       |
+| `/doc`         | Add documentation comments to the selected code |
+| `/simplify`    | Simplify the selected code                      |
+| `/new`         | Scaffold a new workspace or file                |
+| `/newNotebook` | Create a new Jupyter notebook                   |
+| `/clear`       | Start a new chat session                        |
+| `/help`        | Show available slash commands and chat tips     |
 
 ## Chat Variables
 
 Reference context directly in your chat prompts using `#` variables:
 
-| Variable            | Description                                          |
-| ------------------- | ---------------------------------------------------- |
-| `#file`             | Reference a specific file from the workspace         |
-| `#editor`           | Reference the currently active editor content        |
-| `#selection`        | Reference the current text selection                 |
-| `#terminalSelection`| Reference the current terminal selection             |
-| `#terminalLastCommand` | Reference the last terminal command and output    |
-| `#codebase`         | Search across the entire codebase for relevant files |
-| `#sym`              | Reference a specific symbol (function, class, etc.)  |
+| Variable               | Description                                          |
+| ---------------------- | ---------------------------------------------------- |
+| `#file`                | Reference a specific file from the workspace         |
+| `#editor`              | Reference the currently active editor content        |
+| `#selection`           | Reference the current text selection                 |
+| `#terminalSelection`   | Reference the current terminal selection             |
+| `#terminalLastCommand` | Reference the last terminal command and output       |
+| `#codebase`            | Search across the entire codebase for relevant files |
+| `#sym`                 | Reference a specific symbol (function, class, etc.)  |
 
 Example usage:
 
@@ -75,11 +75,11 @@ Explain how authentication works in #file:src/auth.ts
 
 Prefix your message with `@` to target a specific agent:
 
-| Participant  | Description                                                     |
-| ------------ | --------------------------------------------------------------- |
-| `@workspace` | Ask questions about the entire workspace/codebase               |
-| `@vscode`    | Ask questions about VS Code settings, commands, and extensions  |
-| `@terminal`  | Get help with shell commands and terminal usage                 |
+| Participant  | Description                                                    |
+| ------------ | -------------------------------------------------------------- |
+| `@workspace` | Ask questions about the entire workspace/codebase              |
+| `@vscode`    | Ask questions about VS Code settings, commands, and extensions |
+| `@terminal`  | Get help with shell commands and terminal usage                |
 | `@github`    | Search GitHub repositories, issues, PRs and docs               |
 
 Example usage:
