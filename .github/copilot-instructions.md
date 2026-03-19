@@ -33,3 +33,16 @@ Deployment: Netlify runs `mkdocs build` and publishes `site/` on push.
 1. Create `docs/<topic>.md` with an `# H1` title.
 2. Follow the structure of existing files (e.g., `git.md`, `kubernetes.md`) for style reference.
 3. No other config changes needed — MkDocs picks it up automatically.
+
+## Before Pushing
+
+Run the following steps before every push:
+
+1. **Format with Prettier** — mandatory, run on every modified file:
+   ```bash
+   npx prettier --write docs/<file>.md
+   ```
+2. **Verify the build** — ensure MkDocs can build without errors:
+   ```bash
+   mkdocs build --no-strict
+   ```
