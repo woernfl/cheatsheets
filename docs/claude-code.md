@@ -140,8 +140,6 @@ This creates a `/deploy-prod` slash command inside Claude Code.
 
 ## MCP (Model Context Protocol)
 
-MCP lets Claude Code connect to external tools, databases, and APIs.
-
 ### Add an MCP Server via CLI
 
 Add a local stdio-based MCP server:
