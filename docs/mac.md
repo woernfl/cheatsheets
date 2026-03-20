@@ -62,6 +62,7 @@ Here is the list of packages I usually use:
 - [VS Code](https://code.visualstudio.com/)
 - [LM Studio](https://lmstudio.ai/)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+- [pipx](https://pipx.pypa.io/stable/)
 - [Netbird](https://docs.netbird.io/)
 
 Here is how to install this packages using the terminal:
@@ -74,6 +75,7 @@ brew install rectangle
 brew install --cask visual-studio-code
 brew install --cask lm-studio
 brew install kubernetes-cli
+brew install pipx && pipx ensurepath
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
 ```
