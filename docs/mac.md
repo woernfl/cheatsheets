@@ -64,6 +64,7 @@ Here is the list of packages I usually use:
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 - [pipx](https://pipx.pypa.io/stable/)
 - [watch](https://gitlab.com/procps-ng/procps)
+- [pre-commit](https://pre-commit.com/)
 - [Netbird](https://docs.netbird.io/)
 
 Here is how to install this packages using the terminal:
@@ -78,6 +79,7 @@ brew install --cask lm-studio
 brew install kubernetes-cli
 brew install pipx && pipx ensurepath
 brew install watch
+brew install pre-commit
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
 ```
