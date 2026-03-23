@@ -57,9 +57,9 @@ Here is the list of packages I usually use:
 
 - [Git](https://git-scm.com/)
 - [Bash Completion](https://github.com/scop/bash-completion)
-- [Firefox](https://www.firefox.com)
 - [Chrome](https://www.google.com/chrome/)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
+- [Whatsapp](https://www.whatsapp.com/)
 - [VS Code](https://code.visualstudio.com/)
 - [LM Studio](https://lmstudio.ai/)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
@@ -73,9 +73,9 @@ Here is how to install this packages using the terminal:
 ```
 brew install git
 brew install bash-completion@2
-brew install --cask firefox
 brew install --cask google-chrome
 brew install rectangle
+brew install --cask whatsapp
 brew install --cask visual-studio-code
 brew install --cask lm-studio
 brew install kubernetes-cli
