@@ -1,5 +1,86 @@
 # OpenCode
 
+## TUI Slash Commands
+
+Inside the TUI, type `/` to trigger a slash command:
+
+| Command     | Description                                         |
+| ----------- | --------------------------------------------------- |
+| `/connect`  | Add a model provider and set API keys interactively |
+| `/models`   | Switch or list available models                     |
+| `/init`     | Scan project and generate/update `AGENTS.md`        |
+| `/new`      | Start a new chat session                            |
+| `/sessions` | Open session history and switch or resume sessions  |
+| `/compact`  | Summarize the session to manage context length      |
+| `/undo`     | Undo the last code change (git-based)               |
+| `/redo`     | Redo the last undone code change (git-based)        |
+| `/editor`   | Open your external editor to compose a prompt       |
+| `/export`   | Export the session as Markdown or JSON              |
+| `/share`    | Generate a share link for the current session       |
+| `/unshare`  | Cancel a previously generated share link            |
+| `/details`  | Toggle display of execution and tool details        |
+| `/theme`    | Change the TUI theme                                |
+| `/help`     | Show interactive command help                       |
+| `/exit`     | Quit OpenCode                                       |
+
+## Keyboard Shortcuts
+
+The default leader key is `Ctrl+X`. Press the leader key followed by the next key to trigger an action.
+
+| Shortcut            | Description                      |
+| ------------------- | -------------------------------- |
+| `Ctrl+C` / `Ctrl+D` | Exit the app                     |
+| `<leader>q`         | Quit OpenCode                    |
+| `<leader>n`         | Start a new session              |
+| `<leader>l`         | List sessions                    |
+| `<leader>e`         | Open external editor             |
+| `<leader>m`         | Cycle available models           |
+| `<leader>a`         | Show agent list                  |
+| `<leader>b`         | Toggle sidebar                   |
+| `<leader>t`         | List and change themes           |
+| `<leader>x`         | Export session                   |
+| `<leader>u`         | Undo last message                |
+| `<leader>r`         | Redo last message                |
+| `<leader>h`         | Show help dialog                 |
+| `Ctrl+A`            | Move cursor to beginning of line |
+| `Ctrl+E`            | Move cursor to end of line       |
+
+## MCP (Model Context Protocol)
+
+Add an MCP server:
+
+```bash
+opencode mcp add
+```
+
+Example `opencode.json` MCP configuration:
+
+```json
+{
+  "mcp": {
+    "servers": {
+      "filesystem": {
+        "type": "local",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/home/$USER/Documents"
+        ]
+      },
+      "github": {
+        "type": "local",
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-github"],
+        "env": {
+          "GITHUB_PERSONAL_ACCESS_TOKEN": "$GITHUB_TOKEN"
+        }
+      }
+    }
+  }
+}
+```
+
 ## Installation
 
 Install using the official install script (Linux/macOS):
@@ -12,12 +93,6 @@ Install via Homebrew (macOS/Linux):
 
 ```bash
 brew install opencode-ai/tap/opencode
-```
-
-Install via npm:
-
-```bash
-npm install -g opencode-ai
 ```
 
 Verify the installation:
@@ -85,51 +160,6 @@ List all session histories:
 opencode session list
 ```
 
-## TUI Slash Commands
-
-Inside the TUI, type `/` to trigger a slash command:
-
-| Command     | Description                                         |
-| ----------- | --------------------------------------------------- |
-| `/connect`  | Add a model provider and set API keys interactively |
-| `/models`   | Switch or list available models                     |
-| `/init`     | Scan project and generate/update `AGENTS.md`        |
-| `/new`      | Start a new chat session                            |
-| `/sessions` | Open session history and switch or resume sessions  |
-| `/compact`  | Summarize the session to manage context length      |
-| `/undo`     | Undo the last code change (git-based)               |
-| `/redo`     | Redo the last undone code change (git-based)        |
-| `/editor`   | Open your external editor to compose a prompt       |
-| `/export`   | Export the session as Markdown or JSON              |
-| `/share`    | Generate a share link for the current session       |
-| `/unshare`  | Cancel a previously generated share link            |
-| `/details`  | Toggle display of execution and tool details        |
-| `/theme`    | Change the TUI theme                                |
-| `/help`     | Show interactive command help                       |
-| `/exit`     | Quit OpenCode                                       |
-
-## Keyboard Shortcuts
-
-The default leader key is `Ctrl+X`. Press the leader key followed by the next key to trigger an action.
-
-| Shortcut            | Description                      |
-| ------------------- | -------------------------------- |
-| `Ctrl+C` / `Ctrl+D` | Exit the app                     |
-| `<leader>q`         | Quit OpenCode                    |
-| `<leader>n`         | Start a new session              |
-| `<leader>l`         | List sessions                    |
-| `<leader>e`         | Open external editor             |
-| `<leader>m`         | Cycle available models           |
-| `<leader>a`         | Show agent list                  |
-| `<leader>b`         | Toggle sidebar                   |
-| `<leader>t`         | List and change themes           |
-| `<leader>x`         | Export session                   |
-| `<leader>u`         | Undo last message                |
-| `<leader>r`         | Redo last message                |
-| `<leader>h`         | Show help dialog                 |
-| `Ctrl+A`            | Move cursor to beginning of line |
-| `Ctrl+E`            | Move cursor to end of line       |
-
 ## Configuration
 
 OpenCode is configured via `opencode.json`. Place it in the project root (project-scoped) or `~/.config/opencode/opencode.json` (user-scoped).
@@ -195,40 +225,4 @@ Shell command output can be injected into prompts with `!$COMMAND`:
 
 ```
 !git diff HEAD
-```
-
-## MCP (Model Context Protocol)
-
-Add an MCP server:
-
-```bash
-opencode mcp add
-```
-
-Example `opencode.json` MCP configuration:
-
-```json
-{
-  "mcp": {
-    "servers": {
-      "filesystem": {
-        "type": "local",
-        "command": "npx",
-        "args": [
-          "-y",
-          "@modelcontextprotocol/server-filesystem",
-          "/home/$USER/Documents"
-        ]
-      },
-      "github": {
-        "type": "local",
-        "command": "npx",
-        "args": ["-y", "@modelcontextprotocol/server-github"],
-        "env": {
-          "GITHUB_PERSONAL_ACCESS_TOKEN": "$GITHUB_TOKEN"
-        }
-      }
-    }
-  }
-}
 ```
