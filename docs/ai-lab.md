@@ -99,7 +99,7 @@ No need to tell me that my setup is great. Just answer the question.
 Install MCP in VSCode:
 
 ```bash
-code --add-mcp '{"name":"kubernetes","command":"npx","args":["kubernetes-mcp-server@latest"]}'
+code --add-mcp '{"name":"kubernetes","command":"npx","args":["-y", "kubernetes-mcp-server@latest"]}'
 ```
 
 ## VRAM Budget
