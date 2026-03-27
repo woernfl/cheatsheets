@@ -163,7 +163,7 @@
     "eval": false,
     "Invoke-Expression": false,
     "iex": false,
-    "/^kubectl (explain\\b.*|get\\b.*|cluster-info\\b.*|top\\b.*|describe\\b.*|logs\\b.*|auth\\b.*|events\\b.*|diff\\b.*|wait\\b.*|api-resources\\b.*|api-versions\\b.*|version\\b.*)$/": true
+    "/^kubectl\\s+(explain|get|cluster-info|top|describe|logs|auth|events|diff|wait|api-resources|api-versions|version?)\\b/": true,
 }
 ```
 
