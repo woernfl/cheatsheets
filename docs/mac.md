@@ -83,6 +83,7 @@ brew install --cask whatsapp
 brew install --cask visual-studio-code
 brew install --cask lm-studio
 brew install node@24
+echo 'export PATH="/opt/homebrew/opt/node@24/bin:$PATH"' >> /Users/woernfl/.bashrc
 brew install kubernetes-cli
 brew install kubeseal
 brew install pipx && pipx ensurepath
