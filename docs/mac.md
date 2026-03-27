@@ -63,6 +63,7 @@ Here is the list of packages I usually use:
 - [Whatsapp](https://www.whatsapp.com/)
 - [VS Code](https://code.visualstudio.com/)
 - [LM Studio](https://lmstudio.ai/)
+- [Nodejs](https://github.com/nodejs/node)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 - [kubeseal](https://github.com/bitnami-labs/sealed-secrets)
 - [pipx](https://pipx.pypa.io/stable/)
@@ -81,6 +82,7 @@ brew install --cask alt-tab
 brew install --cask whatsapp
 brew install --cask visual-studio-code
 brew install --cask lm-studio
+brew install node@24
 brew install kubernetes-cli
 brew install kubeseal
 brew install pipx && pipx ensurepath
