@@ -94,6 +94,14 @@ Here is a list of softwares I use in my home lab:
 No need to tell me that my setup is great. Just answer the question.
 ```
 
+## MCP
+
+Install MCP in VSCode:
+
+```bash
+code --add-mcp '{"name":"kubernetes","command":"npx","args":["kubernetes-mcp-server@latest"]}'
+```
+
 ## VRAM Budget
 
 Rule of thumb:
