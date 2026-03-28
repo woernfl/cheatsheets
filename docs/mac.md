@@ -56,6 +56,7 @@ Install [Homebrew](https://brew.sh/):
 Here is the list of packages I usually use:
 
 - [Git](https://git-scm.com/)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Bash Completion](https://github.com/scop/bash-completion)
 - [Chrome](https://www.google.com/chrome/)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
@@ -76,6 +77,7 @@ Here is how to install this packages using the terminal:
 
 ```
 brew install git
+brew install --cask docker-desktop
 brew install bash-completion@2
 brew install --cask google-chrome
 brew install rectangle
