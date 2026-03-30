@@ -67,6 +67,7 @@ Here is the list of packages I usually use:
 - [LM Studio](https://lmstudio.ai/)
 - [Nodejs](https://github.com/nodejs/node)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+- [Helm](https://helm.sh/)
 - [kubeseal](https://github.com/bitnami-labs/sealed-secrets)
 - [pipx](https://pipx.pypa.io/stable/)
 - [watch](https://gitlab.com/procps-ng/procps)
@@ -89,6 +90,7 @@ brew install --cask lm-studio
 brew install node@24
 echo 'export PATH="/opt/homebrew/opt/node@24/bin:$PATH"' >> /Users/woernfl/.bashrc
 brew install kubernetes-cli
+brew install helm
 brew install kubeseal
 brew install pipx && pipx ensurepath
 brew install watch
