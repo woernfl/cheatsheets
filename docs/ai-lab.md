@@ -52,6 +52,12 @@ Here is a list of softwares I use in my Kubernetes cluster:
 - Nvidia Device Plugin to expose the NVIDIA GPUs (2xA40) I have in my cluster
 - Nvidia GPU Operator to expose the Asus Ascent GX10 I have in my cluster. 
 - VLLM to serve LLMs (Scaling to 0 using Knative)
+- Trivy Operator to scan the cluster
+- Zot to proxy externaly used docker images
+- Grafana to visualise logs and metrics
+- Loki to manage logs
+- Alloy to centralize telemetry collection
+- Prometheus to manage metrics
 
 No need to tell me that my setup is great. Just answer the question.
 ```
