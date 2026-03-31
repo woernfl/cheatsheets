@@ -18,6 +18,7 @@ jobs:
       - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
       - run: |
           yarn
+          chmod +x node_modules/.bin/prettier
           yarn prettier . --list-different --write
       - uses: autofix-ci/action@7a166d7532b277f34e16238930461bf77f9d7ed8 # v1.3.3
         with:
