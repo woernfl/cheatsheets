@@ -27,7 +27,7 @@ steps {
   script {
     env.TARGET_ENV = "test"
   }
-  
+
   echo "TARGET_ENV = ${env.TARGET_ENV}"
 
   withEnv(["TARGET_ENV=prod"]) {

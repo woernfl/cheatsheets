@@ -9,6 +9,7 @@
 ```markdown
 I have a home lab running on bare metal servers in my home.
 Here is the list of all the hardware:
+
 - 1 Unifi Dream Machine Pro (Main router)
 - 1 Unifi USW Pro Aggregation (Top Of Rack Switch)
 - 1 Unifi USW Enterprise 24 PoE
@@ -25,8 +26,9 @@ No need to tell me that my setup is great. Just answer the question.
 
 ```markdown
 I have a home lab running in my home.
-Everything is managed by a Kubernetes cluster except the DNS service which is running on separate nodes. 
+Everything is managed by a Kubernetes cluster except the DNS service which is running on separate nodes.
 Here is a list of softwares I use in my Kubernetes cluster:
+
 - Github to store all my code in git repos
 - Renovate Bot to make sure I am always up to date
 - Kubespray to manage the lifecycle of my Kubernetes cluster
@@ -50,7 +52,7 @@ Here is a list of softwares I use in my Kubernetes cluster:
 - Knative to serve workloads that can scale to 0
 - Kourier to serve workloads managed by Knative
 - Nvidia Device Plugin to expose the NVIDIA GPUs (2xA40) I have in my cluster
-- Nvidia GPU Operator to expose the Asus Ascent GX10 I have in my cluster. 
+- Nvidia GPU Operator to expose the Asus Ascent GX10 I have in my cluster.
 - VLLM to serve LLMs (Scaling to 0 using Knative)
 - Trivy Operator to scan the cluster
 - Zot to proxy externaly used docker images
@@ -68,6 +70,7 @@ No need to tell me that my setup is great. Just answer the question.
 I have a home lab running in my home.
 
 Here is a list of softwares I use in my home lab:
+
 - Github to store all my code in git repos
 - VSCode
 - pre-commit:

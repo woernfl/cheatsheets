@@ -14,8 +14,8 @@ gpg --list-secret-keys --keyid-format LONG
 gpg2 --gen-key
 ```
 
-!!! note 
-    If you get the following error: `gpg: Sorry, no terminal at all requested - can't get input` remove the line `no-tty` from `~/.gnupg/gpg.conf`
+!!! note
+If you get the following error: `gpg: Sorry, no terminal at all requested - can't get input` remove the line `no-tty` from `~/.gnupg/gpg.conf`
 
 - Choose `RSA and RSA` option
 
@@ -50,7 +50,7 @@ $ gpg --list-secret-keys --keyid-format LONG
 /Users/hubot/.gnupg/secring.gpg
 ------------------------------------
 sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
-uid                          Hubot 
+uid                          Hubot
 ssb   4096R/42B317FD4BA89E7A 2016-03-10
 ```
 

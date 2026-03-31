@@ -19,6 +19,7 @@ Bootstrap the AWS account
 ```bash
 cdk bootstrap aws://$AWS_ACCOUNT_ID/$AWS_REGION
 ```
+
 List the different stacks:
 
 ```bash

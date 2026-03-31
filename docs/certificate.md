@@ -8,7 +8,7 @@ Supports storage of private and public keys and all certificates in the path.
 
 **`CER` or `CRT` Base64-encoded or DER-encoded binary X.509 Certificate**
 
-Storage of a single certificate.  This format does not support storage of private keys.
+Storage of a single certificate. This format does not support storage of private keys.
 
 **`CRL` Certificate Revocation List**
 
@@ -20,7 +20,7 @@ This file type is issued by applications to submit requests to a Certification A
 
 **`DER` DER-encoded binary X.509 Certificate**
 
-Storage of a single certificate.  This format does not support storage of private keys.
+Storage of a single certificate. This format does not support storage of private keys.
 
 **`P7B` or `P7R` or `SPC` Cryptographic Message Syntax Standard**
 
