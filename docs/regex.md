@@ -10,7 +10,7 @@
 | \d             | Any numeric character (equivalent to [0-9])                          | c\d       | c1, c2, c3 ...         |
 | \D             | Any non-numeric character (equivalent to [^0-9])                     | c\D       | ca, c., c\* ...        |
 | \w             | Any alphanumeric character (equivalent to [A-Za-z0-9_])              | a\w       | aa, a1, a\* ...        |
-| \W             | Any non-alphanumeric character (equivalent to [^A-Za-z0-9_])          | a\W       | a), a$, a? ...         |
+| \W             | Any non-alphanumeric character (equivalent to [^A-Za-z0-9_])         | a\W       | a), a$, a? ...         |
 | \s             | Usually used for white space, but can be used for new line, tab, etc | a\s       | a                      |
 | \S             | Not a white space or equivalent like new line, tab, etc              | a\S       | aa                     |
 | \t             | Matches a horizontal tab                                             | T\tab     | T ab                   |

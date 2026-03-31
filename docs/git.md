@@ -314,7 +314,7 @@ git config --global gpg.program gpg2
 Enable credential helper to not have to retype your password each time you want to do something:
 
 ```
-git config credential.helper store 
+git config credential.helper store
 ```
 
 ## Submodules
@@ -442,4 +442,3 @@ Trigger the CI without making changes to the code base:
 ```bash
 git commit --allow-empty -s -m "Trigger CI"
 ```
-

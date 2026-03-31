@@ -206,7 +206,7 @@ kubectl get nodes -o custom-columns=NAME:.metadata.name,CPU_CAPACITY:.status.cap
 Create a job from a cronjob
 
 ```bash
-kubectl create job --from=cronjobs.batch/$CRONJOB_NAME $JOB_NAME 
+kubectl create job --from=cronjobs.batch/$CRONJOB_NAME $JOB_NAME
 ```
 
 Suspend a cronjob:
