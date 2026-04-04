@@ -164,6 +164,7 @@
     "Invoke-Expression": false,
     "iex": false,
     "/^kubectl\\s+(explain|get|cluster-info|top|describe|logs|auth|events|diff|wait|api-resources|api-versions|version?)\\b/": true,
+    "true": true,
 }
 ```
 
