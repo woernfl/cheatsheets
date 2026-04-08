@@ -26,6 +26,12 @@ Get really all the ressources of a specific namespace:
 kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -n $NAMESPACE
 ```
 
+List all ingressroutes hosts:
+
+```bash
+kubectl get ingressroutes --all-namespaces -o custom-columns="NAME:.metadata.name,HOSTS:.spec.routes[*].match"
+```
+
 ## Generic actions
 
 Rename a ressource (the deployment ressource is an example, is working with other ressources also):
