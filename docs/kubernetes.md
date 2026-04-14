@@ -118,7 +118,7 @@ kubectl get pods --watch --output-watch-events
 Get the list of all non running pods:
 
 ```bash
-kubectl get pods --all-namespaces --field-selector=status.phase!=Running,status.phase!=Succeeded
+kubectl get pods --all-namespaces | awk 'NR==1 || ($4!="Running" && $4!="Completed")'
 ```
 
 Get the list of pod with their CPU consumpsion:
