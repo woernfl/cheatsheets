@@ -12,7 +12,7 @@
 | ]       | Alt + Maj + ) | Alt + 6        |
 | {       | Alt + (       | Alt + 8        |
 | }       | Alt + )       | Alt + 9        |
-| #       | Alt +         | Alt + 3        |
+| #       | Maj + #       | Alt + 3        |
 
 ### Systeme
 
