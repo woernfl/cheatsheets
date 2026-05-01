@@ -74,6 +74,7 @@ Here is the list of packages I usually use:
 - [pipx](https://pipx.pypa.io/stable/)
 - [watch](https://gitlab.com/procps-ng/procps)
 - [pre-commit](https://pre-commit.com/)
+- [argocd](https://argoproj.github.io/cd/)
 - [Netbird](https://docs.netbird.io/)
 
 Here is how to install this packages using the terminal:
@@ -98,6 +99,7 @@ brew install kubeseal
 brew install pipx && pipx ensurepath
 brew install watch
 brew install pre-commit
+brew install argocd
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
 ```
