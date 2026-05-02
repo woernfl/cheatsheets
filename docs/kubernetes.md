@@ -118,6 +118,10 @@ kubectl get pods --watch --output-watch-events
 Get the list of all non running pods:
 
 ```bash
+kubectl get pods --all-namespaces | grep -v -E "Running|Completed"
+```
+
+```bash
 watch -n 2 'kubectl get pods --all-namespaces | grep -v -E "Running|Completed"'
 ```
 
