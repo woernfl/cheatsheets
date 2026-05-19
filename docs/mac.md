@@ -76,7 +76,6 @@ Here is the list of packages I usually use:
 - [pre-commit](https://pre-commit.com/)
 - [argocd](https://argoproj.github.io/cd/)
 - [Netbird](https://docs.netbird.io/)
-- [Termix](https://docs.termix.site/)
 
 Here is how to install this packages using the terminal:
 
@@ -103,8 +102,6 @@ brew install pre-commit
 brew install argocd
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
-brew tap Termix-SSH/Termix https://github.com/Termix-SSH/Termix.git
-brew install --cask termix
 ```
 
 ## Some easy fix
