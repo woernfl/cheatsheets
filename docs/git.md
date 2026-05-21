@@ -141,7 +141,7 @@ Check stages changes:
 git diff --staged
 ```
 
-## Commit history managment
+## Commit history management
 
 Check commit history:
 
@@ -170,7 +170,7 @@ git commit --amend
 Add file change to the last commit:
 
 ```bash
-git commit --am -s -m "$COMMIT_MESSAGE"
+git commit --amend -s -m "$COMMIT_MESSAGE"
 ```
 
 Count the number of commits on a specific branch:
@@ -179,7 +179,7 @@ Count the number of commits on a specific branch:
 git rev-list --count $BRANCH_NAME
 ```
 
-## Branch managment
+## Branch management
 
 Delete local branch:
 
@@ -253,7 +253,7 @@ git remote add origin $REPO_URL
 git push -u origin master
 ```
 
-## Config managment
+## Config management
 
 To set the default config to be used, used `git config --global --edit`:
 

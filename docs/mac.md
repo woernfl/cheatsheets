@@ -44,7 +44,7 @@ Add this to your `.bash_profile`:
 source ~/.bashrc
 ```
 
-## Package managment
+## Package management
 
 Install [Homebrew](https://brew.sh/):
 
@@ -92,7 +92,7 @@ brew install --cask visual-studio-code
 brew install --cask lm-studio
 brew install --cask jan
 brew install node@24
-echo 'export PATH="/opt/homebrew/opt/node@24/bin:$PATH"' >> /Users/woernfl/.bashrc
+echo 'export PATH="/opt/homebrew/opt/node@24/bin:$PATH"' >> ~/.bashrc
 brew install kubernetes-cli
 brew install helm
 brew install kubeseal

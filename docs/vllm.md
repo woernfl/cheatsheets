@@ -5,7 +5,7 @@
 ### Ask a question
 
 ```bash
-curl -X POST https://vllm-deepseek-r1-distill-llama-70b.vllm.apps.onmyowncorp.eu/v1/chat/completions \
+curl -X POST https://$VLLM_API_URL/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
     "model": "RedHatAI/DeepSeek-R1-Distill-Llama-70B-quantized.w8a8",

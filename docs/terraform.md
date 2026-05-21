@@ -38,7 +38,7 @@ terraform apply -target="aws_eks_node_group.eks-worker[\"node-group\"]" -var-fil
 Delete Terraform resources:
 
 ```bash
-terraform destroy -force
+terraform destroy -auto-approve
 ```
 
 ## Exposing the content of a file as a variable
