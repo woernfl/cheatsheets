@@ -77,6 +77,7 @@ Here is the list of packages I usually use:
 - [argocd](https://argoproj.github.io/cd/)
 - [Netbird](https://docs.netbird.io/)
 - [Pi](https://pi.dev/)
+- [Warp](https://www.warp.dev/)
 
 Here is how to install this packages using the terminal:
 
@@ -104,6 +105,7 @@ brew install argocd
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
 brew install pi-coding-agent
+brew install --cask warp
 ```
 
 ## Some easy fix
