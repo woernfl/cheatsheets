@@ -325,7 +325,7 @@ Delete lines:
 sed '/$SEARCH_STRING/d' $FILE_PATH
 ```
 
-## Package managment
+## Package management
 
 ### RedHat Based OS
 

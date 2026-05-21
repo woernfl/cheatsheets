@@ -1,6 +1,6 @@
 # Vault - Hashicorp
 
-## Token managment
+## Token management
 
 Create a token using LDAP auth:
 
@@ -14,7 +14,7 @@ Self renew a token:
 curl --header "X-Vault-Token: $TOKEN" --request POST --data "{\"increment\": \"100h\"}" $VAULT_ADDR/v1/auth/token/renew-self
 ```
 
-## Secrets managment
+## Secrets management
 
 Retrive secret from Vault:
 

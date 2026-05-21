@@ -8,19 +8,19 @@ Get more info about pods:
 kubectl get po -o wide
 ```
 
-Get all main ressources:
+Get all main resources:
 
 ```bash
 kubectl get all --all-namespaces
 ```
 
-Get main ressources for a specific namespace:
+Get main resources for a specific namespace:
 
 ```bash
 kubectl get all -n $NAMESPACE
 ```
 
-Get really all the ressources of a specific namespace:
+Get really all the resources of a specific namespace:
 
 ```bash
 kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -n $NAMESPACE
@@ -34,13 +34,13 @@ kubectl get ingressroutes --all-namespaces -o custom-columns="NAME:.metadata.nam
 
 ## Generic actions
 
-Rename a ressource (the deployment ressource is an example, is working with other ressources also):
+Rename a resource (the deployment resource is an example, is working with other resources also):
 
 ```bash
 kubectl -n $NAMESPACE get deployment $RESSOURCE_NAME -o json | jq '.metadata.name = "$NEW_RESSOURCE_NAME"' | kubectl -n $NAMESPACE apply -f - && kubectl -n $NAMESPACE delete deployment $RESSOURCE_NAME
 ```
 
-## Namespace managment
+## Namespace management
 
 Namespace creation:
 
@@ -48,7 +48,7 @@ Namespace creation:
 kubectl create namespace $NAMESPACE_NAME
 ```
 
-## Deployment managment
+## Deployment management
 
 Restart a rollout:
 
@@ -80,7 +80,7 @@ Scale deployment to 0:
 kubectl scale deploy $DEPLOY_NAME --replicas=0
 ```
 
-## Secret managment
+## Secret management
 
 Create a secret from literal:
 
@@ -110,7 +110,7 @@ Copy a secret from a namespace to an other:
 kubectl get secrets $SECRET_NAME -o json --namespace $NAMESPACE_OLD | jq '.metadata.namespace = "$NAMESPACE_NEW"' | kubectl create -f  -
 ```
 
-## Pod managment
+## Pod management
 
 Watch pod events:
 
@@ -128,13 +128,13 @@ kubectl get pods --all-namespaces | grep -v -E "Running|Completed"
 watch -n 2 'kubectl get pods --all-namespaces | grep -v -E "Running|Completed"'
 ```
 
-Get the list of pod with their CPU consumpsion:
+Get the list of pod with their CPU consumption:
 
 ```bash
 kubectl top pods -A | sort --reverse --key 3 --numeric
 ```
 
-Get the list of pod with their memory consumpsion:
+Get the list of pod with their memory consumption:
 
 ```bash
 kubectl top pods -A | sort --reverse --key 4 --numeric
@@ -182,7 +182,7 @@ Force delete a specific pod:
 kubectl -n $NAMESPACE delete po $POD_NAME --force --grace-period=0
 ```
 
-## Node managment
+## Node management
 
 Get the list of nodes and their memory size:
 
@@ -214,7 +214,7 @@ List the CPU and Memory for all the nodes in a cluster:
 kubectl get nodes -o custom-columns=NAME:.metadata.name,CPU_CAPACITY:.status.capacity.cpu,CPU_ALLOCATABLE:.status.allocatable.cpu,MEM_CAPACITY:.status.capacity.memory,MEM_ALLOCATABLE:.status.allocatable.memory
 ```
 
-## Job managment
+## Job management
 
 Create a job from a cronjob
 
@@ -234,7 +234,7 @@ Get logs of a job:
 kubectl logs job/$JOB_NAME
 ```
 
-## CRD managment
+## CRD management
 
 list applied CRDs:
 
@@ -260,7 +260,7 @@ kubectl get --raw /metrics
 
 ## Security query
 
-Get pods renuning in privileged mode:
+Get pods running in privileged mode:
 
 ```bash
 kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{"\n"}{.metadata.name}{": "}{range .spec.containers[*]}{.securityContext.privileged}{end}{end}' | grep true
@@ -304,10 +304,10 @@ Connect to a service from your local workstation:
 kubectl port-forward -n $NAMESPACE --address 0.0.0.0 service/$SERVICE_NAME $LOCAL_PORT:$POD_PORT
 ```
 
-Boot a centos pod in Kubernetes:
+Boot a debian pod in Kubernetes:
 
 ```bash
-kubectl -n $NAMESPACE run tmp-shell --rm -i --tty --image centos -- /bin/bash
+kubectl -n $NAMESPACE run tmp-shell --rm -i --tty --image debian -- /bin/bash
 ```
 
 Start shell in a running container:

@@ -2,7 +2,7 @@
 
 ## Follow releases
 
-Follow the realse RSS feed:
+Follow the release RSS feed:
 
 ```
 https://github.com/:owner/:repo/releases.atom

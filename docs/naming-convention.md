@@ -11,7 +11,7 @@ With the following attributes:
 - `project`: project name
 - `env`: in which environment are we? `dev` | `tst` | `prd`
 - `datacenter`: datacenter in which the server is
-- `type`: which kind of ressource? `physical` | `virtual`
+- `type`: which kind of resource? `physical` | `virtual`
 - `purpose`: short description of the purpose of this server
   - `app`: application server
   - `bkt`: storage bucket
