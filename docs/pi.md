@@ -1,5 +1,51 @@
 # Pi Coding Agent
 
+## Slash Commands
+
+| Command             | Description                                                        |
+| ------------------- | ------------------------------------------------------------------ |
+| `/login`, `/logout` | Manage OAuth or API-key credentials                                |
+| `/model`            | Switch models                                                      |
+| `/scoped-models`    | Enable or disable models for cycling                               |
+| `/settings`         | Configure thinking level, theme, delivery mode, and transport      |
+| `/resume`           | Pick from previous sessions                                        |
+| `/new`              | Start a new session                                                |
+| `/name <name>`      | Set the current session display name                               |
+| `/session`          | Show session file, ID, token usage, and cost                       |
+| `/tree`             | Jump to any point in the session tree                              |
+| `/fork`             | Create a new session from an earlier user message                  |
+| `/clone`            | Duplicate the current active branch into a new session             |
+| `/compact [prompt]` | Compact older context, optionally with custom instructions         |
+| `/copy`             | Copy the last assistant message                                    |
+| `/export [file]`    | Export the session to HTML                                         |
+| `/share`            | Upload the session as a private GitHub gist                        |
+| `/reload`           | Reload keybindings, extensions, skills, prompts, and context files |
+| `/hotkeys`          | Show all keyboard shortcuts                                        |
+| `/changelog`        | Display version history                                            |
+| `/quit`             | Exit Pi                                                            |
+
+Skills are exposed as `/skill:$NAME`, and prompt templates are exposed as `/$NAME`.
+
+## Keyboard Shortcuts
+
+| Shortcut       | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| `Enter`        | Submit the current input                               |
+| `Shift+Enter`  | Insert a new line                                      |
+| `Alt+Enter`    | Queue a follow-up message                              |
+| `Alt+Up`       | Restore queued messages to the editor                  |
+| `Esc`          | Abort the current run                                  |
+| `Ctrl+D`       | Exit when the editor is empty                          |
+| `Ctrl+G`       | Open the prompt in `$VISUAL` or `$EDITOR`              |
+| `Ctrl+L`       | Open the model selector                                |
+| `Ctrl+P`       | Cycle to the next model                                |
+| `Shift+Ctrl+P` | Cycle to the previous model                            |
+| `Shift+Tab`    | Cycle thinking level                                   |
+| `Ctrl+O`       | Collapse or expand tool output                         |
+| `Ctrl+V`       | Paste an image from the clipboard (`Alt+V` on Windows) |
+
+Keybindings can be customized in `~/.pi/agent/keybindings.json`. After editing them, run `/reload`.
+
 ## Installation
 
 Install Pi with npm:
@@ -97,52 +143,6 @@ pi @src/app.ts @src/app.test.ts "Review these together"
 | `-v`, `--version`               | Show version                                                            |
 
 Built-in tools: `read`, `bash`, `edit`, `write`, `grep`, `find`, `ls`.
-
-## Slash Commands
-
-| Command             | Description                                                        |
-| ------------------- | ------------------------------------------------------------------ |
-| `/login`, `/logout` | Manage OAuth or API-key credentials                                |
-| `/model`            | Switch models                                                      |
-| `/scoped-models`    | Enable or disable models for cycling                               |
-| `/settings`         | Configure thinking level, theme, delivery mode, and transport      |
-| `/resume`           | Pick from previous sessions                                        |
-| `/new`              | Start a new session                                                |
-| `/name <name>`      | Set the current session display name                               |
-| `/session`          | Show session file, ID, token usage, and cost                       |
-| `/tree`             | Jump to any point in the session tree                              |
-| `/fork`             | Create a new session from an earlier user message                  |
-| `/clone`            | Duplicate the current active branch into a new session             |
-| `/compact [prompt]` | Compact older context, optionally with custom instructions         |
-| `/copy`             | Copy the last assistant message                                    |
-| `/export [file]`    | Export the session to HTML                                         |
-| `/share`            | Upload the session as a private GitHub gist                        |
-| `/reload`           | Reload keybindings, extensions, skills, prompts, and context files |
-| `/hotkeys`          | Show all keyboard shortcuts                                        |
-| `/changelog`        | Display version history                                            |
-| `/quit`             | Exit Pi                                                            |
-
-Skills are exposed as `/skill:$NAME`, and prompt templates are exposed as `/$NAME`.
-
-## Keyboard Shortcuts
-
-| Shortcut       | Description                                            |
-| -------------- | ------------------------------------------------------ |
-| `Enter`        | Submit the current input                               |
-| `Shift+Enter`  | Insert a new line                                      |
-| `Alt+Enter`    | Queue a follow-up message                              |
-| `Alt+Up`       | Restore queued messages to the editor                  |
-| `Esc`          | Abort the current run                                  |
-| `Ctrl+D`       | Exit when the editor is empty                          |
-| `Ctrl+G`       | Open the prompt in `$VISUAL` or `$EDITOR`              |
-| `Ctrl+L`       | Open the model selector                                |
-| `Ctrl+P`       | Cycle to the next model                                |
-| `Shift+Ctrl+P` | Cycle to the previous model                            |
-| `Shift+Tab`    | Cycle thinking level                                   |
-| `Ctrl+O`       | Collapse or expand tool output                         |
-| `Ctrl+V`       | Paste an image from the clipboard (`Alt+V` on Windows) |
-
-Keybindings can be customized in `~/.pi/agent/keybindings.json`. After editing them, run `/reload`.
 
 ## Context Files
 
