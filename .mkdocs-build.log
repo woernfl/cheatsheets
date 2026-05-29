@@ -1,0 +1,929 @@
+DEBUG   -  Loading configuration file: /tmp/workspace/woernfl/cheatsheets/mkdocs.yml
+
+[31m │  ⚠  Warning from the Material for MkDocs team[0m
+[31m │[0m
+[31m │[0m  MkDocs 2.0, the underlying framework of Material for MkDocs,
+[31m │[0m  will introduce backward-incompatible changes, including:
+[31m │[0m
+[31m │  × [0mAll plugins will stop working – the plugin system has been removed
+[31m │  × [0mAll theme overrides will break – the theming system has been rewritten
+[31m │  × [0mNo migration path exists – existing projects cannot be upgraded
+[31m │  × [0mClosed contribution model – community members can't report bugs
+[31m │  × [0mCurrently unlicensed – unsuitable for production use
+[31m │[0m
+[31m │[0m  Our full analysis:
+[31m │[0m
+[31m │[0m  [4mhttps://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/[0m
+[0m
+DEBUG   -  Loaded theme configuration for 'material' from '/home/runner/.local/lib/python3.12/site-packages/material/templates/mkdocs_theme.yml': {'language': 'en', 'direction': None, 'features': [], 'font': {'text': 'Roboto', 'code': 'Roboto Mono'}, 'icon': None, 'favicon': 'assets/images/favicon.png', 'static_templates': ['404.html']}
+DEBUG   -  Config value 'config_file_path' = '/tmp/workspace/woernfl/cheatsheets/mkdocs.yml'
+DEBUG   -  Config value 'site_name' = 'Cheatsheets'
+DEBUG   -  Config value 'nav' = None
+DEBUG   -  Config value 'pages' = None
+DEBUG   -  Config value 'exclude_docs' = None
+DEBUG   -  Config value 'draft_docs' = None
+DEBUG   -  Config value 'not_in_nav' = None
+DEBUG   -  Config value 'site_url' = 'https://cheatsheets.woernfl.xyz/'
+DEBUG   -  Config value 'site_description' = None
+DEBUG   -  Config value 'site_author' = None
+DEBUG   -  Config value 'theme' = Theme(name='material', dirs=['/home/runner/.local/lib/python3.12/site-packages/material/templates', '/home/runner/.local/lib/python3.12/site-packages/mkdocs/templates'], static_templates={'404.html', 'sitemap.xml'}, name='material', locale=Locale('en'), language='en', direction=None, features=['content.action.edit', 'navigation.instant', 'navigation.instant.progress', 'navigation.top', 'search.suggest', 'search.highlight', 'content.code.copy'], font={'text': 'Roboto', 'code': 'Roboto Mono'}, icon={'edit': 'material/pencil'}, favicon='assets/images/logo.png', logo='assets/images/logo.png', palette=[{'media': '(prefers-color-scheme)', 'toggle': {'icon': 'material/brightness-auto', 'name': 'Switch to light mode'}}, {'media': '(prefers-color-scheme: light)', 'scheme': 'default', 'toggle': {'icon': 'material/brightness-7', 'name': 'Switch to dark mode'}}, {'media': '(prefers-color-scheme: dark)', 'scheme': 'slate', 'toggle': {'icon': 'material/brightness-4', 'name': 'Switch to system preference'}}])
+DEBUG   -  Config value 'docs_dir' = '/tmp/workspace/woernfl/cheatsheets/docs'
+DEBUG   -  Config value 'site_dir' = '/tmp/workspace/woernfl/cheatsheets/site'
+DEBUG   -  Config value 'copyright' = 'Copyright &copy; 2017 - 2026 Florian Woerner'
+DEBUG   -  Config value 'google_analytics' = None
+DEBUG   -  Config value 'dev_addr' = _IpAddressValue(host='127.0.0.1', port=8000)
+DEBUG   -  Config value 'use_directory_urls' = True
+DEBUG   -  Config value 'repo_url' = 'https://github.com/woernfl/cheatsheets'
+DEBUG   -  Config value 'repo_name' = 'woernfl/cheatsheets'
+DEBUG   -  Config value 'edit_uri_template' = None
+DEBUG   -  Config value 'edit_uri' = 'edit/master/docs/'
+DEBUG   -  Config value 'extra_css' = []
+DEBUG   -  Config value 'extra_javascript' = []
+DEBUG   -  Config value 'extra_templates' = []
+DEBUG   -  Config value 'markdown_extensions' = ['toc', 'tables', 'fenced_code', 'admonition', 'pymdownx.highlight', 'pymdownx.superfences', 'pymdownx.inlinehilite']
+DEBUG   -  Config value 'mdx_configs' = {}
+DEBUG   -  Config value 'strict' = False
+DEBUG   -  Config value 'remote_branch' = 'gh-pages'
+DEBUG   -  Config value 'remote_name' = 'origin'
+DEBUG   -  Config value 'extra' = {'social': [{'icon': 'fontawesome/solid/globe', 'link': 'https://blog.woernfl.xyz/', 'name': "Woernfl's blog"}, {'icon': 'fontawesome/brands/github', 'link': 'https://github.com/woernfl', 'name': 'Woernfl on Github'}, {'icon': 'fontawesome/brands/linkedin', 'link': 'https://www.linkedin.com/in/woernfl', 'name': 'Woernfl on Linkedin'}], 'consent': {'title': 'Cookie consent', 'description': "We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better."}}
+DEBUG   -  Config value 'plugins' = {'material/social': <material.plugins.social.plugin.SocialPlugin object at 0x7fc892083d40>, 'material/search': <material.plugins.search.plugin.SearchPlugin object at 0x7fc891f7d670>, 'git-revision-date-localized': <mkdocs_git_revision_date_localized_plugin.plugin.GitRevisionDateLocalizedPlugin object at 0x7fc890e2ca70>, 'minify': <mkdocs_minify_plugin.plugin.MinifyPlugin object at 0x7fc890bf6ea0>}
+DEBUG   -  Config value 'hooks' = {}
+DEBUG   -  Config value 'watch' = []
+DEBUG   -  Config value 'validation' = {'nav': {'omitted_files': 20, 'not_found': 30, 'absolute_links': 20}, 'links': {'not_found': 30, 'absolute_links': 20, 'unrecognized_links': 20, 'anchors': 20}}
+DEBUG   -  Running `startup` event from plugin 'material/social'
+DEBUG   -  Running `startup` event from plugin 'material/search'
+DEBUG   -  Running `startup` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `config` event from plugin 'material/social'
+DEBUG   -  Running `config` event from plugin 'material/search'
+DEBUG   -  Looking for translations for locale 'en'
+DEBUG   -  No translations found here: '/home/runner/.local/lib/python3.12/site-packages/mkdocs/templates/locales'
+DEBUG   -  No translations found here: '/home/runner/.local/lib/python3.12/site-packages/material/templates/locales'
+DEBUG   -  Looking for translations for locale 'en'
+DEBUG   -  No translations found here: '/home/runner/.local/lib/python3.12/site-packages/mkdocs/templates/locales'
+DEBUG   -  No translations found here: '/home/runner/.local/lib/python3.12/site-packages/material/templates/locales'
+DEBUG   -  Looking for translations for locale 'en'
+DEBUG   -  No translations found here: '/home/runner/.local/lib/python3.12/site-packages/mkdocs/templates/locales'
+DEBUG   -  No translations found here: '/home/runner/.local/lib/python3.12/site-packages/material/templates/locales'
+DEBUG   -  Running `config` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `pre_build` event from plugin 'minify'
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: /tmp/workspace/woernfl/cheatsheets/site
+DEBUG   -  Looking for translations for locale 'en'
+DEBUG   -  No translations found here: '/home/runner/.local/lib/python3.12/site-packages/mkdocs/templates/locales'
+DEBUG   -  No translations found here: '/home/runner/.local/lib/python3.12/site-packages/material/templates/locales'
+DEBUG   -  Running `files` event from plugin 'material/social'
+DEBUG   -  Running `files` event from plugin 'git-revision-date-localized'
+DEBUG   -  Reading markdown pages.
+DEBUG   -  Reading: index.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: ai-lab.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: ansible.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: aws-cdk.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: aws-cli.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: bash-setup.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: certificate.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: claude-code.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: cloud-init.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: container.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: curl.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: elasticsearch.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: gcloud.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: git.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: github-copilot.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: github.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: gpg-key-generation.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: helm.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: htpasswd-file-management.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: http-codes.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: jenkins.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: jenkinsfile.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: jq.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: knative.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: kubernetes.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: linux.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: mac.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: markdown.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: maven.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: naming-convention.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: nix.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: npm.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: opencode.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: openssl.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: pi.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: pip.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: pre-commit.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: promql.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: regex.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: scp.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: spec-kit.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: ssh.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: terraform.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: ubuntu-upgrade.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: vault.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: vim.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: vllm.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: vs-code.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Reading: wget.md
+DEBUG   -  Running `page_markdown` event from plugin 'git-revision-date-localized'
+DEBUG   -  Running `page_markdown` event from plugin 'material/social'
+DEBUG   -  Copying static assets.
+DEBUG   -  Copying media file: 'assets/images/code.jpeg'
+DEBUG   -  Copying media file: 'assets/images/logo.png'
+DEBUG   -  Copying media file: 'assets/images/favicon.png'
+DEBUG   -  Copying media file: 'assets/javascripts/bundle.79ae519e.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/bundle.79ae519e.min.js.map'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.ar.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.da.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.de.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.du.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.el.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.es.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.fi.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.fr.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.he.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.hi.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.hu.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.hy.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.it.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.ja.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.jp.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.kn.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.ko.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.multi.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.nl.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.no.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.pt.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.ro.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.ru.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.sa.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.stemmer.support.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.sv.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.ta.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.te.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.th.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.tr.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.vi.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/min/lunr.zh.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/tinyseg.js'
+DEBUG   -  Copying media file: 'assets/javascripts/lunr/wordcut.js'
+DEBUG   -  Copying media file: 'assets/javascripts/workers/search.2c215733.min.js'
+DEBUG   -  Copying media file: 'assets/javascripts/workers/search.2c215733.min.js.map'
+DEBUG   -  Copying media file: 'assets/stylesheets/main.484c7ddc.min.css'
+DEBUG   -  Copying media file: 'assets/stylesheets/main.484c7ddc.min.css.map'
+DEBUG   -  Copying media file: 'assets/stylesheets/palette.ab4e12ef.min.css'
+DEBUG   -  Copying media file: 'assets/stylesheets/palette.ab4e12ef.min.css.map'
+DEBUG   -  Building theme template: 404.html
+DEBUG   -  Running `post_template` event from plugin 'minify'
+DEBUG   -  Building theme template: sitemap.xml
+DEBUG   -  Running `post_template` event from plugin 'minify'
+DEBUG   -  Gzipping template: sitemap.xml
+DEBUG   -  Building markdown pages.
+DEBUG   -  Building page index.md
+DEBUG   -  Running `page_context` event from plugin 'material/search'
+DEBUG   -  Running `post_page` event from plugin 'material/social'
+ERROR   -  Error building page 'index.md': HTTPSConnectionPool(host='fonts.google.com', port=443): Max retries exceeded with url: /download/list?family=Roboto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc890d9e360>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)"))
+DEBUG   -  Running `shutdown` event from plugin 'material/social'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 492, in _make_request
+    raise new_e
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 468, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1097, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fc890d9e360>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 845, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 517, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='fonts.google.com', port=443): Max retries exceeded with url: /download/list?family=Roboto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc890d9e360>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/mkdocs", line 8, in <module>
+    sys.exit(cli())
+             ^^^^^
+  File "/usr/lib/python3/dist-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/mkdocs/__main__.py", line 288, in build_command
+    build.build(cfg, dirty=not clean)
+  File "/home/runner/.local/lib/python3.12/site-packages/mkdocs/commands/build.py", line 337, in build
+    _build_page(
+  File "/home/runner/.local/lib/python3.12/site-packages/mkdocs/commands/build.py", line 226, in _build_page
+    output = config.plugins.on_post_page(output, page=page, config=config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/mkdocs/plugins.py", line 646, in on_post_page
+    return self.run_event('post_page', output, page=page, config=config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/mkdocs/plugins.py", line 566, in run_event
+    result = method(item, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 236, in on_post_page
+    raise e
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 443, in _generate
+    self.card_layer_pool_jobs[h].result(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 474, in _render
+    image = self._render_typography(layer, image)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 554, in _render_typography
+    path = self._resolve_font(family, style, variant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 841, in _resolve_font
+    self._fetch_font_from_google_fonts(family)
+  File "/home/runner/.local/lib/python3.12/site-packages/material/plugins/social/plugin.py", line 886, in _fetch_font_from_google_fonts
+    res = requests.get(url)
+          ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='fonts.google.com', port=443): Max retries exceeded with url: /download/list?family=Roboto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc890d9e360>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)"))

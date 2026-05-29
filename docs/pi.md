@@ -80,8 +80,8 @@ pi @src/app.ts @src/app.test.ts "Review these together"
 | `--mode rpc` | Run in RPC mode over stdin/stdout |
 | `-c`, `--continue` | Continue the most recent session |
 | `-r`, `--resume` | Browse and select a previous session |
-| `--session <path\|id>` | Open a specific session |
-| `--fork <path\|id>` | Fork a session into a new one |
+| `--session <path-or-id>` | Open a specific session |
+| `--fork <path-or-id>` | Fork a session into a new one |
 | `--name <name>` | Set the session display name |
 | `--provider <name>` | Select a provider such as `anthropic` or `openai` |
 | `--model <pattern>` | Select a model or model pattern |
