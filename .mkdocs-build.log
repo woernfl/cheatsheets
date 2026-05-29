@@ -46,7 +46,7 @@ DEBUG   -  Config value 'strict' = False
 DEBUG   -  Config value 'remote_branch' = 'gh-pages'
 DEBUG   -  Config value 'remote_name' = 'origin'
 DEBUG   -  Config value 'extra' = {'social': [{'icon': 'fontawesome/solid/globe', 'link': 'https://blog.woernfl.xyz/', 'name': "Woernfl's blog"}, {'icon': 'fontawesome/brands/github', 'link': 'https://github.com/woernfl', 'name': 'Woernfl on Github'}, {'icon': 'fontawesome/brands/linkedin', 'link': 'https://www.linkedin.com/in/woernfl', 'name': 'Woernfl on Linkedin'}], 'consent': {'title': 'Cookie consent', 'description': "We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better."}}
-DEBUG   -  Config value 'plugins' = {'material/social': <material.plugins.social.plugin.SocialPlugin object at 0x7fc892083d40>, 'material/search': <material.plugins.search.plugin.SearchPlugin object at 0x7fc891f7d670>, 'git-revision-date-localized': <mkdocs_git_revision_date_localized_plugin.plugin.GitRevisionDateLocalizedPlugin object at 0x7fc890e2ca70>, 'minify': <mkdocs_minify_plugin.plugin.MinifyPlugin object at 0x7fc890bf6ea0>}
+DEBUG   -  Config value 'plugins' = {'material/social': <material.plugins.social.plugin.SocialPlugin object at 0x7f274a2fde20>, 'material/search': <material.plugins.search.plugin.SearchPlugin object at 0x7f2749bf2c60>, 'git-revision-date-localized': <mkdocs_git_revision_date_localized_plugin.plugin.GitRevisionDateLocalizedPlugin object at 0x7f2748f41640>, 'minify': <mkdocs_minify_plugin.plugin.MinifyPlugin object at 0x7f2748dbe030>}
 DEBUG   -  Config value 'hooks' = {}
 DEBUG   -  Config value 'watch' = []
 DEBUG   -  Config value 'validation' = {'nav': {'omitted_files': 20, 'not_found': 30, 'absolute_links': 20}, 'links': {'not_found': 30, 'absolute_links': 20, 'unrecognized_links': 20, 'anchors': 20}}
@@ -276,7 +276,7 @@ DEBUG   -  Building markdown pages.
 DEBUG   -  Building page index.md
 DEBUG   -  Running `page_context` event from plugin 'material/search'
 DEBUG   -  Running `post_page` event from plugin 'material/social'
-ERROR   -  Error building page 'index.md': HTTPSConnectionPool(host='fonts.google.com', port=443): Max retries exceeded with url: /download/list?family=Roboto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc890d9e360>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)"))
+ERROR   -  Error building page 'index.md': HTTPSConnectionPool(host='fonts.google.com', port=443): Max retries exceeded with url: /download/list?family=Roboto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2749bf0920>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)"))
 DEBUG   -  Running `shutdown` event from plugin 'material/social'
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 203, in _new_conn
@@ -307,7 +307,7 @@ Traceback (most recent call last):
                        ^^^^^^^^^^^^^^^^
   File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 210, in _new_conn
     raise NameResolutionError(self.host, self, e) from e
-urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fc890d9e360>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f2749bf0920>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)
 
 The above exception was the direct cause of the following exception:
 
@@ -321,7 +321,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 517, in increment
     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='fonts.google.com', port=443): Max retries exceeded with url: /download/list?family=Roboto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc890d9e360>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)"))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='fonts.google.com', port=443): Max retries exceeded with url: /download/list?family=Roboto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2749bf0920>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)"))
 
 During handling of the above exception, another exception occurred:
 
@@ -926,4 +926,4 @@ Traceback (most recent call last):
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 519, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='fonts.google.com', port=443): Max retries exceeded with url: /download/list?family=Roboto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc890d9e360>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)"))
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='fonts.google.com', port=443): Max retries exceeded with url: /download/list?family=Roboto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2749bf0920>: Failed to resolve 'fonts.google.com' ([Errno -5] No address associated with hostname)"))
