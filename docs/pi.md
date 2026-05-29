@@ -73,74 +73,74 @@ pi @src/app.ts @src/app.test.ts "Review these together"
 
 ## CLI Flags
 
-| Flag | Description |
-| ---- | ----------- |
-| `-p`, `--print` | Print a response and exit |
-| `--mode json` | Output events as JSON lines |
-| `--mode rpc` | Run in RPC mode over stdin/stdout |
-| `-c`, `--continue` | Continue the most recent session |
-| `-r`, `--resume` | Browse and select a previous session |
-| `--session <path-or-id>` | Open a specific session |
-| `--fork <path-or-id>` | Fork a session into a new one |
-| `--name <name>` | Set the session display name |
-| `--provider <name>` | Select a provider such as `anthropic` or `openai` |
-| `--model <pattern>` | Select a model or model pattern |
-| `--thinking <level>` | Set thinking level (`off`, `minimal`, `low`, `medium`, `high`, `xhigh`) |
-| `--tools <list>` | Allow only specific tools |
-| `--exclude-tools <list>` | Disable specific tools |
-| `--no-tools` | Disable all tools |
-| `--skill <path>` | Load a skill from a path |
-| `--prompt-template <path>` | Load a prompt template from a path |
-| `--no-context-files` | Disable `AGENTS.md` and `CLAUDE.md` discovery |
-| `--append-system-prompt <text>` | Append custom system prompt text |
-| `-h`, `--help` | Show help |
-| `-v`, `--version` | Show version |
+| Flag                            | Description                                                             |
+| ------------------------------- | ----------------------------------------------------------------------- |
+| `-p`, `--print`                 | Print a response and exit                                               |
+| `--mode json`                   | Output events as JSON lines                                             |
+| `--mode rpc`                    | Run in RPC mode over stdin/stdout                                       |
+| `-c`, `--continue`              | Continue the most recent session                                        |
+| `-r`, `--resume`                | Browse and select a previous session                                    |
+| `--session <path-or-id>`        | Open a specific session                                                 |
+| `--fork <path-or-id>`           | Fork a session into a new one                                           |
+| `--name <name>`                 | Set the session display name                                            |
+| `--provider <name>`             | Select a provider such as `anthropic` or `openai`                       |
+| `--model <pattern>`             | Select a model or model pattern                                         |
+| `--thinking <level>`            | Set thinking level (`off`, `minimal`, `low`, `medium`, `high`, `xhigh`) |
+| `--tools <list>`                | Allow only specific tools                                               |
+| `--exclude-tools <list>`        | Disable specific tools                                                  |
+| `--no-tools`                    | Disable all tools                                                       |
+| `--skill <path>`                | Load a skill from a path                                                |
+| `--prompt-template <path>`      | Load a prompt template from a path                                      |
+| `--no-context-files`            | Disable `AGENTS.md` and `CLAUDE.md` discovery                           |
+| `--append-system-prompt <text>` | Append custom system prompt text                                        |
+| `-h`, `--help`                  | Show help                                                               |
+| `-v`, `--version`               | Show version                                                            |
 
 Built-in tools: `read`, `bash`, `edit`, `write`, `grep`, `find`, `ls`.
 
 ## Slash Commands
 
-| Command | Description |
-| ------- | ----------- |
-| `/login`, `/logout` | Manage OAuth or API-key credentials |
-| `/model` | Switch models |
-| `/scoped-models` | Enable or disable models for cycling |
-| `/settings` | Configure thinking level, theme, delivery mode, and transport |
-| `/resume` | Pick from previous sessions |
-| `/new` | Start a new session |
-| `/name <name>` | Set the current session display name |
-| `/session` | Show session file, ID, token usage, and cost |
-| `/tree` | Jump to any point in the session tree |
-| `/fork` | Create a new session from an earlier user message |
-| `/clone` | Duplicate the current active branch into a new session |
-| `/compact [prompt]` | Compact older context, optionally with custom instructions |
-| `/copy` | Copy the last assistant message |
-| `/export [file]` | Export the session to HTML |
-| `/share` | Upload the session as a private GitHub gist |
-| `/reload` | Reload keybindings, extensions, skills, prompts, and context files |
-| `/hotkeys` | Show all keyboard shortcuts |
-| `/changelog` | Display version history |
-| `/quit` | Exit Pi |
+| Command             | Description                                                        |
+| ------------------- | ------------------------------------------------------------------ |
+| `/login`, `/logout` | Manage OAuth or API-key credentials                                |
+| `/model`            | Switch models                                                      |
+| `/scoped-models`    | Enable or disable models for cycling                               |
+| `/settings`         | Configure thinking level, theme, delivery mode, and transport      |
+| `/resume`           | Pick from previous sessions                                        |
+| `/new`              | Start a new session                                                |
+| `/name <name>`      | Set the current session display name                               |
+| `/session`          | Show session file, ID, token usage, and cost                       |
+| `/tree`             | Jump to any point in the session tree                              |
+| `/fork`             | Create a new session from an earlier user message                  |
+| `/clone`            | Duplicate the current active branch into a new session             |
+| `/compact [prompt]` | Compact older context, optionally with custom instructions         |
+| `/copy`             | Copy the last assistant message                                    |
+| `/export [file]`    | Export the session to HTML                                         |
+| `/share`            | Upload the session as a private GitHub gist                        |
+| `/reload`           | Reload keybindings, extensions, skills, prompts, and context files |
+| `/hotkeys`          | Show all keyboard shortcuts                                        |
+| `/changelog`        | Display version history                                            |
+| `/quit`             | Exit Pi                                                            |
 
 Skills are exposed as `/skill:$NAME`, and prompt templates are exposed as `/$NAME`.
 
 ## Keyboard Shortcuts
 
-| Shortcut | Description |
-| -------- | ----------- |
-| `Enter` | Submit the current input |
-| `Shift+Enter` | Insert a new line |
-| `Alt+Enter` | Queue a follow-up message |
-| `Alt+Up` | Restore queued messages to the editor |
-| `Esc` | Abort the current run |
-| `Ctrl+D` | Exit when the editor is empty |
-| `Ctrl+G` | Open the prompt in `$VISUAL` or `$EDITOR` |
-| `Ctrl+L` | Open the model selector |
-| `Ctrl+P` | Cycle to the next model |
-| `Shift+Ctrl+P` | Cycle to the previous model |
-| `Shift+Tab` | Cycle thinking level |
-| `Ctrl+O` | Collapse or expand tool output |
-| `Ctrl+V` | Paste an image from the clipboard (`Alt+V` on Windows) |
+| Shortcut       | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| `Enter`        | Submit the current input                               |
+| `Shift+Enter`  | Insert a new line                                      |
+| `Alt+Enter`    | Queue a follow-up message                              |
+| `Alt+Up`       | Restore queued messages to the editor                  |
+| `Esc`          | Abort the current run                                  |
+| `Ctrl+D`       | Exit when the editor is empty                          |
+| `Ctrl+G`       | Open the prompt in `$VISUAL` or `$EDITOR`              |
+| `Ctrl+L`       | Open the model selector                                |
+| `Ctrl+P`       | Cycle to the next model                                |
+| `Shift+Ctrl+P` | Cycle to the previous model                            |
+| `Shift+Tab`    | Cycle thinking level                                   |
+| `Ctrl+O`       | Collapse or expand tool output                         |
+| `Ctrl+V`       | Paste an image from the clipboard (`Alt+V` on Windows) |
 
 Keybindings can be customized in `~/.pi/agent/keybindings.json`. After editing them, run `/reload`.
 
@@ -192,7 +192,9 @@ Example `.pi/prompts/review.md`:
 ---
 description: Review staged git changes
 ---
+
 Review the staged changes (`git diff --cached`). Focus on:
+
 - Bugs and logic errors
 - Security issues
 - Error handling gaps
