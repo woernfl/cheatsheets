@@ -105,7 +105,7 @@ brew install argocd
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
 brew install pi-coding-agent
-brew install --cask warp
+brew install --cask iterm2
 ```
 
 ## Some easy fix
