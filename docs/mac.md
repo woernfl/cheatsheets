@@ -77,7 +77,7 @@ Here is the list of packages I usually use:
 - [argocd](https://argoproj.github.io/cd/)
 - [Netbird](https://docs.netbird.io/)
 - [Pi](https://pi.dev/)
-- [Warp](https://www.warp.dev/)
+- [iTerm2](https://github.com/gnachman/iterm2)
 
 Here is how to install this packages using the terminal:
 
