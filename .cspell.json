@@ -1,11 +1,5 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [
-    "cheatsheets",
-    "earendil",
-    "lmstudio",
-    "speckit",
-    "xhigh"
-  ]
+  "words": ["cheatsheets", "earendil", "lmstudio", "speckit", "xhigh"]
 }
