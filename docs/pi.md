@@ -68,28 +68,22 @@ npm uninstall -g @earendil-works/pi-coding-agent
 
 ## Extensions
 
-Pi supports extensions that can enhance functionality. After installation, you may need to run `/reload` to activate the extensions.
+Pi supports extensions that can enhance functionality.
 
 Here are some useful extensions:
 
-### pi-bar
+- `pi-bar`: status bar extension that shows useful information at the bottom of the interface.
+- `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
+- `pi-mcp-adapter`: use MCP servers with Pi
 
-A status bar extension that shows useful information at the bottom of the interface.
+### Installation
 
-**Installation:**
+After installation, you may need to run `/reload` to activate the extensions.
 
 ```bash
 pi install npm:pi-bar
-```
-
-### pi-lmstudio
-
-An extension for integrating LM Studio with Pi, allowing you to use local LLMs.
-
-**Installation:**
-
-```bash
 pi install npm:pi-lmstudio
+pi install npm:pi-mcp-adapter
 ```
 
 ## Starting a Session
