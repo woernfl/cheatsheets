@@ -74,7 +74,7 @@ Here are some useful extensions:
 
 - `pi-bar`: status bar extension that shows useful information at the bottom of the interface.
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
-- `pi-mcp-adapter`: use MCP servers with Pi 
+- `pi-mcp-adapter`: use MCP servers with Pi
 
 ### Installation
 
