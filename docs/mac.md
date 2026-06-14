@@ -44,7 +44,9 @@ Add this to your `.bash_profile`:
 source ~/.bashrc
 ```
 
-## Package management
+## Homebrew
+
+### Install Homebrew
 
 Install [Homebrew](https://brew.sh/):
 
@@ -79,6 +81,8 @@ Here is the list of packages I usually use:
 - [Pi](https://pi.dev/)
 - [iTerm2](https://github.com/gnachman/iterm2)
 - [GitUI](https://github.com/gitui-org/gitui)
+
+### Install Packages
 
 Here is how to install this packages using the terminal:
 
