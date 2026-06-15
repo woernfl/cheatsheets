@@ -51,7 +51,11 @@ Here are some useful extensions:
 
 - `pi-bar`: status bar extension that shows useful information at the bottom of the interface.
 - `pi-mcp-adapter`: use MCP servers with Pi.
+- `pi-subagents`: lets Pi delegate work to focused child agents.
 - `@juicesharp/rpiv-web-tools`: let the model search the web and read pages.
+- `@juicesharp/rpiv-ask-user-question`: ask clarifying questions instead of guessing.
+- `@juicesharp/rpiv-advisor`: ask a stronger model for a second opinion before it acts.
+- `@gotgenes/pi-permission-system`: provides permission gates over tool, bash, MCP, skill, and special operations.
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
 
 ### Installation
@@ -61,7 +65,11 @@ After installation, you may need to run `/reload` to activate the extensions.
 ```bash
 pi install npm:pi-bar
 pi install npm:pi-mcp-adapter
+pi install npm:pi-subagents
 pi install npm:@juicesharp/rpiv-web-tools
+pi install npm:@juicesharp/rpiv-ask-user-question
+pi install npm:@juicesharp/rpiv-advisor
+pi install npm:@gotgenes/pi-permission-system
 pi install npm:pi-lmstudio
 ```
 
