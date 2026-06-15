@@ -50,8 +50,9 @@ Pi supports extensions that can enhance functionality.
 Here are some useful extensions:
 
 - `pi-bar`: status bar extension that shows useful information at the bottom of the interface.
+- `pi-mcp-adapter`: use MCP servers with Pi.
+- `@juicesharp/rpiv-web-tools`: let the model search the web and read pages.
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
-- `pi-mcp-adapter`: use MCP servers with Pi
 
 ### Installation
 
@@ -60,6 +61,7 @@ After installation, you may need to run `/reload` to activate the extensions.
 ```bash
 pi install npm:pi-bar
 pi install npm:pi-mcp-adapter
+pi install npm:@juicesharp/rpiv-web-tools
 pi install npm:pi-lmstudio
 ```
 
