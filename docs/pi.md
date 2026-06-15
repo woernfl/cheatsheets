@@ -8,51 +8,28 @@
 | `/model`            | Switch models                                                      |
 | `/scoped-models`    | Enable or disable models for cycling                               |
 | `/settings`         | Configure thinking level, theme, delivery mode, and transport      |
-| `/resume`           | Pick from previous sessions                                        |
 | `/new`              | Start a new session                                                |
-| `/name <name>`      | Set the current session display name                               |
 | `/session`          | Show session file, ID, token usage, and cost                       |
-| `/tree`             | Jump to any point in the session tree                              |
-| `/fork`             | Create a new session from an earlier user message                  |
-| `/clone`            | Duplicate the current active branch into a new session             |
-| `/compact [prompt]` | Compact older context, optionally with custom instructions         |
-| `/copy`             | Copy the last assistant message                                    |
-| `/export [file]`    | Export the session to HTML                                         |
-| `/share`            | Upload the session as a private GitHub gist                        |
+| `/compact`          | Compact older context, optionally with custom instructions         |
 | `/reload`           | Reload keybindings, extensions, skills, prompts, and context files |
 | `/hotkeys`          | Show all keyboard shortcuts                                        |
-| `/changelog`        | Display version history                                            |
 | `/quit`             | Exit Pi                                                            |
 
 Skills are exposed as `/skill:$NAME`, and prompt templates are exposed as `/$NAME`.
 
 ## Keyboard Shortcuts
 
-| Shortcut       | Description                                            |
-| -------------- | ------------------------------------------------------ |
-| `Enter`        | Submit the current input                               |
-| `Shift+Enter`  | Insert a new line                                      |
-| `Alt+Enter`    | Queue a follow-up message                              |
-| `Alt+Up`       | Restore queued messages to the editor                  |
-| `Esc`          | Abort the current run                                  |
-| `Ctrl+D`       | Exit when the editor is empty                          |
-| `Ctrl+G`       | Open the prompt in `$VISUAL` or `$EDITOR`              |
-| `Ctrl+L`       | Open the model selector                                |
-| `Ctrl+P`       | Cycle to the next model                                |
-| `Shift+Ctrl+P` | Cycle to the previous model                            |
-| `Shift+Tab`    | Cycle thinking level                                   |
-| `Ctrl+O`       | Collapse or expand tool output                         |
-| `Ctrl+V`       | Paste an image from the clipboard (`Alt+V` on Windows) |
+| Shortcut    | Description                           |
+| ----------- | ------------------------------------- |
+| `Alt+Enter` | Queue a follow-up message             |
+| `Alt+Up`    | Restore queued messages to the editor |
+| `Esc`       | Abort the current run                 |
+| `Ctrl+P`    | Cycle to the next model               |
+| `Shift+Tab` | Cycle thinking level                  |
 
 Keybindings can be customized in `~/.pi/agent/keybindings.json`. After editing them, run `/reload`.
 
 ## Installation
-
-Install Pi with npm:
-
-```bash
-npm install -g --ignore-scripts @earendil-works/pi-coding-agent
-```
 
 Install Pi with the official install script:
 
@@ -82,8 +59,8 @@ After installation, you may need to run `/reload` to activate the extensions.
 
 ```bash
 pi install npm:pi-bar
-pi install npm:pi-lmstudio
 pi install npm:pi-mcp-adapter
+pi install npm:pi-lmstudio
 ```
 
 ## Starting a Session
@@ -92,30 +69,6 @@ Start Pi in the current project directory:
 
 ```bash
 pi
-```
-
-Start Pi with an initial prompt:
-
-```bash
-pi "Summarize this repository and tell me how to run its checks."
-```
-
-Continue the most recent session:
-
-```bash
-pi -c
-```
-
-Browse and resume a previous session:
-
-```bash
-pi -r
-```
-
-Open a specific session:
-
-```bash
-pi --session $SESSION_ID
 ```
 
 Run a one-shot prompt:
@@ -137,33 +90,6 @@ pi @README.md "Summarize this"
 pi @src/app.ts @src/app.test.ts "Review these together"
 ```
 
-## CLI Flags
-
-| Flag                            | Description                                                             |
-| ------------------------------- | ----------------------------------------------------------------------- |
-| `-p`, `--print`                 | Print a response and exit                                               |
-| `--mode json`                   | Output events as JSON lines                                             |
-| `--mode rpc`                    | Run in RPC mode over stdin/stdout                                       |
-| `-c`, `--continue`              | Continue the most recent session                                        |
-| `-r`, `--resume`                | Browse and select a previous session                                    |
-| `--session <path-or-id>`        | Open a specific session                                                 |
-| `--fork <path-or-id>`           | Fork a session into a new one                                           |
-| `--name <name>`                 | Set the session display name                                            |
-| `--provider <name>`             | Select a provider such as `anthropic` or `openai`                       |
-| `--model <pattern>`             | Select a model or model pattern                                         |
-| `--thinking <level>`            | Set thinking level (`off`, `minimal`, `low`, `medium`, `high`, `xhigh`) |
-| `--tools <list>`                | Allow only specific tools                                               |
-| `--exclude-tools <list>`        | Disable specific tools                                                  |
-| `--no-tools`                    | Disable all tools                                                       |
-| `--skill <path>`                | Load a skill from a path                                                |
-| `--prompt-template <path>`      | Load a prompt template from a path                                      |
-| `--no-context-files`            | Disable `AGENTS.md` and `CLAUDE.md` discovery                           |
-| `--append-system-prompt <text>` | Append custom system prompt text                                        |
-| `-h`, `--help`                  | Show help                                                               |
-| `-v`, `--version`               | Show version                                                            |
-
-Built-in tools: `read`, `bash`, `edit`, `write`, `grep`, `find`, `ls`.
-
 ## Context Files
 
 Pi loads project instructions from:
@@ -171,16 +97,6 @@ Pi loads project instructions from:
 - `~/.pi/agent/AGENTS.md`
 - `AGENTS.md` in the current directory
 - `AGENTS.md` or `CLAUDE.md` in parent directories
-
-Example `AGENTS.md`:
-
-```markdown
-# Project Instructions
-
-- Run `npm run check` after code changes.
-- Do not run production migrations locally.
-- Keep responses concise.
-```
 
 Disable context file discovery with:
 
@@ -242,17 +158,3 @@ my-skill/
 ├── scripts/
 └── references/
 ```
-
-## Packages and Extensions
-
-Manage Pi packages:
-
-```bash
-pi install <source>
-pi remove <source>
-pi update
-pi list
-pi config
-```
-
-Pi keeps the core intentionally small. Features such as custom workflows are typically added through extensions, skills, prompt templates, and packages rather than built into the core agent.
