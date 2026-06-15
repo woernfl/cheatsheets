@@ -10,7 +10,7 @@
 | `/settings`         | Configure thinking level, theme, delivery mode, and transport      |
 | `/new`              | Start a new session                                                |
 | `/session`          | Show session file, ID, token usage, and cost                       |
-| `/compact` | Compact older context, optionally with custom instructions         |
+| `/compact`          | Compact older context, optionally with custom instructions         |
 | `/reload`           | Reload keybindings, extensions, skills, prompts, and context files |
 | `/hotkeys`          | Show all keyboard shortcuts                                        |
 | `/quit`             | Exit Pi                                                            |
@@ -19,13 +19,13 @@ Skills are exposed as `/skill:$NAME`, and prompt templates are exposed as `/$NAM
 
 ## Keyboard Shortcuts
 
-| Shortcut       | Description                                            |
-| -------------- | ------------------------------------------------------ |
-| `Alt+Enter`    | Queue a follow-up message                              |
-| `Alt+Up`       | Restore queued messages to the editor                  |
-| `Esc`          | Abort the current run                                  |
-| `Ctrl+P`       | Cycle to the next model                                |
-| `Shift+Tab`    | Cycle thinking level                                   |
+| Shortcut    | Description                           |
+| ----------- | ------------------------------------- |
+| `Alt+Enter` | Queue a follow-up message             |
+| `Alt+Up`    | Restore queued messages to the editor |
+| `Esc`       | Abort the current run                 |
+| `Ctrl+P`    | Cycle to the next model               |
+| `Shift+Tab` | Cycle thinking level                  |
 
 Keybindings can be customized in `~/.pi/agent/keybindings.json`. After editing them, run `/reload`.
 
