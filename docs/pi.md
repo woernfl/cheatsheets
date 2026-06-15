@@ -65,6 +65,14 @@ pi install npm:@juicesharp/rpiv-web-tools
 pi install npm:pi-lmstudio
 ```
 
+### Post Installation
+
+Configure web searches:
+
+```bash
+/web-tools
+```
+
 ## Starting a Session
 
 Start Pi in the current project directory:
