@@ -83,6 +83,33 @@ Configure web searches:
 /web-tools
 ```
 
+Configure the permission system extention (`~/.pi/agent/extensions/pi-permission-system/config.json`):
+
+```bash
+{
+  // Flat permission policy
+  "permission": {
+    "*": "ask",                              // universal fallback
+    "path": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    },
+    "read": "allow",
+    "write": "deny",
+    "edit": "deny",
+    "bash": {
+      "git *": "ask",
+      "git status": "allow",
+    },
+    "mcp": { "mcp_status": "allow" },
+    "skill": { "*": "ask" },
+    "external_directory": "ask"
+  }
+}
+```
+
 ## Starting a Session
 
 Start Pi in the current project directory:
