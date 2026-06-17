@@ -56,7 +56,7 @@ Here are some useful extensions:
 - `@juicesharp/rpiv-advisor`: ask a stronger model for a second opinion before it acts.
 - `@gotgenes/pi-permission-system`: provides permission gates over tool, bash, MCP, skill, and special operations.
 - `@gotgenes/pi-subagents`:
-- `@gotgenes/pi-subagents-worktrees`:  
+- `@gotgenes/pi-subagents-worktrees`:
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
 
 ### Installation
