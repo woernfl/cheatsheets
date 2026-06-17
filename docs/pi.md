@@ -213,6 +213,12 @@ Run a one-shot prompt:
 pi -p "Summarize this codebase"
 ```
 
+Run a one-shot prompt with a specific model:
+
+```bash
+pi --model gemma-4-31b-qat:high -p "Commit to git. Follow conventional commit. Then push and open a PR on GitHub."
+```
+
 Pipe stdin into a one-shot prompt:
 
 ```bash
