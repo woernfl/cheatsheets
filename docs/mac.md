@@ -81,6 +81,8 @@ Here is the list of packages I usually use:
 - [Pi](https://pi.dev/)
 - [iTerm2](https://github.com/gnachman/iterm2)
 - [GitUI](https://github.com/gitui-org/gitui)
+- [bat](https://github.com/sharkdp/bat)
+- [xclip](https://github.com/astrand/xclip)
 - [gh](https://cli.github.com/)
 
 ### Install Packages
@@ -113,6 +115,8 @@ brew install --cask netbirdio/tap/netbird-ui
 brew install pi-coding-agent
 brew install --cask iterm2
 brew install gitui
+brew install bat
+brew install xclip
 brew install gh
 ```
 
