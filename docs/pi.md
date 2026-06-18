@@ -79,13 +79,33 @@ pi install npm:pi-lmstudio
 
 ### Post Installation
 
-Configure web searches:
+Enable pi-linter rules (`pi-linter`):
+
+```bash
+/linter enable vague-opener
+/linter enable pronoun-soup
+/linter enable reactive-noop
+/linter enable imperative-only
+/linter enable scope-creep
+/linter enable reversal
+/linter enable unbounded-loop
+/linter enable naked-review-paste
+/linter enable review-drip
+```
+
+Check if all the rules have been enabled:
+
+```bash
+/linter status
+```
+
+Configure web searches (`@juicesharp/rpiv-web-tools`):
 
 ```bash
 /web-tools
 ```
 
-Configure the permission system extention (`~/.pi/agent/extensions/pi-permission-system/config.json`):
+Configure the permission system extention (`~/.pi/agent/extensions/pi-permission-system/config.json`)(`@gotgenes/pi-permission-system`):
 
 ```bash
 {
