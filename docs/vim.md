@@ -287,7 +287,7 @@ call plug#end()
 set number
 syntax enable
 set laststatus=2
-colorscheme delek
+colorscheme default
 
 let g:rainbow_active = 1
 map <F4> :RainbowToggle<CR>
