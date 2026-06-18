@@ -59,7 +59,6 @@ Here are some useful extensions:
 - `@gotgenes/pi-permission-system`: provides permission gates over tool, bash, MCP, skill, and special operations.
 - `@gotgenes/pi-subagents`: gives pi a focused, in-process sub-agent core.
 - `@gotgenes/pi-subagents-worktrees`: git worktree isolation for `@gotgenes/pi-subagents`.
-- `@kylebrodeur/pi-model-router`: intelligent per-turn model router extension.
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
 
 ### Installation
@@ -77,7 +76,6 @@ pi install npm:@juicesharp/rpiv-advisor
 pi install npm:@gotgenes/pi-permission-system
 pi install npm:@gotgenes/pi-subagents
 pi install npm:@gotgenes/pi-subagents-worktrees
-pi install npm:@kylebrodeur/pi-model-router
 pi install npm:pi-lmstudio
 ```
 
