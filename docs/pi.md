@@ -50,6 +50,7 @@ Pi supports extensions that can enhance functionality.
 Here are some useful extensions:
 
 - `pi-bar`: status bar extension that shows useful information at the bottom of the interface.
+- `pi-linter`: deterministic linter that renders findings above the input bar in pi.
 - `pi-mcp-adapter`: use MCP servers with Pi.
 - `@juicesharp/rpiv-web-tools`: let the model search the web and read pages.
 - `@juicesharp/rpiv-ask-user-question`: ask clarifying questions instead of guessing.
@@ -65,6 +66,7 @@ After installation, you may need to run `/reload` to activate the extensions.
 
 ```bash
 pi install npm:pi-bar
+pi install npm:pi-linter
 pi install npm:pi-mcp-adapter
 pi install npm:@juicesharp/rpiv-web-tools
 pi install npm:@juicesharp/rpiv-ask-user-question
