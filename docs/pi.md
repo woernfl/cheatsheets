@@ -125,8 +125,15 @@ Configure the permission system extention (`~/.pi/agent/extensions/pi-permission
     "write": "deny",
     "edit": "deny",
     "web_search": "allow",
-    "web_fetch": "ask",
+    "web_fetch": "allow",
     "bash": {
+      "xargs *": "allow",
+      "curl *": "allow",
+      "cp *": "allow",
+      "kubectl get *": "allow",
+      "kubectl logs *": "allow",
+      "kubectl describe *": "allow",
+      "helm repo *": "allow",
       "ls *": "allow",
       "ls": "allow",
       "pwd": "allow",
@@ -213,13 +220,15 @@ Configure the permission system extention (`~/.pi/agent/extensions/pi-permission
       "curl * | bash": "ask",
       "wget * | sh": "ask",
       "wget * | bash": "ask",
+      "curl -o *": "ask",
+      "curl -O *": "ask",
       "rm -rf *": "deny",
       "rm -fr *": "deny",
       "chmod 777 *": "deny",
       ":(){ :|:& };:": "deny"
     },
     "mcp": { "mcp_status": "allow" },
-    "skill": { "*": "ask" },
+    "skill": { "*": "allow" },
     "external_directory": "ask"
   }
 }
