@@ -37,6 +37,7 @@ theme:
 
 repo_name: "woernfl/cheatsheets"
 repo_url: "https://github.com/woernfl/cheatsheets"
+edit_uri: edit/main/docs/
 
 copyright: "Copyright &copy; 2017 - 2026 Florian Woerner"
 
