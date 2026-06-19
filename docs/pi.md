@@ -237,8 +237,10 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "edit": "deny",
     "web_search": "allow",
     "web_fetch": "allow",
+    "advisor": "allow",
     "bash": {
       "xargs *": "allow",
+      "pre-commit *": "allow",
       "curl *": "allow",
       "cp *": "allow",
       "kubectl get *": "allow",
@@ -324,6 +326,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "gh repo view *": "allow",
       "gh pr view *": "allow",
       "gh pr list *": "allow",
+      "gh pr create *": "allow",
       "gh issue view *": "allow",
       "gh issue list *": "allow",
       "sudo *": "ask",
@@ -343,6 +346,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "external_directory": "ask"
   }
 }
+
 ```
 
 ## Starting a Session
