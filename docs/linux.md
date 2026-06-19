@@ -130,7 +130,7 @@ Concatenate 2 files:
 cat $FILE_1 $FILE_2 > $FILE_1+2
 ```
 
-Display the content of a file with line numbres:
+Display the content of a file with line numbers:
 
 ```bash
 cat -n $FILE_NAME
@@ -409,7 +409,7 @@ Send a UDP Packet:
 echo -n "blah:36|c" | nc -w 1 -u -4 $REMOTE_IP $REMOTE_PORT
 ```
 
-Listen on UDP packet recieved by an host:
+Listen on UDP packet received by an host:
 
 ```bash
 sudo tcpdump udp port $PORT_TO_LISTEN_ON -vv -X
@@ -427,7 +427,7 @@ ss -tualpn
 
 Display connection summary:
 
-```
+```bash
 ss -s
 ```
 
@@ -489,7 +489,7 @@ Extract a tar:
 tar -xvzf $ARCHIVE_NAME.tar
 ```
 
-## Debugin Wake On Lan
+## Debug Wake On Lan
 
 Check if the magic packet reach the server:
 
@@ -507,7 +507,7 @@ cat ~/.bash_history | tr "\|\;" "\n" | sed -e "s/^ //g" | cut -d " " -f 1 | sort
 
 ## Exit Codes
 
-Check the exist code of the last command runned:
+Check the exit code of the last command ran:
 
 ```bash
 echo $?
@@ -634,7 +634,7 @@ echo "Took $(($end_time - $start_time)) seconds to complete"
 
 ### Useful scripts
 
-#### Create strucutured logs
+#### Create structured logs
 
 You will need to have `jq` installed.
 
@@ -668,7 +668,7 @@ __log "INFO" "Hello, World!"
 {"timestamp":"20210812T191730","log_level":"INFO","message":"Hello, World!"}
 ```
 
-Thanks to Jesse Riddle for sharing this awsome pice of shell script. All the info's of this section come from [here](https://medium.com/@jesse.riddle/structured-logging-in-a-shell-script-with-jq-f7542a94a1f6).
+Thanks to Jesse Riddle for sharing this awesome pice of shell script. All the info's of this section come from [here](https://medium.com/@jesse.riddle/structured-logging-in-a-shell-script-with-jq-f7542a94a1f6).
 
 #### Automated Backup
 

@@ -223,6 +223,6 @@ Arguments are passed when invoking the command. Use `$ARGUMENTS`, `$1`, `$2`, et
 
 Shell command output can be injected into prompts with `!$COMMAND`:
 
-```
+```bash
 !git diff HEAD
 ```

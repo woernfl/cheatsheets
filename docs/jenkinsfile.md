@@ -36,7 +36,7 @@ steps {
 }
 ```
 
-Set the value of an env varible using a `sh` command output:
+Set the value of an env variable using a `sh` command output:
 
 ```bash
 environment {

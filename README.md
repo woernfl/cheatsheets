@@ -1,5 +1,21 @@
 # Cheatsheets
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Content](#content)
+- [Local Development](#local-development)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Running Locally](#running-locally)
+  - [Building the Documentation](#building-the-documentation)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgment](#acknowledgment)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 This repository contains a collection of technical reference documents and cheatsheets for various tools, platforms, and technologies. It's built using [MkDocs](https://www.mkdocs.org/) with the [Material theme](https://squidfunk.github.io/mkdocs-material/).
 
 ## Content
@@ -41,7 +57,7 @@ To serve the documentation locally:
 mkdocs serve
 ```
 
-This will start a local server at http://127.0.0.1:8000/
+This will start a local server at [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ### Building the Documentation
 

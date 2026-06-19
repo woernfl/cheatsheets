@@ -62,7 +62,7 @@ Search some code in the git history:
 git rev-list --all | xargs git grep -F ‘$STRING_TO_SEARCH’
 ```
 
-## Standardise commit messages
+## Standardize commit messages
 
 Using [Commitizen](https://github.com/commitizen/cz-cli) to have a common format.
 
@@ -325,7 +325,7 @@ git config user.signingkey 30F2B65B9246B6CA
 git config commit.gpgsign true
 ```
 
-Set GPG program to use (usefull to solve `gpg: signing failed: secret key not available`):
+Set GPG program to use (useful to solve `gpg: signing failed: secret key not available`):
 
 ```bash
 git config --global gpg.program gpg2
@@ -333,7 +333,7 @@ git config --global gpg.program gpg2
 
 Enable credential helper to not have to retype your password each time you want to do something:
 
-```
+```bash
 git config credential.helper=store
 ```
 
@@ -341,19 +341,19 @@ git config credential.helper=store
 
 Pull all the submodules updates:
 
-```
+```bash
 git pull --recurse-submodules
 ```
 
 Create a submodule:
 
-```
+```bash
 git submodule add -b master --name $SUBMODULE_NAME $GIT_SUBMODULE_REPO_URL $SUBMODULE_PATH
 ```
 
 Delete a submodule:
 
-```
+```bash
 # Delete the relevant section from the .gitmodules file
 git add .gitmodules
 git submodule deinit $PATH_TO_SUBMODULE

@@ -6,7 +6,7 @@ To list global variable add `pipeline-syntax/globals` after your Jenkins URL in 
 
 `env.$ENV_VAR` Get or set the value of a environment variable
 
-`params.$PARAM_NAME` Get or set the value of a parametre
+`params.$PARAM_NAME` Get or set the value of a parameter
 
 `currentBuild.result` Get or set the final status of a job. Typically SUCCESS, UNSTABLE, or FAILURE (may be null for an ongoing build)
 
@@ -18,7 +18,7 @@ To list environment variable add `env-vars.html` after your Jenkins URL in a bro
 
 `BUILD_TAG` String of "jenkins-${JOB_NAME}-${BUILD_NUMBER}". All forward slashes ("/") in the JOB_NAME are replaced with dashes ("-").
 
-`BUILD_URL` Full URL of this build, like http://server:port/jenkins/job/foo/15/ (Jenkins URL must be set)
+`BUILD_URL` Full URL of this build, like http://server:port/jenkins/job/foo/15/ (Jenkins URL must be set) <!-- markdownlint-disable-line MD034-->
 
 `BRANCH_NAME` For a multibranch project, this will be set to the name of the branch being built.
 
@@ -34,7 +34,7 @@ To list environment variable add `env-vars.html` after your Jenkins URL in a bro
 
 `JOB_NAME` Name of the project of this build, such as "foo" or "foo/bar".
 
-`JOB_URL` Full URL of this job, like http://server:port/jenkins/job/foo/ (Jenkins URL must be set)
+`JOB_URL` Full URL of this job, like http://server:port/jenkins/job/foo/ (Jenkins URL must be set) <!-- markdownlint-disable-line MD034-->
 
 `WORKSPACE` The absolute path of the directory assigned to the build as a workspace.
 
@@ -46,7 +46,7 @@ Cancel all builds in the queue:
 Jenkins.instance.queue.clear()
 ```
 
-## Arboting Builds
+## Aborting Builds
 
 Pipeline jobs can be stopped by sending an HTTP POST request to URL endpoints of a build:
 

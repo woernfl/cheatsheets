@@ -326,7 +326,7 @@ Force delete a namespace:
 kubectl get ns $NAMESPACE -o json | jq '.spec.finalizers = []'| kubectl replace --raw "/api/v1/namespaces/$NAMESPACE/finalize" -f -
 ```
 
-To run a command in a container that is failling right after it's start:
+To run a command in a container that is failing right after it's start:
 
 ```yaml
 spec:

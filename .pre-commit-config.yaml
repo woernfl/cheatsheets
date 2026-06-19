@@ -1,0 +1,83 @@
+---
+fail_fast: true
+
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+        name: "🗒️ yaml · Validate YAML files"
+        args: [--allow-multiple-documents]
+      - id: end-of-file-fixer
+        name: "🧹 whitespace · Ensure newline at end of file"
+      - id: trailing-whitespace
+        name: "🧹 whitespace · Remove trailing whitespace"
+      - id: check-added-large-files
+        name: "🌳 git · Block large file commits"
+        args: ["--maxkb=5000"]
+      - id: debug-statements
+        name: "🐞 debug · Detect debug statements"
+      - id: check-json
+        name: "🗄️ json · Validate JSON files"
+      - id: check-case-conflict
+        name: "📁 filesystem/📝 names · Check case sensitivity"
+      - id: check-merge-conflict
+        name: "🌳 git · Detect conflict markers"
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.16.3
+    hooks:
+      - id: commitizen
+        name: "🌳 git · Validate commit message"
+        stages: [commit-msg]
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+        name: "🔒 security · Detect hardcoded secrets"
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.38.0
+    hooks:
+      - id: yamllint
+        name: yamllint (YAML style)
+        files: \.(yml|yaml)$
+
+  - repo: https://github.com/thlorenz/doctoc
+    rev: v2.4.1
+    hooks:
+      - id: doctoc
+        name: "📝 markdown · Update TOC"
+        exclude: ^(.github/|docs/)
+
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.22.1
+    hooks:
+      - id: markdownlint-cli2
+        name: "📝 markdown · Lint markdown"
+
+  - repo: https://github.com/JoC0de/pre-commit-prettier
+    rev: v3.8.3
+    hooks:
+      - id: prettier
+        name: prettier (format JS/TS/JSON/MD/YAML)
+
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v10.0.0
+    hooks:
+      - id: cspell # Spell check changed files
+      - id: cspell # Spell check the commit message
+        name: check commit message spelling
+        args:
+          - --no-must-find-files
+          - --no-progress
+          - --no-summary
+          - --files
+          - .git/COMMIT_EDITMSG
+        stages: [commit-msg]
+        always_run: true

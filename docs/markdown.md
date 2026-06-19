@@ -2,6 +2,9 @@
 
 ## Basic syntaxes
 
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable MD033 MD034 -->
+
 | Element         | Syntax                                                                                   |
 | --------------- | ---------------------------------------------------------------------------------------- |
 | Heading         | # H1 <br> ## H2 <br> ### H3                                                              |
@@ -17,3 +20,5 @@
 | Image           | \!\[alt text\]\(path/to/image.jpg\)                                                      |
 | Table           | \| Header \| Title \| <br> \| ----------- \| ----------- \| <br> \| Paragraph \| Text \| |
 | Code block      | \```json <br> { <br> "some": "code" <br> } <br> \```                                     |
+
+<!-- markdownlint-restore -->

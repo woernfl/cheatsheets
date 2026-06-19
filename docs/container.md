@@ -2,7 +2,7 @@
 
 ## Docker
 
-### Basic actions
+### Basic actions - Docker
 
 Log in to a Docker registry:
 
@@ -28,7 +28,7 @@ List all the labels of an images:
 docker inspect $DOCKER_IMAGE_NAME | jq -r '.[0].Config.Labels'
 ```
 
-### Get docker image informations
+### Get docker image information
 
 Check if an image already exist in a registry (will be 0 if the image exist or 1 if the image doesn't exist):
 
@@ -56,13 +56,11 @@ Change the build log output:
 export BUILDKIT_PROGRESS=plain
 ```
 
-Automatically add some git lables:
+Automatically add some git labels:
 
 ```bash
 export BUILDX_GIT_LABELS=full
 ```
-
-#
 
 ### BuildX (Multi-platform)
 
@@ -90,7 +88,7 @@ docker run -it -u root --entrypoint /bin/bash $IMAGE_NAME -c "$BASH_COMMAND"
 
 ## ContainerD
 
-### Basic actions
+### Basic actions - ContainerD
 
 Pull an image:
 

@@ -8,7 +8,7 @@ Install a package at user level:
 npm install -u $PACKAGE_NAME
 ```
 
-Install a package globaly:
+Install a package globally:
 
 ```bash
 npm install -g $PACKAGE_NAME
@@ -20,7 +20,7 @@ Check the version of a package:
 npm show $PACKAGE_NAME version
 ```
 
-Check the version of a package and all it depedencies:
+Check the version of a package and all it dependencies:
 
 ```bash
 npm list $PACKAGE_NAME

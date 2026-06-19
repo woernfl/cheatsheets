@@ -16,13 +16,13 @@ curl --header "X-Vault-Token: $TOKEN" --request POST --data "{\"increment\": \"1
 
 ## Secrets management
 
-Retrive secret from Vault:
+Retrieve secret from Vault:
 
 ```bash
 curl --silent -H "X-Vault-Token: $TOKEN" $VAULT_ADDR/v1/secret/data/$SECRET_PATH | jq
 ```
 
-Writting a secret to Vault:
+Writing a secret to Vault:
 
 ```bash
 curl -H "X-Vault-Token: $TOKEN" -H "Content-Type: application/json" -X POST -d '{"value":"bar"}' $VAULT_ADDR/v1/$SECRET_PATH
