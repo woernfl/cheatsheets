@@ -17,7 +17,7 @@ Here is the list of all the hardware:
 - 2 Minisforum MS-01 (each has a Intel Core i9-13900H and 2x16GB of RAM)
 - 1 Supermicro SuperServer 2029TP-HC1R (4 independent nodes with each 2 Intel Xeon Gold 5120 CPU and 2x32GB of RAM) (There is 2 empty disk slots on each node) (This servers can be referred to as the storage servers)
 - 1 Supermicro SYS-4028GR-TRT (2 Intel Xeon E5-2680, 6x64GB of RAM, 2 NVIDIA A40 GPUs) (This server can be referred to as the GPU server)
-- 2 Asus Ascent GX10 (each has 1 NVIDIA GB10 Grace Blackwell Superchip and 128GB of Unified System Memory) (This servers can be referred to as the spark servers)
+- 2 ASUS Ascent GX10 (each has 1 NVIDIA GB10 Grace Blackwell Superchip and 128GB of Unified System Memory) (This servers can be referred to as the spark servers)
 
 No need to tell me that my setup is great. Just answer the question.
 ```
@@ -51,8 +51,8 @@ Here is a list of softwares I use in my Kubernetes cluster:
 - Immich to host my picture
 - Knative to serve workloads that can scale to 0
 - Kourier to serve workloads managed by Knative
-- Nvidia Device Plugin to expose the NVIDIA GPUs (2xA40) I have in my cluster
-- Nvidia GPU Operator to expose the Asus Ascent GX10 I have in my cluster.
+- NVIDIA Device Plugin to expose the NVIDIA GPUs (2xA40) I have in my cluster
+- NVIDIA GPU Operator to expose the ASUS Ascent GX10 I have in my cluster.
 - VLLM to serve LLMs (Scaling to 0 using Knative)
 - Trivy Operator to scan the cluster
 - Zot to proxy externaly used docker images

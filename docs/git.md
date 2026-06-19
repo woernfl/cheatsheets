@@ -114,25 +114,25 @@ git diff --color-words HEAD $PATH_TO_FILE
 Check changes between two commits:
 
 ```bash
-git diff --color-words $COMMIT_NUMBER $COMMIT_NUMBER
+git diff --color-words $COMMIT_NUMBER_1 $COMMIT_NUMBER_2
 ```
 
 Check changes between two commits for a specific file:
 
 ```bash
-git diff --color-words $COMMIT_NUMBER $COMMIT_NUMBER $PATH_TO_FILE
+git diff --color-words $COMMIT_NUMBER_1 $COMMIT_NUMBER_2 $PATH_TO_FILE
 ```
 
 Check changes between two branches:
 
 ```bash
-git diff --color-words $BRANCH_NAME $BRANCH_NAME
+git diff --color-words $BRANCH_1 $BRANCH_2
 ```
 
 Check changes between two branches for a specific file:
 
 ```bash
-git diff --color-words $BRANCH_NAME $BRANCH_NAME $PATH_TO_FILE
+git diff --color-words $BRANCH_1 $BRANCH_2 $PATH_TO_FILE
 ```
 
 Check stages changes:
@@ -243,6 +243,26 @@ Delete local branch that are not `master`:
 git branch | grep -E -v "master|main" | xargs -n 1 git branch -d
 ```
 
+## Worktrees
+
+Create a new worktree for a branch:
+
+```bash
+git worktree add ../$BRANCH_NAME $BRANCH_NAME
+```
+
+List all worktrees:
+
+```bash
+git worktree list
+```
+
+Remove a worktree:
+
+```bash
+git worktree remove $WORKTREE_PATH
+```
+
 ## Start a new git repository
 
 ```bash
@@ -314,16 +334,10 @@ git config --global gpg.program gpg2
 Enable credential helper to not have to retype your password each time you want to do something:
 
 ```
-git config credential.helper store
+git config credential.helper=store
 ```
 
 ## Submodules
-
-Clone repo with submodules (5 submodules at once):
-
-```
-git clone --recursive --jobs 5 $GIT_SUBMODULE_REPO_URL
-```
 
 Pull all the submodules updates:
 

@@ -10,6 +10,7 @@ Hey I am [@woernfl](https://github.com/woernfl) and these are all the cheatsheet
 | [Claude Code](claude-code.md)       | CLI flags, slash commands, MCP, project memory    |
 | [GitHub Copilot](github-copilot.md) | Keyboard shortcuts, chat, agent mode, MCP         |
 | [OpenCode](opencode.md)             | TUI commands, keyboard shortcuts, sessions, MCP   |
+| [Pi](pi.md)                         | Pi coding agent commands and shortcuts            |
 | [Spec Kit](spec-kit.md)             | Spec-driven development workflow commands         |
 | [vLLM](vllm.md)                     | Querying vLLM-hosted models                       |
 

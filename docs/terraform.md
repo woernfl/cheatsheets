@@ -41,6 +41,24 @@ Delete Terraform resources:
 terraform destroy -auto-approve
 ```
 
+List workspaces:
+
+```bash
+terraform workspace list
+```
+
+Select a workspace:
+
+```bash
+terraform workspace select $NAME
+```
+
+Import an existing resource:
+
+```bash
+terraform import $ADDRESS $ID
+```
+
 ## Exposing the content of a file as a variable
 
 ```bash

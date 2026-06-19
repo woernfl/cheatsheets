@@ -105,7 +105,7 @@ awk -F '$SEPARATOR' '$STATEMENT' $FILE_PATH
 Show results that should have all the specified keywords by using "and":
 
 ```bash
-awk '/$KEYWORD/ && /$KEYWORD/' $FILE_PATH
+awk '/$KEYWORD_1/ && /$KEYWORD_2/' $FILE_PATH
 ```
 
 Show results that should have any of the specified keywords by using “or”:
@@ -580,7 +580,7 @@ fi
 Check if a folder exist:
 
 ```bash
-if [ ! -d "$FOLDER_PATH"; then
+if [ ! -d "$FOLDER_PATH" ]; then
   echo 'Create $FOLDER_PATH folder'
   mkdir -p $FOLDER_PATH
 fi
