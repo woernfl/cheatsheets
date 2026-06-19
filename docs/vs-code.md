@@ -194,7 +194,7 @@ Here is the list of extensions I usually use:
 
 Here is how to install these extensions using the VS Code Quick Open (Ctrl+P):
 
-```
+```text
 ext install yzhang.markdown-all-in-one
 ext install DavidAnson.vscode-markdownlint
 ext install wayou.vscode-todo-highlight
@@ -236,7 +236,7 @@ code --install-extension tfsec.tfsec
 code --install-extension ms-vscode-remote.remote-ssh
 ```
 
-## Remote SSH extention configuration
+## Remote SSH extension configuration
 
 Add your SSH host following this steps:
 
@@ -246,7 +246,7 @@ Add your SSH host following this steps:
 4. Choose the user configuration file (usually the first one in the list)
 5. Enter the following details:
 
-```
+```text
 Host dev-ec2
   HostName $SERVER_HOSTNAME_OR_IP
   User $USER_TO_BE_USED_TO_CONNECT

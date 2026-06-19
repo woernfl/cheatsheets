@@ -2,19 +2,19 @@
 
 ## Keyboard shortcut
 
-### Symboles
+### Symbols
 
-| Symbole | FR Shortcut   | CH DE Shortcut |
-| ------- | ------------- | -------------- |
-| \|      | Alt + Maj + L | Alt + 7        |
-| \       | Alt + Maj + / | Alt + Maj + 7  |
-| [       | Alt + Maj + ( | Alt + 5        |
-| ]       | Alt + Maj + ) | Alt + 6        |
-| {       | Alt + (       | Alt + 8        |
-| }       | Alt + )       | Alt + 9        |
-| #       | Maj + #       | Alt + 3        |
+| Symbol | FR Shortcut   | CH DE Shortcut |
+| ------ | ------------- | -------------- |
+| \|     | Alt + Maj + L | Alt + 7        |
+| \      | Alt + Maj + / | Alt + Maj + 7  |
+| [      | Alt + Maj + ( | Alt + 5        |
+| ]      | Alt + Maj + ) | Alt + 6        |
+| {      | Alt + (       | Alt + 8        |
+| }      | Alt + )       | Alt + 9        |
+| #      | Maj + #       | Alt + 3        |
 
-### Systeme
+### System
 
 | Shortcut            | Action                            |
 | ------------------- | --------------------------------- |
@@ -88,7 +88,7 @@ Here is the list of packages I usually use:
 
 Here is how to install this packages using the terminal:
 
-```
+```bash
 brew install git
 brew install --cask docker-desktop
 brew install bash-completion@2

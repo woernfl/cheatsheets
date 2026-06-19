@@ -1,0 +1,10 @@
+---
+# Default state for all rules
+default: true
+
+# Override specific rules
+MD013: false # Line length
+MD029:
+  style: ordered # Allow sequential 1/2/3 numbering
+MD051: false # Link syntax
+MD059: false # Link definition syntax
