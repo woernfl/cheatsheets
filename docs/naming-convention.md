@@ -2,7 +2,7 @@
 
 ## Global Naming Pattern
 
-```
+```text
 [project]-[env]-[datacenter]-[type]-[purpose]-[number]
 ```
 
@@ -36,7 +36,7 @@ With the following attributes:
 
 ## DNS Naming Pattern
 
-```
+```text
 [project].[env].[dns_domain]
 ```
 

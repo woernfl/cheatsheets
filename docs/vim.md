@@ -205,9 +205,9 @@ vim -x $PATH_TO_THE_FILE
 
 ### vim-plug
 
-vim-plug for Vim available [here](https://github.com/junegunn/vim-plug). Installed using the `~/.vimrc` file provided in the overal basic setup section.
+vim-plug for Vim available [here](https://github.com/junegunn/vim-plug). Installed using the `~/.vimrc` file provided in the overall basic setup section.
 
-## Overal basic setup
+## Overall basic setup
 
 1. Create a `~/.vimrc` file:
 

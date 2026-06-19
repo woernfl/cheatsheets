@@ -29,7 +29,7 @@ Skills are exposed as `/skill:$NAME`, and prompt templates are exposed as `/$NAM
 
 Keybindings can be customized in `~/.pi/agent/keybindings.json`. After editing them, run `/reload`.
 
-## Installation
+## Pi Installation
 
 Install Pi with the official install script:
 

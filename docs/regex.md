@@ -14,8 +14,6 @@
 | \s             | Usually used for white space, but can be used for new line, tab, etc | a\s       | a                      |
 | \S             | Not a white space or equivalent like new line, tab, etc              | a\S       | aa                     |
 | \t             | Matches a horizontal tab                                             | T\tab     | T ab                   |
-| \r             | Matches a carriage return                                            | AB\r\nCD  | AB<br>CD               |
-| \n             | Matches a linefeed                                                   | AB\r\nCD  | AB<br>CD               |
 | \              | Escapes special characters                                           | \d        | 0, 1, ...              |
 | x\|y           | Matches either "x" or "y"                                            | a\|b      | a, b                   |
 

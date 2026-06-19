@@ -64,6 +64,6 @@ gpg --armor --export 3AA5C34371567BD2
 
 Solve `gpg: signing failed: Inappropriate ioctl for device gpg: [stdin]: clear-sign failed: Inappropriate ioctl for device`:
 
-```
+```bash
 export GPG_TTY=$(tty)
 ```

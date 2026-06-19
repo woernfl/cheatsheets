@@ -14,7 +14,7 @@ List all releases installed:
 helm list --all-namespaces
 ```
 
-Get all the informations available on a release:
+Get all the information available on a release:
 
 ```bash
 helm get all $RELEASE_NAME

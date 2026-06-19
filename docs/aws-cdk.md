@@ -8,7 +8,7 @@ Install or update the CDK cli:
 sudo npm install -g aws-cdk@latest
 ```
 
-Initialise the code:
+Initialize the code:
 
 ```bash
 cdk init app --language typescript
