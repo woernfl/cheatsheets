@@ -183,9 +183,7 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
   },
   "extensionStatusRow": {
     "hiddenKeys": [],
-    "knownKeys": [
-      "loadout"
-    ]
+    "knownKeys": ["loadout"]
   }
 }
 ```
