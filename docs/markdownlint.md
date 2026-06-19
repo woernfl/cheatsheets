@@ -1,4 +1,4 @@
-# Markdownlint Configuration Guide
+# Markdownlint
 
 ## Disabling and Enabling Rules for Parts of a Document
 
