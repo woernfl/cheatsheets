@@ -37,7 +37,7 @@ kubectl get ingressroutes --all-namespaces -o custom-columns="NAME:.metadata.nam
 Rename a resource (the deployment resource is an example, is working with other resources also):
 
 ```bash
-kubectl -n $NAMESPACE get deployment $RESSOURCE_NAME -o json | jq '.metadata.name = "$NEW_RESSOURCE_NAME"' | kubectl -n $NAMESPACE apply -f - && kubectl -n $NAMESPACE delete deployment $RESSOURCE_NAME
+kubectl -n $NAMESPACE get deployment $RESOURCE_NAME -o json | jq '.metadata.name = "$NEW_RESOURCE_NAME"' | kubectl -n $NAMESPACE apply -f - && kubectl -n $NAMESPACE delete deployment $RESOURCE_NAME
 ```
 
 ## Namespace management
@@ -183,6 +183,12 @@ kubectl -n $NAMESPACE delete po $POD_NAME --force --grace-period=0
 ```
 
 ## Node management
+Get the CPU and Memory usage of all nodes:
+
+```bash
+kubectl top nodes
+```
+
 
 Get the list of nodes and their memory size:
 
@@ -242,14 +248,6 @@ list applied CRDs:
 kubectl get crd
 ```
 
-## Kustomize
-
-To generate the manifest before applying it:
-
-```bash
-kubectl kustomize -o tmp.yaml
-```
-
 ## Monitoring
 
 Get raw metrics from the API server:
@@ -267,6 +265,12 @@ kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{"\n"}{.metadata
 ```
 
 ## To debug
+Run a debug container as an ephemeral container in a pod:
+
+```bash
+kubectl debug -it $POD_NAME --image=busybox --target=$CONTAINER_NAME
+```
+
 
 Follow logs of multiple pods:
 
@@ -385,13 +389,13 @@ kubectl krew install lineage
 List dependent resources:
 
 ```bash
-kubectl lineage $RESSOURCE_TYPE $RESSOURCE_NAME -o=wide
+kubectl lineage $RESOURCE_TYPE $RESOURCE_NAME -o=wide
 ```
 
 List dependencies resource:
 
 ```bash
-kubectl lineage $RESSOURCE_TYPE $RESSOURCE_NAME -D -o=wide
+kubectl lineage $RESOURCE_TYPE $RESOURCE_NAME -D -o=wide
 ```
 
 Display Helm release resources:

@@ -122,7 +122,7 @@ brew install gh
 
 ## Some easy fix
 
-Remove the binary malware virification:
+Remove the macOS quarantine flag from a binary (used when you get "app is damaged" or "cannot be opened because it is from an unidentified developer" errors):
 
 ```bash
 sudo xattr -rc $BINARY
