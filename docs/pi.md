@@ -49,7 +49,7 @@ Pi supports extensions that can enhance functionality.
 
 Here are some useful extensions:
 
-- `pi-bar`: status bar extension that shows useful information at the bottom of the interface.
+- `pi-footer`: statusline extension for pi.
 - `pi-loadout`: adds a `/loadout` command for choosing which tools and skills are active in the current Pi session.
 - `pi-linter`: deterministic linter that renders findings above the input bar in pi.
 - `pi-mcp-adapter`: use MCP servers with Pi.
@@ -59,7 +59,6 @@ Here are some useful extensions:
 - `@gotgenes/pi-permission-system`: provides permission gates over tool, bash, MCP, skill, and special operations.
 - `@gotgenes/pi-subagents`: gives pi a focused, in-process sub-agent core.
 - `@gotgenes/pi-subagents-worktrees`: git worktree isolation for `@gotgenes/pi-subagents`.
-- `@kylebrodeur/pi-model-router`: intelligent per-turn model router extension.
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
 
 ### Installation
@@ -67,7 +66,7 @@ Here are some useful extensions:
 After installation, you may need to run `/reload` to activate the extensions.
 
 ```bash
-pi install npm:pi-bar
+pi install npm:pi-footer
 pi install npm:pi-loadout
 pi install npm:pi-linter
 pi install npm:pi-mcp-adapter
@@ -77,13 +76,121 @@ pi install npm:@juicesharp/rpiv-advisor
 pi install npm:@gotgenes/pi-permission-system
 pi install npm:@gotgenes/pi-subagents
 pi install npm:@gotgenes/pi-subagents-worktrees
-pi install npm:@kylebrodeur/pi-model-router
 pi install npm:pi-lmstudio
 ```
 
 ### Post Installation
 
-Enable pi-linter rules (`pi-linter`):
+#### pi-footer
+
+File to modify: `~/.pi/agent/extensions/pi-footer.json`:
+
+```json
+{
+  "version": 1,
+  "enabled": true,
+  "preset": "default",
+  "lines": [
+    [
+      {
+        "id": "model-provider-mqkmgzr8-a69yw3",
+        "type": "model-provider",
+        "enabled": true,
+        "options": {
+          "raw": false,
+          "icon": "",
+          "fg": "yellow",
+          "bg": "default",
+          "bold": false
+        }
+      },
+      {
+        "id": "thinking-level-mqkmgzr8-nu19hx",
+        "type": "thinking-level",
+        "enabled": true,
+        "options": {
+          "raw": false,
+          "hideWhenEmpty": false,
+          "icon": "",
+          "text": "",
+          "fg": "default",
+          "bg": "default",
+          "bold": false
+        }
+      },
+      {
+        "id": "context-mqknp2ad-7m5n9n",
+        "type": "context",
+        "enabled": true,
+        "options": {
+          "raw": false,
+          "icon": "",
+          "fg": "green",
+          "bg": "default",
+          "bold": false,
+          "contextConditionalColors": false,
+          "contextWarningPercent": 70,
+          "contextDangerPercent": 90,
+          "warningFg": "yellow",
+          "warningBg": "default",
+          "dangerFg": "red",
+          "dangerBg": "default"
+        }
+      }
+    ],
+    [
+      {
+        "id": "cwd-mqknjnms-ja69vr",
+        "type": "cwd",
+        "enabled": true,
+        "options": {
+          "raw": false,
+          "icon": "",
+          "fg": "magenta",
+          "bg": "default",
+          "bold": false,
+          "cwdDisplayStyle": "full-home",
+          "segments": 2
+        }
+      },
+      {
+        "id": "git-branch-mqknims8-f95pb8",
+        "type": "git-branch",
+        "enabled": true,
+        "options": {
+          "raw": false,
+          "hideWhenEmpty": false,
+          "icon": "",
+          "text": "",
+          "fg": "cyan",
+          "bg": "default",
+          "bold": false,
+          "gitBranchDisplayStyle": "round-brackets",
+          "surroundLeft": "",
+          "surroundRight": ""
+        }
+      }
+    ]
+  ],
+  "separator": "pipe",
+  "separatorFg": "default",
+  "separatorBg": "default",
+  "iconMode": "text",
+  "minimalist": true,
+  "terminal": {
+    "widthMode": "full",
+    "colorLevel": "ansi256"
+  },
+  "extensionStatusRow": {
+    "hiddenKeys": [],
+    "knownKeys": ["loadout"]
+  }
+}
+```
+
+#### pi-linter
+
+Use slash commands directly in `pi`:
 
 ```bash
 /linter enable vague-opener
@@ -103,15 +210,19 @@ Check if all the rules have been enabled:
 /linter status
 ```
 
-Configure web searches (`@juicesharp/rpiv-web-tools`):
+#### @juicesharp/rpiv-web-tools
+
+Use slash commands directly in `pi`:
 
 ```bash
 /web-tools
 ```
 
-Configure the permission system extention (`~/.pi/agent/extensions/pi-permission-system/config.json`)(`@gotgenes/pi-permission-system`):
+#### @gotgenes/pi-permission-system
 
-```bash
+File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
+
+```json
 {
   "permission": {
     "*": "ask",

@@ -207,53 +207,6 @@ vim -x $PATH_TO_THE_FILE
 
 vim-plug for Vim available [here](https://github.com/junegunn/vim-plug). Installed using the `~/.vimrc` file provided in the overal basic setup section.
 
-### vim-rainbow
-
-vim-rainbow for Vim available [here](https://github.com/frazrepo/vim-rainbow).
-
-### NERDTree
-
-NERDTree for Vim available [here](https://github.com/scrooloose/nerdtree).
-
-**Usage**
-
-Activate NERDTree:
-
-```bash
-:NERDTree
-```
-
-Close NERDTree:
-
-```bash
-:NERDTreeClose
-```
-
-Toggle NERDTree:
-
-```bash
-:NERDTreeToggle
-```
-
-Or add this line to your `.vimrc` file to to toggle when you hit `F2` key:
-
-```bash
-map <F2> :NERDTreeToggle<CR>
-```
-
-Keyboard shortcuts:
-
-- `t`: Open the selected file in a new tab
-- `i`: Open the selected file in a horizontal split window
-- `s`: Open the selected file in a vertical split window
-- `I`: Toggle hidden files
-- `R`: Refresh the tree, useful if files change outside of Vim
-- `Ctrl + w w`: Cycle though all windows
-- `Ctrl + w h`: Takes you left a window
-- `Ctrl + w j`: Takes you down a window
-- `Ctrl + w k`: Takes you up a window
-- `Ctrl + w l`: Takes you right a window
-
 ## Overal basic setup
 
 1. Create a `~/.vimrc` file:
@@ -277,9 +230,6 @@ call plug#begin()
 " Make sure you use single quotes
 
 Plug 'junegunn/vim-plug'
-Plug 'https://github.com/frazrepo/vim-rainbow'
-Plug 'https://github.com/scrooloose/nerdtree'
-Plug 'https://github.com/vim-airline/vim-airline'
 
 " Initialize plugin system
 call plug#end()
@@ -287,10 +237,5 @@ call plug#end()
 set number
 syntax enable
 set laststatus=2
-colorscheme delek
-
-let g:rainbow_active = 1
-map <F4> :RainbowToggle<CR>
-
-map <F2> :NERDTreeToggle<CR>
+colorscheme default
 ```
