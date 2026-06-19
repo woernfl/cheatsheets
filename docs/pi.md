@@ -346,7 +346,6 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "external_directory": "ask"
   }
 }
-
 ```
 
 ## Starting a Session
