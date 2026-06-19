@@ -81,7 +81,7 @@ pi install npm:pi-lmstudio
 
 ### Post Installation
 
-#### `pi-footer`
+#### pi-footer
 
 File to modify: `~/.pi/agent/extensions/pi-footer.json`:
 
@@ -188,7 +188,7 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
 }
 ```
 
-#### `pi-linter`
+#### pi-linter
 
 Use slash commands directly in `pi`:
 
@@ -210,7 +210,7 @@ Check if all the rules have been enabled:
 /linter status
 ```
 
-#### `@juicesharp/rpiv-web-tools`
+#### @juicesharp/rpiv-web-tools
 
 Use slash commands directly in `pi`:
 
@@ -218,7 +218,7 @@ Use slash commands directly in `pi`:
 /web-tools
 ```
 
-#### `@gotgenes/pi-permission-system`
+#### @gotgenes/pi-permission-system
 
 File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
 
