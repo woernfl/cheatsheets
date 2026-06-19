@@ -183,12 +183,12 @@ kubectl -n $NAMESPACE delete po $POD_NAME --force --grace-period=0
 ```
 
 ## Node management
+
 Get the CPU and Memory usage of all nodes:
 
 ```bash
 kubectl top nodes
 ```
-
 
 Get the list of nodes and their memory size:
 
@@ -265,12 +265,12 @@ kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{"\n"}{.metadata
 ```
 
 ## To debug
+
 Run a debug container as an ephemeral container in a pod:
 
 ```bash
 kubectl debug -it $POD_NAME --image=busybox --target=$CONTAINER_NAME
 ```
-
 
 Follow logs of multiple pods:
 

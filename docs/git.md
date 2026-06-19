@@ -243,20 +243,22 @@ Delete local branch that are not `master`:
 git branch | grep -E -v "master|main" | xargs -n 1 git branch -d
 ```
 
-
 ## Worktrees
 
 Create a new worktree for a branch:
+
 ```bash
 git worktree add ../$BRANCH_NAME $BRANCH_NAME
 ```
 
 List all worktrees:
+
 ```bash
 git worktree list
 ```
 
 Remove a worktree:
+
 ```bash
 git worktree remove $WORKTREE_PATH
 ```
@@ -336,8 +338,6 @@ git config credential.helper=store
 ```
 
 ## Submodules
-
-
 
 Pull all the submodules updates:
 

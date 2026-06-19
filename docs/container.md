@@ -63,6 +63,7 @@ export BUILDX_GIT_LABELS=full
 ```
 
 #
+
 ### BuildX (Multi-platform)
 
 Build an image for multiple platforms:
@@ -70,6 +71,7 @@ Build an image for multiple platforms:
 ```bash
 docker buildx build --platform linux/amd64,linux/arm64 -t $IMAGE_NAME:$IMAGE_TAG --push .
 ```
+
 ## Clean up
 
 Remove all unused images, containers, networks and volumes:
