@@ -355,6 +355,68 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
 }
 ```
 
+#### @pi-unipi/notify
+
+File to modify: `~/.unipi/config/notify/config.json`:
+
+```json
+{
+  "defaultPlatforms": [
+    "native"
+  ],
+  "events": {
+    "workflow_end": {
+      "enabled": false,
+      "platforms": []
+    },
+    "ralph_loop_end": {
+      "enabled": false,
+      "platforms": []
+    },
+    "mcp_server_error": {
+      "enabled": false,
+      "platforms": []
+    },
+    "agent_end": {
+      "enabled": false,
+      "platforms": []
+    },
+    "memory_consolidated": {
+      "enabled": false,
+      "platforms": []
+    },
+    "session_shutdown": {
+      "enabled": false,
+      "platforms": []
+    },
+    "ask_user_prompt": {
+      "enabled": true,
+      "platforms": []
+    }
+  },
+  "native": {
+    "enabled": true,
+    "suppressWhenFocused": true
+  },
+  "gotify": {
+    "enabled": false,
+    "priority": 5
+  },
+  "telegram": {
+    "enabled": false
+  },
+  "ntfy": {
+    "enabled": false,
+    "serverUrl": "https://ntfy.sh",
+    "priority": 3
+  },
+  "recap": {
+    "enabled": false,
+    "model": "openrouter/openai/gpt-oss-20b"
+  }
+}
+```
+
 ## Starting a Session
 
 Start Pi in the current project directory:
