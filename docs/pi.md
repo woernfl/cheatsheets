@@ -59,7 +59,7 @@ Here are some useful extensions:
 - `@gotgenes/pi-permission-system`: provides permission gates over tool, bash, MCP, skill, and special operations.
 - `@gotgenes/pi-subagents`: gives pi a focused, in-process sub-agent core.
 - `@gotgenes/pi-subagents-worktrees`: git worktree isolation for `@gotgenes/pi-subagents`.
-- `@pi-unipi/notify`; push notifications when things happen. 
+- `@pi-unipi/notify`; push notifications when things happen.
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
 
 ### Installation
