@@ -361,9 +361,7 @@ File to modify: `~/.unipi/config/notify/config.json`:
 
 ```json
 {
-  "defaultPlatforms": [
-    "native"
-  ],
+  "defaultPlatforms": ["native"],
   "events": {
     "workflow_end": {
       "enabled": false,
