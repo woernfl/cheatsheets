@@ -415,6 +415,26 @@ File to modify: `~/.unipi/config/notify/config.json`:
 }
 ```
 
+### Updates
+
+Core:
+
+```bash
+pi update
+```
+
+Extensions:
+
+```bash
+pi update --extensions
+```
+
+Everything:
+
+```bash
+pi update --all
+```
+
 ## Starting a Session
 
 Start Pi in the current project directory:
