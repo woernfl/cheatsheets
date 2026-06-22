@@ -359,6 +359,12 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
 
 #### @pi-unipi/notify
 
+Create the necessary folder:
+
+```bash
+mkdir -p ~/.unipi/config/notify/
+```
+
 File to modify: `~/.unipi/config/notify/config.json`:
 
 ```json
