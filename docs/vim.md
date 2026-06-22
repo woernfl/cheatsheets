@@ -193,6 +193,17 @@ Shift-{
 Shift-}
 ```
 
+## Overall basic setup
+
+Create a `~/.vimrc` file:
+
+```bash
+set number
+syntax enable
+set laststatus=2
+colorscheme default
+```
+
 ## Miscellaneous
 
 Set password protection to a file:
@@ -207,9 +218,7 @@ vim -x $PATH_TO_THE_FILE
 
 vim-plug for Vim available [here](https://github.com/junegunn/vim-plug). Installed using the `~/.vimrc` file provided in the overall basic setup section.
 
-## Overall basic setup
-
-1. Create a `~/.vimrc` file:
+For automatic plugin install, add this to your `~/.vimrc` file:
 
 ```bash
 " Install vim-plug if not found
@@ -233,9 +242,4 @@ Plug 'junegunn/vim-plug'
 
 " Initialize plugin system
 call plug#end()
-
-set number
-syntax enable
-set laststatus=2
-colorscheme default
 ```
