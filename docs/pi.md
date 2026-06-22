@@ -382,7 +382,7 @@ File to modify: `~/.unipi/config/notify/config.json`:
       "platforms": []
     },
     "agent_end": {
-      "enabled": false,
+      "enabled": true,
       "platforms": []
     },
     "memory_consolidated": {
