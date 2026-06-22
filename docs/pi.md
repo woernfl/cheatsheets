@@ -101,7 +101,7 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
         "options": {
           "raw": false,
           "icon": "",
-          "fg": "yellow",
+          "fg": "brightCyan",
           "bg": "default",
           "bold": false
         }
@@ -115,7 +115,7 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
           "hideWhenEmpty": false,
           "icon": "",
           "text": "",
-          "fg": "default",
+          "fg": "brightMagenta",
           "bg": "default",
           "bold": false
         }
@@ -127,7 +127,7 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
         "options": {
           "raw": false,
           "icon": "",
-          "fg": "green",
+          "fg": "brightYellow",
           "bg": "default",
           "bold": false,
           "contextConditionalColors": false,
@@ -148,7 +148,7 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
         "options": {
           "raw": false,
           "icon": "",
-          "fg": "magenta",
+          "fg": "brightRed",
           "bg": "default",
           "bold": false,
           "cwdDisplayStyle": "full-home",
@@ -164,7 +164,7 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
           "hideWhenEmpty": false,
           "icon": "",
           "text": "",
-          "fg": "cyan",
+          "fg": "brightGreen",
           "bg": "default",
           "bold": false,
           "gitBranchDisplayStyle": "round-brackets",
@@ -185,7 +185,9 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
   },
   "extensionStatusRow": {
     "hiddenKeys": [],
-    "knownKeys": ["loadout"]
+    "knownKeys": [
+      "loadout"
+    ]
   }
 }
 ```
