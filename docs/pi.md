@@ -59,7 +59,6 @@ Here are some useful extensions:
 - `@gotgenes/pi-permission-system`: provides permission gates over tool, bash, MCP, skill, and special operations.
 - `@gotgenes/pi-subagents`: gives pi a focused, in-process sub-agent core.
 - `@gotgenes/pi-subagents-worktrees`: git worktree isolation for `@gotgenes/pi-subagents`.
-- `@pi-unipi/notify`; push notifications when things happen.
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
 
 ### Installation
@@ -77,7 +76,6 @@ pi install npm:@juicesharp/rpiv-advisor
 pi install npm:@gotgenes/pi-permission-system
 pi install npm:@gotgenes/pi-subagents
 pi install npm:@gotgenes/pi-subagents-worktrees
-pi install npm:@pi-unipi/notify
 pi install npm:pi-lmstudio
 ```
 
@@ -351,72 +349,6 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "mcp": { "mcp_status": "allow" },
     "skill": { "*": "allow" },
     "external_directory": "ask"
-  }
-}
-```
-
-#### @pi-unipi/notify
-
-Create the necessary folder:
-
-```bash
-mkdir -p ~/.unipi/config/notify/
-```
-
-File to modify: `~/.unipi/config/notify/config.json`:
-
-```json
-{
-  "defaultPlatforms": ["native"],
-  "events": {
-    "workflow_end": {
-      "enabled": false,
-      "platforms": []
-    },
-    "ralph_loop_end": {
-      "enabled": false,
-      "platforms": []
-    },
-    "mcp_server_error": {
-      "enabled": false,
-      "platforms": []
-    },
-    "agent_end": {
-      "enabled": true,
-      "platforms": []
-    },
-    "memory_consolidated": {
-      "enabled": false,
-      "platforms": []
-    },
-    "session_shutdown": {
-      "enabled": false,
-      "platforms": []
-    },
-    "ask_user_prompt": {
-      "enabled": true,
-      "platforms": []
-    }
-  },
-  "native": {
-    "enabled": true,
-    "suppressWhenFocused": true
-  },
-  "gotify": {
-    "enabled": false,
-    "priority": 5
-  },
-  "telegram": {
-    "enabled": false
-  },
-  "ntfy": {
-    "enabled": false,
-    "serverUrl": "https://ntfy.sh",
-    "priority": 3
-  },
-  "recap": {
-    "enabled": false,
-    "model": "openrouter/openai/gpt-oss-20b"
   }
 }
 ```
