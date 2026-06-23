@@ -242,6 +242,9 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "web_fetch": "allow",
     "advisor": "allow",
     "ask_user_question": "allow",
+    "subagent": "allow",
+    "get_subagent_result": "allow",
+    "steer_subagent": "allow",
     "bash": {
       "xargs *": "allow",
       "pre-commit *": "allow",
@@ -353,7 +356,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
 }
 ```
 
-#### @gotgenes/pi-permission-system
+#### @gotgenes/pi-subagents-worktrees
 
 File to modify: `~/.pi/agent/subagents-worktrees.json`:
 
