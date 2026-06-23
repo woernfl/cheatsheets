@@ -62,7 +62,7 @@ repos:
         name: "📝 markdown · Lint markdown"
 
   - repo: https://github.com/JoC0de/pre-commit-prettier
-    rev: v3.8.3
+    rev: v3.8.4
     hooks:
       - id: prettier
         name: prettier (format JS/TS/JSON/MD/YAML)
