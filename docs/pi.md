@@ -233,8 +233,8 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "*.env.example": "allow"
     },
     "read": "allow",
-    "write": "deny",
-    "edit": "deny",
+    "write": "ask",
+    "edit": "ask",
     "find": "allow",
     "ls": "allow",
     "grep": "allow",
