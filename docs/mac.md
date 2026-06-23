@@ -83,6 +83,7 @@ Here is the list of packages I usually use:
 - [GitUI](https://github.com/gitui-org/gitui)
 - [bat](https://github.com/sharkdp/bat)
 - [gh](https://cli.github.com/)
+- [lychee](https://lychee.cli.rs/)
 
 ### Install Packages
 
@@ -116,6 +117,7 @@ brew install --cask iterm2
 brew install gitui
 brew install bat
 brew install gh
+brew install lychee
 ```
 
 ## Some easy fix
