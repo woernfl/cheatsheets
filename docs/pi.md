@@ -353,6 +353,16 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
 }
 ```
 
+#### @gotgenes/pi-permission-system
+
+File to modify: `~/.pi/agent/subagents-worktrees.json`:
+
+```json
+{
+  "worktreeAgents": ["general-purpose"]
+}
+```
+
 ### Updates
 
 Core:
