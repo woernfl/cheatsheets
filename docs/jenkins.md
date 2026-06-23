@@ -18,7 +18,7 @@ To list environment variable add `env-vars.html` after your Jenkins URL in a bro
 
 `BUILD_TAG` String of "jenkins-${JOB_NAME}-${BUILD_NUMBER}". All forward slashes ("/") in the JOB_NAME are replaced with dashes ("-").
 
-`BUILD_URL` Full URL of this build, like http://server:port/jenkins/job/foo/15/ (Jenkins URL must be set) <!-- markdownlint-disable-line MD034-->
+`BUILD_URL` Full URL of this build, like http://jenkins-server/jenkins/job/foo/15/ (Jenkins URL must be set) <!-- markdownlint-disable-line MD034-->
 
 `BRANCH_NAME` For a multibranch project, this will be set to the name of the branch being built.
 
@@ -34,7 +34,7 @@ To list environment variable add `env-vars.html` after your Jenkins URL in a bro
 
 `JOB_NAME` Name of the project of this build, such as "foo" or "foo/bar".
 
-`JOB_URL` Full URL of this job, like http://server:port/jenkins/job/foo/ (Jenkins URL must be set) <!-- markdownlint-disable-line MD034-->
+`JOB_URL` Full URL of this job, like http://jenkins-server/jenkins/job/foo/ (Jenkins URL must be set) <!-- markdownlint-disable-line MD034-->
 
 `WORKSPACE` The absolute path of the directory assigned to the build as a workspace.
 

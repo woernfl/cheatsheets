@@ -45,7 +45,3 @@ With the following attributes:
 - `project`: project name
 - `env`: in which environment are we? `dev` | `stage` | `prod`
 - `dns_domain`: DNS domain used
-
-## Thanks
-
-Thanks to Stepan for his [blog article](https://stepan.wtf/cloud-naming-convention/) which inspired most of this page.
