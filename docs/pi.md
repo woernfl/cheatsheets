@@ -451,6 +451,12 @@ Pi loads prompt templates from:
 - package `prompts/` directories
 - `--prompt-template <path>`
 
+If using the [ai-lab repo](https://github.com/woernfl/ai-lab), here is how to link it from the git repo:
+
+```bash
+ln -s $REPO_PATH/prompts/ ~/.pi/agent/
+```
+
 Example `.pi/prompts/review.md`:
 
 ```markdown
@@ -476,6 +482,13 @@ Pi loads skills from:
 - `.pi/skills/`
 - `.agents/skills/`
 - `--skill <path>`
+
+
+If using the [ai-lab repo](https://github.com/woernfl/ai-lab), here is how to link it from the git repo:
+
+```bash
+ln -s $REPO_PATH/skills/ ~/.pi/agent/
+```
 
 Skills are directories containing a `SKILL.md` file and are available as `/skill:$NAME`.
 
