@@ -29,7 +29,7 @@ repos:
         name: "🌳 git · Detect conflict markers"
 
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.16.3
+    rev: v4.16.4
     hooks:
       - id: commitizen
         name: "🌳 git · Validate commit message"
