@@ -483,7 +483,6 @@ Pi loads skills from:
 - `.agents/skills/`
 - `--skill <path>`
 
-
 If using the [ai-lab repo](https://github.com/woernfl/ai-lab), here is how to link it from the git repo:
 
 ```bash
