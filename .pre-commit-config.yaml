@@ -67,11 +67,11 @@ repos:
       - id: prettier
         name: prettier (format JS/TS/JSON/MD/YAML)
 
-  - repo: https://github.com/lycheeverse/lychee
+  - repo: https://github.com/lycheeverse/lychee.git
     rev: v0.15.1
     hooks:
       - id: lychee
-        args: [--base, ., --exclude, "localhost"]
+        args: ["--no-progress", "--exclude", "file://"]
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
     rev: v10.0.0
