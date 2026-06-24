@@ -246,6 +246,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "steer_subagent": "allow",
     "bash": {
       "npm ls *": "allow",
+      "cd *": "allow",
       "if *": "allow",
       "xargs *": "allow",
       "pre-commit *": "allow",
