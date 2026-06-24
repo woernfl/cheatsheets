@@ -190,24 +190,23 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
 
 #### pi-linter
 
-Use slash commands directly in `pi`:
+File to modify: `~/.pi/pi-lint.json`:
 
-```bash
-/linter enable vague-opener
-/linter enable pronoun-soup
-/linter enable reactive-noop
-/linter enable imperative-only
-/linter enable scope-creep
-/linter enable reversal
-/linter enable unbounded-loop
-/linter enable naked-review-paste
-/linter enable review-drip
-```
-
-Check if all the rules have been enabled:
-
-```bash
-/linter status
+```json
+{
+  "disabled": [],
+  "enabled": [
+    "vague-opener",
+    "pronoun-soup",
+    "reactive-noop",
+    "imperative-only",
+    "scope-creep",
+    "reversal",
+    "unbounded-loop",
+    "naked-review-paste",
+    "review-drip"
+  ]
+}
 ```
 
 #### @juicesharp/rpiv-web-tools
