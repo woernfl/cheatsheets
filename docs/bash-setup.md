@@ -22,7 +22,7 @@ fi
 alias hg='echo "Use !\$CMD_HISTORY_NUM to run the specific cmd" && history|grep'
 alias ls='ls -GFh'
 alias ll='ls -lah'
-alias gd='git diff --color-words'
+alias gitmain='git checkout main && git pull'
 alias gitcred='git config credential.helper store'
 alias gitcredunset='git config --unset credential.helper store'
 alias gitbranchclean='git branch | grep -E -v "master|main" | xargs -n 1 git branch -d'
