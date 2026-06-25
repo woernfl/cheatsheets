@@ -67,6 +67,7 @@
     "gitclonecd",
     "gitcred",
     "gitcredunset",
+    "gitmain",
     "gitui",
     "goroutines",
     "gotgenes",
