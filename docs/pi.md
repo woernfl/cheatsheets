@@ -246,6 +246,8 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "steer_subagent": "allow",
     "bash": {
       "npm ls *": "allow",
+      "docker pull *": "allow",
+      "true": "allow",
       "sleep *": "allow",
       "base64 *": "allow",
       "gh run *": "allow",
