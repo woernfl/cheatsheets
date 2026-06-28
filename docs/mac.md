@@ -68,7 +68,6 @@ Here is the list of packages I usually use:
 - [Whatsapp](https://www.whatsapp.com/)
 - [VS Code](https://code.visualstudio.com/)
 - [LM Studio](https://lmstudio.ai/)
-- [Jan](https://www.jan.ai/)
 - [Nodejs](https://github.com/nodejs/node)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 - [Helm](https://helm.sh/)
@@ -79,6 +78,9 @@ Here is the list of packages I usually use:
 - [argocd](https://argoproj.github.io/cd/)
 - [Netbird](https://docs.netbird.io/)
 - [neovim](https://neovim.io/)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [fd](https://github.com/sharkdp/fd)
+- [fzf](https://junegunn.github.io/fzf/)
 - [Pi](https://pi.dev/)
 - [iTerm2](https://github.com/gnachman/iterm2)
 - [GitUI](https://github.com/gitui-org/gitui)
@@ -102,7 +104,6 @@ brew install --cask alt-tab
 brew install --cask whatsapp
 brew install --cask visual-studio-code
 brew install --cask lm-studio
-brew install --cask jan
 brew install node@24
 echo 'export PATH="/opt/homebrew/opt/node@24/bin:$PATH"' >> ~/.bashrc
 brew install kubernetes-cli
@@ -115,6 +116,9 @@ brew install argocd
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
 brew install neovim
+brew install ripgrep
+brew install fd
+brew install fzf
 brew install pi-coding-agent
 brew install --cask iterm2
 brew install gitui
