@@ -246,6 +246,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "steer_subagent": "allow",
     "bash": {
       "npm ls *": "allow",
+      "kubectl wait *": "allow",
       "kubectl debug *": "allow",
       "docker pull *": "allow",
       "true": "allow",
