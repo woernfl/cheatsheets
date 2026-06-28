@@ -78,6 +78,7 @@ Here is the list of packages I usually use:
 - [pre-commit](https://pre-commit.com/)
 - [argocd](https://argoproj.github.io/cd/)
 - [Netbird](https://docs.netbird.io/)
+- [neovim](https://neovim.io/)
 - [Pi](https://pi.dev/)
 - [iTerm2](https://github.com/gnachman/iterm2)
 - [GitUI](https://github.com/gitui-org/gitui)
@@ -113,6 +114,7 @@ brew install pre-commit
 brew install argocd
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
+brew install neovim
 brew install pi-coding-agent
 brew install --cask iterm2
 brew install gitui
