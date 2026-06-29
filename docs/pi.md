@@ -52,26 +52,56 @@ For Scaleway:
 ```json
 {
   "providers": {
-    "scaleway": {
-      "baseUrl": "https://api.scaleway.ai/v1",
+    "scaleway-standard": {
+      "baseUrl": "https://api.scaleway.ai/$PROJECT_ID/v1",
       "api": "openai-completions",
       "apiKey": "$SCALEWAY_API_KEY",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
       "models": [
         {
-          "id": "glm-5.2[1m]",
-          "name": "GLM-5.2 (1M Context)",
+          "id": "qwen3.5-397b-a17b",
+          "name": "Qwen 3.5 397B",
           "reasoning": true,
           "input": ["text"],
+          "contextWindow": 131072,
+          "maxTokens": 16384
+        }
+      ]
+    },
+    "scaleway-reasoning": {
+      "baseUrl": "https://api.scaleway.ai/$PROJECT_ID/v1",
+      "api": "openai-completions",
+      "apiKey": "$SCALEWAY_API_KEY",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": true
+      },
+      "models": [
+        {
+          "id": "glm-5.2",
+          "name": "GLM-5.2 744B",
           "contextWindow": 1048576,
-          "maxTokens": 131072,
-          "thinkingLevelMap": {
-            "off": null,
-            "minimal": null,
-            "low": null,
-            "medium": null,
-            "high": "high",
-            "xhigh": "max"
-          }
+          "maxTokens": 16000
+        }
+      ]
+    },
+    "local-spark": {
+      "baseUrl": "https://vllm-qwen3-5-122b-a10b-nvfp4-spark.vllm.apps.onmyowncorp.eu/v1",
+      "api": "openai-completions",
+      "apiKey": "vllm-dummy-key",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        {
+          "id": "nvidia/Qwen3.5-122B-A10B-NVFP4",
+          "name": "Qwen 3.5 122B",
+          "contextWindow": 131072,
+          "maxTokens": 16000
         }
       ]
     }
