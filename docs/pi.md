@@ -76,6 +76,7 @@ pi install npm:@juicesharp/rpiv-advisor
 pi install npm:@gotgenes/pi-permission-system
 pi install npm:@gotgenes/pi-subagents
 pi install npm:@gotgenes/pi-subagents-worktrees
+pi install npm:pi-messenger-bridge
 pi install npm:pi-lmstudio
 ```
 
