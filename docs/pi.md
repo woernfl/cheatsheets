@@ -43,6 +43,42 @@ Uninstall Pi:
 npm uninstall -g @earendil-works/pi-coding-agent
 ```
 
+## Adding model from a non supported provider
+
+Modify `~/.pi/agent/models.json`.
+
+For Scaleway:
+
+```json
+{
+  "providers": {
+    "scaleway": {
+      "baseUrl": "https://api.scaleway.ai/v1",
+      "api": "openai-completions",
+      "apiKey": "$SCALEWAY_API_KEY",
+      "models": [
+        {
+          "id": "glm-5.2[1m]",
+          "name": "GLM-5.2 (1M Context)",
+          "reasoning": true,
+          "input": ["text"],
+          "contextWindow": 1048576,
+          "maxTokens": 131072,
+          "thinkingLevelMap": {
+            "off": null,
+            "minimal": null,
+            "low": null,
+            "medium": null,
+            "high": "high",
+            "xhigh": "max"
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
 ## Extensions
 
 Pi supports extensions that can enhance functionality.
