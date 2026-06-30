@@ -78,16 +78,14 @@ Here is the list of packages I usually use:
 - [argocd](https://argoproj.github.io/cd/)
 - [Netbird](https://docs.netbird.io/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
-- [fd](https://github.com/sharkdp/fd)
-- [fzf](https://junegunn.github.io/fzf/)
 - [Pi](https://pi.dev/)
 - [iTerm2](https://github.com/gnachman/iterm2)
 - [GitUI](https://github.com/gitui-org/gitui)
+- [Hunk](https://github.com/modem-dev/hunk)
 - [diffnav](https://github.com/dlvhdr/diffnav)
 - [bat](https://github.com/sharkdp/bat)
 - [gh](https://cli.github.com/)
 - [lychee](https://lychee.cli.rs/)
-- [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2)
 
 ### Install Packages
 
@@ -116,17 +114,15 @@ brew install argocd
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
 brew install ripgrep
-brew install fd
-brew install fzf
 brew install pi-coding-agent
 brew install --cask iterm2
 brew install gitui
+brew install modem-dev/tap/hunk
 brew install dlvhdr/formulae/diffnav
 git config --global pager.diff diffnav
 brew install bat
 brew install gh
 brew install lychee
-brew install markdownlint-cli2
 ```
 
 ## Some easy fix
