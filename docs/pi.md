@@ -431,7 +431,11 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     },
     "mcp": { "mcp_status": "allow" },
     "skill": { "*": "allow" },
-    "external_directory": "ask"
+    "external_directory": {
+      "*": "ask",
+      "/tmp": "allow",
+      "/tmp/*": "allow"
+    }
   }
 }
 ```
