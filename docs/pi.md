@@ -125,6 +125,8 @@ Here are some useful extensions:
 - `@gotgenes/pi-permission-system`: provides permission gates over tool, bash, MCP, skill, and special operations.
 - `@gotgenes/pi-subagents`: gives pi a focused, in-process sub-agent core.
 - `@gotgenes/pi-subagents-worktrees`: git worktree isolation for `@gotgenes/pi-subagents`.
+- `@gotgenes/pi-autoformat`: automatically formats files after the agent edits them.
+- `pi-messenger-bridge`: bridge common messengers into pi.
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
 
 ### Installation
@@ -142,6 +144,7 @@ pi install npm:@juicesharp/rpiv-advisor
 pi install npm:@gotgenes/pi-permission-system
 pi install npm:@gotgenes/pi-subagents
 pi install npm:@gotgenes/pi-subagents-worktrees
+pi install npm:@gotgenes/pi-autoformat
 pi install npm:pi-messenger-bridge
 pi install npm:pi-lmstudio
 ```
@@ -448,6 +451,26 @@ File to modify: `~/.pi/agent/subagents-worktrees.json`:
 ```json
 {
   "worktreeAgents": ["general-purpose"]
+}
+```
+
+#### @gotgenes/pi-autoformat
+
+File to modify: `~/.pi/extensions/pi-autoformat/config.json`:
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/gotgenes/pi-autoformat/main/schemas/pi-autoformat.schema.json",
+  "formatters": {
+    "biome": {
+      "command": ["biome", "check", "--write", "--files-ignore-unknown=true"]
+    }
+  },
+  "chains": {
+    ".ts": ["biome"],
+    ".tsx": ["biome"],
+    ".json": ["biome"]
+  }
 }
 ```
 
