@@ -467,12 +467,7 @@ File to modify: `~/.pi/agent/extensions/pi-autoformat/config.json`:
     }
   },
   "chains": {
-    ".ts": ["prettier"],
-    ".tsx": ["prettier"],
-    ".json": ["prettier"],
-    ".md": ["prettier"],
-    ".yml": ["prettier"],
-    ".yaml": ["prettier"]
+    "*": ["prettier"]
   }
 }
 ```
