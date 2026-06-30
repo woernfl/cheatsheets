@@ -87,6 +87,7 @@ Here is the list of packages I usually use:
 - [bat](https://github.com/sharkdp/bat)
 - [gh](https://cli.github.com/)
 - [lychee](https://lychee.cli.rs/)
+- [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2)
 
 ### Install Packages
 
@@ -125,6 +126,7 @@ git config --global pager.diff diffnav
 brew install bat
 brew install gh
 brew install lychee
+brew install markdownlint-cli2
 ```
 
 ## Some easy fix
