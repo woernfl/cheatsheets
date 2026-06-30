@@ -313,6 +313,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "steer_subagent": "allow",
     "bash": {
       "npm ls *": "allow",
+      "git symbolic-ref --short *": "allow",
       "nl *": "allow",
       "for *": "allow",
       "git merge-base *": "allow",
