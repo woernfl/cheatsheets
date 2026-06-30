@@ -470,7 +470,9 @@ File to modify: `~/.pi/extensions/pi-autoformat/config.json`:
     ".ts": ["prettier"],
     ".tsx": ["prettier"],
     ".json": ["prettier"],
-    ".md": ["prettier"]
+    ".md": ["prettier"],
+    ".yml": ["prettier"],
+    ".yaml": ["prettier"]
   }
 }
 ```
