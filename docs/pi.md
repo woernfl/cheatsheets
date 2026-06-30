@@ -456,7 +456,7 @@ File to modify: `~/.pi/agent/subagents-worktrees.json`:
 
 #### @gotgenes/pi-autoformat
 
-File to modify: `~/.pi/extensions/pi-autoformat/config.json`:
+File to modify: `~/.pi/agent/extensions/pi-autoformat/config.json`:
 
 ```json
 {
