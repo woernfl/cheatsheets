@@ -462,14 +462,15 @@ File to modify: `~/.pi/extensions/pi-autoformat/config.json`:
 {
   "$schema": "https://raw.githubusercontent.com/gotgenes/pi-autoformat/main/schemas/pi-autoformat.schema.json",
   "formatters": {
-    "biome": {
-      "command": ["biome", "check", "--write", "--files-ignore-unknown=true"]
+    "prettier": {
+      "command": ["npx", "prettier", "--write"]
     }
   },
   "chains": {
-    ".ts": ["biome"],
-    ".tsx": ["biome"],
-    ".json": ["biome"]
+    ".ts": ["prettier"],
+    ".tsx": ["prettier"],
+    ".json": ["prettier"],
+    ".md": ["prettier"]
   }
 }
 ```
