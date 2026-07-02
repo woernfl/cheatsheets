@@ -118,6 +118,7 @@ brew install ripgrep
 brew install pi-coding-agent
 brew install --cask iterm2
 brew install herdr
+herdr integration install pi
 brew install gitui
 brew install modem-dev/tap/hunk
 brew install dlvhdr/formulae/diffnav
