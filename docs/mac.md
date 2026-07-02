@@ -80,6 +80,7 @@ Here is the list of packages I usually use:
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Pi](https://pi.dev/)
 - [iTerm2](https://github.com/gnachman/iterm2)
+- [herdr](https://herdr.dev/)
 - [GitUI](https://github.com/gitui-org/gitui)
 - [Hunk](https://github.com/modem-dev/hunk)
 - [diffnav](https://github.com/dlvhdr/diffnav)
@@ -116,6 +117,7 @@ brew install --cask netbirdio/tap/netbird-ui
 brew install ripgrep
 brew install pi-coding-agent
 brew install --cask iterm2
+brew install herdr
 brew install gitui
 brew install modem-dev/tap/hunk
 brew install dlvhdr/formulae/diffnav
