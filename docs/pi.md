@@ -314,6 +314,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "subagent": "allow",
     "get_subagent_result": "allow",
     "steer_subagent": "allow",
+    "context7*": "allow",
     "bash": {
       "npm ls *": "allow",
       "npm list *": "allow",
