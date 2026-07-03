@@ -316,6 +316,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "steer_subagent": "allow",
     "bash": {
       "npm ls *": "allow",
+      "npm list *": "allow",
       "dig *": "allow",
       "git symbolic-ref --short *": "allow",
       "nl *": "allow",
@@ -434,7 +435,10 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "chmod 777 *": "deny",
       ":(){ :|:& };:": "deny"
     },
-    "mcp": { "mcp_status": "allow" },
+    "mcp": {
+      "mcp_status": "allow",
+      "context7": "allow"
+    },
     "skill": { "*": "allow" },
     "external_directory": {
       "*": "ask",
