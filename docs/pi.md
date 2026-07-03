@@ -45,9 +45,7 @@ npm uninstall -g @earendil-works/pi-coding-agent
 
 ## Adding model from a non supported provider
 
-Modify `~/.pi/agent/models.json`.
-
-For Scaleway:
+Modify `~/.pi/agent/models.json`:
 
 ```json
 {
@@ -205,6 +203,33 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
           "warningBg": "default",
           "dangerFg": "red",
           "dangerBg": "default"
+        }
+      },
+      {
+        "id": "tokens-mr4wxj6r-bj6zgf",
+        "type": "tokens",
+        "enabled": true,
+        "options": {
+          "raw": false,
+          "icon": "",
+          "fg": "brightCyan",
+          "bg": "default",
+          "bold": false,
+          "tokenFormatStyle": "default"
+        }
+      },
+      {
+        "id": "total-speed-mr4x9dio-6jre70",
+        "type": "total-speed",
+        "enabled": true,
+        "options": {
+          "raw": false,
+          "hideWhenZero": false,
+          "icon": "",
+          "fg": "brightGreen",
+          "bg": "default",
+          "bold": false,
+          "tokenFormatStyle": "default"
         }
       }
     ],
