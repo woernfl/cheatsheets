@@ -80,9 +80,9 @@ Here is the list of packages I usually use:
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Pi](https://pi.dev/)
 - [iTerm2](https://github.com/gnachman/iterm2)
-- [herdr](https://herdr.dev/)
 - [GitUI](https://github.com/gitui-org/gitui)
 - [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+- [revdiff](https://github.com/umputun/revdiff)
 - [bat](https://github.com/sharkdp/bat)
 - [gh](https://cli.github.com/)
 - [lychee](https://lychee.cli.rs/)
@@ -116,13 +116,13 @@ brew install --cask netbirdio/tap/netbird-ui
 brew install ripgrep
 brew install pi-coding-agent
 brew install --cask iterm2
-brew install herdr
-herdr integration install pi
 brew install gitui
 brew install diff-so-fancy
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RF"
 git config --global interactive.diffFilter "diff-so-fancy --patch"
 git config --bool --global diff-so-fancy.stripLeadingSymbols false
+brew install umputun/apps/revdiff
+pi install https://github.com/umputun/revdiff
 brew install bat
 brew install gh
 brew install lychee
