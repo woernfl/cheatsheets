@@ -348,6 +348,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "grafana_find*": "allow",
     "bash": {
       "npm ls *": "allow",
+      "git checkout -b *": "allow",
       "kubectl cluster-info*": "allow",
       "npm list *": "allow",
       "dig *": "allow",
