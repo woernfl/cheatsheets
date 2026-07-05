@@ -346,9 +346,11 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "grafana_list*": "allow",
     "grafana_get*": "allow",
     "grafana_find*": "allow",
+    "revdiff_review": "allow",
     "bash": {
       "npm ls *": "allow",
       "git checkout -b *": "allow",
+      "git push *": "allow",
       "kubectl cluster-info*": "allow",
       "npm list *": "allow",
       "dig *": "allow",
