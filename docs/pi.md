@@ -646,3 +646,16 @@ my-skill/
 ├── scripts/
 └── references/
 ```
+
+## Agents
+
+Pi loads agents from:
+
+- Global/user agents: `~/.pi/agent/agents/*.md`
+- Project agents: `.pi/agents/*.md`
+
+If using the [agency-agents](https://github.com/msitarzewski/agency-agents/tree/main) repo, here is how to link it from the git repo:
+
+```bash
+mkdir -p "$HOME/code" "$HOME/.pi/agent/agents" && { [ -d "$HOME/code/agency-agents" ] || git clone https://github.com/msitarzewski/agency-agents.git "$HOME/code/agency-agents"; } && cd "$HOME/code/agency-agents" && divs="$(jq -r '.divisions | keys | join(" ")' divisions.json)" && [ -n "$divs" ] && find $divs -name '*.md' -type f | sort | while read -r f; do [ "$(head -1 "$f")" = "---" ] && printf '%s\n' "$f"; done | while read -r f; do d="$HOME/.pi/agent/agents/agency__$(basename "$f")"; [ -e "$d" ] && echo "SKIP: agency__$(basename "$f")" || ln -s "$HOME/code/agency-agents/$f" "$d"; done
+```
