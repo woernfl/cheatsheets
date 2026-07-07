@@ -360,6 +360,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "revdiff_review": "allow",
     "bash": {
       "npm ls *": "allow",
+      "kubectl diff *": "allow",
       "git checkout -b *": "allow",
       "git push *": "allow",
       "kubectl cluster-info*": "allow",
