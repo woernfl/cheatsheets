@@ -26,6 +26,7 @@ Skills are exposed as `/skill:$NAME`, and prompt templates are exposed as `/$NAM
 | `Esc`       | Abort the current run                 |
 | `Ctrl+P`    | Cycle to the next model               |
 | `Shift+Tab` | Cycle thinking level                  |
+| `Ctrl+g`    | Open an editor for long prompt        |
 
 Keybindings can be customized in `~/.pi/agent/keybindings.json`. After editing them, run `/reload`.
 
