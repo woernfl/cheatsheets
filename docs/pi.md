@@ -335,6 +335,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "grep": "allow",
     "web_search": "allow",
     "web_fetch": "allow",
+    "web_fetch *": "allow",
     "advisor": "allow",
     "ask_user_question": "allow",
     "subagent": "allow",
