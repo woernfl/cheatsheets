@@ -140,6 +140,7 @@ pi install npm:pi-mcp-adapter
 pi install npm:@juicesharp/rpiv-web-tools
 pi install npm:@juicesharp/rpiv-ask-user-question
 pi install npm:@juicesharp/rpiv-advisor
+pi install npm:@booplex/bpx-consult
 pi install npm:@gotgenes/pi-permission-system
 pi install npm:@gotgenes/pi-subagents
 pi install npm:@gotgenes/pi-subagents-worktrees
