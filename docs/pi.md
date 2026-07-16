@@ -125,6 +125,7 @@ Here are some useful extensions:
 - `@gotgenes/pi-subagents`: gives pi a focused, in-process sub-agent core.
 - `@gotgenes/pi-subagents-worktrees`: git worktree isolation for `@gotgenes/pi-subagents`.
 - `@gotgenes/pi-autoformat`: automatically formats files after the agent edits them.
+- `revdiff`: TUI for reviewing diffs, files, and documents with inline annotations.
 - `pi-lmstudio`: integrating LM Studio with Pi, allowing you to use local LLMs.
 
 ### Installation
@@ -143,6 +144,7 @@ pi install npm:@gotgenes/pi-permission-system
 pi install npm:@gotgenes/pi-subagents
 pi install npm:@gotgenes/pi-subagents-worktrees
 pi install npm:@gotgenes/pi-autoformat
+pi install https://github.com/umputun/revdiff
 pi install npm:pi-lmstudio
 ```
 
