@@ -51,25 +51,6 @@ Modify `~/.pi/agent/models.json`:
 ```json
 {
   "providers": {
-    "scaleway-standard": {
-      "baseUrl": "https://api.scaleway.ai/$PROJECT_ID/v1",
-      "api": "openai-completions",
-      "apiKey": "$SCALEWAY_API_KEY",
-      "compat": {
-        "supportsDeveloperRole": false,
-        "supportsReasoningEffort": false
-      },
-      "models": [
-        {
-          "id": "qwen3.5-397b-a17b",
-          "name": "Qwen 3.5 397B",
-          "reasoning": true,
-          "input": ["text"],
-          "contextWindow": 131072,
-          "maxTokens": 16384
-        }
-      ]
-    },
     "scaleway-reasoning": {
       "baseUrl": "https://api.scaleway.ai/$PROJECT_ID/v1",
       "api": "openai-completions",
@@ -87,8 +68,8 @@ Modify `~/.pi/agent/models.json`:
         }
       ]
     },
-    "local-spark": {
-      "baseUrl": "https://vllm-qwen3-5-122b-a10b-nvfp4-spark.vllm.apps.onmyowncorp.eu/v1",
+    "local-qwen35-122-spark": {
+      "baseUrl": "https://vllm-qwen3-5-122b-a10b-nvfp4-spark.vllm-spark.apps.onmyowncorp.eu/v1",
       "api": "openai-completions",
       "apiKey": "vllm-dummy-key",
       "compat": {
@@ -100,6 +81,57 @@ Modify `~/.pi/agent/models.json`:
           "id": "nvidia/Qwen3.5-122B-A10B-NVFP4",
           "name": "Qwen 3.5 122B",
           "contextWindow": 131072,
+          "maxTokens": 16000
+        }
+      ]
+    },
+    "local-gemma4-31-spark": {
+      "baseUrl": "https://vllm-gemma-4-31b-it-nvfp4-spark.vllm-spark.apps.onmyowncorp.eu/v1",
+      "api": "openai-completions",
+      "apiKey": "vllm-dummy-key",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        {
+          "id": "nvidia/Gemma-4-31B-IT-NVFP4",
+          "name": "Gemma 4 31B",
+          "contextWindow": 16384,
+          "maxTokens": 4096
+        }
+      ]
+    },
+    "local-ornith1-35-spark": {
+      "baseUrl": "https://vllm-ornith-1-0-35b-fp8-spark.vllm-spark.apps.onmyowncorp.eu/v1",
+      "api": "openai-completions",
+      "apiKey": "vllm-dummy-key",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        {
+          "id": "deepreinforce-ai/Ornith-1.0-35B-FP8",
+          "name": "Ornith 1.0 35B",
+          "contextWindow": 262144,
+          "maxTokens": 16000
+        }
+      ]
+    },
+    "local-qwen36-35-spark": {
+      "baseUrl": "https://vllm-qwen3-6-35b-a3b-nvfp4-spark.vllm-spark.apps.onmyowncorp.eu/v1",
+      "api": "openai-completions",
+      "apiKey": "vllm-dummy-key",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        {
+          "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+          "name": "Qwen 3.6 35B",
+          "contextWindow": 262144,
           "maxTokens": 16000
         }
       ]
