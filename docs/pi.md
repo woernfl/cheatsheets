@@ -394,6 +394,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "revdiff_review": "allow",
     "bash": {
       "npm ls *": "allow",
+      "docker manifest *": "allow",
       "helm show *": "allow",
       "kubectl version *": "allow",
       "git pull *": "allow",
