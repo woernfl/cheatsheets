@@ -182,6 +182,12 @@ Force delete a specific pod:
 kubectl -n $NAMESPACE delete po $POD_NAME --force --grace-period=0
 ```
 
+Force delete all the pods in "Terminating" state for all the namespaces:
+
+```bash
+kubectl get pods --all-namespaces | awk '/Terminating/{print "-n", $1, $2}' | xargs -L 1 kubectl delete pod --force --grace-period=0
+```
+
 ## Node management
 
 Get the CPU and Memory usage of all nodes:
