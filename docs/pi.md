@@ -445,6 +445,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "sleep *": "allow",
       "base64 *": "allow",
       "gh run *": "allow",
+      "gh search *": "allow",
       "while *": "allow",
       "cd *": "allow",
       "if *": "allow",
