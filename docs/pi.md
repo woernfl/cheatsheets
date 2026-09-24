@@ -345,6 +345,26 @@ Use slash commands directly in `pi`:
 /web-tools
 ```
 
+Make sure to use `searxng` provider, modify `~/.config/rpiv-web-tools/config.json`:
+
+```json
+{
+  "provider": "searxng",
+  "baseUrls": {
+    "searxng": "http://localhost:8080"
+  },
+  "guidance": {
+    "web_search": {
+      "promptGuidelines": [
+        "Always set provider to searxng. Never pass any other provider unless the user explicitly names a different backend.",
+        "If unsure, omit the provider parameter — the configured active provider (searxng) resolves correctly.",
+        "After answering from search results, include a Sources: section with markdown hyperlinks."
+      ]
+    }
+  }
+}
+```
+
 #### @gotgenes/pi-permission-system
 
 File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
