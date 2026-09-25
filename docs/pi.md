@@ -541,6 +541,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "gh pr list *": "allow",
       "gh issue view *": "allow",
       "gh issue list *": "allow",
+      "gh pr checks *": "allow",
       "sudo *": "ask",
       "curl * | sh": "ask",
       "curl * | bash": "ask",
