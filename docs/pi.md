@@ -425,6 +425,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "helm show *": "allow",
       "kubectl version *": "allow",
       "git pull *": "allow",
+      "git fetch *": "allow",
       "revdiff": "allow",
       "revdiff *": "allow",
       "kubectl diff *": "allow",
