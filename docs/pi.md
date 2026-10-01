@@ -379,6 +379,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "*.env.*": "deny",
       "*.env.example": "allow"
     },
+    "tool_search": "allow",
     "read": "allow",
     "write": "ask",
     "edit": "ask",
