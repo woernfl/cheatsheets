@@ -417,6 +417,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "revdiff_review": "allow",
     "bash": {
       "npm ls *": "allow",
+      "aws eks list-clusters *": "allow",
       "aws ec2 describe*": "allow",
       "aws support describe*": "allow",
       "argocd app get *": "allow",
