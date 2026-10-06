@@ -419,6 +419,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "npm ls *": "allow",
       "man *": "allow",
       "git grep *": "allow",
+      "git cat-file *": "allow",
       "git worktree *": "allow",
       "aws cloudwatch get*": "allow",
       "aws eks list*": "allow",
