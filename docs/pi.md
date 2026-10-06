@@ -417,6 +417,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "revdiff_review": "allow",
     "bash": {
       "npm ls *": "allow",
+      "man *": "allow",
       "git grep *": "allow",
       "git worktree *": "allow",
       "aws cloudwatch get*": "allow",
