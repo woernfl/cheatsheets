@@ -413,6 +413,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "mcp_atlassian_jira_search": "allow",
     "mcp_atlassian_jira_search*": "allow",
     "bitbucket-server_*": "allow",
+    "acp_delegate": "allow",
     "revdiff_review": "allow",
     "bash": {
       "npm ls *": "allow",
