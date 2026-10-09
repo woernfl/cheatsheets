@@ -64,6 +64,7 @@ Here is the list of packages I usually use:
 - [Chrome](https://www.google.com/chrome/)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 - [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus)
+- [Bitwarden](https://bitwarden.com/)
 - [AltTab](https://alt-tab-macos.netlify.app/)
 - [Whatsapp](https://www.whatsapp.com/)
 - [VS Code](https://code.visualstudio.com/)
@@ -96,6 +97,7 @@ brew install bash-completion@2
 brew install --cask google-chrome
 brew install rectangle
 brew install --cask logi-options+
+brew install bitwarden
 brew install --cask alt-tab
 brew install --cask whatsapp
 brew install --cask visual-studio-code
