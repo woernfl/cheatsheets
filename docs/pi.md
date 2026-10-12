@@ -381,8 +381,16 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     },
     "tool_search": "allow",
     "read": "allow",
-    "write": "ask",
-    "edit": "ask",
+    "write": {
+      "*": "ask",
+      "/tmp/*": "allow",
+      "/private/tmp/*": "allow"
+    },
+    "edit": {
+      "*": "ask",
+      "/tmp/*": "allow",
+      "/private/tmp/*": "allow"
+    },
     "find": "allow",
     "ls": "allow",
     "grep": "allow",
