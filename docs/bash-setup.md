@@ -28,6 +28,7 @@ alias gitcredunset='git config --unset credential.helper store'
 alias gitbranchclean='git branch | grep -E -v "master|main" | xargs -n 1 git branch -d'
 alias update='sudo apt-get update && sudo apt-get upgrade -y'
 alias bupdate='brew update && brew upgrade -y && brew upgrade --greedy && brew cleanup'
+alias piup='pi update --extensions'
 alias tmp='rm -rf tmp/ && mkdir tmp && cd tmp/'
 
 gitclonecd() {
