@@ -377,7 +377,7 @@ mkdir -p ~/.pi/agent/extensions/pi-permission-classifier
 echo '{}' > ~/.pi/agent/extensions/pi-permission-classifier/config.json
 ```
 
-Then choose a judge model with /permission-model. With no model set, it uses whichever model your session is on. Pick a cheap, fast model from a Novartis-approved provider, because the full command for every ask call is sent to it. A local model is an option if you have one.
+Then choose a judge model with `/permission-model`. With no model set, it uses whichever model your session is on.
 
 #### @gotgenes/pi-permission-system
 
