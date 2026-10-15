@@ -172,6 +172,7 @@ pi install npm:pi-mcp-adapter
 pi install npm:@juicesharp/rpiv-web-tools
 pi install npm:@juicesharp/rpiv-ask-user-question
 pi install npm:@juicesharp/rpiv-advisor
+pi install npm:pi-permission-classifier
 pi install npm:@gotgenes/pi-permission-system
 pi install npm:@gotgenes/pi-subagents
 pi install npm:@gotgenes/pi-subagents-worktrees
@@ -365,12 +366,26 @@ Make sure to use `searxng` provider, modify `~/.config/rpiv-web-tools/config.jso
 }
 ```
 
+#### pi-permission-classifier
+
+Make sure that in `~/.pi/agent/settings.json` the `npm:pi-permission-classifier` package is before `npm:@gotgenes/pi-permission-system`.
+
+Create the classifier's config file:
+
+```bash
+mkdir -p ~/.pi/agent/extensions/pi-permission-classifier
+echo '{}' > ~/.pi/agent/extensions/pi-permission-classifier/config.json
+```
+
+Then choose a judge model with `/permission-model`. With no model set, it uses whichever model your session is on.
+
 #### @gotgenes/pi-permission-system
 
 File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
 
 ```json
 {
+  "authorizerChain": ["classifier"],
   "permission": {
     "*": "ask",
     "path": {
