@@ -595,6 +595,9 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "*": "ask",
       "/tmp": "allow",
       "/tmp/*": "allow"
+    },
+    "external_directory_read": {
+      "*": "allow"
     }
   }
 }
