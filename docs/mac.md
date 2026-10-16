@@ -61,6 +61,8 @@ Here is the list of packages I usually use:
 - [Git](https://git-scm.com/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Bash Completion](https://github.com/scop/bash-completion)
+- [Firefox](https://www.firefox.com/)
+- [Brave](https://brave.com/)
 - [Chrome](https://www.google.com/chrome/)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 - [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus)
@@ -94,6 +96,8 @@ Here is how to install this packages using the terminal:
 brew install git
 brew install --cask docker-desktop
 brew install bash-completion@2
+brew install --cask firefox
+brew install --cask brave-browser
 brew install --cask google-chrome
 brew install rectangle
 brew install --cask logi-options+
