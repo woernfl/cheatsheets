@@ -17,6 +17,7 @@
     "editorBracketHighlight.foreground6": "#abb2c0",
     "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
   },
+  "markdown.extension.toc.levels": "2..6",
   "indentRainbow.includedLanguages": ["yaml", "yml"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
