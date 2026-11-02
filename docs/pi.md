@@ -387,7 +387,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
 
 ```json
 {
-  "authorizerChain": ["classifier"],
+  "authorizerChain": ["permission-judge"],
   "permission": {
     "*": "ask",
     "path": {
