@@ -590,7 +590,8 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "rm -rf *": "deny",
       "rm -fr *": "deny",
       "chmod 777 *": "deny",
-      ":(){ :|:& };:": "deny"
+      ":(){ :|:& };:": "deny",
+      "gh pr merge *": "ask"
     },
     "mcp": {
       "mcp_status": "allow",
