@@ -151,7 +151,7 @@ Here are some useful extensions:
 - `pi-linter`: deterministic linter that renders findings above the input bar in pi.
 - `pi-mcp-adapter`: use MCP servers with Pi.
 - `pi-worktree-extension`: enable you to manage git worktree.
-- `google/elephant-goldfish-model`: draft specs, review designs, and check implementation drift.
+- `egm`: draft specs, review designs, and check implementation drift.
 - `@juicesharp/rpiv-web-tools`: let the model search the web and read pages.
 - `@juicesharp/rpiv-ask-user-question`: ask clarifying questions instead of guessing.
 - `@juicesharp/rpiv-advisor`: ask a stronger model for a second opinion before it acts.
@@ -172,7 +172,7 @@ pi install npm:pi-loadout
 pi install npm:pi-linter
 pi install npm:pi-mcp-adapter
 pi install npm:pi-worktree-extension
-pi install npm:@google/elephant-goldfish-model
+pi install npm:egm
 pi install npm:@juicesharp/rpiv-web-tools
 pi install npm:@juicesharp/rpiv-ask-user-question
 pi install npm:@juicesharp/rpiv-advisor
