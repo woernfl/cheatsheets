@@ -170,7 +170,6 @@ After installation, you may need to run `/reload` to activate the extensions.
 ```bash
 pi install npm:pi-footer
 pi install npm:pi-loadout
-pi install npm:pi-linter
 pi install npm:pi-mcp-adapter
 pi install npm:pi-worktree-extension
 pi install npm:egm
@@ -323,25 +322,12 @@ File to modify: `~/.pi/agent/extensions/pi-footer.json`:
 }
 ```
 
-#### pi-linter
+#### github.com/microsoft/TokenEconomizer
 
-File to modify: `~/.pi/pi-lint.json`:
+If Python not found, add this to `~/.bashrc`:
 
-```json
-{
-  "disabled": [],
-  "enabled": [
-    "vague-opener",
-    "pronoun-soup",
-    "reactive-noop",
-    "imperative-only",
-    "scope-creep",
-    "reversal",
-    "unbounded-loop",
-    "naked-review-paste",
-    "review-drip"
-  ]
-}
+```bash
+export TE_PYTHON="/opt/homebrew/bin/python3"
 ```
 
 #### @juicesharp/rpiv-web-tools
