@@ -151,7 +151,7 @@ Here are some useful extensions:
 - `pi-linter`: deterministic linter that renders findings above the input bar in pi.
 - `pi-mcp-adapter`: use MCP servers with Pi.
 - `pi-worktree-extension`: enable you to manage git worktree.
-- `egm`: draft specs, review designs, and check implementation drift.
+- `@rizkiaprita/egm`: draft specs, review designs, and check implementation drift.
 - `microsoft/TokenEconomizer`: experience-Driven Black-Box Cost Control for Coding Agents.
 - `@juicesharp/rpiv-web-tools`: let the model search the web and read pages.
 - `@juicesharp/rpiv-ask-user-question`: ask clarifying questions instead of guessing.
@@ -172,7 +172,7 @@ pi install npm:pi-footer
 pi install npm:pi-loadout
 pi install npm:pi-mcp-adapter
 pi install npm:pi-worktree-extension
-pi install npm:egm
+pi install npm:@rizkiaprita/egm
 pi install git:github.com/microsoft/TokenEconomizer
 pi install npm:@juicesharp/rpiv-web-tools
 pi install npm:@juicesharp/rpiv-ask-user-question
