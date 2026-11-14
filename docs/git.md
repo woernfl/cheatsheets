@@ -263,6 +263,25 @@ Remove a worktree:
 git worktree remove $WORKTREE_PATH
 ```
 
+Force remove a worktree with uncommitted changes:
+
+```bash
+git worktree remove --force $WORKTREE_PATH
+```
+
+Remove all worktrees and clean up stale administrative files:
+
+```bash
+git worktree list --porcelain | awk '/^worktree /{print $2}' | tail -n +2 | xargs -r -n 1 git worktree remove
+git worktree prune
+```
+
+Prune stale worktree references (e.g. after deleting a worktree directory manually):
+
+```bash
+git worktree prune
+```
+
 ## Start a new git repository
 
 ```bash
