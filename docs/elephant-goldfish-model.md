@@ -6,36 +6,6 @@
 - **Goldfish** reviewers examine the draft with fresh eyes, without the earlier conversation, exposing unstated assumptions and blind spots.
 - **You** resolve trade-offs and approve the specification before implementing.
 
-## Installation
-
-Install the complete plugin so its skills can read the reviewer prompts and document standards. Start a new session after installation.
-
-### Claude Code
-
-```bash
-claude plugin marketplace add google/elephant-goldfish-model
-claude plugin install egm@egm
-```
-
-### Codex CLI
-
-```bash
-codex plugin marketplace add google/elephant-goldfish-model
-codex plugin add egm@egm
-```
-
-### Antigravity CLI
-
-```bash
-agy plugin install https://github.com/google/elephant-goldfish-model
-```
-
-For the Antigravity App and Antigravity for IDEs (VS Code extension), run `/plugin`.
-
-### ChatGPT and Codex Desktop
-
-Open the published EGM plugin in the desktop app and install it. This listing is desktop-only; for Codex CLI use the commands above.
-
 ## Workflow
 
 The built-in workflow targets software specifications. For other documents, choose reviewers and standards with `/egm-review-loop`.
@@ -77,6 +47,36 @@ Review the draft with fresh reviewers:
 Use the draft path returned by the agent. Fresh reviewers check the design, its clarity, its fit with the code, and its implementation plan. Choose which findings to address. When you approve the design, ask your coding agent to implement it.
 
 Save approved specifications under `docs/designs/`.
+
+### Resolve
+
+Work through review findings and agree on changes. Run it in the session that produced the document, and provide the target file, a line range, and the aggregated findings list:
+
+```text
+/egm-resolve design_draft.md lines 1-120
+```
+
+Each finding is categorized as **CONTEST** (the critique is inaccurate; the agent cites evidence), **ACCEPT** (the agent applies a textual repair), or **NEGOTIATE** (the agent presents options and waits for your decision).
+
+### Bootstrap
+
+Create or update `README.md` contract files across a directory tree of an existing codebase:
+
+```text
+/egm-bootstrap src/services/
+```
+
+The agent writes leaf-level component READMEs (**Peanuts**) and parent-level repository blueprints (**Hay**) that roll up child interfaces. It only writes documentation — no source code and no git commits. Use `target_filename` to write to an alternate name such as `EGM.md` when existing human-maintained READMEs must not be modified.
+
+### Review loop
+
+Run a configured group of reviewers against a document with specific reviewer and standard combinations — useful for documents other than software specifications:
+
+```text
+/egm-review-loop docs/designs/webhooks.md full file reviewers=design_critic,comprehension standards=feature-spec-standard
+```
+
+Reviewers (for example `design_critic`, `structural`, `style`, `implementation_readiness`, `comprehension`) audit the document in fresh contexts, then the Elephant context resolves the findings. Standards map reviewers to document standards such as `feature-spec-standard` or `implementation-readiness-standard`.
 
 ## Reviewing Existing Documents
 
