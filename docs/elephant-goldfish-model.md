@@ -118,7 +118,6 @@ The agent compares each document in the folder with the current source code and 
 
 ## Limitations
 
-- Goldfish reviews require fresh subagent contexts. If your agent cannot create them, EGM stops the review.
 - Brainstorming and review require a session that can create fresh subagents.
 - A review does not replace tests or human judgment.
 - Bootstrap and drift reporting apply to software codebases.
