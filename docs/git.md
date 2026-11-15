@@ -273,7 +273,6 @@ Remove all worktrees and clean up stale administrative files:
 
 ```bash
 git worktree list --porcelain | awk '/^worktree /{print $2}' | tail -n +2 | xargs -r -n 1 git worktree remove
-git worktree prune
 ```
 
 Prune stale worktree references (e.g. after deleting a worktree directory manually):
