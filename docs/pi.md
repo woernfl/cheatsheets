@@ -430,6 +430,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "bitbucket-server_*": "allow",
     "acp_delegate": "allow",
     "revdiff_review": "allow",
+    "invoke_subagent": "allow",
     "bash": {
       "npm ls *": "allow",
       "git push *": "allow",
