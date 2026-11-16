@@ -433,6 +433,8 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
     "invoke_subagent": "allow",
     "bash": {
       "npm ls *": "allow",
+      "git add *": "allow",
+      "git commit *": "allow",
       "git push *": "allow",
       "man *": "allow",
       "git grep *": "allow",
