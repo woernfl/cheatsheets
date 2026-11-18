@@ -37,6 +37,7 @@ docker pull $IMAGE_NAME@sha256:$IMAGE_DIGEST
 ```
 
 Pull a container for a specific platform:
+
 ```bash
 docker pull --platform linux/amd64 $IMAGE_NAME:$IMAGE_TAG
 ```
