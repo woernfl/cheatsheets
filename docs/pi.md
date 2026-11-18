@@ -362,11 +362,14 @@ Make sure to use `searxng` provider, modify `~/.config/rpiv-web-tools/config.jso
 
 Make sure that in `~/.pi/agent/settings.json` the `npm:pi-permission-classifier` package is before `npm:@gotgenes/pi-permission-system`.
 
-Create the classifier's config file:
+Create the classifier's config file `~/.pi/agent/extensions/pi-permission-classifier/config.json`:
 
-```bash
-mkdir -p ~/.pi/agent/extensions/pi-permission-classifier
-echo '{}' > ~/.pi/agent/extensions/pi-permission-classifier/config.json
+```json
+{
+  "provider": "mistral",
+  "model": "codestral-latest",
+  "verdicts": "allow-defer"
+}
 ```
 
 Then choose a judge model with `/permission-model`. With no model set, it uses whichever model your session is on.
