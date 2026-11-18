@@ -28,6 +28,12 @@ List all the labels of an images:
 docker inspect $DOCKER_IMAGE_NAME | jq -r '.[0].Config.Labels'
 ```
 
+### Docker pull container
+
+```bash
+docker pull $DOCKER_IMAGE_NAME@sha256:$DOCKER_IMAGE_DIGEST
+```
+
 ### Get docker image information
 
 Check if an image already exist in a registry (will be 0 if the image exist or 1 if the image doesn't exist):
