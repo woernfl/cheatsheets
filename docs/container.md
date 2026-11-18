@@ -25,13 +25,20 @@ for t in $(docker images --format "{{.Repository}}:{{.Tag}} " | grep "$IMAGE_NAM
 List all the labels of an images:
 
 ```bash
-docker inspect $DOCKER_IMAGE_NAME | jq -r '.[0].Config.Labels'
+docker inspect $IMAGE_NAME | jq -r '.[0].Config.Labels'
 ```
 
 ### Docker pull container
 
+Pull a container by his digest:
+
 ```bash
-docker pull $DOCKER_IMAGE_NAME@sha256:$DOCKER_IMAGE_DIGEST
+docker pull $IMAGE_NAME@sha256:$IMAGE_DIGEST
+```
+
+Pull a container for a specific platform:
+```bash
+docker pull --platform linux/amd64 $IMAGE_NAME:$IMAGE_TAG
 ```
 
 ### Get docker image information
