@@ -443,6 +443,7 @@ File to modify: `~/.pi/agent/extensions/pi-permission-system/config.json`:
       "git grep *": "allow",
       "git cat-file *": "allow",
       "git worktree *": "allow",
+      "helm template *": "allow",
       "aws cloudwatch get*": "allow",
       "aws eks list*": "allow",
       "aws ec2 describe*": "allow",
