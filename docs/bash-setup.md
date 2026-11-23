@@ -36,19 +36,27 @@ gitclonecd() {
 }
 
 gitworktreeclean() {
+  local dry=0 force=0 wt branch
+  for arg in "$@"; do
+    case "$arg" in
+      -n) dry=1 ;;
+      -f|--force) force=1 ;;
+    esac
+  done
   git worktree prune
-  local wt branch
   while IFS= read -r wt; do
     branch=$(git -C "$wt" branch --show-current 2>/dev/null)
     case "$branch" in
-      main|master|"") continue ;;   # keep main/master and detached worktrees
+      main|master) continue ;;
     esac
-    if git worktree remove "$wt"; then
-      echo "Removed worktree at $wt (branch: $branch)"
+    if [ $dry = 1 ]; then
+      echo "Would remove: $wt (branch: ${branch:-detached})"
+    elif git worktree remove $( [ $force = 1 ] && echo --force ) "$wt"; then
+      echo "Removed: $wt (branch: ${branch:-detached})"
     else
-      echo "Skipped $wt (branch: $branch) - has uncommitted changes or untracked files"
+      echo "Skipped: $wt (branch: ${branch:-detached})"
     fi
-  done < <(git worktree list --porcelain | awk '/^worktree: /{sub(/^worktree: /,""); print}')
+  done < <(git worktree list --porcelain | awk '/^worktree /{sub(/^worktree /,""); print}')
 }
 ```
 
