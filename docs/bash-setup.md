@@ -34,6 +34,22 @@ alias tmp='rm -rf tmp/ && mkdir tmp && cd tmp/'
 gitclonecd() {
   git clone "$1" && cd "$(basename "$1" .git)"
 }
+
+gitworktreeclean() {
+  git worktree prune
+  local wt branch
+  while IFS= read -r wt; do
+    branch=$(git -C "$wt" branch --show-current 2>/dev/null)
+    case "$branch" in
+      main|master|"") continue ;;   # keep main/master and detached worktrees
+    esac
+    if git worktree remove "$wt"; then
+      echo "Removed worktree at $wt (branch: $branch)"
+    else
+      echo "Skipped $wt (branch: $branch) - has uncommitted changes or untracked files"
+    fi
+  done < <(git worktree list --porcelain | awk '/^worktree: /{sub(/^worktree: /,""); print}')
+}
 ```
 
 ## Setup a personal folder to store binaries
