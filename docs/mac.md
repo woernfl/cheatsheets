@@ -77,6 +77,7 @@ Here is the list of packages I usually use:
 - [kubeseal](https://github.com/bitnami-labs/sealed-secrets)
 - [pipx](https://pipx.pypa.io/stable/)
 - [watch](https://gitlab.com/procps-ng/procps)
+- [prettier](https://prettier.io/)
 - [pre-commit](https://pre-commit.com/)
 - [Netbird](https://docs.netbird.io/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -113,6 +114,7 @@ brew install helm
 brew install kubeseal
 brew install pipx && pipx ensurepath
 brew install watch
+brew install prettier
 brew install pre-commit
 brew install netbirdio/tap/netbird
 brew install --cask netbirdio/tap/netbird-ui
